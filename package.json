@@ -1,0 +1,16 @@
+{
+  "name": "comforty",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "devDependencies": {
+    "sass": "^1.32.12",
+    "vite": "^2.2.3"
+  },
+  "dependencies": {
+    "bootstrap": "^5.0.0-beta3"
+  }
+}

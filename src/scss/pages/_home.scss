@@ -1,0 +1,344 @@
+/*
+
+    Tamplate Name: Alex.
+    version:1.1.
+    author:monirkm.
+    
+    Content of Tamplate
+============================
+    1.menu Part
+    2.banner part
+    3.introduction part
+    4.cause part
+    5.event part
+    6.member part
+    7.partner part
+    8.footer Part
+
+*/
+
+/*
+Genaral Css Start
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Epilogue', sans-serif;
+}
+
+p,
+span,
+a {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+a:hover {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+$primay-color :#29D882;
+$header-p :#21272F;
+
+.common--header {
+    &--subtitle {
+        font-size: 12px;
+        color: $header-p;
+        font-family: 'Epilogue';
+        font-weight: 500;
+        text-transform: uppercase;
+        margin-bottom: 0;
+    }
+
+    &--title {
+        font-size: 48px;
+        color: $primay-color;
+        font-family: 'Epilogue';
+        font-weight: 700;
+    }
+}
+
+
+
+/*Genaral Css End*/
+
+
+.btnn-primary {
+    background-color: $primay-color;
+    border: 0;
+    color: #fff;
+    font-family: 'Epilogue';
+    letter-spacing: 1px;
+    border-radius: 5px;
+
+}
+
+.btnn-border-light {
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+.btnn-border-dark {
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+/* menu start start -----------------------*/
+
+.header {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    padding: 0 40px;
+
+    &--nav ul {
+        padding-left: 340px;
+
+        li {
+            list-style: none;
+
+            a {
+                font-size: 16px;
+                color: #88949B;
+                margin: 0 20px;
+                padding: 0 7px;
+                font-family: 'Inter';
+                font-weight: 600;
+                position: relative;
+            }
+
+            .active {
+                color: #21272F;
+            }
+
+            a:after {
+                position: absolute;
+                content: '';
+                bottom: -5px;
+                left: 0;
+                height: 2px;
+                width: 0%;
+                background: $primay-color;
+                // opacity: 0;
+                transition: .5s;
+            }
+
+        }
+
+        li:hover a:after {
+            opacity: 1;
+            width: 100%;
+        }
+
+
+    }
+
+    .header-social-icon {
+        a {
+            padding: 0 10px;
+            text-decoration: none;
+        }
+
+        button {
+            padding: 0 10px;
+            font-size: 16px;
+            color: #fff;
+            text-transform: uppercase;
+
+        }
+
+        .header-btn {
+            padding: 7px 25px;
+
+            margin-left: 30px;
+        }
+    }
+
+}
+
+
+
+.banner {
+    height: 100vh;
+    background-size: cover !important;
+    background-position: center !important;
+
+    &--content {
+        &--left {
+            padding-top: 200px;
+            padding-bottom: 150px;
+
+            h4 {
+                font-size: 20px;
+                color: #21272F;
+                font-family: 'Inter';
+                font-weight: 600;
+                margin-bottom: 10px;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+            }
+
+            h2 {
+                font-size: 88px;
+                color: #21272F;
+                font-family: 'Epilogue';
+                font-weight: 600;
+                margin-bottom: 28px;
+
+                span {
+                    color: $primay-color;
+                }
+            }
+
+            p {
+                font-size: 20px;
+                color: #21272F;
+                font-family: 'Inter';
+                font-weight: 400;
+                line-height: 30px;
+                margin-bottom: 33px;
+            }
+
+            .btnn {
+                padding: 20px 40px;
+                font-weight: 600;
+                text-transform: uppercase;
+            }
+        }
+
+        .srolll-drwn {
+            a {
+                color: #88949B;
+                font-weight: 400;
+                font-size: 14px;
+                position: relative;
+                text-decoration: none;
+
+            }
+
+            a:after {
+                position: absolute;
+                content: '';
+                top: 0px;
+                left: -10px;
+                height: 100%;
+                width: 2px;
+                background: $primay-color;
+
+            }
+        }
+    }
+
+    &--content--right {
+        position: relative;
+
+        img {
+            max-width: 115%;
+        }
+    }
+}
+
+.header-curve {
+    position: relative;
+}
+
+.header-curve svg {
+    margin-top: -350px;
+    z-index: 9999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+}
+
+
+.about {
+    background-color: #F0FCF9;
+    position: relative;
+
+    &--img {
+
+
+        &--bobbles-a,
+        &--bobbles-b,
+        &--bobbles-c {
+            span {
+                color: $primay-color;
+                font-weight: 700;
+                font-size: 40px;
+                font-family: 'Epilogue';
+            }
+
+            p {
+                color: #21272F;
+                font-weight: 400;
+                font-size: 14px;
+                font-family: 'Inter';
+            }
+        }
+
+        .about--img--bobbles-b {
+            position: absolute;
+            bottom: 50%;
+            left: 0;
+
+        }
+
+
+    }
+}
+
+/* services start-------------- */
+
+
+.services {
+    &--body {
+        
+        &-item {
+            box-shadow: 1px 2px 10px #f1f1f1;
+            svg{
+                display: block;
+                padding-bottom: 27px;
+            }
+            span{
+                color: #21272F;
+                letter-spacing: 18%;
+                
+            }
+            p{
+                color:#21272F;
+                font-size: 16px;
+                font-family: 'Inter';
+                font-weight: 400;
+            }
+            h4{
+                color:#21272F;
+                font-size: 32px;
+                font-family: 'Epilogue';
+                font-weight: 700;
+            }
+
+        }
+    }
+}
