@@ -1,0 +1,35 @@
+// ====  Colors Function  ====== \\
+@function color($color-name) {
+  @return map-get($map: $colors, $key: $color-name);
+}
+
+//  colors
+@each $key, $value in $colors {
+  .bgcolor--#{$key} {
+    background-color: $value;
+  }
+  .textColor--#{$key} {
+    color: $value;
+  }
+}
+
+// ====   ====== \\
+
+// ==== Responsive  ====== \\
+@mixin max($size) {
+  @media (max-width: $size) {
+    @content;
+  }
+}
+
+@mixin min($size) {
+  @media (min-width: $size) {
+    @content;
+  }
+}
+
+@mixin min-max($min, $max) {
+  @media (min-width: $min) and (max-width: $max) {
+    @content;
+  }
+}
