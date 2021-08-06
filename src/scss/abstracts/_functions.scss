@@ -3,7 +3,6 @@
   @return map-get($map: $colors, $key: $color-name);
 }
 
-//  colors
 @each $key, $value in $colors {
   .bgcolor--#{$key} {
     background-color: $value;
@@ -13,6 +12,13 @@
   }
 }
 
+// ==== Fonts Size  ====== \\
+
+@each $value, $key in $fontSize {
+  .text--#{$value} {
+    font-size: $key;
+  }
+}
 // ====   ====== \\
 
 // ==== Responsive  ====== \\
