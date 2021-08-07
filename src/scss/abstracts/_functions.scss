@@ -12,13 +12,22 @@
   }
 }
 
-// ==== Fonts Size  ====== \\
+// ==== Fonts ====== \\
 
 @each $value, $key in $fontSize {
   .text--#{$value} {
     font-size: $key;
+    text-transform: capitalize;
   }
 }
+
+@mixin fstyle($size, $lineHeight, $fontWeight, $color) {
+  font-size: $size;
+  line-height: $lineHeight;
+  font-weight: $fontWeight;
+  color: color($color);
+}
+
 // ====   ====== \\
 
 // ==== Responsive  ====== \\

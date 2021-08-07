@@ -55,6 +55,10 @@ $colors: (
   'danger-9': #ffe5e5,
 );
 
+// ==== Fonts Family ====== \\
+$fprimary: 'Nunito', sans-serif;
+$fsecondary: 'Nunito Sans', sans-serif;
+
 // ==== Fonts Size  ====== \\
 $fontSize: (
   'display-1': 80px,
@@ -63,6 +67,7 @@ $fontSize: (
   'heading-1': 40px,
   'heading-2': 32px,
   'heading-3': 24px,
+  'button': 16px,
   'caption': 14px,
   'body-1': 24px,
   'body-2': 20px,

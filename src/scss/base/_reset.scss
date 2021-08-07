@@ -55,6 +55,7 @@ h6 {
 
 p {
   margin: 0;
+  @include fstyle(14px, 21px, 700, primary-4);
 }
 
 a {
