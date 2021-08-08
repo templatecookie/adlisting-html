@@ -21,11 +21,23 @@
   }
 }
 
-@mixin fstyle($size, $lineHeight, $fontWeight, $color) {
+@mixin font($size, $lineHeight, $fontWeight, $color) {
   font-size: $size;
   line-height: $lineHeight;
   font-weight: $fontWeight;
   color: color($color);
+}
+
+// ==== Flex  ====== \\
+@mixin flex($y, $x) {
+  display: flex;
+  align-items: $y;
+  justify-content: $x;
+}
+
+// ====  Transition   ====== \\
+@mixin trans($time, $type) {
+  transition: all $time $type;
 }
 
 // ====   ====== \\

@@ -1,5 +1,6 @@
 .btn {
   @include font(16px, 50px, 700, null);
+  text-transform: capitalize;
   font-family: $fsecondary;
   color: #fff;
   padding: 0px 20px;
@@ -7,7 +8,12 @@
   background-color: color(primary-4);
 
   &:hover {
+    color: #fff;
     background-color: color(primary-3);
+  }
+  &:focus {
+    outline: none;
+    box-shadow: none;
   }
 
   .icon {

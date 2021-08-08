@@ -1,37 +1,1030 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AdListing || Style Guide</title>
-    <!-- Favicons -->
-    <link
-      rel="apple-touch-icon"
-      sizes="512x512"
-      href="src/images/favicon_io/android-chrome-512x512.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="192x192"
-      href="src/images/favicon_io/android-chrome-192x192.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="src/images/favicon_io/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="src/images/favicon_io/favicon-16x16.png"
-    />
-    <link rel="manifest" href="src/images/favicon_io/site.webmanifest" />
-  </head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>AdListing || Style Guide</title>
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="512x512" href="src/images/favicon_io/android-chrome-512x512.png" />
+        <link rel="apple-touch-icon" sizes="192x192" href="src/images/favicon_io/android-chrome-192x192.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="src/images/favicon_io/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="src/images/favicon_io/favicon-16x16.png" />
+        <link rel="manifest" href="src/images/favicon_io/site.webmanifest" />
+    </head>
 
-  <body>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script type="module" src="/main.js"></script>
-  </body>
+    <body>
+        <!-- Header Component start  -->
+        <!-- Header one  -->
+        <div class="my-5 bgcolor--primary">
+            <header class="header header--one">
+                <div class="container navigation-bar">
+                    <!-- Brand Logo -->
+                    <a href="index.html" class="navigation-bar__logo">
+                        <img src="src/images/logo.png" alt="brand-logo" />
+                        <!-- <img src="src/images/logo-dark.png" alt="brand-logo" /> -->
+                    </a>
+                    <!-- Menu -->
+                    <ul class="menu">
+                        <li class="menu__item">
+                            <a href="#" class="menu__link active">
+                                Home
+                                <span class="icon">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3 6L8 11L13 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                            </a>
+                            <ul class="menu-dropdown">
+                                <li class="menu-dropdown__item">
+                                    <a href="index.html" class="menu-dropdown__link active">Homepage 01</a>
+                                </li>
+                                <li class="menu-dropdown__item">
+                                    <a href="home-02.html" class="menu-dropdown__link">Homepage 02</a>
+                                </li>
+                                <li class="menu-dropdown__item">
+                                    <a href="home-03.html" class="menu-dropdown__link">Homepage 03</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Ads Listing</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">
+                                Pages
+                                <span class="icon">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3 6L8 11L13 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                            </a>
+                            <ul class="menu-dropdown">
+                                <li class="menu-dropdown__item">
+                                    <a href="blog-list.html" class="menu-dropdown__link">Blog List</a>
+                                </li>
+                                <li class="menu-dropdown__item">
+                                    <a href="single-blog.html" class="menu-dropdown__link">Single Blogs</a>
+                                </li>
+                                <li class="menu-dropdown__item">
+                                    <a href="about.html" class="menu-dropdown__link">About</a>
+                                </li>
+                                <li class="menu-dropdown__item">
+                                    <a href="price-plan.html" class="menu-dropdown__link">Pricing Plans</a>
+                                </li>
+                                <li class="menu-dropdown__item">
+                                    <a href="sign-in.html" class="menu-dropdown__link">Sign In</a>
+                                </li>
+                                <li class="menu-dropdown__item">
+                                    <a href="sign-up.html" class="menu-dropdown__link">Sign Up</a>
+                                </li>
+                                <li class="menu-dropdown__item">
+                                    <a href="dashboard.html" class="menu-dropdown__link">user Dashboard</a>
+                                </li>
+                                <li class="menu-dropdown__item">
+                                    <a href="faq.html" class="menu-dropdown__link">Faqs</a>
+                                </li>
+                                <li class="menu-dropdown__item">
+                                    <a href="404-error.html" class="menu-dropdown__link">404 Error Pages</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu__item">
+                            <a href="membership-board.html" class="menu__link">Get Membership</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="contact.html" class="menu__link">Contact</a>
+                        </li>
+                    </ul>
+                    <!-- Action Buttons -->
+                    <div class="navigation-bar__buttons">
+                        <a href="sign-in.html" class="btn btn--bg">Sign in</a>
+                        <a href="#" class="btn">
+                            <span class="icon--left">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="currentColor" stroke-width="1.6" stroke-miterlimit="10" />
+                                    <path d="M8.25 12H15.75" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M12 8.25V15.75" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                            Post Ads
+                        </a>
+                    </div>
+                    <!-- Responsive Navigation Menu -->
+                    <button class="toggle-icon">
+                        <span class="toggle-icon__bar"></span>
+                        <span class="toggle-icon__bar"></span>
+                        <span class="toggle-icon__bar"></span>
+                    </button>
+                    <ul class="menu--sm">
+                        <li class="menu--sm__item">
+                            <a href="#" class="menu--sm__link active">
+                                Home
+                                <span class="icon">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3 6L8 11L13 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                            </a>
+                            <ul class="menu--sm-dropdown">
+                                <li class="menu--sm-dropdown__item">
+                                    <a href="index.html" class="menu--sm-dropdown__link active">Homepage 01</a>
+                                </li>
+                                <li class="menu--sm-dropdown__item">
+                                    <a href="home-02.html" class="menu--sm-dropdown__link">Homepage 02</a>
+                                </li>
+                                <li class="menu--sm-dropdown__item">
+                                    <a href="home-03.html" class="menu--sm-dropdown__link">Homepage 03</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu--sm__item">
+                            <a href="#" class="menu--sm__link">Listing</a>
+                        </li>
+                        <li class="menu--sm__item">
+                            <a href="#" class="menu--sm__link">
+                                Pages
+                                <span class="icon">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3 6L8 11L13 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                            </a>
+                            <ul class="menu--sm-dropdown">
+                                <li class="menu--sm-dropdown__item">
+                                    <a href="blog-list.html" class="menu--sm-dropdown__link">Blog List</a>
+                                </li>
+                                <li class="menu--sm-dropdown__item">
+                                    <a href="single-blog.html" class="menu--sm-dropdown__link">Single Blogs</a>
+                                </li>
+                                <li class="menu--sm-dropdown__item">
+                                    <a href="about.html" class="menu--sm-dropdown__link">About</a>
+                                </li>
+                                <li class="menu--sm-dropdown__item">
+                                    <a href="price-plan.html" class="menu--sm-dropdown__link">Pricing Plans</a>
+                                </li>
+                                <li class="menu--sm-dropdown__item">
+                                    <a href="sign-in.html" class="menu--sm-dropdown__link">Sign In</a>
+                                </li>
+                                <li class="menu--sm-dropdown__item">
+                                    <a href="sign-up.html" class="menu--sm-dropdown__link">Sign Up</a>
+                                </li>
+                                <li class="menu--sm-dropdown__item">
+                                    <a href="dashboard.html" class="menu--sm-dropdown__link">user Dashboard</a>
+                                </li>
+                                <li class="menu--sm-dropdown__item">
+                                    <a href="faq.html" class="menu--sm-dropdown__link">Faqs</a>
+                                </li>
+                                <li class="menu--sm-dropdown__item">
+                                    <a href="404-error.html" class="menu--sm-dropdown__link">404 Error Pages</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu--sm__item">
+                            <a href="membership-board.html" class="menu--sm__link">Get Membership</a>
+                        </li>
+                        <li class="menu--sm__item">
+                            <a href="contact.html" class="menu--sm__link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </header>
+        </div>
+
+        <!-- Header two -->
+        <div class="my-5 bgcolor--white">
+            <header class="header header--two">
+                <div class="navigation-bar__top">
+                    <div class="container">
+                        <div class="navigation-bar">
+                            <!-- Brand Logo -->
+                            <a href="index.html" class="navigation-bar__logo">
+                                <img src="src/images/logo.png" alt="brand-logo" />
+                            </a>
+                            <!-- Search Field -->
+                            <form action="#">
+                                <div class="navigation-bar__search-field">
+                                    <input type="text" placeholder="Ads tittle, keyword... " />
+                                    <button type="submit" class="navigation-bar__search-icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+                                                stroke="#00AAFF"
+                                                stroke-width="1.6"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                            <path d="M20.9999 21L16.6499 16.65" stroke="#00AAFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </form>
+                            <!-- Action Buttons -->
+                            <div class="navigation-bar__buttons">
+                                <a href="sign-in.html" class="btn btn--bg">Sign in</a>
+                                <a href="#" class="btn">
+                                    <span class="icon--left">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="currentColor" stroke-width="1.6" stroke-miterlimit="10" />
+                                            <path d="M8.25 12H15.75" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M12 8.25V15.75" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                    Post Ads
+                                </a>
+                            </div>
+                            <!-- Responsive Navigation Menu -->
+                            <button class="toggle-icon">
+                                <span class="toggle-icon__bar"></span>
+                                <span class="toggle-icon__bar"></span>
+                                <span class="toggle-icon__bar"></span>
+                            </button>
+                            <ul class="menu--sm">
+                                <li class="menu--sm__item">
+                                    <a href="#" class="menu--sm__link active">
+                                        Home
+                                        <span class="icon">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M3 6L8 11L13 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </span>
+                                    </a>
+                                    <ul class="menu--sm-dropdown">
+                                        <li class="menu--sm-dropdown__item">
+                                            <a href="index.html" class="menu--sm-dropdown__link active">Homepage 01</a>
+                                        </li>
+                                        <li class="menu--sm-dropdown__item">
+                                            <a href="home-02.html" class="menu--sm-dropdown__link">Homepage 02</a>
+                                        </li>
+                                        <li class="menu--sm-dropdown__item">
+                                            <a href="home-03.html" class="menu--sm-dropdown__link">Homepage 03</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu--sm__item">
+                                    <a href="#" class="menu--sm__link">Listing</a>
+                                </li>
+                                <li class="menu--sm__item">
+                                    <a href="#" class="menu--sm__link">
+                                        Pages
+                                        <span class="icon">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M3 6L8 11L13 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </span>
+                                    </a>
+                                    <ul class="menu--sm-dropdown">
+                                        <li class="menu--sm-dropdown__item">
+                                            <a href="blog-list.html" class="menu--sm-dropdown__link">Blog List</a>
+                                        </li>
+                                        <li class="menu--sm-dropdown__item">
+                                            <a href="single-blog.html" class="menu--sm-dropdown__link">Single Blogs</a>
+                                        </li>
+                                        <li class="menu--sm-dropdown__item">
+                                            <a href="about.html" class="menu--sm-dropdown__link">About</a>
+                                        </li>
+                                        <li class="menu--sm-dropdown__item">
+                                            <a href="price-plan.html" class="menu--sm-dropdown__link">Pricing Plans</a>
+                                        </li>
+                                        <li class="menu--sm-dropdown__item">
+                                            <a href="sign-in.html" class="menu--sm-dropdown__link">Sign In</a>
+                                        </li>
+                                        <li class="menu--sm-dropdown__item">
+                                            <a href="sign-up.html" class="menu--sm-dropdown__link">Sign Up</a>
+                                        </li>
+                                        <li class="menu--sm-dropdown__item">
+                                            <a href="dashboard.html" class="menu--sm-dropdown__link">user Dashboard</a>
+                                        </li>
+                                        <li class="menu--sm-dropdown__item">
+                                            <a href="faq.html" class="menu--sm-dropdown__link">Faqs</a>
+                                        </li>
+                                        <li class="menu--sm-dropdown__item">
+                                            <a href="404-error.html" class="menu--sm-dropdown__link">404 Error Pages</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu--sm__item">
+                                    <a href="membership-board.html" class="menu--sm__link">Get Membership</a>
+                                </li>
+                                <li class="menu--sm__item">
+                                    <a href="contact.html" class="menu--sm__link">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="container navigation-bar__bottom">
+                    <!-- category menu -->
+                    <ul class="category-menu">
+                        <li class="category-menu__item">
+                            <a href="#" class="category-menu__link">
+                                All Category
+                                <span class="icon">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                            </a>
+                            <ul class="category-menu__dropdown">
+                                <li class="category-menu__dropdown__item">
+                                    <a href="#" class="category-menu__dropdown__link">
+                                        <span class="category-icon">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M18 20.25V3.75C18 2.92157 17.3284 2.25 16.5 2.25L7.5 2.25C6.67157 2.25 6 2.92157 6 3.75L6 20.25C6 21.0784 6.67157 21.75 7.5 21.75H16.5C17.3284 21.75 18 21.0784 18 20.25Z"
+                                                    stroke="#66CCFF"
+                                                    stroke-width="1.6"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                                <path d="M9 5.25H15" stroke="#66CCFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </span>
+                                        Mobile
+                                        <span class="drop-icon">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </span>
+                                    </a>
+                                    <ul class="category-menu__subdropdown">
+                                        <li class="category-menu__subdropdown__item">
+                                            <a href="#" class="category-menu__subdropdown__link">Desktop Computer</a>
+                                        </li>
+                                        <li class="category-menu__subdropdown__item">
+                                            <a href="#" class="category-menu__subdropdown__link">Laptop</a>
+                                        </li>
+                                        <li class="category-menu__subdropdown__item">
+                                            <a href="#" class="category-menu__subdropdown__link">TVs</a>
+                                        </li>
+                                        <li class="category-menu__subdropdown__item">
+                                            <a href="#" class="category-menu__subdropdown__link">TV & Video Accessories</a>
+                                        </li>
+                                        <li class="category-menu__subdropdown__item">
+                                            <a href="#" class="category-menu__subdropdown__link">Cameras, Camcorders & Accessories</a>
+                                        </li>
+                                        <li class="category-menu__subdropdown__item">
+                                            <a href="#" class="category-menu__subdropdown__link">Audio & Sound Systems</a>
+                                        </li>
+                                        <li class="category-menu__subdropdown__item">
+                                            <a href="#" class="category-menu__subdropdown__link">Video Game Consoles & Accessories</a>
+                                        </li>
+                                        <li class="category-menu__subdropdown__item">
+                                            <a href="#" class="category-menu__subdropdown__link">Other Electronics</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="category-menu__dropdown__item">
+                                    <a href="#" class="category-menu__dropdown__link">
+                                        <span class="category-icon">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M4.5 18L19.5 18C20.3284 18 21 17.3284 21 16.5V6C21 5.17157 20.3284 4.5 19.5 4.5L4.5 4.5C3.67157 4.5 3 5.17157 3 6V16.5C3 17.3284 3.67157 18 4.5 18Z"
+                                                    stroke="#00AAFF"
+                                                    stroke-width="1.6"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                                <path d="M15 21H9" stroke="#00AAFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </span>
+                                        Electronics
+                                        <span class="drop-icon">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </span>
+                                    </a>
+                                    <ul class="category-menu__subdropdown">
+                                        <li class="category-menu__subdropdown__item">
+                                            <a href="#" class="category-menu__subdropdown__link">Desktop Computer</a>
+                                        </li>
+                                        <li class="category-menu__subdropdown__item">
+                                            <a href="#" class="category-menu__subdropdown__link">Laptop</a>
+                                        </li>
+                                        <li class="category-menu__subdropdown__item">
+                                            <a href="#" class="category-menu__subdropdown__link">TVs</a>
+                                        </li>
+                                        <li class="category-menu__subdropdown__item">
+                                            <a href="#" class="category-menu__subdropdown__link">TV & Video Accessories</a>
+                                        </li>
+                                        <li class="category-menu__subdropdown__item">
+                                            <a href="#" class="category-menu__subdropdown__link">Cameras, Camcorders & Accessories</a>
+                                        </li>
+                                        <li class="category-menu__subdropdown__item">
+                                            <a href="#" class="category-menu__subdropdown__link">Audio & Sound Systems</a>
+                                        </li>
+                                        <li class="category-menu__subdropdown__item">
+                                            <a href="#" class="category-menu__subdropdown__link">Video Game Consoles & Accessories</a>
+                                        </li>
+                                        <li class="category-menu__subdropdown__item">
+                                            <a href="#" class="category-menu__subdropdown__link">Other Electronics</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="category-menu__dropdown__item">
+                                    <a href="#" class="category-menu__dropdown__link">
+                                        <span class="category-icon">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1.5 11.25H22.5" stroke="#66CCFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path
+                                                    d="M21 17.25V19.5C21 19.6989 20.921 19.8897 20.7803 20.0303C20.6397 20.171 20.4489 20.25 20.25 20.25H18C17.8011 20.25 17.6103 20.171 17.4697 20.0303C17.329 19.8897 17.25 19.6989 17.25 19.5V17.25"
+                                                    stroke="#66CCFF"
+                                                    stroke-width="1.6"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                                <path
+                                                    d="M6.75 17.25V19.5C6.75 19.6989 6.67098 19.8897 6.53033 20.0303C6.38968 20.171 6.19891 20.25 6 20.25H3.75C3.55109 20.25 3.36032 20.171 3.21967 20.0303C3.07902 19.8897 3 19.6989 3 19.5V17.25"
+                                                    stroke="#66CCFF"
+                                                    stroke-width="1.6"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                                <path d="M6 14.25H7.5" stroke="#66CCFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M16.5 14.25H18" stroke="#66CCFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path
+                                                    d="M21 11.25L18.198 4.9454C18.139 4.81282 18.0429 4.70018 17.9213 4.62113C17.7996 4.54208 17.6577 4.5 17.5126 4.5H6.48741C6.34233 4.5 6.20037 4.54208 6.07872 4.62113C5.95708 4.70018 5.86097 4.81282 5.80205 4.9454L3 11.25V17.25H21V11.25Z"
+                                                    stroke="#66CCFF"
+                                                    stroke-width="1.6"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                            </svg>
+                                        </span>
+                                        Vehicles
+                                        <span class="drop-icon">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </span>
+                                    </a>
+                                    <ul class="category-menu__subdropdown">
+                                        <li class="category-menu__subdropdown__item">
+                                            <a href="#" class="category-menu__subdropdown__link">Desktop Computer</a>
+                                        </li>
+                                        <li class="category-menu__subdropdown__item">
+                                            <a href="#" class="category-menu__subdropdown__link">Laptop</a>
+                                        </li>
+                                        <li class="category-menu__subdropdown__item">
+                                            <a href="#" class="category-menu__subdropdown__link">TVs</a>
+                                        </li>
+                                        <li class="category-menu__subdropdown__item">
+                                            <a href="#" class="category-menu__subdropdown__link">TV & Video Accessories</a>
+                                        </li>
+                                        <li class="category-menu__subdropdown__item">
+                                            <a href="#" class="category-menu__subdropdown__link">Cameras, Camcorders & Accessories</a>
+                                        </li>
+                                        <li class="category-menu__subdropdown__item">
+                                            <a href="#" class="category-menu__subdropdown__link">Audio & Sound Systems</a>
+                                        </li>
+                                        <li class="category-menu__subdropdown__item">
+                                            <a href="#" class="category-menu__subdropdown__link">Video Game Consoles & Accessories</a>
+                                        </li>
+                                        <li class="category-menu__subdropdown__item">
+                                            <a href="#" class="category-menu__subdropdown__link">Other Electronics</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="category-menu__dropdown__item">
+                                    <a href="#" class="category-menu__dropdown__link">
+                                        <span class="category-icon">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M4.5 13.0864V19.5C4.5 19.6989 4.57902 19.8897 4.71967 20.0304C4.86032 20.171 5.05109 20.25 5.25 20.25H18.75C18.9489 20.25 19.1397 20.171 19.2803 20.0304C19.421 19.8897 19.5 19.6989 19.5 19.5V13.0866"
+                                                    stroke="#66CCFF"
+                                                    stroke-width="1.6"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                                <path
+                                                    d="M5.06573 3.75H18.9343C19.0973 3.75 19.2558 3.80309 19.3859 3.90124C19.516 3.99939 19.6106 4.13725 19.6554 4.29396L21 9H3L4.34458 4.29396C4.38936 4.13725 4.48396 3.99939 4.61408 3.90124C4.7442 3.80309 4.90274 3.75 5.06573 3.75Z"
+                                                    stroke="#66CCFF"
+                                                    stroke-width="1.6"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                                <path
+                                                    d="M9 9V10.5C9 11.2956 8.68393 12.0587 8.12132 12.6213C7.55871 13.1839 6.79565 13.5 6 13.5C5.20435 13.5 4.44129 13.1839 3.87868 12.6213C3.31607 12.0587 3 11.2956 3 10.5V9"
+                                                    stroke="#66CCFF"
+                                                    stroke-width="1.6"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                                <path
+                                                    d="M15 9V10.5C15 11.2956 14.6839 12.0587 14.1213 12.6213C13.5587 13.1839 12.7956 13.5 12 13.5C11.2044 13.5 10.4413 13.1839 9.87868 12.6213C9.31607 12.0587 9 11.2956 9 10.5V9"
+                                                    stroke="#66CCFF"
+                                                    stroke-width="1.6"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                                <path
+                                                    d="M21 9V10.5C21 11.2956 20.6839 12.0587 20.1213 12.6213C19.5587 13.1839 18.7956 13.5 18 13.5C17.2044 13.5 16.4413 13.1839 15.8787 12.6213C15.3161 12.0587 15 11.2956 15 10.5V9"
+                                                    stroke="#66CCFF"
+                                                    stroke-width="1.6"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                            </svg>
+                                        </span>
+                                        Property
+                                        <span class="drop-icon">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </span>
+                                    </a>
+                                    <ul class="category-menu__subdropdown">
+                                        <li class="category-menu__subdropdown__item">
+                                            <a href="#" class="category-menu__subdropdown__link">Desktop Computer</a>
+                                        </li>
+                                        <li class="category-menu__subdropdown__item">
+                                            <a href="#" class="category-menu__subdropdown__link">Laptop</a>
+                                        </li>
+                                        <li class="category-menu__subdropdown__item">
+                                            <a href="#" class="category-menu__subdropdown__link">TVs</a>
+                                        </li>
+                                        <li class="category-menu__subdropdown__item">
+                                            <a href="#" class="category-menu__subdropdown__link">TV & Video Accessories</a>
+                                        </li>
+                                        <li class="category-menu__subdropdown__item">
+                                            <a href="#" class="category-menu__subdropdown__link">Cameras, Camcorders & Accessories</a>
+                                        </li>
+                                        <li class="category-menu__subdropdown__item">
+                                            <a href="#" class="category-menu__subdropdown__link">Audio & Sound Systems</a>
+                                        </li>
+                                        <li class="category-menu__subdropdown__item">
+                                            <a href="#" class="category-menu__subdropdown__link">Video Game Consoles & Accessories</a>
+                                        </li>
+                                        <li class="category-menu__subdropdown__item">
+                                            <a href="#" class="category-menu__subdropdown__link">Other Electronics</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="category-menu__dropdown__item">
+                                    <a href="#" class="category-menu__dropdown__link">
+                                        <span class="category-icon">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M17.343 3.47514L13.4091 7.40906L13.9394 10.0607L16.5911 10.591L20.525 6.65712L20.5254 6.65695C21.0123 7.80636 21.1288 9.07897 20.8585 10.2977C20.5883 11.5164 19.9448 12.6205 19.0177 13.4563C18.0906 14.2922 16.9259 14.8182 15.6859 14.9612C14.4458 15.1041 13.192 14.8569 12.099 14.2539L12.0991 14.2537L6.84106 20.341C6.41902 20.7626 5.84685 20.9993 5.25034 20.9991C4.65382 20.999 4.08179 20.7619 3.65999 20.3401C3.23819 19.9183 3.00115 19.3463 3.00098 18.7498C3.00081 18.1533 3.23752 17.5811 3.65908 17.1591L9.7464 11.9011L9.74627 11.9011C9.14326 10.8081 8.89603 9.55434 9.03897 8.31427C9.18191 7.07419 9.70793 5.90953 10.5438 4.98241C11.3796 4.05528 12.4838 3.41182 13.7025 3.1416C14.9211 2.87137 16.1938 2.98783 17.3432 3.47475L17.343 3.47514Z"
+                                                    stroke="#66CCFF"
+                                                    stroke-width="1.6"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                            </svg>
+                                        </span>
+                                        Essentials
+                                        <span class="drop-icon">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </span>
+                                    </a>
+                                    <ul class="category-menu__subdropdown">
+                                        <li class="category-menu__subdropdown__item">
+                                            <a href="#" class="category-menu__subdropdown__link">Desktop Computer</a>
+                                        </li>
+                                        <li class="category-menu__subdropdown__item">
+                                            <a href="#" class="category-menu__subdropdown__link">Laptop</a>
+                                        </li>
+                                        <li class="category-menu__subdropdown__item">
+                                            <a href="#" class="category-menu__subdropdown__link">TVs</a>
+                                        </li>
+                                        <li class="category-menu__subdropdown__item">
+                                            <a href="#" class="category-menu__subdropdown__link">TV & Video Accessories</a>
+                                        </li>
+                                        <li class="category-menu__subdropdown__item">
+                                            <a href="#" class="category-menu__subdropdown__link">Cameras, Camcorders & Accessories</a>
+                                        </li>
+                                        <li class="category-menu__subdropdown__item">
+                                            <a href="#" class="category-menu__subdropdown__link">Audio & Sound Systems</a>
+                                        </li>
+                                        <li class="category-menu__subdropdown__item">
+                                            <a href="#" class="category-menu__subdropdown__link">Video Game Consoles & Accessories</a>
+                                        </li>
+                                        <li class="category-menu__subdropdown__item">
+                                            <a href="#" class="category-menu__subdropdown__link">Other Electronics</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="category-menu__dropdown__item">
+                                    <a href="#" class="category-menu__dropdown__link">
+                                        <span class="category-icon">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M20.25 20.25V10.8317C20.25 10.7272 20.2282 10.6239 20.1859 10.5283C20.1436 10.4328 20.0818 10.3471 20.0045 10.2768L12.504 3.45787C12.3659 3.33236 12.186 3.26281 11.9995 3.26282C11.8129 3.26282 11.633 3.33238 11.4949 3.45791L3.99545 10.2768C3.91814 10.3471 3.85637 10.4328 3.8141 10.5283C3.77183 10.6239 3.75 10.7272 3.75 10.8317V20.25"
+                                                    stroke="#66CCFF"
+                                                    stroke-width="1.6"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                                <path d="M1.5 20.25H22.5" stroke="#66CCFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path
+                                                    d="M14.2495 20.2493V14.9993C14.2495 14.8004 14.1705 14.6096 14.0298 14.4689C13.8892 14.3283 13.6984 14.2493 13.4995 14.2493H10.4995C10.3006 14.2493 10.1098 14.3283 9.96918 14.4689C9.82853 14.6096 9.74951 14.8004 9.74951 14.9993V20.2493"
+                                                    stroke="#66CCFF"
+                                                    stroke-width="1.6"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                            </svg>
+                                        </span>
+                                        Home & Living
+                                        <span class="drop-icon">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </span>
+                                    </a>
+                                    <ul class="category-menu__subdropdown">
+                                        <li class="category-menu__subdropdown__item">
+                                            <a href="#" class="category-menu__subdropdown__link">Desktop Computer</a>
+                                        </li>
+                                        <li class="category-menu__subdropdown__item">
+                                            <a href="#" class="category-menu__subdropdown__link">Laptop</a>
+                                        </li>
+                                        <li class="category-menu__subdropdown__item">
+                                            <a href="#" class="category-menu__subdropdown__link">TVs</a>
+                                        </li>
+                                        <li class="category-menu__subdropdown__item">
+                                            <a href="#" class="category-menu__subdropdown__link">TV & Video Accessories</a>
+                                        </li>
+                                        <li class="category-menu__subdropdown__item">
+                                            <a href="#" class="category-menu__subdropdown__link">Cameras, Camcorders & Accessories</a>
+                                        </li>
+                                        <li class="category-menu__subdropdown__item">
+                                            <a href="#" class="category-menu__subdropdown__link">Audio & Sound Systems</a>
+                                        </li>
+                                        <li class="category-menu__subdropdown__item">
+                                            <a href="#" class="category-menu__subdropdown__link">Video Game Consoles & Accessories</a>
+                                        </li>
+                                        <li class="category-menu__subdropdown__item">
+                                            <a href="#" class="category-menu__subdropdown__link">Other Electronics</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="category-menu__dropdown__item">
+                                    <a href="#" class="category-menu__dropdown__link">
+                                        <span class="category-icon">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M22.5673 11.4173L20.25 12.576L17.25 6.83079L19.5909 5.66036C19.7667 5.57242 19.9701 5.55707 20.1572 5.61761C20.3443 5.67814 20.5001 5.80973 20.5911 5.98403L22.8967 10.3994C22.9428 10.4877 22.9708 10.5842 22.9792 10.6835C22.9876 10.7827 22.9761 10.8827 22.9454 10.9774C22.9148 11.0722 22.8655 11.1599 22.8006 11.2354C22.7357 11.311 22.6564 11.3728 22.5673 11.4173V11.4173Z"
+                                                    stroke="#66CCFF"
+                                                    stroke-width="1.6"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                                <path
+                                                    d="M3.74994 12.4755L1.43266 11.3169C1.34357 11.2723 1.26425 11.2105 1.19932 11.135C1.13439 11.0594 1.08516 10.9717 1.0545 10.877C1.02383 10.7822 1.01235 10.6823 1.02072 10.583C1.02909 10.4838 1.05714 10.3872 1.10325 10.2989L3.40883 5.88357C3.49985 5.70927 3.65567 5.57768 3.84275 5.51714C4.02982 5.45661 4.23319 5.47196 4.40906 5.55989L6.74994 6.73033L3.74994 12.4755Z"
+                                                    stroke="#66CCFF"
+                                                    stroke-width="1.6"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                                <path
+                                                    d="M20.25 12.5759L18.75 14.3308L15.3003 17.7805C15.2087 17.8721 15.095 17.9384 14.9701 17.9729C14.8453 18.0075 14.7137 18.0092 14.588 17.9778L9.15458 16.6194C9.05266 16.5939 8.95724 16.5473 8.87448 16.4826L3.75 12.4755"
+                                                    stroke="#66CCFF"
+                                                    stroke-width="1.6"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                                <path
+                                                    d="M18.7498 14.3308L14.6248 11.3308L13.4248 12.2308C12.9055 12.6203 12.2739 12.8308 11.6248 12.8308C10.9757 12.8308 10.3441 12.6203 9.8248 12.2308L9.3166 11.8497C9.23064 11.7852 9.15953 11.703 9.1081 11.6087C9.05667 11.5143 9.02611 11.41 9.01849 11.3028C9.01087 11.1956 9.02637 11.0881 9.06395 10.9874C9.10152 10.8867 9.16029 10.7953 9.23627 10.7193L12.9051 7.05048C12.9748 6.98084 13.0574 6.92559 13.1484 6.8879C13.2394 6.85021 13.337 6.83081 13.4355 6.83081H17.2498"
+                                                    stroke="#66CCFF"
+                                                    stroke-width="1.6"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                                <path d="M6.80371 6.73022L11.615 5.32758C11.7868 5.27748 11.971 5.2905 12.1341 5.3643L15.3749 6.83071" stroke="#66CCFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M10.5 19.9558L7.67443 19.2494C7.55977 19.2207 7.4535 19.1654 7.3643 19.0878L5.25 17.25" stroke="#66CCFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </span>
+                                        Business Industry
+                                        <span class="drop-icon">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </span>
+                                    </a>
+                                    <ul class="category-menu__subdropdown">
+                                        <li class="category-menu__subdropdown__item">
+                                            <a href="#" class="category-menu__subdropdown__link">Desktop Computer</a>
+                                        </li>
+                                        <li class="category-menu__subdropdown__item">
+                                            <a href="#" class="category-menu__subdropdown__link">Laptop</a>
+                                        </li>
+                                        <li class="category-menu__subdropdown__item">
+                                            <a href="#" class="category-menu__subdropdown__link">TVs</a>
+                                        </li>
+                                        <li class="category-menu__subdropdown__item">
+                                            <a href="#" class="category-menu__subdropdown__link">TV & Video Accessories</a>
+                                        </li>
+                                        <li class="category-menu__subdropdown__item">
+                                            <a href="#" class="category-menu__subdropdown__link">Cameras, Camcorders & Accessories</a>
+                                        </li>
+                                        <li class="category-menu__subdropdown__item">
+                                            <a href="#" class="category-menu__subdropdown__link">Audio & Sound Systems</a>
+                                        </li>
+                                        <li class="category-menu__subdropdown__item">
+                                            <a href="#" class="category-menu__subdropdown__link">Video Game Consoles & Accessories</a>
+                                        </li>
+                                        <li class="category-menu__subdropdown__item">
+                                            <a href="#" class="category-menu__subdropdown__link">Other Electronics</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="category-menu__dropdown__item">
+                                    <a href="#" class="category-menu__dropdown__link">
+                                        <span class="category-icon">
+                                            <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1.75 9L13 3L24.25 9L13 15L1.75 9Z" stroke="#66CCFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M18.625 22.5V12L13 9" stroke="#66CCFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path
+                                                    d="M21.625 10.4V15.5114C21.6253 15.6731 21.573 15.8307 21.476 15.9601C20.8444 16.8005 18.18 19.875 13 19.875C7.82004 19.875 5.15558 16.8005 4.52402 15.9601C4.42699 15.8307 4.37469 15.6731 4.375 15.5114V10.4"
+                                                    stroke="#66CCFF"
+                                                    stroke-width="1.6"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                            </svg>
+                                        </span>
+                                        Education
+                                        <span class="drop-icon">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </span>
+                                    </a>
+                                    <ul class="category-menu__subdropdown">
+                                        <li class="category-menu__subdropdown__item">
+                                            <a href="#" class="category-menu__subdropdown__link">Desktop Computer</a>
+                                        </li>
+                                        <li class="category-menu__subdropdown__item">
+                                            <a href="#" class="category-menu__subdropdown__link">Laptop</a>
+                                        </li>
+                                        <li class="category-menu__subdropdown__item">
+                                            <a href="#" class="category-menu__subdropdown__link">TVs</a>
+                                        </li>
+                                        <li class="category-menu__subdropdown__item">
+                                            <a href="#" class="category-menu__subdropdown__link">TV & Video Accessories</a>
+                                        </li>
+                                        <li class="category-menu__subdropdown__item">
+                                            <a href="#" class="category-menu__subdropdown__link">Cameras, Camcorders & Accessories</a>
+                                        </li>
+                                        <li class="category-menu__subdropdown__item">
+                                            <a href="#" class="category-menu__subdropdown__link">Audio & Sound Systems</a>
+                                        </li>
+                                        <li class="category-menu__subdropdown__item">
+                                            <a href="#" class="category-menu__subdropdown__link">Video Game Consoles & Accessories</a>
+                                        </li>
+                                        <li class="category-menu__subdropdown__item">
+                                            <a href="#" class="category-menu__subdropdown__link">Other Electronics</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- Category Item -->
+                    <ul class="categories">
+                        <li class="categories__item">
+                            <a href="#" class="categories__link">Mobile Phone</a>
+                        </li>
+                        <li class="categories__item">
+                            <a href="#" class="categories__link">Electronics</a>
+                        </li>
+                        <li class="categories__item">
+                            <a href="#" class="categories__link">Car</a>
+                        </li>
+                        <li class="categories__item">
+                            <a href="#" class="categories__link">Vehicle</a>
+                        </li>
+                        <li class="categories__item">
+                            <a href="#" class="categories__link">Property</a>
+                        </li>
+                        <li class="categories__item">
+                            <a href="#" class="categories__link">Home & Living</a>
+                        </li>
+                        <li class="categories__item">
+                            <a href="#" class="categories__link">Business & Industry</a>
+                        </li>
+                        <li class="categories__item">
+                            <a href="#" class="categories__link">Agriculture</a>
+                        </li>
+                    </ul>
+                </div>
+            </header>
+        </div>
+
+        <!-- Header three  -->
+        <div class="my-5">
+            <header class="header header--three">
+                <div class="container navigation-bar">
+                    <div class="navigation-bar__left">
+                        <!-- Brand Logo -->
+                        <a href="index.html" class="navigation-bar__logo">
+                            <img src="src/images/logo-dark.png" alt="brand-logo" />
+                        </a>
+                        <!-- Menu -->
+                        <ul class="menu">
+                            <li class="menu__item">
+                                <a href="#" class="menu__link active">
+                                    Home
+                                    <span class="icon">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3 6L8 11L13 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                </a>
+                                <ul class="menu-dropdown">
+                                    <li class="menu-dropdown__item">
+                                        <a href="index.html" class="menu-dropdown__link active">Homepage 01</a>
+                                    </li>
+                                    <li class="menu-dropdown__item">
+                                        <a href="home-02.html" class="menu-dropdown__link">Homepage 02</a>
+                                    </li>
+                                    <li class="menu-dropdown__item">
+                                        <a href="home-03.html" class="menu-dropdown__link">Homepage 03</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">Ads Listing</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">
+                                    Pages
+                                    <span class="icon">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3 6L8 11L13 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                </a>
+                                <ul class="menu-dropdown">
+                                    <li class="menu-dropdown__item">
+                                        <a href="blog-list.html" class="menu-dropdown__link">Blog List</a>
+                                    </li>
+                                    <li class="menu-dropdown__item">
+                                        <a href="single-blog.html" class="menu-dropdown__link">Single Blogs</a>
+                                    </li>
+                                    <li class="menu-dropdown__item">
+                                        <a href="about.html" class="menu-dropdown__link">About</a>
+                                    </li>
+                                    <li class="menu-dropdown__item">
+                                        <a href="price-plan.html" class="menu-dropdown__link">Pricing Plans</a>
+                                    </li>
+                                    <li class="menu-dropdown__item">
+                                        <a href="sign-in.html" class="menu-dropdown__link">Sign In</a>
+                                    </li>
+                                    <li class="menu-dropdown__item">
+                                        <a href="sign-up.html" class="menu-dropdown__link">Sign Up</a>
+                                    </li>
+                                    <li class="menu-dropdown__item">
+                                        <a href="dashboard.html" class="menu-dropdown__link">user Dashboard</a>
+                                    </li>
+                                    <li class="menu-dropdown__item">
+                                        <a href="faq.html" class="menu-dropdown__link">Faqs</a>
+                                    </li>
+                                    <li class="menu-dropdown__item">
+                                        <a href="404-error.html" class="menu-dropdown__link">404 Error Pages</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu__item">
+                                <a href="membership-board.html" class="menu__link">Get Membership</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="contact.html" class="menu__link">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="navigation-bar__right">
+                        <!-- Action Buttons -->
+                    </div>
+                </div>
+            </header>
+        </div>
+
+        <!-- Header Four  -->
+        <div class="my-5 bgcolor--white">
+            <header class="header header--four">
+                <div class="container navigation-bar">
+                    <!-- Brand Logo -->
+                    <a href="index.html" class="navigation-bar__logo">
+                        <img src="src/images/logo-dark.png" alt="brand-logo" />
+                    </a>
+                    <!-- Menu -->
+                    <ul class="menu">
+                        <li class="menu__item">
+                            <a href="#" class="menu__link active">
+                                Home
+                                <span class="icon">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3 6L8 11L13 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                            </a>
+                            <ul class="menu-dropdown">
+                                <li class="menu-dropdown__item">
+                                    <a href="index.html" class="menu-dropdown__link active">Homepage 01</a>
+                                </li>
+                                <li class="menu-dropdown__item">
+                                    <a href="home-02.html" class="menu-dropdown__link">Homepage 02</a>
+                                </li>
+                                <li class="menu-dropdown__item">
+                                    <a href="home-03.html" class="menu-dropdown__link">Homepage 03</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Ads Listing</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">
+                                Pages
+                                <span class="icon">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3 6L8 11L13 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                            </a>
+                            <ul class="menu-dropdown">
+                                <li class="menu-dropdown__item">
+                                    <a href="blog-list.html" class="menu-dropdown__link">Blog List</a>
+                                </li>
+                                <li class="menu-dropdown__item">
+                                    <a href="single-blog.html" class="menu-dropdown__link">Single Blogs</a>
+                                </li>
+                                <li class="menu-dropdown__item">
+                                    <a href="about.html" class="menu-dropdown__link">About</a>
+                                </li>
+                                <li class="menu-dropdown__item">
+                                    <a href="price-plan.html" class="menu-dropdown__link">Pricing Plans</a>
+                                </li>
+                                <li class="menu-dropdown__item">
+                                    <a href="sign-in.html" class="menu-dropdown__link">Sign In</a>
+                                </li>
+                                <li class="menu-dropdown__item">
+                                    <a href="sign-up.html" class="menu-dropdown__link">Sign Up</a>
+                                </li>
+                                <li class="menu-dropdown__item">
+                                    <a href="dashboard.html" class="menu-dropdown__link">user Dashboard</a>
+                                </li>
+                                <li class="menu-dropdown__item">
+                                    <a href="faq.html" class="menu-dropdown__link">Faqs</a>
+                                </li>
+                                <li class="menu-dropdown__item">
+                                    <a href="404-error.html" class="menu-dropdown__link">404 Error Pages</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu__item">
+                            <a href="membership-board.html" class="menu__link">Get Membership</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="contact.html" class="menu__link">Contact</a>
+                        </li>
+                    </ul>
+                    <!-- Action Buttons -->
+                    <div class="navigation-bar__buttons">
+                        <a href="#" class="btn">
+                            <span class="icon--left">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.6">
+                                        <path d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z" stroke="currentColor" stroke-width="1.6" stroke-miterlimit="10" />
+                                        <path d="M16 20C18.7614 20 21 17.7614 21 15C21 12.2386 18.7614 10 16 10C13.2386 10 11 12.2386 11 15C11 17.7614 13.2386 20 16 20Z" stroke="currentColor" stroke-width="1.6" stroke-miterlimit="10" />
+                                        <path
+                                            d="M7.9751 24.9218C8.72836 23.4408 9.87675 22.1971 11.2931 21.3284C12.7095 20.4598 14.3387 20 16.0002 20C17.6617 20 19.2909 20.4598 20.7073 21.3284C22.1237 22.1971 23.272 23.4407 24.0253 24.9217"
+                                            stroke="currentColor"
+                                            stroke-width="1.6"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </g>
+                                </svg>
+                            </span>
+                            Login / Register
+                        </a>
+                        <a href="#" class="btn">
+                            <span class="icon--left">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="currentColor" stroke-width="1.6" stroke-miterlimit="10" />
+                                    <path d="M8.25 12H15.75" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M12 8.25V15.75" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                            Post Ads
+                        </a>
+                    </div>
+                </div>
+            </header>
+        </div>
+
+        <!-- Header Component end  -->
+
+        <!-- ?? Component start  -->
+        <!-- ?? Component end  -->
+
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script type="module" src="/main.js"></script>
+    </body>
 </html>

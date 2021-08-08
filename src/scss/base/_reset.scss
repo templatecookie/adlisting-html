@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 img {
@@ -13,11 +14,32 @@ img {
 
 button {
   margin: 0;
+  padding: 0;
   border: 0;
   outline: none;
   background: transparent;
   box-sizing: border-box;
   &:focus {
+    outline: none;
+  }
+}
+input {
+  @include font(16px, 24px, 400, gray-2);
+  border: 1px solid #ebeef7;
+  transition: all 0.3s linear;
+  &::placeholder {
+    font-size: inherit;
+    line-height: inherit;
+    font-weight: inherit;
+    text-transform: capitalize;
+    color: color(gray-5);
+  }
+
+  &:focus,
+  &:hover {
+    border: 1px solid color(primary-4);
+    transition: all 0.3s linear;
+    box-shadow: none;
     outline: none;
   }
 }
@@ -49,13 +71,9 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-  margin: 0;
-}
-
+h6,
 p {
   margin: 0;
-  @include fstyle(14px, 21px, 700, primary-4);
 }
 
 a {
