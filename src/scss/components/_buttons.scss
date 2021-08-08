@@ -1,0 +1,46 @@
+.btn {
+  @include font(16px, 50px, 700, null);
+  font-family: $fsecondary;
+  color: #fff;
+  padding: 0px 20px;
+  border-radius: 4px;
+  background-color: color(primary-4);
+
+  &:hover {
+    background-color: color(primary-3);
+  }
+
+  .icon {
+    &--left {
+      margin-right: 8px;
+    }
+    &--right {
+      margin-left: 8px;
+    }
+  }
+
+  &--lg {
+    @include font(18px, 58px, 700, null);
+    padding: 0px 32px;
+    border-radius: 6px;
+  }
+
+  &--bg {
+    color: color(primary-4);
+    background-color: color(primary-9);
+    &:hover {
+      color: color(primary-3);
+      background-color: color(primary-8);
+    }
+  }
+
+  &--outline {
+    color: color(primary-4);
+    background-color: transparent;
+    border: 1px solid color(primary-8);
+    &:hover {
+      border-color: color(primary-4);
+      color: color(primary-4);
+    }
+  }
+}
