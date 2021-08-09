@@ -1,0 +1,96 @@
+.cards {
+  position: relative;
+  background-color: #fff;
+  border-radius: 12px;
+  border: 1px solid #ebeef7;
+  overflow: hidden;
+  @include trans(0.3s, ease-in-out);
+  &:hover {
+    box-shadow: 0px 12px 80px 0px #001a661a;
+    border-color: transparent;
+    @include trans(0.4s, ease-in-out);
+    .cards__img-wrapper {
+      img {
+        transform: scale(1.1);
+        @include trans(0.4s, ease-in-out);
+      }
+    }
+  }
+
+  &--highlight {
+    .cards {
+      &__info {
+        border: 1px solid #ffd966;
+        background: linear-gradient(
+          90deg,
+          #fff8e0 0%,
+          rgba(255, 248, 224, 0) 100%
+        );
+      }
+    }
+  }
+
+  &__img-wrapper {
+    position: relative;
+    overflow: hidden;
+    img {
+      @include trans(0.3s, ease-in-out);
+    }
+  }
+
+  &__caption-title {
+    color: color(g);
+  }
+
+  &__info-top {
+    border-bottom: 1px solid #ebeef7;
+  }
+
+  &--one {
+    .cards {
+      &__info-top,
+      &__info-bottom {
+        padding: 16px 20px;
+      }
+
+      &__category-title {
+        margin-bottom: 8px;
+        color: color(gray-4);
+        .icon {
+          margin-right: 8px;
+        }
+      }
+
+      &__location {
+        color: color(gray-4);
+      }
+
+      &__price-title {
+        color: color(danger-4);
+      }
+    }
+  }
+
+  &--two {
+    display: flex;
+    .cards {
+      &__info-top {
+        padding: 24px 20px;
+      }
+      &__info-bottom {
+        padding: 12px 20px;
+      }
+    }
+  }
+
+  &--three {
+    .cards {
+      &__info-top {
+        padding: 24px 20px;
+      }
+      &__info-bottom {
+        padding: 12px 20px;
+      }
+    }
+  }
+}
