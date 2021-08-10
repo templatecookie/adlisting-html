@@ -1,26 +1,32 @@
 .cards {
   position: relative;
-  background-color: #fff;
+  width: 100%;
   border-radius: 12px;
-  border: 1px solid #ebeef7;
   overflow: hidden;
+  background-color: #fff;
   @include trans(0.3s, ease-in-out);
   &:hover {
     box-shadow: 0px 12px 80px 0px #001a661a;
-    border-color: transparent;
     @include trans(0.4s, ease-in-out);
     .cards__img-wrapper {
+      transform: scale(1);
+      @include trans(0.4s, ease-in-out);
+
       img {
         transform: scale(1.1);
         @include trans(0.4s, ease-in-out);
       }
+    }
+    .cards__tag {
+      transform: scale(1.1) rotate(-45deg);
+      @include trans(0.4s, ease-in-out);
     }
   }
 
   &--highlight {
     .cards {
       &__info {
-        border: 1px solid #ffd966;
+        border-left: 2px solid #ffd966;
         background: linear-gradient(
           90deg,
           #fff8e0 0%,
@@ -32,7 +38,9 @@
 
   &__img-wrapper {
     position: relative;
+    width: 100%;
     overflow: hidden;
+    display: flex;
     img {
       @include trans(0.3s, ease-in-out);
     }
@@ -42,8 +50,33 @@
     color: color(g);
   }
 
+  &__info {
+    border: 1px solid #ebeef7;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+  }
+
   &__info-top {
     border-bottom: 1px solid #ebeef7;
+  }
+
+  &__info-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+  }
+
+  &__user-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__item {
+      .icon {
+        margin-right: 6px;
+      }
+    }
   }
 
   &--one {
@@ -51,6 +84,11 @@
       &__info-top,
       &__info-bottom {
         padding: 16px 20px;
+      }
+
+      &__img-wrapper {
+        height: 250px;
+        border-radius: 8px 8px 0px 0px;
       }
 
       &__category-title {
@@ -73,23 +111,142 @@
 
   &--two {
     display: flex;
+    align-items: center;
+    height: 100%;
+    @include max(767px) {
+      flex-direction: column;
+    }
+
+    &.cards--highlight {
+      .cards__info {
+        border-top: 1px solid #ffd966;
+        border-bottom: 1px solid #ffd966;
+        border-right: 1px solid #ffd966;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 12px;
+        border-bottom-right-radius: 12px;
+      }
+    }
+
     .cards {
+      &__img-wrapper {
+        width: 220px;
+        height: 220px;
+        display: flex;
+        @include max(767px) {
+          width: 100%;
+          height: 325px;
+        }
+      }
+
+      &__tag {
+        font-weight: 700;
+        color: #fff;
+        padding: 4px 32px;
+        text-transform: uppercase;
+        position: absolute;
+        top: 20px;
+        left: -30px;
+        transform: scale(1) rotate(-45deg);
+        background-color: color(danger-4);
+        @include trans(0.3s, ease-in-out);
+      }
+
+      &__info {
+        width: 70%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+
+        @include max(767px) {
+          width: 100%;
+          height: auto;
+        }
+      }
+
       &__info-top {
-        padding: 24px 20px;
+        padding: 0px 24px;
+        @include max(767px) {
+          padding-top: 24px;
+        }
       }
       &__info-bottom {
-        padding: 12px 20px;
+        padding: 12px 24px;
+      }
+
+      &__category-title {
+        margin-bottom: 12px;
+        color: color(gray-3);
+      }
+
+      &__caption-title {
+        margin-bottom: 20px;
+      }
+
+      &__price-title {
+        color: color(danger-4);
+      }
+
+      &__user-details {
+        padding-bottom: 22px;
+        &__item {
+          h5 {
+            color: color(gray-4);
+          }
+        }
       }
     }
   }
 
   &--three {
+    &.cards--highlight {
+      .cards__info {
+        border-top: 1px solid #ffd966;
+        border-bottom: 1px solid #ffd966;
+        border-right: 1px solid #ffd966;
+      }
+    }
+
     .cards {
       &__info-top {
         padding: 24px 20px;
       }
       &__info-bottom {
         padding: 12px 20px;
+      }
+
+      &__category-title {
+        color: color(gray-4);
+        margin-bottom: 8px;
+      }
+      &__caption-title {
+        margin-bottom: 20px;
+      }
+
+      &__img-wrapper {
+        height: 325px;
+        border-radius: 8px 8px 0px 0px;
+      }
+
+      &__price-title {
+        color: color(danger-4);
+      }
+
+      &__user-details {
+        flex-wrap: wrap;
+      }
+
+      &__user-details__item {
+        @include max(380px) {
+          margin-bottom: 6px;
+        }
+        h5 {
+          color: color(gray-3);
+        }
       }
     }
   }
