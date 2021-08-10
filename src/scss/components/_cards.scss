@@ -278,7 +278,8 @@
 }
 
 .work-card,
-.categorylist-card {
+.categorylist-card,
+.category-card {
   position: relative;
   border-radius: 12px;
   overflow: hidden;
@@ -433,7 +434,6 @@
   &__view {
     display: flex;
     flex-direction: column;
-    // background-color: red;
     max-height: 24px;
     overflow: hidden;
 
@@ -446,7 +446,6 @@
     }
     .second {
       transform: translateY(0px);
-      // transform: translateY(-25px);
     }
 
     .view-number,
@@ -485,6 +484,89 @@
           @include trans(0.4s, ease-in-out);
         }
       }
+    }
+  }
+}
+
+.category-card {
+  text-align: center;
+  padding: 24px;
+  background-color: transparent;
+  @include trans(0.4s, ease-in-out);
+
+  &:hover {
+    background-color: #fff;
+    box-shadow: 0px 12px 80px 0px #001a661a;
+    @include trans(0.4s, ease-in-out);
+    .category-card {
+      &__icon {
+        color: #fff;
+        background-color: color(primary-4);
+        box-shadow: 0px 8px 32px 0px #00aaff66;
+        @include trans(0.4s, ease-in-out);
+      }
+
+      &__view {
+        .first {
+          transform: translateY(-25px);
+          @include trans(0.4s, ease-in-out);
+        }
+        .second {
+          transform: translateY(-25px);
+          @include trans(0.4s, ease-in-out);
+        }
+      }
+    }
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 24px;
+    background-color: color(primary-9);
+    color: color(primary-4);
+    overflow: hidden;
+    @include trans(0.4s, ease-in-out);
+  }
+
+  &__title {
+    color: color(g);
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 16px;
+  }
+
+  &__view {
+    display: flex;
+    flex-direction: column;
+    max-height: 24px;
+    overflow: hidden;
+
+    .first,
+    .second {
+      @include trans(0.4s, ease-in-out);
+    }
+    .first {
+      transform: translateY(0px);
+    }
+    .second {
+      transform: translateY(0px);
+    }
+
+    .view-number,
+    .view-btn {
+      @include font(16px, 24px, 400, gray-3);
+    }
+    .view-btn {
+      color: color(primary-4);
+      font-weight: 600;
+      text-transform: capitalize;
     }
   }
 }
