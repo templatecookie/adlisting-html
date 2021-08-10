@@ -570,3 +570,122 @@
     }
   }
 }
+
+.plan-card {
+  position: relative;
+  border-radius: 12px;
+  background-color: #fff;
+  overflow: hidden;
+
+  &--active {
+    &.plan-card {
+      border: 2px solid #00aaff;
+    }
+    .plan-card {
+      &__top {
+        background-color: color(primary-3);
+        border: 0px;
+        border-radius: 0px;
+      }
+
+      &__bottom {
+        border-top: 0px;
+      }
+
+      &__title,
+      &__description,
+      &__price h5 {
+        color: #fff;
+      }
+
+      &__description {
+        opacity: 0.6;
+      }
+
+      &__price {
+        span {
+          color: #fff;
+          opacity: 0.6;
+        }
+      }
+    }
+  }
+
+  &__top,
+  &__bottom {
+    padding: 32px;
+    border: 1px solid #ebeef7;
+  }
+
+  &__top {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    text-align: center;
+  }
+
+  &__bottom {
+    border-top: 0px;
+  }
+
+  &__title {
+    color: color(g);
+    margin-bottom: 12px;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+
+  &__description {
+    color: color(gray-4);
+    margin-bottom: 24px;
+  }
+
+  &__price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 32px;
+    h5 {
+      color: color(primary-4);
+    }
+    span {
+      display: inline-block;
+      text-transform: lowercase;
+      color: color(gray-4);
+      margin-top: 20px;
+      margin-left: 6px;
+    }
+  }
+
+  &__package {
+    &-list {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+
+      &.active {
+        .icon {
+          color: #fff;
+          background-color: color(primary-4);
+        }
+      }
+
+      &:nth-last-child(1) {
+        margin-bottom: 0px;
+      }
+      .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        margin-right: 12px;
+        color: color(primary-6);
+      }
+      h5 {
+        color: color(gray-6);
+        text-transform: capitalize;
+      }
+    }
+  }
+}
