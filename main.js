@@ -22,3 +22,12 @@ toggle.addEventListener('click', function (e) {
     : (logo.src = 'src/images/logo-dark.png');
   logoChange = !logoChange;
 });
+
+// Cards Edit menu
+const editBtn = document.querySelectorAll('.cards__edit-icon');
+
+editBtn.forEach((dropMenu) => {
+  dropMenu.addEventListener('click', function () {
+    dropMenu.classList.toggle('active');
+  });
+});

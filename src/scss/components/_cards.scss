@@ -106,7 +106,7 @@
         &-icon {
           position: relative;
           cursor: pointer;
-          &:hover {
+          &.active {
             .icon-toggle {
               color: color(g);
             }
