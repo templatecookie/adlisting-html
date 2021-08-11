@@ -112,6 +112,16 @@
         height: 24px;
         &-icon {
           position: relative;
+          cursor: pointer;
+          &:hover {
+            .cards__edit-dropdown {
+              opacity: 1;
+              visibility: visible;
+              pointer-events: all;
+              transform: translateY(0px);
+              @include trans(0.4s, ease-in-out);
+            }
+          }
         }
 
         .icon-toggle {
@@ -128,8 +138,11 @@
           border-radius: 12px;
           background-color: #fff;
           box-shadow: 0px 5px 24px 0px #0022330a;
-          &:hover {
-          }
+          opacity: 0;
+          visibility: hidden;
+          pointer-events: all;
+          transform: translateY(15px);
+          @include trans(0.4s, ease-in-out);
 
           &__item {
             &:nth-last-child(1) {
@@ -142,7 +155,6 @@
             align-items: center;
             padding: 8px 12px;
             border-radius: 4px;
-            // background: #e8f7ff;
 
             .icon {
               margin-right: 12px;
@@ -150,6 +162,15 @@
             }
             h5 {
               color: color(gray-2);
+            }
+
+            &:hover {
+              background: #e8f7ff;
+              .icon,
+              h5 {
+                color: color(primary-4);
+                @include trans(0.3s, linear);
+              }
             }
           }
         }
