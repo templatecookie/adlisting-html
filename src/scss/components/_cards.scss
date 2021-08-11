@@ -352,7 +352,8 @@
 
 .work-card,
 .categorylist-card,
-.category-card {
+.category-card,
+.blog-card {
   position: relative;
   border-radius: 12px;
   overflow: hidden;
@@ -825,6 +826,113 @@
     .designation {
       display: block;
       color: color(gray-4);
+    }
+  }
+}
+
+.blog-card {
+  padding: 16px;
+  border: 1px solid #ebeef7;
+  display: flex;
+  align-items: center;
+  @include trans(0.4s, ease-in-out);
+  @include max(767px) {
+    flex-direction: column;
+  }
+  &:hover {
+    box-shadow: 0px 12px 80px 0px #001a661a;
+    @include trans(0.4s, ease-in-out);
+    .blog-card {
+      &__img-wrapper {
+        img {
+          transform: scale(1.1);
+          @include trans(0.4s, linear);
+        }
+        .icon {
+          box-shadow: 0px 0px 20px 0px #00000033;
+          @include trans(0.4s, linear);
+        }
+      }
+    }
+  }
+
+  &__left {
+    width: 100%;
+  }
+
+  &__img-wrapper {
+    position: relative;
+    width: 295px;
+    height: 208px;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-right: 24px;
+
+    @include max(767px) {
+      width: 100%;
+      margin-bottom: 16px;
+    }
+
+    img {
+      @include trans(0.4s, linear);
+    }
+    .icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: #fff;
+    }
+  }
+
+  &__blog-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    &-item {
+      display: flex;
+      align-items: center;
+      margin-right: 24px;
+      &:nth-last-child(1) {
+        margin-right: 0px;
+      }
+      .icon {
+        margin-right: 6px;
+      }
+    }
+  }
+
+  &__username,
+  &__coment-num {
+    color: color(gray-2);
+    text-transform: capitalize;
+  }
+
+  &__blog-caption {
+    color: color(g);
+    text-transform: capitalize;
+    margin-bottom: 12px;
+  }
+
+  &__description {
+    color: color(gray-4);
+    margin-bottom: 20px;
+  }
+
+  &__readmore {
+    @include font(16px, 24px, 600, primary-4);
+    text-transform: capitalize;
+    &:hover {
+      color: color(primary-4);
+    }
+    .icon {
+      margin-left: 8px;
     }
   }
 }
