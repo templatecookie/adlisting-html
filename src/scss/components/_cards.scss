@@ -9,17 +9,10 @@
     box-shadow: 0px 12px 80px 0px #001a661a;
     @include trans(0.4s, ease-in-out);
     .cards__img-wrapper {
-      transform: scale(1);
-      @include trans(0.4s, ease-in-out);
-
       img {
         transform: scale(1.1);
         @include trans(0.4s, ease-in-out);
       }
-    }
-    .cards__tag {
-      transform: scale(1.1) rotate(-45deg);
-      @include trans(0.4s, ease-in-out);
     }
   }
 
@@ -214,16 +207,14 @@
       }
 
       &__tag {
-        font-weight: 700;
-        color: #fff;
-        padding: 4px 32px;
-        text-transform: uppercase;
         position: absolute;
         top: 20px;
         left: -30px;
-        transform: scale(1) rotate(-45deg);
+        padding: 4px 32px;
+        color: #fff;
+        text-transform: uppercase;
+        transform: rotate(-45deg);
         background-color: color(danger-4);
-        @include trans(0.3s, ease-in-out);
       }
 
       &__info {
@@ -247,6 +238,7 @@
           padding-top: 24px;
         }
       }
+
       &__info-bottom {
         padding: 12px 24px;
       }
@@ -765,7 +757,6 @@
   }
 }
 
-// Testimonial cards
 .testimonial-card {
   position: relative;
   padding: 40px;
