@@ -353,7 +353,8 @@
 .work-card,
 .categorylist-card,
 .category-card,
-.blog-card {
+.blog-card,
+.membership-card {
   position: relative;
   border-radius: 12px;
   overflow: hidden;
@@ -934,5 +935,40 @@
     .icon {
       margin-left: 8px;
     }
+  }
+}
+
+.membership-card {
+  @include flex(flex-start, null);
+  padding: 32px;
+  border-radius: 12px;
+  @include max(767px) {
+    flex-direction: column;
+    padding: 24px;
+  }
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 80px;
+    height: 80px;
+    margin-right: 32px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: color(primary-4);
+    @include max(767px) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__title {
+    color: color(g);
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+  &__description {
+    color: color(gray-4);
   }
 }
