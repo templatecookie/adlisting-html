@@ -202,4 +202,30 @@
       }
     }
   }
+
+  &-demo {
+    padding: 24px 0px;
+    background-color: color(gray-10);
+    &__content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @include max(767px) {
+        flex-direction: column;
+      }
+    }
+
+    &__copyright,
+    &__documentation {
+      color: color(gray-4);
+      text-transform: capitalize;
+      @include max(767px) {
+        text-align: center;
+      }
+      a {
+        color: color(g);
+        font-weight: 600;
+      }
+    }
+  }
 }
