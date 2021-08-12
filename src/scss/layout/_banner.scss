@@ -1,0 +1,148 @@
+.banner {
+  &-demo {
+    &__content {
+      position: relative;
+      width: 1560px;
+      margin: auto;
+      border-radius: 40px;
+      background-color: color(gray-10);
+      @include max(1680px) {
+        width: 95%;
+      }
+      @include max(1200px) {
+        flex-direction: column;
+      }
+
+      @include max(767px) {
+        width: 100%;
+        border-radius: 0px;
+      }
+    }
+    &__left {
+      padding-left: 120px;
+      @include max(1680px) {
+        padding-left: 60px;
+      }
+      @include max(1200px) {
+        order: 2;
+        padding-left: 0px;
+        padding-bottom: 120px;
+      }
+    }
+    &__right {
+      padding-right: 55px;
+      @include max(1200px) {
+        order: 1;
+        padding-right: 0px;
+      }
+    }
+
+    &__title {
+      @include font(64px, 76.8px, 600, g);
+      margin-bottom: 40px;
+      @include max(1200px) {
+        text-align: center;
+      }
+
+      @include max(767px) {
+        font-size: 38px;
+        line-height: 52px;
+      }
+
+      @include max(480px) {
+        font-size: 28px;
+        line-height: 42px;
+        margin-bottom: 16px;
+      }
+    }
+
+    &__layout-details {
+      display: flex;
+      align-items: center;
+      margin-bottom: 40px;
+      @include max(1200px) {
+        justify-content: center;
+      }
+      @include max(767px) {
+        flex-wrap: wrap;
+      }
+      &-item {
+        margin: 0px 6px;
+        &.dot {
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          background-color: color(g);
+          @include max(767px) {
+            width: 4px;
+            height: 4px;
+          }
+        }
+        &:nth-child(1) {
+          margin-left: 0px;
+        }
+
+        span {
+          color: color(g);
+        }
+      }
+    }
+
+    &__buttons {
+      @include max(1200px) {
+        text-align: center;
+      }
+      .btn {
+        margin-right: 20px;
+        @include max(460px) {
+          margin-right: 0px;
+          margin-bottom: 16px;
+        }
+        &:nth-last-child(1) {
+          margin-right: 0px;
+          margin-bottom: 0px;
+          color: color(primary-4);
+          background-color: #fff;
+          border: 1px solid #ebeef7;
+        }
+      }
+    }
+
+    &__tech-used {
+      position: absolute;
+      bottom: -50px;
+      left: 120px;
+      display: flex;
+      align-items: center;
+      @include max(1200px) {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      @include max(767px) {
+        bottom: -40px;
+      }
+      &-item {
+        @include flex(center, center);
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        border: 2px solid #f5f7fa;
+        background-color: #fff;
+        margin-right: 16px;
+        @include max(767px) {
+          width: 80px;
+          height: 80px;
+        }
+      }
+    }
+
+    &__img-wrapper {
+      img {
+        @include max(767px) {
+          max-width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+}
