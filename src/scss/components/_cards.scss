@@ -1027,3 +1027,46 @@
     }
   }
 }
+
+.template__demo-card {
+  &-img-wrapper {
+    position: relative;
+    width: 100%;
+    height: 215px;
+    margin-bottom: 16px;
+    overflow: hidden;
+  }
+  &-category-title {
+    @include font(13px, 16px, 400, gray-4);
+    text-transform: capitalize;
+    margin-bottom: 4px;
+  }
+  &-title {
+    color: color(g);
+    text-transform: capitalize;
+    margin-bottom: 16px;
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &-price {
+    color: color(danger-4);
+    font-weight: 600;
+  }
+  &__buttons {
+    .btn {
+      margin-right: 12px;
+      &:nth-child(1) {
+        border: 1px solid #ebeef7;
+        color: color(gray-2);
+        background-color: transparent;
+      }
+      &:nth-last-child(1) {
+        margin-right: 0px;
+      }
+    }
+  }
+}
