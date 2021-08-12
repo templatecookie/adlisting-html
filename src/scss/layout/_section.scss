@@ -4,6 +4,15 @@
   @include max(767px) {
     padding: 60px 0px;
   }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 50px;
+    @include max(767px) {
+      margin-bottom: 30px;
+    }
+  }
+
   &__title-demo {
     @include font(56px, 67.2px, 700, g);
     text-transform: capitalize;

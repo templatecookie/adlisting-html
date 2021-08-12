@@ -1,0 +1,8 @@
+.work {
+  &-card {
+    @include max(991px) {
+      height: auto;
+      margin-bottom: 24px;
+    }
+  }
+}
