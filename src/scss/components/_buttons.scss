@@ -55,5 +55,9 @@
     height: 50px;
     border-radius: 50%;
     background-color: transparent;
+    @include trans(0.3s, ease-in-out);
+    &:hover {
+      background-color: #e8f7ff;
+    }
   }
 }
