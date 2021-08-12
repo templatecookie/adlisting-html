@@ -8,7 +8,19 @@
 }
 
 .feature-ads {
+  box-shadow: 0px -1px 0px 0px #ebeef7 inset;
+
   .cards {
+    margin-bottom: 24px;
+  }
+  &__btn {
+    text-align: center;
+    margin-top: 26px;
+  }
+}
+
+.popular-location {
+  .location-card {
     margin-bottom: 24px;
   }
 }
