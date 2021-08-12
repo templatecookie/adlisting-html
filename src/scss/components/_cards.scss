@@ -73,6 +73,17 @@
   }
 
   &--one {
+    &.cards--highlight {
+      .cards__info {
+        &-top,
+        &-bottom {
+          border-right: 1px solid #ffd966;
+        }
+        &-bottom {
+          border-bottom: 1px solid #ffd966;
+        }
+      }
+    }
     .cards {
       &__info-top,
       &__info-bottom {
