@@ -1,0 +1,59 @@
+.download {
+  @include min-max(768px, 991px) {
+    padding: 100px 0px;
+  }
+  @include max(767px) {
+    padding: 60px 0px;
+  }
+
+  &__content {
+    margin-left: 65px;
+    @include max(1200px) {
+      margin-left: 0px;
+    }
+  }
+
+  &__img-content {
+    @include max(991px) {
+      padding-bottom: 30px;
+    }
+  }
+
+  &__title {
+    color: color(g);
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    @include max(767px) {
+      font-size: 24px;
+      line-height: 38px;
+    }
+  }
+
+  &__brief {
+    color: color(gray-4);
+    margin-bottom: 32px;
+    @include max(767px) {
+      font-size: 16px;
+      // line-height: ;
+    }
+  }
+
+  &__apps-store {
+    display: flex;
+    align-items: center;
+    @include max(351px) {
+      flex-direction: column;
+    }
+    @include max(1200px) {
+      padding-bottom: 30px;
+    }
+    .app {
+      margin-right: 16px;
+      @include max(351px) {
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 16px;
+      }
+    }
+  }
+}
