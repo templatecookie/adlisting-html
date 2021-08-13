@@ -408,6 +408,7 @@
 
 .categorylist-card {
   padding: 24px;
+  height: 100%;
   border: 1px solid #ebeef7;
   @include trans(0.4s, ease-in-out);
   @include max(767px) {
