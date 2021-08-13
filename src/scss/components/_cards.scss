@@ -475,6 +475,7 @@
 
       &:hover {
         color: color(primary-4);
+        font-weight: 600;
         @include trans(0.4s, ease-in-out);
         .icon {
           color: color(primary-4);
