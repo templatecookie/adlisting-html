@@ -1,0 +1,39 @@
+.subscribe {
+  position: relative;
+  overflow: hidden;
+  padding: 50px 0px;
+  box-shadow: 0px -1px 0px 0px #2e3447 inset;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__title {
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  &__description {
+    color: color(gray-4);
+    width: 425px;
+  }
+
+  &__input-group {
+    position: relative;
+    width: 633px;
+    border-radius: 12px;
+    padding: 9px 12px;
+    padding-left: 18px;
+    background-color: color(gray-1);
+    overflow: hidden;
+    input {
+      width: 74%;
+      background-color: transparent;
+      border: 0px;
+    }
+    .icon {
+      margin-right: 12px;
+    }
+  }
+}
