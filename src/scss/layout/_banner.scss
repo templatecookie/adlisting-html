@@ -1,4 +1,28 @@
 .banner {
+  position: relative;
+  overflow: hidden;
+
+  &--two {
+    padding: 120px 0px;
+    @include max(767px) {
+      padding: 90px 0px;
+    }
+    .banner {
+      &__title {
+        color: color(g);
+        text-transform: capitalize;
+        margin-bottom: 24px;
+        @include max(767px) {
+          font-size: 38px;
+          line-height: 52px;
+        }
+      }
+      &__brief {
+        color: color(gray-2);
+      }
+    }
+  }
+
   &-demo {
     padding-bottom: 50px;
     &__content {
