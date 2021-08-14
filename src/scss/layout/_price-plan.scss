@@ -1,0 +1,251 @@
+.price-plan {
+  &__title,
+  &__brief {
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  &__title {
+    color: color(g);
+    @include max(767px) {
+      font-size: 38px;
+      line-height: 48px;
+    }
+  }
+  &__brief {
+    color: color(gray-4);
+    width: 512px;
+    margin: auto;
+    margin-bottom: 24px;
+    @include max(767px) {
+      width: 100%;
+    }
+  }
+
+  &__nav {
+    display: inline-flex;
+    border: 0;
+    border-radius: 160px;
+    padding: 8px;
+    background-color: color(gray-10);
+    margin-bottom: 50px;
+  }
+
+  &__link {
+    @include font(16px, 24px, 400, null);
+    color: color(gray-2) !important;
+    padding: 8px 24px;
+    border-radius: 100px !important;
+    margin-right: 8px;
+    &:nth-last-child(1) {
+      margin-right: 0px;
+    }
+    &.active {
+      color: #fff !important;
+      background-color: color(primary-4) !important;
+    }
+  }
+
+  .plan-card {
+    @include max(1199px) {
+      margin-bottom: 24px;
+    }
+  }
+
+  // Modal
+  &__modal-content {
+    padding: 40px;
+    border-radius: 12px;
+    @include max(767px) {
+      padding: 40px 16px;
+    }
+  }
+
+  &__modal-header,
+  &__modal-body {
+    padding: 0;
+  }
+
+  &__modal-header {
+    margin-bottom: 32px;
+  }
+
+  &__modal-btnclose {
+    width: 48px;
+    height: 48px;
+    border-radius: 4px;
+    background-color: #ebeef7;
+    color: color(g);
+    &:hover {
+      color: color(gray-3);
+    }
+  }
+
+  &__input-group {
+    margin-bottom: 16px;
+    label {
+      @include font(14px, 20px, 400, g);
+      width: 100%;
+      text-align: left;
+      margin-bottom: 8px;
+      text-transform: capitalize;
+    }
+
+    .bv_mainselect {
+      position: relative;
+      padding: 12px 18px;
+      border: 1px solid #edeff5;
+      border-radius: 5px;
+      background-color: #fff;
+      text-align: left;
+      cursor: pointer;
+      .bv_atual.bv_background {
+        position: relative;
+        @include font(16px, 24px, 400, gray-5);
+        text-transform: capitalize;
+        @include max(991px) {
+          width: 100% !important;
+        }
+        .arrows_bv {
+          position: absolute;
+          right: 0;
+          top: 50%;
+          border: solid color(gray-5);
+          border-width: 0 1px 1px 0;
+          display: inline-block;
+          padding: 3px;
+          transition: all 0.2s ease;
+          transform: translateY(-50%) rotate(45deg);
+          &.up {
+            transform: rotate(-135deg);
+            transition: all 0.3s ease-out;
+          }
+        }
+      }
+
+      .bv_ul_inner.bv_background {
+        top: 100%;
+        left: 0;
+        width: 100% !important;
+        padding: 16px 0px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        background-color: #fff;
+        box-shadow: 0px 24px 100px 0px #001d491f;
+        z-index: 9;
+        li {
+          @include font(14px, 24px, 400, g);
+          padding: 8px 16px;
+          &:hover {
+            color: #fff;
+            background-color: color(primary-4);
+            @include trans(0.4s, ease-in-out);
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+  &__field-group {
+    display: flex;
+    justify-content: space-between;
+    @include max(991px) {
+      flex-direction: column;
+    }
+  }
+
+  &__input {
+    position: relative;
+    width: 100%;
+    height: 48px;
+    input {
+      width: inherit;
+      height: inherit;
+      padding-left: 18px;
+      border-radius: 5px;
+    }
+    .icon,
+    .card-type {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .icon {
+      left: 20px;
+      @include max(767px) {
+        left: 10px;
+      }
+    }
+
+    .card-type {
+      right: 24px;
+      display: flex;
+      @include max(767px) {
+        right: 12px;
+      }
+      &__item {
+        margin-right: 16px;
+        @include max(767px) {
+          margin-right: 8px;
+        }
+        &:nth-last-child(1) {
+          margin-right: 0px;
+        }
+        span {
+          color: color(gray-5);
+          text-transform: uppercase;
+          @include max(767px) {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    &#credit {
+      input {
+        padding-left: 55px;
+        @include max(767px) {
+          padding-left: 40px;
+        }
+      }
+    }
+  }
+
+  &__info {
+    padding: 32px 0px;
+    margin-bottom: 32px;
+    border-bottom: 1px solid #ebeef7;
+    &-item {
+      margin-bottom: 24px;
+      &:nth-last-child(1) {
+        margin-bottom: 0px;
+      }
+      .plan-type {
+        color: color(gray-3);
+        span {
+          font-weight: 600;
+          color: color(g);
+        }
+      }
+      .price {
+        color: color(g);
+      }
+    }
+  }
+
+  &__total {
+    h2 {
+      color: color(g);
+    }
+  }
+
+  &__checkout-btn {
+    margin-bottom: 16px;
+  }
+
+  &__message {
+    color: color(gray-5);
+    text-transform: capitalize;
+  }
+}
