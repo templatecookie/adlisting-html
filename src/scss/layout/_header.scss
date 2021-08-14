@@ -46,10 +46,16 @@
     .navigation-bar__top {
       padding: 26px 0px;
       box-shadow: 0px -1px 0px 0px #ebeef7 inset;
+      @include max(991px) {
+        padding: 0px;
+      }
     }
     .navigation-bar__bottom {
       @include max(1200px) {
         justify-content: space-between;
+      }
+      @include max(991px) {
+        display: none;
       }
       .category-menu {
         padding-right: 43px;
@@ -439,6 +445,7 @@
     left: 0;
     width: 100%;
     padding: 20px 0px;
+    padding-bottom: 4px;
     z-index: 9;
     background-color: #fff;
     box-shadow: 0px 12px 50px 0px #00000040;
@@ -456,6 +463,9 @@
       border-right: 0px;
       &:nth-child(1) {
         padding-top: 0px;
+      }
+      &:nth-last-child(1) {
+        border-bottom: 0px;
       }
       &:hover,
       &.active {
@@ -679,7 +689,9 @@
   &__bar {
     width: 18px;
     height: 1.94px;
-    background-color: #fff;
+    // background-color: #fff;
+    background-color: color(g);
+
     border-radius: 4px;
     margin: 2px 0px;
     display: inline-block;
