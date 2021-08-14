@@ -149,6 +149,10 @@
   }
 
   &--four {
+    padding: 20px 0px;
+    @include max(991px) {
+      padding: 0px;
+    }
     .menu {
       &__item {
         @include max(1199px) {
@@ -171,18 +175,14 @@
           }
 
           &:nth-child(1) {
-            margin-right: 24px;
+            font-size: 16px;
             line-height: 24px;
             font-weight: 400;
-            color: color(gray-4);
+            color: color(gray-3);
             background-color: transparent;
             @include max(1199px) {
               margin-right: 8px;
             }
-          }
-          &:nth-child(2) {
-            background-color: #fff;
-            color: color(primary-4);
           }
         }
       }
