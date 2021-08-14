@@ -28,7 +28,9 @@
     height: 388px;
     border-radius: 12px;
     overflow: hidden;
-
+    @include max(767px) {
+      height: 280px;
+    }
     img {
       @include trans(0.4s, ease-in-out);
     }
