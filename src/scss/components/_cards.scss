@@ -800,6 +800,9 @@
       right: 20px;
       bottom: 20px;
     }
+    @include max(480px) {
+      right: 10px;
+    }
   }
 
   &__user-rating {
