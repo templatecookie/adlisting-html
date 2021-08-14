@@ -9,6 +9,8 @@
     text-align: center;
     margin-bottom: 50px;
     @include max(767px) {
+      font-size: 38px;
+      line-height: 48px;
       margin-bottom: 30px;
     }
   }
