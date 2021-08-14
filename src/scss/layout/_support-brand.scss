@@ -6,7 +6,6 @@
   &__slider-item {
     margin: 0px 24px;
     @include max(767px) {
-      // margin: auto;
       display: flex !important;
       justify-content: center;
     }
