@@ -11,6 +11,7 @@
     color: #fff;
     background-color: color(primary-3);
   }
+
   &:focus {
     outline: none;
     box-shadow: none;
@@ -58,6 +59,20 @@
     @include trans(0.3s, ease-in-out);
     &:hover {
       background-color: #e8f7ff;
+    }
+  }
+
+  &-sign {
+    position: relative;
+    @include font(16px, 24px, 400, gray-2);
+    text-transform: capitalize;
+    text-align: center;
+    padding: 16px 24px;
+    border-radius: 6px;
+    border: 1px solid #ebeef7;
+    background-color: #fff;
+    .icon {
+      margin-right: 16px;
     }
   }
 }
