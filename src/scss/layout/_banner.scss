@@ -2,6 +2,75 @@
   position: relative;
   overflow: hidden;
 
+  &--one {
+    display: flex;
+    align-items: center;
+    height: 820px;
+    z-index: 1;
+    @include max(767px) {
+      height: auto;
+      padding: 100px 0px;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #000;
+      opacity: 0.85;
+      z-index: -1;
+    }
+
+    .banner {
+      &__title {
+        color: #fff;
+        width: 900px;
+        margin: auto;
+        margin-bottom: 32px;
+        @include max(991px) {
+          width: 100%;
+        }
+
+        @include max(767px) {
+          @include font(48px, 62px, null, null);
+        }
+
+        @include max(575px) {
+          @include font(28px, 46px, null, null);
+        }
+      }
+    }
+
+    .category-card {
+      &__icon {
+        background-color: transparent;
+      }
+
+      &__title {
+        color: #fff;
+      }
+
+      &__view {
+        .view-number {
+          color: #fff;
+          opacity: 0.6;
+        }
+      }
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.1);
+
+        .category-card__icon {
+          background-color: transparent;
+          box-shadow: none;
+          color: color(primary-4);
+        }
+      }
+    }
+  }
+
   &--two {
     padding: 120px 0px;
     @include max(767px) {

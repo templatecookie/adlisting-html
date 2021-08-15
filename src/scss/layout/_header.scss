@@ -14,6 +14,14 @@
   }
 
   &--one {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+    padding: 25px 0px;
+    @include max(991px) {
+      padding: 0px;
+    }
     .menu {
       &__item {
         @include max(1199px) {
@@ -38,6 +46,12 @@
             background: #ffffff;
           }
         }
+      }
+    }
+
+    .toggle-icon {
+      &__bar {
+        background-color: #fff;
       }
     }
   }
