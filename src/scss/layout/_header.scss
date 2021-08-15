@@ -119,6 +119,10 @@
   }
 
   &--three {
+    padding: 19px 0px;
+    @include max(991px) {
+      padding: 0px;
+    }
     .navigation-bar {
       &__left {
         @include flex(center, space-between);
@@ -128,6 +132,9 @@
       &__logo {
         position: relative;
         padding-right: 32px;
+        @include max(1200px) {
+          padding-right: 16px;
+        }
         &::after {
           content: '';
           position: absolute;
@@ -144,6 +151,44 @@
       }
       .menu {
         margin-left: 32px;
+        @include max(1200px) {
+          margin-left: 16px;
+        }
+        &__item {
+          @include max(1200px) {
+            margin-right: 24px;
+          }
+        }
+      }
+
+      &__buttons {
+        .message {
+          position: relative;
+          &::after {
+            content: '';
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            width: 9px;
+            height: 9px;
+            border-radius: 50%;
+            background-color: color(danger-4);
+            border: 2px solid #fff;
+          }
+        }
+
+        .user {
+          margin: 0px 24px;
+          @include max(1200px) {
+            margin: 0px 12px;
+          }
+          &__img-wrapper {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            overflow: hidden;
+          }
+        }
       }
     }
   }
