@@ -1,0 +1,9 @@
+.map {
+  position: relative;
+  overflow: hidden;
+  height: 400px;
+  margin: 0px;
+  iframe {
+    height: inherit;
+  }
+}
