@@ -23,7 +23,8 @@ button {
     outline: none;
   }
 }
-input {
+input,
+textarea {
   @include font(16px, 24px, 400, gray-2);
   border: 1px solid #ebeef7;
   transition: all 0.3s linear;
