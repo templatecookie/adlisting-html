@@ -1105,6 +1105,7 @@
 
   &__title {
     @include font(20px, 32px, 600, g);
+    margin-bottom: 24px;
   }
 
   &--count {
@@ -1132,6 +1133,65 @@
       display: flex;
       align-items: center;
       justify-content: center;
+    }
+  }
+
+  &--recent {
+    &__activity {
+      max-height: 350px;
+      overflow-y: auto;
+
+      &-item {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 24px;
+        &:nth-last-child(1) {
+          margin-bottom: 0px;
+        }
+        &.success {
+          .icon {
+            color: color(success-4);
+            background-color: color(success-9);
+          }
+        }
+        &.primary {
+          .icon {
+            color: color(primary-4);
+            background-color: color(primary-9);
+          }
+        }
+        &.warning {
+          .icon {
+            color: color(warning-4);
+            background-color: color(warning-9);
+          }
+        }
+        &.danger {
+          .icon {
+            color: color(danger-4);
+            background-color: color(danger-9);
+          }
+        }
+        .icon {
+          width: 48px;
+          height: 48px;
+          padding: 12px;
+          margin-right: 16px;
+          border-radius: 8px;
+          display: inline-block;
+        }
+
+        p {
+          color: color(g);
+          .quote {
+            color: color(gray-2);
+          }
+          a {
+            color: color(g);
+            text-decoration: underline;
+          }
+        }
+      }
     }
   }
 }
