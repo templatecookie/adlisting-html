@@ -13,6 +13,24 @@
     }
   }
 
+  &--home-three {
+    .navigation-bar__buttons {
+      .btn {
+        &:nth-child(1) {
+          @include max(1199px) {
+            margin-right: 0px !important;
+          }
+        }
+      }
+    }
+
+    .menu {
+      &__item {
+        margin-right: 12px !important;
+      }
+    }
+  }
+
   &--one {
     position: absolute;
     top: 0;
@@ -33,6 +51,13 @@
     .navigation-bar {
       &__buttons {
         .btn {
+          &.tg {
+            font-weight: 400;
+
+            background-color: transparent !important;
+            color: rgba(255, 255, 255, 0.6) !important;
+          }
+
           @include max(1199px) {
             padding: 0px 12px;
           }
