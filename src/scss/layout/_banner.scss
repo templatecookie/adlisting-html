@@ -92,6 +92,44 @@
     }
   }
 
+  &--three {
+    @include flex(center, center);
+    height: 800px;
+    background-color: color(primary);
+    text-align: center;
+    @include max(767px) {
+      height: auto;
+      padding: 160px 0px;
+    }
+    .banner {
+      &__tag {
+        color: #fff;
+        text-transform: uppercase;
+        padding: 8px 20px;
+        margin-bottom: 28px;
+        border-radius: 5px;
+        display: inline-block;
+        background-color: color(success-4);
+      }
+
+      &__title {
+        color: #fff;
+        width: 890px;
+        margin: auto;
+        margin-bottom: 40px;
+        @include max(991px) {
+          font-size: 48px;
+          line-height: 68px;
+          width: 100%;
+        }
+        @include max(767px) {
+          font-size: 28px;
+          line-height: 42px;
+        }
+      }
+    }
+  }
+
   &-demo {
     padding-bottom: 50px;
     &__content {
