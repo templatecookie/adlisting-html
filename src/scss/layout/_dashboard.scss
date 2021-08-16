@@ -1,0 +1,111 @@
+.dashboard {
+  &__navigation {
+    position: relative;
+    padding: 32px 0px;
+    border-radius: 12px;
+    border: 1px solid #ebeef7;
+    background-color: #fff;
+    box-shadow: 0px 12px 48px 0px #0022330f;
+
+    &.active {
+      left: 0px;
+
+      .dashboard__navigation-toggle-btn {
+        color: color(primary-4);
+        @include max(360px) {
+          border-radius: 50%;
+          right: 12px;
+          @include trans(0.4s, ease-in-out);
+        }
+      }
+    }
+
+    @include max(991px) {
+      position: fixed;
+      top: 50%;
+      left: -295px;
+      width: 295px;
+      z-index: 999;
+      transform: translateY(-50%);
+      border-top-left-radius: 0px;
+      border-bottom-left-radius: 0px;
+      @include trans(0.6s, ease-in-out);
+    }
+
+    @include max(360px) {
+      width: 100%;
+      left: -100%;
+      border-radius: 0px;
+    }
+
+    &-toggle-btn {
+      position: absolute;
+      top: 45px;
+      right: -42px;
+      border: 1px solid #ebeef7;
+      background-color: #fff;
+      box-shadow: 0px 12px 48px 0px #0022330f;
+      padding: 8px;
+      border-top-right-radius: 12px;
+      border-bottom-right-radius: 12px;
+
+      &:hover {
+        color: color(primary);
+      }
+      @include min(992px) {
+        display: none;
+      }
+    }
+
+    &-top {
+      padding: 0px 32px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid #ebeef7;
+    }
+    &-bottom {
+      padding-top: 24px;
+    }
+  }
+
+  &__user {
+    &-proifle {
+      display: flex;
+      align-items: center;
+    }
+    &-img {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-right: 14px;
+    }
+    &-info {
+      .name {
+        color: color(g);
+        text-transform: capitalize;
+      }
+      .designation {
+        color: color(gray-4);
+      }
+    }
+  }
+
+  &__nav {
+    &-link {
+      display: flex;
+      @include font(16px, 24px, 600, gray-4);
+      align-items: center;
+
+      text-transform: capitalize;
+      width: 100%;
+      padding: 12px 24px;
+      &:hover {
+        color: color(primary-4);
+        background-color: color(primary-9);
+      }
+      .icon {
+        margin-right: 16px;
+      }
+    }
+  }
+}
