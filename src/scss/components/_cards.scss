@@ -367,11 +367,12 @@
 .categorylist-card,
 .category-card,
 .blog-card,
-.membership-card {
+.membership-card,
+.dashboard-card {
   position: relative;
   border-radius: 12px;
-  overflow: hidden;
   background-color: #fff;
+  overflow: hidden;
 }
 
 .work-card {
@@ -1094,6 +1095,43 @@
       &:nth-last-child(1) {
         margin-right: 0px;
       }
+    }
+  }
+}
+
+.dashboard-card {
+  padding: 24px;
+  box-shadow: 0px 2px 32px 0px #0022330d;
+
+  &__title {
+    @include font(20px, 32px, 600, g);
+  }
+
+  &--count {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: none;
+    height: 100%;
+    &__info {
+      .counter-number {
+        display: inline-block;
+        margin-bottom: 8px;
+      }
+
+      .counter-title {
+        color: color(gray-2);
+      }
+    }
+
+    &__icon {
+      width: 72px;
+      height: 72px;
+      border-radius: 8px;
+      background-color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
 }

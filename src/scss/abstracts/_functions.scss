@@ -5,7 +5,7 @@
 
 @each $key, $value in $colors {
   .bgcolor--#{$key} {
-    background-color: $value;
+    background-color: $value !important;
   }
   .textColor--#{$key} {
     color: $value;

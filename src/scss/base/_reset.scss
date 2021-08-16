@@ -62,7 +62,7 @@ body {
       height: 100%;
       background-color: #000;
       opacity: 0.6;
-      @include min(992px) {
+      @include min(1200px) {
         display: none;
       }
     }

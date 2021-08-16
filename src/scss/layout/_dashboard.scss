@@ -20,7 +20,7 @@
       }
     }
 
-    @include max(991px) {
+    @include max(1199px) {
       position: fixed;
       top: 50%;
       left: -295px;
@@ -52,7 +52,7 @@
       &:hover {
         color: color(primary);
       }
-      @include min(992px) {
+      @include min(1200px) {
         display: none;
       }
     }
@@ -106,6 +106,14 @@
       .icon {
         margin-right: 16px;
       }
+    }
+  }
+
+  // counting card
+  &-card--count {
+    @include max(991px) {
+      height: auto !important;
+      margin-bottom: 24px;
     }
   }
 }
