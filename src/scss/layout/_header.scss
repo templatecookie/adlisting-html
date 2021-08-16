@@ -500,6 +500,7 @@
 
     &__link {
       @include font(16px, 24px, 400, gray-4);
+      text-transform: capitalize;
       padding: 10px 12px;
       border-radius: 4px;
       width: 100%;

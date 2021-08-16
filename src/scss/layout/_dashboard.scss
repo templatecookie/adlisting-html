@@ -172,13 +172,16 @@
       display: flex;
       @include font(16px, 24px, 600, gray-4);
       align-items: center;
-
       text-transform: capitalize;
       width: 100%;
       padding: 12px 24px;
-      &:hover {
+      border-left: 2px solid transparent;
+      &:hover,
+      &.active {
         color: color(primary-4);
         background-color: color(primary-9);
+        border-left: 2px solid color(primary-4);
+        box-shadow: 2px 0px 0px 0px #00aaff inset;
       }
       .icon {
         margin-right: 16px;
