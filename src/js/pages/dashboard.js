@@ -37,3 +37,33 @@ $('.dashboard__posted-ads-slider').slick({
     },
   ],
 });
+
+var ctx = document.getElementById('adsview').getContext('2d');
+var myChart = new Chart(ctx, {
+  type: 'bar',
+  data: {
+    labels: ['Sun', 'Mon', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
+    datasets: [
+      {
+        label: '',
+        data: [277, 138, 109, 171, 215, 120, 245],
+        backgroundColor: '#00aaff',
+        borderWidth: 0,
+        barThickness: 28,
+        borderRadius: 100,
+      },
+    ],
+  },
+  options: {
+    scales: {
+      y: {
+        beginAtZero: true,
+      },
+    },
+    plugins: {
+      legend: {
+        display: false,
+      },
+    },
+  },
+});

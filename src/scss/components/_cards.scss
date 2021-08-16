@@ -372,7 +372,7 @@
   position: relative;
   border-radius: 12px;
   background-color: #fff;
-  overflow: hidden;
+  // overflow: hidden;
 }
 
 .work-card {
@@ -1137,9 +1137,10 @@
   }
 
   &--recent {
+    height: 100%;
     &__activity {
-      max-height: 350px;
-      overflow-y: auto;
+      // max-height: 350px;
+      // overflow-y: auto;
 
       &-item {
         display: flex;

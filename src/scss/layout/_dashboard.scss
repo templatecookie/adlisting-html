@@ -16,6 +16,65 @@
         margin-left: 8px;
       }
     }
+
+    .history {
+      &-item {
+        position: relative;
+        &:hover {
+          .history-link {
+            .icon {
+              transform: rotate(180deg);
+            }
+          }
+          .history-dropdown {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: all;
+            transform: translateY(0px);
+          }
+        }
+      }
+      &-link {
+        @include font(14px, 20px, 400, gray-2);
+        text-transform: capitalize;
+        display: flex;
+        align-items: center;
+        .icon {
+          margin-left: 8px;
+          @include trans(0.3s, ease-in-out);
+        }
+      }
+
+      &-dropdown {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 150px;
+        border-radius: 12px;
+        z-index: 999;
+        background-color: #fff;
+        box-shadow: 0px 2px 32px 0px #0022330d;
+        padding: 12px 0px;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: all;
+        transform: translateY(-10px);
+        @include trans(0.4s, ease-in-out);
+
+        &__link {
+          font-size: 14px;
+          line-height: 20px;
+          width: 100%;
+          padding: 6px 20px;
+          color: color(gray-2);
+          &:hover {
+            color: #fff;
+            background-color: color(primary-4);
+            @include trans(0.4s, ease-in);
+          }
+        }
+      }
+    }
   }
 
   &__navigation {
