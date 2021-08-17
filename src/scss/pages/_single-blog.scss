@@ -288,4 +288,48 @@
       }
     }
   }
+
+  &__user-comments {
+    .title {
+      margin-bottom: 24px;
+    }
+
+    .user-comments {
+      &__item {
+        display: flex;
+        align-items: flex-start;
+        padding: 24px 0px;
+        border-bottom: 1px solid #e6e6e6;
+        &:nth-child(1) {
+          padding-top: 0px;
+        }
+        &:nth-last-child(1) {
+          border-bottom: 0px;
+        }
+        .user-img {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          margin-right: 12px;
+          overflow: hidden;
+          flex-shrink: 0;
+        }
+        .user-info {
+          .user-name {
+            color: color(g);
+            text-transform: capitalize;
+            margin-bottom: 6px;
+            .date {
+              color: color(gray-5);
+              margin-left: 6px;
+            }
+          }
+        }
+      }
+
+      &__text {
+        color: color(gray-2);
+      }
+    }
+  }
 }
