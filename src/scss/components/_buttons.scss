@@ -151,3 +151,31 @@
     }
   }
 }
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  &--wa {
+    background-color: #25d366;
+  }
+  &--fb {
+    background-color: #3b5998;
+  }
+  &--tw {
+    background-color: #1da1f2;
+  }
+  &--in {
+    background-color: #0077b5;
+  }
+  &--p {
+    background-color: #cb2027;
+  }
+  &--lk {
+    background-color: #636a80;
+  }
+}
