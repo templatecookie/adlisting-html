@@ -207,4 +207,70 @@
       margin: 0px 12px;
     }
   }
+
+  &__upgrade-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include max(991px) {
+      // text-align: ;
+      align-items: flex-start;
+      flex-direction: column;
+    }
+    .info {
+      h2 {
+        color: color(g);
+        text-transform: capitalize;
+        margin-bottom: 12px;
+      }
+      p {
+        color: color(gray-4);
+      }
+    }
+
+    .action {
+      display: flex;
+      align-items: center;
+
+      @include max(991px) {
+        margin-top: 16px;
+      }
+      @include max(360px) {
+        flex-direction: column;
+        width: 100%;
+      }
+      .btn {
+        &:nth-child(1) {
+          color: #636a80;
+          border-color: #ebeef7;
+          margin-right: 16px;
+          @include max(360px) {
+            margin-right: 0px;
+            margin-bottom: 16px;
+          }
+        }
+        @include max(360px) {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  &__upgrade,
+  &__bill-two {
+    margin-bottom: 24px;
+  }
+
+  &-card--benefits {
+    @include max(991px) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &-card--payment-method {
+    @include max(991px) {
+      height: auto !important;
+      margin-bottom: 24px;
+    }
+  }
 }

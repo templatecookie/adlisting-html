@@ -1201,9 +1201,6 @@
 
     .dashboard-card__title {
       padding: 0px 24px;
-      @include max(390px) {
-        margin-bottom: 0px;
-      }
     }
 
     &__history {
@@ -1211,7 +1208,7 @@
         display: flex;
         align-items: center;
         @include max(390px) {
-          display: none;
+          // display: none;
         }
         &-item {
           border-bottom: 1px solid #ebeef7;
@@ -1221,13 +1218,42 @@
           &:nth-child(2) {
             width: 40%;
           }
+          &:nth-child(1) {
+            @include max(390px) {
+              display: none;
+            }
+            h6 {
+              @include max(390px) {
+                display: none;
+              }
+            }
+          }
+          &:nth-child(2) {
+            @include max(390px) {
+              width: 70%;
+            }
+            h6 {
+              @include max(390px) {
+                display: none;
+              }
+            }
+          }
           &:nth-child(3) {
             width: 25%;
+            @include max(390px) {
+              width: 30%;
+            }
           }
 
-          h6 {
+          h6,
+          h5 {
             color: color(gray-5);
             text-transform: capitalize;
+          }
+          h5 {
+            @include min(391px) {
+              display: none;
+            }
           }
         }
       }
@@ -1281,6 +1307,7 @@
   }
 
   &--payment-method {
+    height: 100%;
     &__logo {
       display: flex;
       align-items: center;
