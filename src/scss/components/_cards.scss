@@ -1329,4 +1329,88 @@
       }
     }
   }
+
+  &--invoice {
+    position: relative;
+    &-info {
+      h2 {
+        margin-bottom: 8px;
+      }
+    }
+
+    &__details {
+      &-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px;
+        &:nth-last-child(1) {
+          margin-bottom: 0px;
+        }
+        .title {
+          color: color(gray-2);
+          margin-right: 30px;
+        }
+        .plan-info {
+          color: color(gray-5);
+        }
+      }
+    }
+
+    &__icon {
+      position: absolute;
+      top: 22px;
+      right: 22px;
+      width: 64px;
+      height: 64px;
+      @include flex(center, center);
+      border-radius: 50%;
+      background-color: color(primary-9);
+    }
+  }
+
+  &--benefits {
+    .dashboard__benefits {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      @include max(460px) {
+        flex-direction: column;
+      }
+      &-left {
+        width: 55%;
+        @include max(460px) {
+          width: 100%;
+          margin-bottom: 16px;
+        }
+      }
+      &-right {
+        width: 45%;
+        @include max(460px) {
+          width: 100%;
+        }
+      }
+
+      &-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;
+        &:nth-last-child(1) {
+          margin-bottom: 0px;
+        }
+        .icon {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 20px;
+          height: 20px;
+          margin-right: 8px;
+          border-radius: 50%;
+          background-color: color(primary-9);
+        }
+        p {
+          color: color(gray-3);
+        }
+      }
+    }
+  }
 }
