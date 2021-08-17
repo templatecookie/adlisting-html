@@ -86,6 +86,12 @@
     @include max(991px) {
       flex-direction: column;
     }
+    .input-select {
+      width: 100%;
+      &:nth-child(1) {
+        margin-right: 18px;
+      }
+    }
   }
 
   &__input {

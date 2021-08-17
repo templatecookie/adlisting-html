@@ -477,7 +477,52 @@
                             </span>
                         </div>
                     </div>
-                  
+                    <div class="col-xl-9">
+                         <div class="dashboard__filter">
+                              <div class="dashboard__filter-left">
+                                  <form action="#">
+                                      <div class="input-field">
+                                          <input type="text" placeholder="Ads, Title, keyword...">
+                                          <button class="icon icon-search">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#00AAFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M21.0004 21.0004L16.6504 16.6504" stroke="#00AAFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                
+                                          </button>
+                                      </div>
+                                  </form>
+                              </div>
+                              <div class="dashboard__filter-right"> 
+                                   <div class="dashboard__filter-group">
+                                    <div class="input-select">
+                                        <select id="category">
+                                            <option value="01">Category 01</option>
+                                            <option value="02">Category 02</option>
+                                            <option value="03">Category 03</option>
+                                            <option value="04">Category 04</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-select">
+                                        <select id="recent">
+                                            <option value="01">Recently Posted</option>
+                                            <option value="02">Recent 02</option>
+                                            <option value="03">Recent 03</option>
+                                            <option value="04">Recent 04</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-select">
+                                        <select id="view">
+                                            <option value="01">All 01</option>
+                                            <option value="02">All 02</option>
+                                            <option value="03">All 03</option>
+                                            <option value="04">All 04</option>
+                                        </select>
+                                    </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -714,12 +759,43 @@
         </footer>
         <!-- footer section end -->
 
-        <!-- <script src="src/js/plugins/jquery.min.js"></script> -->
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-        <!-- <script src="src/js/plugins/slick.min.js"></script> -->
-        <!-- <script src="src/js/plugins/chart.min.js"></script> -->
+        <script src="src/js/plugins/bvselect.js"></script>
         <script type="module" src="/main.js"></script>
                <script src="src/js/app.js"></script>
         <script src="src/js/pages/dashboard.js"></script>
+        <!-- <script src="src/js/pages/bbselect.js"></script> -->
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+  var category = new BVSelect({
+    selector: '#category',
+    searchbox: false,
+    offset: true,
+    placeholder: 'All category',
+    search_autofocus: true,
+    breakpoint: 450,
+  });
+  var recent = new BVSelect({
+    selector: '#recent',
+    searchbox: false,
+    offset: true,
+    placeholder: 'Recently added',
+    search_placeholder: 'Search...',
+    search_autofocus: true,
+    breakpoint: 450,
+  });
+  var all = new BVSelect({
+    selector: '#view',
+    searchbox: false,
+    offset: true,
+    placeholder: 'All',
+    search_placeholder: 'Search...',
+    search_autofocus: true,
+    breakpoint: 450,
+  });
+});
+        </script>
+
     </body>
 </html>
