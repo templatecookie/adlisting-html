@@ -92,6 +92,14 @@
     position: relative;
     width: 100%;
     height: 48px;
+
+    &-group {
+      margin-bottom: 16px;
+      label {
+        margin-bottom: 8px;
+      }
+    }
+
     input {
       width: inherit;
       height: inherit;
