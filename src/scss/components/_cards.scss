@@ -39,6 +39,17 @@
     }
   }
 
+  &__tag {
+    position: absolute;
+    top: 20px;
+    left: -30px;
+    padding: 4px 32px;
+    color: #fff;
+    text-transform: uppercase;
+    transform: rotate(-45deg);
+    background-color: color(danger-4);
+  }
+
   &__caption-title {
     color: color(g);
   }
