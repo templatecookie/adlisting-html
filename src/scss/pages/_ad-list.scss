@@ -98,3 +98,35 @@
     }
   }
 }
+
+.related-post {
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    @include max(380px) {
+      flex-direction: column;
+    }
+    h2 {
+      @include max(380px) {
+        margin-bottom: 24px;
+      }
+    }
+
+    .slider-btn {
+      button {
+        padding: 12px;
+        display: inline-block;
+        border-radius: 4px;
+        border: 2px solid #e8f7ff;
+        margin-right: 16px;
+      }
+    }
+  }
+  &__slider {
+    &-item {
+      margin: 0px 12px;
+    }
+  }
+}
