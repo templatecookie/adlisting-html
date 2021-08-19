@@ -34,6 +34,19 @@
     }
   }
 
+  label {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: color(g);
+    text-transform: capitalize;
+    margin-bottom: 8px;
+    span {
+      text-transform: lowercase;
+      color: color(gray-4);
+    }
+  }
+
   &__group {
     display: flex;
     align-items: center;

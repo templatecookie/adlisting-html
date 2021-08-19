@@ -10,7 +10,7 @@
         <link rel="icon" type="image/png" sizes="32x32" href="src/images/favicon_io/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="src/images/favicon_io/favicon-16x16.png" />
         <link rel="manifest" href="src/images/favicon_io/site.webmanifest" />
-        <link rel="stylesheet" href="src/js/plugins/css/slick.css" />
+        <link rel="stylesheet" href="src/js/plugins/css/intlTelInput.css">
     </head>
 
     <body class="">
@@ -477,7 +477,158 @@
                             </span>
                         </div>
                     </div>
-                  
+                    <div class="col-xl-9">
+                        <div class="dashboard-setting">
+                            <!-- Account Information -->
+                            <div class="dashboard-setting__box account-information">
+                                <h2 class="text--body-2-600">Account Information</h2>
+                                <div class="user-info">
+                                    <div class="img">
+                                        <div class="img-wrapper">
+                                            <img src="src/images/users/img-01.png" alt="user-img">
+                                        </div>
+                                        <a href="#" class="btn btn--bg">
+                                            Choose Image
+                                        </a>
+                                    </div>
+                                    <div class="email">
+                                        <h2 class="text--body-3-600">Email: <span>jenny.wilson@gmail.com</span></h2>
+                                    </div>
+                                </div>
+                                <form action="#">
+                                    <div class="input-field__group">
+                                        <div class="input-field">
+                                            <label for="name">Full Name</label>
+                                            <input type="text" placeholder="Full name">
+                                        </div>
+                                        <div class="input-field telephone">
+                                            <label for="telephone">phone Number</label>
+                                            <input type="tel" id="telephone" placeholder="Phone" >
+                                        </div>
+                                    </div>
+                                    <div class="input-field__group">
+                                        <div class="input-field">
+                                            <label for="email">Email</label>
+                                            <input type="text" placeholder="Email Address">
+                                        </div>
+                                        <div class="input-field">
+                                            <label for="email">Web site Links <span>(optional)</span></label>
+                                            <input type="text" placeholder="website url">
+                                        </div>
+                                    </div>
+                                    <button class="btn">
+                                        Save Changes
+                                    </button>
+                                </form>
+                            </div>
+                            <!-- change Password -->
+                            <div class="dashboard-setting__box change-password">
+                                <h2 class="text--body-2-600">Change Password</h2>
+                                <form action="#">
+                                    <div class="input-field__group">
+                                        <div class="input-field">
+                                            <label for="cpassword">current password</label>
+                                            <input type="password" placeholder="Password" id="cpassword">
+
+                                            <span class="icon icon--eye" onclick="showPassword('cpassword',this)">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1 12C1 12 5 4 12 4C19 4 23 12 23 12C23 12 19 20 12 20C5 20 1 12 1 12Z" stroke="#191F33" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" stroke="#191F33" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="icon icon--success">
+                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <rect width="20" height="20" rx="10" fill="#27C200"></rect>
+                                                    <path d="M14 7L8.5 12.5L6 10" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="icon icon--alart">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M10.29 3.86L1.82002 18C1.64539 18.3024 1.55299 18.6453 1.55201 18.9945C1.55103 19.3437 1.64151 19.6871 1.81445 19.9905C1.98738 20.2939 2.23675 20.5467 2.53773 20.7239C2.83871 20.901 3.18082 20.9962 3.53002 21H20.47C20.8192 20.9962 21.1613 20.901 21.4623 20.7239C21.7633 20.5467 22.0127 20.2939 22.1856 19.9905C22.3585 19.6871 22.449 19.3437 22.448 18.9945C22.4471 18.6453 22.3547 18.3024 22.18 18L13.71 3.86C13.5318 3.56611 13.2807 3.32312 12.9812 3.15448C12.6817 2.98585 12.3438 2.89725 12 2.89725C11.6563 2.89725 11.3184 2.98585 11.0188 3.15448C10.7193 3.32312 10.4683 3.56611 10.29 3.86Z" fill="#FF4F4F"></path>
+                                                    <path d="M12 9V13" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M12 17H12.01" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>
+                                            </span>
+
+                                        </div>
+                                        <div class="input-field">
+                                            <label for="npassword">New password</label>
+                                            <input type="password" placeholder="Password" id="npassword">
+
+                                            <span class="icon icon--eye" onclick="showPassword('npassword',this)">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1 12C1 12 5 4 12 4C19 4 23 12 23 12C23 12 19 20 12 20C5 20 1 12 1 12Z" stroke="#191F33" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" stroke="#191F33" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="icon icon--success">
+                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <rect width="20" height="20" rx="10" fill="#27C200"></rect>
+                                                    <path d="M14 7L8.5 12.5L6 10" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="icon icon--alart">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M10.29 3.86L1.82002 18C1.64539 18.3024 1.55299 18.6453 1.55201 18.9945C1.55103 19.3437 1.64151 19.6871 1.81445 19.9905C1.98738 20.2939 2.23675 20.5467 2.53773 20.7239C2.83871 20.901 3.18082 20.9962 3.53002 21H20.47C20.8192 20.9962 21.1613 20.901 21.4623 20.7239C21.7633 20.5467 22.0127 20.2939 22.1856 19.9905C22.3585 19.6871 22.449 19.3437 22.448 18.9945C22.4471 18.6453 22.3547 18.3024 22.18 18L13.71 3.86C13.5318 3.56611 13.2807 3.32312 12.9812 3.15448C12.6817 2.98585 12.3438 2.89725 12 2.89725C11.6563 2.89725 11.3184 2.98585 11.0188 3.15448C10.7193 3.32312 10.4683 3.56611 10.29 3.86Z" fill="#FF4F4F"></path>
+                                                    <path d="M12 9V13" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M12 17H12.01" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>
+                                            </span>
+
+                                        </div>
+                                        <div class="input-field">
+                                            <label for="confirmpass">Confirm password</label>
+                                            <input type="password" placeholder="Password" id="confirmpass">
+
+                                            <span class="icon icon--eye" onclick="showPassword('confirmpass',this)">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1 12C1 12 5 4 12 4C19 4 23 12 23 12C23 12 19 20 12 20C5 20 1 12 1 12Z" stroke="#191F33" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" stroke="#191F33" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="icon icon--success">
+                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <rect width="20" height="20" rx="10" fill="#27C200"></rect>
+                                                    <path d="M14 7L8.5 12.5L6 10" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="icon icon--alart">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M10.29 3.86L1.82002 18C1.64539 18.3024 1.55299 18.6453 1.55201 18.9945C1.55103 19.3437 1.64151 19.6871 1.81445 19.9905C1.98738 20.2939 2.23675 20.5467 2.53773 20.7239C2.83871 20.901 3.18082 20.9962 3.53002 21H20.47C20.8192 20.9962 21.1613 20.901 21.4623 20.7239C21.7633 20.5467 22.0127 20.2939 22.1856 19.9905C22.3585 19.6871 22.449 19.3437 22.448 18.9945C22.4471 18.6453 22.3547 18.3024 22.18 18L13.71 3.86C13.5318 3.56611 13.2807 3.32312 12.9812 3.15448C12.6817 2.98585 12.3438 2.89725 12 2.89725C11.6563 2.89725 11.3184 2.98585 11.0188 3.15448C10.7193 3.32312 10.4683 3.56611 10.29 3.86Z" fill="#FF4F4F"></path>
+                                                    <path d="M12 9V13" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M12 17H12.01" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>
+                                            </span>
+
+                                        </div>
+                                      
+                                    </div>
+                                    <button class="btn">
+                                        Save Changes
+                                    </button>
+                                </form>
+                            </div>
+                            <!-- Delete Account -->
+                            <div class="dashboard-setting__box delete-account">
+                                <h2 class="text--body-2-600">Delete Account</h2>
+                                <p class="delete-account__details text--body-3">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed accumsan felis nunc, ut sagittis augue imperdiet quis. Vestibulum bibendum ultricies ipsum, id suscipit ligula facilisis ac. Praesent ultricies augue metus
+                                </p>
+                                <a href="#" class="btn">
+                                    <span class="icon--left">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M20.25 5.25L3.75 5.25001" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M9.75 9.75V15.75" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14.25 9.75V15.75" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M18.75 5.25V19.5C18.75 19.6989 18.671 19.8897 18.5303 20.0303C18.3897 20.171 18.1989 20.25 18 20.25H6C5.80109 20.25 5.61032 20.171 5.46967 20.0303C5.32902 19.8897 5.25 19.6989 5.25 19.5V5.25" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M15.75 5.25V3.75C15.75 3.35218 15.592 2.97064 15.3107 2.68934C15.0294 2.40804 14.6478 2.25 14.25 2.25H9.75C9.35218 2.25 8.97064 2.40804 8.68934 2.68934C8.40804 2.97064 8.25 3.35218 8.25 3.75V5.25" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                    Delete Account
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -714,12 +865,18 @@
         </footer>
         <!-- footer section end -->
 
-        <!-- <script src="src/js/plugins/jquery.min.js"></script> -->
+        <script src="src/js/plugins/jquery.min.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-        <!-- <script src="src/js/plugins/slick.min.js"></script> -->
-        <!-- <script src="src/js/plugins/chart.min.js"></script> -->
+        <script src="src/js/plugins/intlTelInput.min.js"></script>
         <script type="module" src="/main.js"></script>
-               <script src="src/js/app.js"></script>
+        <script src="src/js/app.js"></script>
         <script src="src/js/pages/dashboard.js"></script>
+        <script>
+          // Vanilla Javascript
+                var input = document.querySelector("#telephone");
+                window.intlTelInput(input,({
+                preferredCountries: ["us","bd" ],
+                }));
+        </script>
     </body>
 </html>
