@@ -47,12 +47,41 @@
     }
   }
 
+  .iti {
+    width: 100%;
+    display: block;
+    &__arrow {
+      border: solid color(gray-5);
+      border-width: 0 1px 1px 0;
+      display: inline-block;
+      padding: 3px;
+      margin-left: 8px;
+      margin-bottom: 4px;
+      transform: rotate(45deg);
+      @include trans(0.4s, ease-in-out);
+
+      &--up {
+        margin-bottom: 0px;
+        transform: rotate(-135deg);
+      }
+    }
+  }
+
   &__group {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    .input-field {
+
+    @include max(767px) {
+      flex-direction: column;
+    }
+
+    .input-field,
+    .input-select {
       margin-right: 16px;
+      @include max(767px) {
+        margin-right: 0px;
+      }
       &:nth-last-child(1) {
         margin-right: 0px;
       }
@@ -75,6 +104,18 @@
     position: relative;
     width: 100%;
     margin-bottom: 16px;
+
+    label {
+      @include font(14px, 20px, 400, g);
+      width: 100%;
+      text-align: left;
+      margin-bottom: 8px;
+      text-transform: capitalize;
+      span {
+        text-transform: lowercase;
+        color: color(gray-4);
+      }
+    }
 
     textarea {
       padding: 12px 18px;
@@ -99,13 +140,20 @@
 }
 
 .input-select {
+  position: relative;
+  width: 100%;
   margin-bottom: 16px;
+
   label {
     @include font(14px, 20px, 400, g);
     width: 100%;
     text-align: left;
     margin-bottom: 8px;
     text-transform: capitalize;
+    span {
+      text-transform: lowercase;
+      color: color(gray-4);
+    }
   }
 
   .bv_mainselect {
@@ -163,6 +211,23 @@
           cursor: pointer;
         }
       }
+    }
+  }
+}
+
+.form-check {
+  display: flex;
+  align-items: center;
+  input {
+    margin-right: 8px;
+  }
+  label {
+    @include font(14px, 20px, 400, gray-3);
+    text-transform: capitalize;
+    margin-top: 4px;
+    span {
+      text-transform: lowercase;
+      color: color(gray-4);
     }
   }
 }

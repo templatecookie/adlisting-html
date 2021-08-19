@@ -400,28 +400,6 @@
         }
       }
 
-      .input-field {
-        .iti {
-          width: 100%;
-          display: block;
-          &__arrow {
-            border: solid color(gray-5);
-            border-width: 0 1px 1px 0;
-            display: inline-block;
-            padding: 3px;
-            margin-left: 8px;
-            margin-bottom: 4px;
-            transform: rotate(45deg);
-            @include trans(0.4s, ease-in-out);
-
-            &--up {
-              margin-bottom: 0px;
-              transform: rotate(-135deg);
-            }
-          }
-        }
-      }
-
       .btn {
         margin-top: 8px;
       }
@@ -452,6 +430,160 @@
         background-color: color(danger-4);
         &:hover {
           background-color: color(danger-3);
+        }
+      }
+    }
+  }
+
+  // Post Ads
+  &-post {
+    position: relative;
+    padding: 32px 0px;
+    border-radius: 12px;
+    border: 1px solid #ebeef7;
+    background-color: #fff;
+    margin-left: 16px;
+    @include max(767px) {
+      margin-left: 0px;
+    }
+    &__ads {
+      .row {
+        .col-lg-6 {
+          &:nth-child(1) {
+            padding-right: 9px;
+          }
+          &:nth-last-child(1) {
+            padding-left: 9px;
+          }
+        }
+      }
+    }
+
+    &__nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 0px 32px;
+      margin-right: 0px;
+      margin-bottom: 32px !important;
+      border-bottom: 1px solid #ebeef7;
+      @include max(767px) {
+        padding: 0px 16px;
+      }
+    }
+
+    &__item {
+      margin-right: 16px;
+      @include max(767px) {
+        margin-bottom: 16px;
+        margin-right: 0px;
+        width: 100%;
+      }
+    }
+
+    &__link {
+      display: flex;
+      align-items: center;
+      padding: 0px;
+      padding-bottom: 32px;
+      border-radius: 0px !important;
+      margin: 0px !important;
+      border-bottom: 2px solid transparent !important;
+      @include max(767px) {
+        width: inherit;
+      }
+      &:nth-last-child(1) {
+        margin-right: 0px;
+      }
+      &.active {
+        background-color: transparent !important;
+        border-bottom: 2px solid color(primary-4) !important;
+        .icon {
+          background-color: color(primary-4) !important;
+        }
+      }
+
+      &.success {
+        .icon {
+          &--default {
+            display: none;
+          }
+          &--success {
+            display: block;
+          }
+        }
+      }
+
+      .icon {
+        color: #fff;
+        padding: 16px;
+        border-radius: 50%;
+        margin-right: 16px;
+        background-color: color(gray-7) !important;
+        &--success {
+          display: none;
+          background-color: color(success-4) !important;
+        }
+      }
+      .step-info {
+        text-align: left;
+        h2 {
+          color: color(g);
+          margin-bottom: 6px;
+          text-transform: capitalize;
+        }
+        p {
+          color: color(gray-4);
+          text-transform: capitalize;
+        }
+      }
+    }
+
+    &__content {
+      padding: 0px 32px;
+      @include max(767px) {
+        padding: 0px 16px;
+      }
+    }
+
+    &__ads-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 50px;
+      .dashboard-post__action-btns {
+        margin-top: 0px;
+      }
+    }
+
+    &__action-btns {
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      margin-top: 50px;
+      @include max(540px) {
+        flex-direction: column;
+      }
+      .btn {
+        margin-right: 24px !important;
+        @include max(767px) {
+          flex-shrink: 0;
+        }
+        @include max(540px) {
+          margin-right: 0px !important;
+          flex-shrink: 0;
+          width: 100%;
+          margin-bottom: 16px;
+        }
+        &:nth-child(1) {
+          color: #636a80;
+          border-color: #ebeef7;
+          @include trans(0.3s, ease-in);
+          margin-right: 0px;
+          &:hover {
+            border-color: color(gray-6);
+          }
         }
       }
     }

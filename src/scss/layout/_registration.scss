@@ -85,18 +85,6 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 32px;
-    .form-check {
-      display: flex;
-      align-items: center;
-      input {
-        margin-right: 8px;
-      }
-      label {
-        @include font(14px, 20px, 400, gray-3);
-        text-transform: capitalize;
-        margin-top: 4px;
-      }
-    }
   }
 
   &__forget-pass {
