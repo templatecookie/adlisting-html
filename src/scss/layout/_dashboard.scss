@@ -604,5 +604,42 @@
         }
       }
     }
+
+    &.post-publish {
+      padding: 132px 30px;
+      text-align: center;
+      @include max(480px) {
+        border: 0px;
+        padding: 60px 0px;
+      }
+      .icon {
+        margin-bottom: 32px;
+      }
+      h2 {
+        color: color(g);
+        margin-bottom: 24px;
+        @include max(480px) {
+          font-size: 32px;
+          line-height: 46px;
+        }
+      }
+      .post-publish__brief {
+        color: color(gray-2);
+        width: 495px;
+        margin: auto;
+        margin-bottom: 32px;
+        @include max(767px) {
+          width: 100%;
+        }
+      }
+      .btns-group {
+        .btn {
+          margin-right: 12px;
+          &:nth-last-child(1) {
+            margin-right: 0px;
+          }
+        }
+      }
+    }
   }
 }
