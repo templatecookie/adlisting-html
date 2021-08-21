@@ -1064,6 +1064,9 @@
   padding: 24px;
   box-shadow: 0px 2px 32px 0px #0022330d;
 
+  #adsview {
+    display: none;
+  }
   &__title {
     @include font(20px, 32px, 600, g);
     margin-bottom: 24px;
