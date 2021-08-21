@@ -316,7 +316,7 @@
       .btn {
         margin-right: 16px;
 
-        @include max(360px) {
+        @include max(380px) {
           margin-bottom: 16px;
           margin-right: 0px;
         }
