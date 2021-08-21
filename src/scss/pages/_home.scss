@@ -42,7 +42,7 @@
     justify-content: space-between;
     padding: 50px 70px;
     border-radius: 12px;
-    background-color: color(primary);
+    background-color: color(primary) !important;
     @include max(991px) {
       flex-direction: column;
     }
