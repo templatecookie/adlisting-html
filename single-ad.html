@@ -10,7 +10,7 @@
         <link rel="icon" type="image/png" sizes="32x32" href="src/images/favicon_io/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="src/images/favicon_io/favicon-16x16.png" />
         <link rel="manifest" href="src/images/favicon_io/site.webmanifest" />
-        <link rel="stylesheet" href="src/js/plugins/css/slick.css" />
+        <!-- <link rel="stylesheet" href="src/js/plugins/css/slick.css" /> -->
     </head>
 
     <body>
@@ -305,7 +305,7 @@
         <section class="product-ad section">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-9">
+                    <div class="col-xl-9">
                         <div class="product-ad__badge">
                             <div class="badge badge--warning">
                                 Featrued
@@ -390,7 +390,80 @@
                             </ul>
                         </div>
 
-                        <div class="product-ad__gallery"></div>
+                        <div class="product-ad__gallery">
+                            <div class="product-ad__slider-content-top">
+                                <div class="product-ad__slider product-slider-for">
+                                    <div class="product-ad__slider-item">
+                                        <img src="src/images/slider/img-lg-01.png" alt="product-img" />
+                                    </div>
+                                    <div class="product-ad__slider-item">
+                                        <img src="src/images/slider/img-lg-02.png" alt="product-img" />
+                                    </div>
+                                    <div class="product-ad__slider-item">
+                                        <img src="src/images/slider/img-lg-03.png" alt="product-img" />
+                                    </div>
+                                    <div class="product-ad__slider-item">
+                                        <img src="src/images/slider/img-lg-04.png" alt="product-img" />
+                                    </div>
+                                    <div class="product-ad__slider-item">
+                                        <img src="src/images/slider/img-lg-05.png" alt="product-img" />
+                                    </div>
+                                    <div class="product-ad__slider-item">
+                                        <img src="src/images/slider/img-lg-06.png" alt="product-img" />
+                                    </div>
+                                    <div class="product-ad__slider-item">
+                                        <img src="src/images/slider/img-lg-01.png" alt="product-img" />
+                                    </div>
+                                    <div class="product-ad__slider-item">
+                                        <img src="src/images/slider/img-lg-02.png" alt="product-img" />
+                                    </div>
+                                    <div class="product-ad__slider-item">
+                                        <img src="src/images/slider/img-lg-03.png" alt="product-img" />
+                                    </div>
+                                </div>
+                                <a class="view" href="">
+                                    <span class="icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M15.75 4.5H19.5V8.25" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M8.25 19.5H4.5V15.75" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M19.5 15.75V19.5H15.75" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M4.5 8.25V4.5H8.25" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="product-ad__slider-content-bottom">
+                                <div class="product-slider-nav">
+                                    <div class="product-slider-nav__item">
+                                        <img src="src/images/slider/img-lg-01.png" alt=" product-sm" />
+                                    </div>
+                                    <div class="product-slider-nav__item">
+                                        <img src="src/images/slider/img-lg-02.png" alt=" product-sm" />
+                                    </div>
+                                    <div class="product-slider-nav__item">
+                                        <img src="src/images/slider/img-lg-03.png" alt=" product-sm" />
+                                    </div>
+                                    <div class="product-slider-nav__item">
+                                        <img src="src/images/slider/img-lg-04.png" alt=" product-sm" />
+                                    </div>
+                                    <div class="product-slider-nav__item">
+                                        <img src="src/images/slider/img-lg-05.png" alt=" product-sm" />
+                                    </div>
+                                    <div class="product-slider-nav__item">
+                                        <img src="src/images/slider/img-lg-06.png" alt=" product-sm" />
+                                    </div>
+                                    <div class="product-slider-nav__item">
+                                        <img src="src/images/slider/img-lg-01.png" alt=" product-sm" />
+                                    </div>
+                                    <div class="product-slider-nav__item">
+                                        <img src="src/images/slider/img-lg-02.png" alt=" product-sm" />
+                                    </div>
+                                    <div class="product-slider-nav__item">
+                                        <img src="src/images/slider/img-lg-03.png" alt=" product-sm" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="product-ad__description">
                             <h2 class="text--body-1-600">Descriptions</h2>
 
@@ -485,7 +558,10 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-3"></div>
+                    <div class="col-xl-3">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, reiciendis pariatur! Molestias cumque laborum, nemo eos placeat corrupti amet ullam odio sit id dolores architecto nobis aspernatur laudantium,
+                        consectetur a!
+                    </div>
                 </div>
             </div>
         </section>
@@ -989,8 +1065,60 @@
         <script src="src/js/plugins/jquery.min.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
         <script type="module" src="/main.js"></script>
+        <script src="src/js/plugins/venobox.min.js"></script>
         <script src="src/js/plugins/slick.min.js"></script>
         <script>
+            $(".product-slider-for").slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                fade: true,
+                asNavFor: ".product-slider-nav",
+                autoplay: false,
+            });
+            $(".product-slider-nav").slick({
+                slidesToShow: 6,
+                slidesToScroll: 1,
+                asNavFor: ".product-slider-for",
+                dots: false,
+                centerMode: true,
+                focusOnSelect: true,
+                centerPadding: "0px",
+                arrows: true,
+                autoplay: false,
+                prevArrow: `<span class="slider-arrow slider-arrow--prev">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 19.5L7.5 12L15 4.5" stroke="#191F33" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+    </span>`,
+                nextArrow: `<span class="slider-arrow slider-arrow--next">
+    
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9 19.5L16.5 12L9 4.5" stroke="#191F33" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+
+    </span>`,
+                responsive: [
+                    {
+                        breakpoint: 992,
+                        settings: {
+                            slidesToShow: 4,
+                            slidesToScroll: 1,
+                        },
+                    },
+
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                        },
+                    },
+                ],
+            });
+
             $(".related-post__slider").slick({
                 infinite: true,
                 slidesToShow: 4,
