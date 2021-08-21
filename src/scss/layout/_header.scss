@@ -26,7 +26,9 @@
 
     .menu {
       &__item {
-        margin-right: 12px !important;
+        @include max(1199px) {
+          margin-right: 12px !important;
+        }
       }
     }
   }
