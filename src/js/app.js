@@ -22,7 +22,7 @@
 // });
 
 // Cards Edit menu
-const editBtn = document.querySelectorAll('.edit__btn-icon');
+const editBtn = document.querySelectorAll('.edit-icon');
 
 editBtn.forEach((dropMenu) => {
   dropMenu.addEventListener('click', function () {

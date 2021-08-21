@@ -101,6 +101,30 @@
         padding: 16px 20px;
       }
 
+      &__info {
+        &-status {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-top: 18px;
+          .tag-status {
+            display: flex;
+            align-items: center;
+
+            &--active {
+              color: color(success-4);
+            }
+            &--expire {
+              color: color(danger-4);
+            }
+
+            .icon {
+              margin-right: 8px;
+            }
+          }
+        }
+      }
+
       &__img-wrapper {
         height: 250px;
         border-radius: 8px 8px 0px 0px;
@@ -127,7 +151,6 @@
   &--two {
     display: flex;
     align-items: center;
-    // height: 100%;
     @include max(767px) {
       flex-direction: column;
     }
@@ -1375,6 +1398,140 @@
         p {
           color: color(gray-3);
         }
+      }
+    }
+  }
+}
+
+.card-edit {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  border-radius: 12px;
+  transition: all 0.4s, ease-in-out;
+  &:hover {
+    background-color: #fff;
+    box-shadow: 0px 12px 80px 0px #001a661a;
+  }
+  &__item {
+    &.product {
+      &-name {
+        display: flex;
+        align-items: center;
+        flex-shrink: 0;
+        @include max(991px) {
+          flex-direction: column;
+          align-items: flex-start;
+          margin-right: 16px;
+        }
+        .img {
+          width: 80px;
+          height: 80px;
+          margin-right: 16px;
+          border-radius: 8px;
+          overflow: hidden;
+          flex-shrink: 0;
+          @include max(991px) {
+            width: 160px;
+            margin-right: 16px;
+            margin-bottom: 12px;
+          }
+        }
+        h2 {
+          color: color(g);
+        }
+      }
+
+      &-date {
+        color: color(gray-4);
+      }
+
+      &-price {
+        color: color(gray-3);
+      }
+
+      &-status {
+        .tag-status {
+          display: flex;
+          align-items: center;
+
+          &--active {
+            color: color(success-4);
+          }
+          &--expire {
+            color: color(danger-4);
+          }
+
+          .icon {
+            margin-right: 8px;
+          }
+        }
+      }
+
+      &-action {
+        display: flex;
+        align-items: center;
+        .btn {
+          display: flex;
+          align-items: center;
+          margin-right: 12px;
+          color: color(gray-2);
+          background-color: color(gray-10);
+          flex-shrink: 0;
+        }
+
+        .edit {
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 50px;
+          height: 50px;
+          border-radius: 4px;
+          text-align: center;
+          background-color: color(gray-10);
+          transition: all 0.4s ease-in;
+          flex-shrink: 0;
+          &:hover {
+            background-color: color(primary-4) !important;
+            .edit-icon {
+              .icon-toggle {
+                color: #fff;
+              }
+            }
+          }
+          &-icon {
+            position: static;
+            // color: #fff;
+            .icon-toggle {
+              color: color(gray-2);
+            }
+          }
+          &-dropdown {
+            bottom: auto;
+            top: 100%;
+            transform: translateY(12px);
+          }
+        }
+      }
+    }
+
+    &:nth-child(1) {
+      width: 35%;
+    }
+    &:nth-child(2),
+    &:nth-child(3),
+    &:nth-child(4) {
+      width: 15%;
+      @include max(991px) {
+        // width: 10%;
+      }
+    }
+    &:nth-child(5) {
+      width: 20%;
+      justify-content: flex-end;
+      @include max(991px) {
+        width: 25%;
       }
     }
   }

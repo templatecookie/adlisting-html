@@ -642,4 +642,57 @@
       }
     }
   }
+
+  &__myads {
+    margin-left: 16px;
+    @include max(767px) {
+      margin-left: 0px;
+    }
+    @include max(767px) {
+      margin-top: 24px;
+    }
+    .header {
+      display: flex;
+      padding-bottom: 20px;
+      margin-top: 32px;
+      margin-bottom: 24px;
+      background-color: #fff;
+      box-shadow: 0px -1px 0px 0px #ebeef7 inset;
+      @include max(767px) {
+        display: none;
+      }
+      &-item {
+        &:nth-child(1) {
+          width: 40%;
+        }
+        &:nth-child(2),
+        &:nth-child(3),
+        &:nth-child(4),
+        &:nth-child(5) {
+          width: 15%;
+        }
+      }
+    }
+
+    .body {
+      &-item {
+        &--lg {
+          @include max(767px) {
+            display: none;
+          }
+        }
+        &--sm {
+          margin-bottom: 18px;
+          @include min(768px) {
+            display: none;
+          }
+        }
+        .card-edit {
+          @include max(767px) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
 }
