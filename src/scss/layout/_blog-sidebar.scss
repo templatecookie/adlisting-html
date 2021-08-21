@@ -175,7 +175,8 @@
           margin-bottom: 0px;
         }
 
-        &:hover {
+        &:hover,
+        &.active {
           color: #fff;
           background-color: color(primary-4);
         }
