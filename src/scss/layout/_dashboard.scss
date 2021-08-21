@@ -1037,11 +1037,17 @@
           width: 100%;
           position: relative;
           overflow: hidden;
-          input {
+          textarea {
             width: inherit;
+            height: 70px;
             padding: 25px;
             border: 0px;
             border-bottom-right-radius: 12px;
+            resize: none;
+
+            &::-webkit-scrollbar {
+              display: none;
+            }
             &::placeholder {
               color: color(gray-5);
             }
