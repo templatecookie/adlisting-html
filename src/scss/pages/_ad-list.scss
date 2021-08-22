@@ -1,5 +1,13 @@
 .ad-list {
   padding-top: 25px;
+
+  &__search-box {
+    padding-top: 50px;
+    .search {
+      border: 1px solid #ebeef7;
+    }
+  }
+
   &__content {
     .cards {
       margin-bottom: 24px;
@@ -686,7 +694,6 @@
       text-align: center;
     }
     &-item {
-      // width: 50%;
       @include max(767px) {
         width: 100% !important;
       }

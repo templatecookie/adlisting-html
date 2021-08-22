@@ -24,7 +24,7 @@
             padding-left: 66px;
             border-right: 1px solid #ebeef7;
             @include max(1199px) {
-              border-right: 0px;
+              border-right: 0px !important;
             }
             @include max(767px) {
               padding-left: 50px;
@@ -39,7 +39,7 @@
             padding-left: 55px;
             border-right: 1px solid #ebeef7;
             @include max(1199px) {
-              border-right: 0px;
+              border-right: 0px !important;
             }
           }
         }
@@ -72,7 +72,8 @@
         margin-bottom: 0px;
         input {
           border: 0;
-
+          background-color: transparent;
+          border-radius: 0px;
           &::placeholder {
             @include max(767px) {
               font-size: 14px;

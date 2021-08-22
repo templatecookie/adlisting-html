@@ -135,6 +135,24 @@
         }
       }
     }
+    .search {
+      background: rgba(255, 255, 255, 0.05);
+
+      &__content {
+        &-item {
+          @include max(1199px) {
+            // border-bottom: 1px solid #ffffff1a !important;
+            border-color: #ffffff1a !important;
+          }
+          .input-field {
+            input {
+              border-right: 1px solid #ffffff1a !important;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
   }
 
   &-demo {
