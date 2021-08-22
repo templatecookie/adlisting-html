@@ -29,13 +29,15 @@
       &-header {
         border: 0px;
         .accordion-button {
+          font-size: 16px;
+          line-height: 21px;
+          font-weight: 600;
           color: color(g);
           border: 0px;
           box-shadow: none;
           background-color: #fff;
           text-transform: uppercase;
           padding: 0px;
-
           &:not(.collapsed) {
             padding-bottom: 0px;
             border-color: transparent;
@@ -43,11 +45,18 @@
               filter: contrast(0%);
             }
           }
+
+          #value-range {
+            color: color(primary-4);
+            text-transform: lowercase;
+            margin-left: 4px;
+          }
         }
       }
 
       &-body {
         padding: 0px;
+        padding-top: 16px;
       }
 
       &-inner {
@@ -57,6 +66,11 @@
           border-bottom: 1px solid #ebeef7;
           border-radius: 0px;
           padding: 16px 0px;
+
+          &:nth-child(1) {
+            padding-top: 0px;
+          }
+
           &:nth-last-child(1) {
             border-bottom: 0px;
             padding-bottom: 0px;
@@ -84,11 +98,11 @@
             display: none;
           }
           &:not(.collapsed) {
-            color: inherit;
+            color: color(primary-4);
+            font-weight: 600;
             box-shadow: none;
             background-color: #fff;
             .icon {
-              // display: none;
               &--minus {
                 display: block !important;
               }
@@ -101,12 +115,6 @@
           .icon {
             position: absolute;
             right: 0px;
-            // &--plus {
-            //   display: none;
-            // }
-            // &--minus {
-            //   display: none;
-            // }
           }
         }
         &-icon {
@@ -129,8 +137,8 @@
                 }
               }
               label {
-                font-size: 14px;
-                line-height: 20px;
+                font-size: 16px;
+                line-height: 21px;
                 text-transform: capitalize;
                 color: color(gray-2);
               }

@@ -29,3 +29,27 @@ editBtn.forEach((dropMenu) => {
     dropMenu.classList.toggle('active');
   });
 });
+
+// Slider
+const sliderRange = document.querySelector('.sliderrange');
+const output = document.querySelector('#value-range');
+
+output.innerHTML = `${sliderRange.value} miles`;
+
+sliderRange.oninput = function () {
+  output.innerHTML = `${this.value} miles`;
+};
+
+sliderRange.addEventListener('mousemove', function () {
+  var x = sliderRange.value;
+
+  var color = `linear-gradient(
+    90deg,
+    rgb(0, 170, 255) ${x / 3}%,
+    rgb(218, 221, 229) ${x / 3}%
+  )`;
+
+  sliderRange.style.background = color;
+});
+
+// console.log(sliderRange);
