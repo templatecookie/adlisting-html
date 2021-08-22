@@ -12,6 +12,13 @@
         border: 1.5px solid #dadde5;
         background-color: #fff;
       }
+      &[type='radio'] {
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        border: 1.5px solid #dadde5;
+        background-color: #fff;
+      }
 
       &:disabled {
         background-color: #f5f7fa;
