@@ -5,6 +5,132 @@
       margin-bottom: 24px;
     }
   }
+
+  .list-sidebar {
+    padding: 32px 0px;
+    border: 1px solid #ebeef7;
+    border: 1px solid #ebeef7;
+    border-radius: 12px;
+    &__accordion {
+      &-item {
+        margin: 0;
+        padding: 24px;
+        border: 0px;
+        border-bottom: 1px solid #ebeef7;
+        border-radius: 0px !important;
+        &:nth-child(1) {
+          padding-top: 0px;
+        }
+        &:nth-last-child(1) {
+          padding-bottom: 0px;
+          border-bottom: 0px;
+        }
+      }
+      &-header {
+        border: 0px;
+        .accordion-button {
+          color: color(g);
+          border: 0px;
+          box-shadow: none;
+          background-color: #fff;
+          text-transform: uppercase;
+          padding: 0px;
+
+          &:not(.collapsed) {
+            padding-bottom: 0px;
+            border-color: transparent;
+            &::after {
+              filter: contrast(0%);
+            }
+          }
+        }
+      }
+
+      &-body {
+        padding: 0px;
+      }
+
+      &-inner {
+        &-item {
+          border: 0;
+          margin: 0px;
+          border-bottom: 1px solid #ebeef7;
+          border-radius: 0px;
+          padding: 16px 0px;
+          &:nth-last-child(1) {
+            border-bottom: 0px;
+            padding-bottom: 0px;
+          }
+        }
+        &-button {
+          position: relative;
+          font-size: 16px;
+          line-height: 24px;
+          padding: 0px;
+          border: 0px;
+          text-transform: capitalize;
+          cursor: pointer;
+          &.collapsed {
+            .icon {
+              &--plus {
+                display: none;
+              }
+              &--minus {
+                display: block;
+              }
+            }
+          }
+          &::after {
+            display: none;
+          }
+          &:not(.collapsed) {
+            color: inherit;
+            box-shadow: none;
+            background-color: #fff;
+          }
+
+          .icon {
+            position: absolute;
+            right: 0px;
+            &--plus {
+              display: block;
+            }
+            &--minus {
+              display: none;
+            }
+          }
+        }
+        &-icon {
+          margin-right: 8px;
+        }
+        &-body {
+          padding: 0px;
+          padding-top: 24px;
+          &--item {
+            margin-bottom: 12px;
+            &:nth-last-child(1) {
+              margin-bottom: 0px;
+            }
+
+            .form-check {
+              &.active {
+                label {
+                  font-weight: 600;
+                  color: color(primary-4);
+                }
+              }
+              label {
+                font-size: 14px;
+                line-height: 20px;
+                text-transform: capitalize;
+                color: color(gray-2);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 .product-ad {
