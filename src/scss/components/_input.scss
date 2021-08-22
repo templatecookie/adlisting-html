@@ -185,11 +185,11 @@
         border-width: 0 1px 1px 0;
         display: inline-block;
         padding: 3px;
-        transition: all 0.2s ease;
+        transition: all 0.2s ease-in-out;
         transform: translateY(-50%) rotate(45deg);
         &.up {
           transform: rotate(-135deg);
-          transition: all 0.3s ease-out;
+          transition: all 0.3s ease-in-out;
         }
       }
     }

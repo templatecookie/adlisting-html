@@ -287,6 +287,38 @@
         </div>
     </section>
     <!-- breedcrumb section end  -->
+    
+    
+    <section class="filter">
+        <div class="container">
+            <div class="filter-result">
+                <div class="filter-result-item">
+                    <h2 class="text--body-2"><span class="text--body-2-600">574,395</span> Results Founds</h2>
+                </div>
+                <div class="filter-result-item">
+                    <div class="input-field__group">
+                        <div class="input-select">
+                            <select id="item">
+                                <option value="01"> Latest</option>
+                                <option value="02"> Used</option>
+                                <option value="03"> New</option>
+                            </select>
+                        </div>
+                        <div class="input-select">
+                            <select id="page">
+                                <option value="01"> 1 Per Page</option>
+                                <option value="02"> 2 Per Page</option>
+                                <option value="03"> 3 Per Page</option>
+                                <option value="04"> 4 Per Page</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
 
     <section class="section ad-list">
         <div class="container">
@@ -2557,6 +2589,23 @@ sidebarToggle.addEventListener('click', function (e) {
   adSidebar.classList.toggle('active');
   body.classList.toggle('overlay');
 });
+
+var item = new BVSelect({
+                    selector: "#item",
+                    searchbox: false,
+                    offset: true,
+                    placeholder: "Select",
+                    search_autofocus: true,
+                    breakpoint: 450,
+                });
+var page = new BVSelect({
+                    selector: "#page",
+                    searchbox: false,
+                    offset: true,
+                    placeholder: "Select",
+                    search_autofocus: true,
+                    breakpoint: 450,
+                });
 
 
 

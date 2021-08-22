@@ -51,5 +51,3 @@ sliderRange.addEventListener('mousemove', function () {
 
   sliderRange.style.background = color;
 });
-
-// console.log(sliderRange);
