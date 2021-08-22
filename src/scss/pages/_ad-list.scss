@@ -143,6 +143,12 @@
                 color: color(gray-2);
               }
             }
+
+            .input-field {
+              input {
+                padding-left: 45px;
+              }
+            }
           }
         }
       }

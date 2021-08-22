@@ -131,7 +131,11 @@
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
-
+    width: 20px;
+    height: 20px;
+    &--left {
+      left: 16px !important;
+    }
     &--alart,
     &--success {
       display: none;
