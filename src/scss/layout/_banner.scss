@@ -43,6 +43,13 @@
       }
     }
 
+    .search {
+      margin-bottom: 50px;
+      @include max(767px) {
+        margin-bottom: 30px;
+      }
+    }
+
     .category-card {
       &__icon {
         background-color: transparent;
