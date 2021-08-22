@@ -192,3 +192,43 @@
     background-color: #636a80;
   }
 }
+
+.scrollTop {
+  position: fixed;
+  bottom: 45px;
+  right: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 6px solid #191f33;
+  background: #2e3447;
+  overflow: hidden;
+  z-index: 99999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease-in-out;
+  @include max(1199px) {
+    right: 15px;
+    bottom: 60px;
+  }
+  @include max(767px) {
+    bottom: 80px;
+  }
+  @include max(480px) {
+    bottom: 100px;
+  }
+  &--white {
+    color: color(g);
+    border-color: #fff;
+    background-color: #ebeef7;
+  }
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
+}

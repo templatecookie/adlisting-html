@@ -30,24 +30,15 @@ editBtn.forEach((dropMenu) => {
   });
 });
 
-// Slider
-const sliderRange = document.querySelector('.sliderrange');
-const output = document.querySelector('#value-range');
-
-output.innerHTML = `${sliderRange.value} miles`;
-
-sliderRange.oninput = function () {
-  output.innerHTML = `${this.value} miles`;
-};
-
-sliderRange.addEventListener('mousemove', function () {
-  var x = sliderRange.value;
-
-  var color = `linear-gradient(
-    90deg,
-    rgb(0, 170, 255) ${x}%,
-    rgb(218, 221, 229) ${x}%
-  )`;
-
-  sliderRange.style.background = color;
+// Back to Top Btn
+window.addEventListener('scroll', function () {
+  var scroll = document.querySelector('.scrollTop');
+  scroll.classList.toggle('active', window.scrollY > 500);
 });
+
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  });
+}
