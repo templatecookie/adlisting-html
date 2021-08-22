@@ -11,7 +11,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="src/images/favicon_io/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="src/images/favicon_io/favicon-16x16.png" />
     <link rel="manifest" href="src/images/favicon_io/site.webmanifest" />
-   
+
 </head>
 
 <body>
@@ -1122,7 +1122,8 @@
                                 <div id="radiusCollapse" class="accordion-collapse collapse "
                                     aria-labelledby="locationRadius" data-bs-parent="#accordionGroup">
                                     <div class="accordion-body list-sidebar__accordion-body">
-                                      <input type="range" min="1" max="100" value="1" id="locationrange" class="sliderrange">
+                                        <input type="range" min="1" max="100" value="1" id="locationrange"
+                                            class="sliderrange">
                                     </div>
                                 </div>
                             </div>
@@ -1137,7 +1138,9 @@
                                 <div id="priceCollapse" class="accordion-collapse collapse show"
                                     aria-labelledby="priceTag" data-bs-parent="#accordionGroup">
                                     <div class="accordion-body list-sidebar__accordion-body">
-
+                                        <div class="price-range-slider">
+                                            <div id="priceRangeSlider"></div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -2463,9 +2466,30 @@
     <script src="src/js/plugins/jquery.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="src/js/plugins/bvselect.js"></script>
-    
+    <script src="src/js/plugins/nouislider.min.js"></script>
+    <script src="src/js/plugins/wNumb.min.js"></script>
     <script type="module" src="/main.js"></script>
     <script src="src/js/app.js"></script>
+
+    <script>
+        var range = document.getElementById('priceRangeSlider');
+
+        noUiSlider.create(range, {
+            start: [20, 80],
+            connect: true,
+            range: {
+                'min': [0],
+                'max': [500],
+            },
+            format: wNumb({
+                decimals: 3,
+        thousand: '.',
+        suffix: ' ($)'
+            }),
+            tooltips: true,
+           
+        });
+    </script>
 </body>
 
 </html>
