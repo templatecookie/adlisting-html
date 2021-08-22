@@ -45,8 +45,8 @@ sliderRange.addEventListener('mousemove', function () {
 
   var color = `linear-gradient(
     90deg,
-    rgb(0, 170, 255) ${x / 3}%,
-    rgb(218, 221, 229) ${x / 3}%
+    rgb(0, 170, 255) ${x}%,
+    rgb(218, 221, 229) ${x}%
   )`;
 
   sliderRange.style.background = color;
