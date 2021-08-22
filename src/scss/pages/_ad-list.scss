@@ -73,10 +73,10 @@
           &.collapsed {
             .icon {
               &--plus {
-                display: none;
+                display: block !important;
               }
               &--minus {
-                display: block;
+                display: none !important;
               }
             }
           }
@@ -87,17 +87,26 @@
             color: inherit;
             box-shadow: none;
             background-color: #fff;
+            .icon {
+              // display: none;
+              &--minus {
+                display: block !important;
+              }
+              &--plus {
+                display: none !important;
+              }
+            }
           }
 
           .icon {
             position: absolute;
             right: 0px;
-            &--plus {
-              display: block;
-            }
-            &--minus {
-              display: none;
-            }
+            // &--plus {
+            //   display: none;
+            // }
+            // &--minus {
+            //   display: none;
+            // }
           }
         }
         &-icon {
