@@ -11,7 +11,7 @@ Step 2: run project
 ```bash
 npm run dev
 // or
-yarn run dev
+yarn dev
 ```
 
 ## Color
