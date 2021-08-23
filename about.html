@@ -10,6 +10,7 @@
         <link rel="icon" type="image/png" sizes="32x32" href="src/images/favicon_io/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="src/images/favicon_io/favicon-16x16.png" />
         <link rel="manifest" href="src/images/favicon_io/site.webmanifest" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="stylesheet" href="src/js/plugins/css/slick.css" />
         <link rel="stylesheet" href="src/js/plugins/css/venobox.min.css" />
     </head>
@@ -274,7 +275,7 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-xl-6 order-xl-0 order-2">
-                        <h2 class="about-us__title text--heading-1">Know more about adlisting</h2>
+                        <h2 class="about-us__title text--heading-1" >Know more about adlisting</h2>
                         <p class="text--body-3 about-us__brief">
                             Adlisting is a website where you can buy and sell almost everything. The best deals are often done with people who live in your own city or on your own street, so on Bikroy.com it's easy to buy and sell locally.
                             All you have to do is select your region. It takes you less than 2 minutes to post an ad on Bikroy.com. You can sign up for a free account and post ads easily every time. Adlisting has the widest selection of
@@ -303,7 +304,15 @@
         <!--  work section start  -->
         <section class="section work bgcolor--gray-10">
             <div class="container">
-                <h2 class="text--heading-1 section__title">How it Work</h2>
+                 <h2 class="text--heading-1 section__title"  
+                 data-aos="fade-up"
+                data-aos-offset="0"
+                data-aos-delay="30"
+                data-aos-duration="700"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="false"
+                data-aos-anchor-placement="top-center">How it Work</h2>
                 <div class="row">
                     <div class="col-lg-4 col-md-6">
                         <div class="work-card">
@@ -407,7 +416,15 @@
         <!-- testimonial section start  -->
         <section class="testimonial section">
             <div class="container">
-                <h2 class="text--heading-1 section__title">What Poeple Says</h2>
+                 <h2 class="text--heading-1 section__title"  
+                 data-aos="fade-up"
+                data-aos-offset="0"
+                data-aos-delay="30"
+                data-aos-duration="700"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="false"
+                data-aos-anchor-placement="top-center">What Poeple Says</h2>
 
                 <div class="testimonial-slider row">
                     <div class="testimonial-slider__item">
@@ -909,9 +926,12 @@
         <script src="src/js/app.js"></script>
         <script src="src/js/plugins/jquery.min.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script src="src/js/plugins/slick.min.js"></script>
         <script src="src/js/plugins/venobox.min.js"></script>
         <script src="src/js/pages/about.js"></script>
-        <script src="src/js/app.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>

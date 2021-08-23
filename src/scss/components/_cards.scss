@@ -343,6 +343,7 @@
   border-radius: 12px;
   background-color: #fff;
   overflow: hidden;
+
   &__icon {
     display: inline-block;
     margin-bottom: 30px;
@@ -546,6 +547,8 @@
   padding: 24px;
   background-color: transparent;
   @include trans(0.4s, ease-in-out);
+  animation: bounceIn; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
 
   &:hover {
     background-color: #fff;

@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+:root {
+  --animate-delay: 2s;
+  --animate-duration: 3s;
+}
+
 img {
   border: 0;
   outline: 0;

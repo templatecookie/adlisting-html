@@ -10,11 +10,11 @@
         <link rel="icon" type="image/png" sizes="32x32" href="src/images/favicon_io/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="src/images/favicon_io/favicon-16x16.png" />
         <link rel="manifest" href="src/images/favicon_io/site.webmanifest" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="stylesheet" href="src/js/plugins/css/slick.css" />
     </head>
 
     <body>
-
         <div class="loader">
             <div class="loader-icon">
                 <img src="src/images/loader.gif" alt="loader" />
@@ -235,7 +235,7 @@
         <!-- Banner section start  -->
         <section class="banner banner--one section" style="background: url('src/images/bg/bg-01.png') center center/cover no-repeat;">
             <div class="container">
-                <h2 class="text--display-2 text-center banner__title">
+                <h2 class="text--display-2 text-center banner__title animate__animated animate__bounceInDown">
                     Browse over 95,00,000 classified ads listing.
                 </h2>
 
@@ -246,39 +246,61 @@
                             <!-- search by keyword/title -->
                             <div class="search__content-item">
                                 <div class="input-field">
-                                    <input type="text" placeholder="Search by ads title, keyword...">
+                                    <input type="text" placeholder="Search by ads title, keyword..." />
                                     <span class="icon icon--left">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#00AAFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M21 21L16.65 16.65" stroke="#00AAFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path
+                                                d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+                                                stroke="#00AAFF"
+                                                stroke-width="1.6"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                            <path d="M21 21L16.65 16.65" stroke="#00AAFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
                                         </svg>
-                                            
                                     </span>
                                 </div>
                             </div>
                             <!-- Search By location -->
                             <div class="search__content-item">
                                 <div class="input-field">
-                                    <input type="text" placeholder="Locations">
+                                    <input type="text" placeholder="Locations" />
                                     <span class="icon icon--left">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M12 12.75C13.6569 12.75 15 11.4069 15 9.75C15 8.09315 13.6569 6.75 12 6.75C10.3431 6.75 9 8.09315 9 9.75C9 11.4069 10.3431 12.75 12 12.75Z" stroke="#00AAFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M19.5 9.75C19.5 16.5 12 21.75 12 21.75C12 21.75 4.5 16.5 4.5 9.75C4.5 7.76088 5.29018 5.85322 6.6967 4.4467C8.10322 3.04018 10.0109 2.25 12 2.25C13.9891 2.25 15.8968 3.04018 17.3033 4.4467C18.7098 5.85322 19.5 7.76088 19.5 9.75V9.75Z" stroke="#00AAFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path
+                                                d="M12 12.75C13.6569 12.75 15 11.4069 15 9.75C15 8.09315 13.6569 6.75 12 6.75C10.3431 6.75 9 8.09315 9 9.75C9 11.4069 10.3431 12.75 12 12.75Z"
+                                                stroke="#00AAFF"
+                                                stroke-width="1.6"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                            <path
+                                                d="M19.5 9.75C19.5 16.5 12 21.75 12 21.75C12 21.75 4.5 16.5 4.5 9.75C4.5 7.76088 5.29018 5.85322 6.6967 4.4467C8.10322 3.04018 10.0109 2.25 12 2.25C13.9891 2.25 15.8968 3.04018 17.3033 4.4467C18.7098 5.85322 19.5 7.76088 19.5 9.75V9.75Z"
+                                                stroke="#00AAFF"
+                                                stroke-width="1.6"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
                                         </svg>
                                     </span>
                                 </div>
                             </div>
-                            <!-- Select Category temprorary disable --> 
-                            <div class="search__content-item "></div>
+                            <!-- Select Category temprorary disable -->
+                            <div class="search__content-item"></div>
                             <!-- Search Btn -->
                             <div class="search__content-item">
                                 <button class="btn btn--lg">
                                     <span class="icon--left">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M21 21L16.65 16.65" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-                                            </svg>
-                                            
+                                            <path
+                                                d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+                                                stroke="white"
+                                                stroke-width="1.6"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                            <path d="M21 21L16.65 16.65" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
                                     </span>
                                     Search
                                 </button>
@@ -532,11 +554,30 @@
         <!-- work section start  -->
         <section class="section work bgcolor--gray-10">
             <div class="container">
-                <h2 class="text--heading-1 section__title">How it Work</h2>
+                <h2
+                    class="text--heading-1 section__title"
+                    data-aos="fade-up"
+                    data-aos-offset="0"
+                    data-aos-delay="30"
+                    data-aos-duration="700"
+                    data-aos-easing="ease-in-out"
+                    data-aos-mirror="true"
+                    data-aos-once="false"
+                    data-aos-anchor-placement="top-center"
+                >
+                    How it Work
+                </h2>
                 <div class="row">
                     <div class="col-lg-4 col-md-6">
-                        <div class="work-card">
-                            <span class="work-card__icon">
+                        <div class="work-card"  data-aos="fade-left"
+                        data-aos-offset="100"
+                        data-aos-delay="30"
+                        data-aos-duration="700"
+                        data-aos-easing="ease-in-out"
+                        data-aos-mirror="true"
+                        data-aos-once="false"
+                        data-aos-anchor-placement="top-center">
+                            <span class="work-card__icon" data-aos="fade-left">
                                 <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path opacity="0.2" d="M25 31.25C31.9036 31.25 37.5 25.6536 37.5 18.75C37.5 11.8464 31.9036 6.25 25 6.25C18.0964 6.25 12.5 11.8464 12.5 18.75C12.5 25.6536 18.0964 31.25 25 31.25Z" fill="#FF4F4F"></path>
                                     <path d="M34.375 10.9375H43.75" stroke="#FF4F4F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -599,7 +640,16 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
-                        <div class="work-card">
+                        <div class="work-card"
+                        data-aos="fade-right"
+                        data-aos-offset="100"
+                        data-aos-delay="30"
+                        data-aos-duration="700"
+                        data-aos-easing="ease-in-out"
+                        data-aos-mirror="true"
+                        data-aos-once="false"
+                        data-aos-anchor-placement="top-center"
+                        >
                             <span class="work-card__icon">
                                 <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -636,10 +686,31 @@
         <!-- feature section start  -->
         <section class="section feature-ads">
             <div class="container">
-                <h2 class="text--heading-1 section__title">Featured Ads</h2>
+                <h2
+                    class="text--heading-1 section__title"
+                    data-aos="fade-up"
+                    data-aos-offset="0"
+                    data-aos-delay="30"
+                    data-aos-duration="700"
+                    data-aos-easing="ease-in-out"
+                    data-aos-mirror="true"
+                    data-aos-once="false"
+                    data-aos-anchor-placement="top-center"
+                >
+                    Featured Ads
+                </h2>
                 <div class="row">
                     <div class="col-lg-6">
-                        <div class="cards cards--two cards--highlight">
+                        <div class="cards cards--two cards--highlight"
+                        data-aos="fade-right"
+                        data-aos-offset="100"
+                        data-aos-delay="30"
+                        data-aos-duration="700"
+                        data-aos-easing="ease-in-out"
+                        data-aos-mirror="true"
+                        data-aos-once="false"
+                        data-aos-anchor-placement="top-center"
+                        >
                             <a href="single-ad.html" class="cards__img-wrapper">
                                 <img src="src/images/view/img-01.png" alt="card-img" />
                             </a>
@@ -743,7 +814,15 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="cards cards--two cards--highlight">
+                        <div class="cards cards--two cards--highlight"
+                        data-aos="fade-left"
+                        data-aos-offset="100"
+                        data-aos-delay="30"
+                        data-aos-duration="700"
+                        data-aos-easing="ease-in-out"
+                        data-aos-mirror="true"
+                        data-aos-once="false"
+                        data-aos-anchor-placement="top-center">
                             <a href="single-ad.html" class="cards__img-wrapper">
                                 <img src="src/images/view/img-02.png" alt="card-img" />
                             </a>
@@ -845,7 +924,15 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="cards cards--two cards--highlight">
+                        <div class="cards cards--two cards--highlight"
+                        data-aos="fade-right"
+                        data-aos-offset="100"
+                        data-aos-delay="30"
+                        data-aos-duration="700"
+                        data-aos-easing="ease-in-out"
+                        data-aos-mirror="true"
+                        data-aos-once="false"
+                        data-aos-anchor-placement="top-center">
                             <a href="single-ad.html" class="cards__img-wrapper">
                                 <img src="src/images/view/img-03.png" alt="card-img" />
                             </a>
@@ -934,7 +1021,15 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="cards cards--two">
+                        <div class="cards cards--two"
+                        data-aos="fade-left"
+                        data-aos-offset="100"
+                        data-aos-delay="30"
+                        data-aos-duration="700"
+                        data-aos-easing="ease-in-out"
+                        data-aos-mirror="true"
+                        data-aos-once="false"
+                        data-aos-anchor-placement="top-center">
                             <a href="single-ad.html" class="cards__img-wrapper">
                                 <img src="src/images/view/img-04.png" alt="card-img" />
                                 <span class="cards__tag text--body-5">
@@ -1026,7 +1121,16 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="cards cards--two">
+                        <div class="cards cards--two"
+                        data-aos="fade-right"
+                        data-aos-offset="100"
+                        data-aos-delay="30"
+                        data-aos-duration="700"
+                        data-aos-easing="ease-in-out"
+                        data-aos-mirror="true"
+                        data-aos-once="false"
+                        data-aos-anchor-placement="top-center"
+                        >
                             <a href="single-ad.html" class="cards__img-wrapper">
                                 <img src="src/images/view/img-05.png" alt="card-img" />
                             </a>
@@ -1115,7 +1219,15 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="cards cards--two">
+                        <div class="cards cards--two"
+                        data-aos="fade-left"
+                        data-aos-offset="100"
+                        data-aos-delay="30"
+                        data-aos-duration="700"
+                        data-aos-easing="ease-in-out"
+                        data-aos-mirror="true"
+                        data-aos-once="false"
+                        data-aos-anchor-placement="top-center">
                             <a href="single-ad.html" class="cards__img-wrapper">
                                 <img src="src/images/view/img-06.png" alt="card-img" />
                             </a>
@@ -1223,10 +1335,31 @@
         <!-- popular-loc section start  -->
         <section class="section popular-location">
             <div class="container">
-                <h2 class="text--heading-1 section__title">Popular Location</h2>
+                <h2
+                    class="text--heading-1 section__title"
+                    data-aos="fade-up"
+                    data-aos-offset="0"
+                    data-aos-delay="30"
+                    data-aos-duration="700"
+                    data-aos-easing="ease-in-out"
+                    data-aos-mirror="true"
+                    data-aos-once="false"
+                    data-aos-anchor-placement="top-center"
+                >
+                    Popular Location
+                </h2>
                 <div class="row">
                     <div class="col-xl-3 col-md-6">
-                        <div class="location-card">
+                        <div class="location-card"
+                        data-aos="flip-right"
+                        data-aos-offset="100"
+                        data-aos-delay="30"
+                        data-aos-duration="700"
+                        data-aos-easing="ease-in-out"
+                        data-aos-mirror="true"
+                        data-aos-once="false"
+                        data-aos-anchor-placement="top-center"
+                        >
                             <a href="single-ad.html" class="location-card__img-wrapper">
                                 <img src="src/images/location/img-01.png" alt="location" />
                             </a>
@@ -1248,7 +1381,16 @@
                         </div>
                     </div>
                     <div class="col-xl-3 col-md-6">
-                        <div class="location-card">
+                        <div class="location-card"
+                           data-aos="flip-right"
+                        data-aos-offset="100"
+                        data-aos-delay="30"
+                        data-aos-duration="700"
+                        data-aos-easing="ease-in-out"
+                        data-aos-mirror="true"
+                        data-aos-once="false"
+                        data-aos-anchor-placement="top-center"
+                        >
                             <a href="single-ad.html" class="location-card__img-wrapper">
                                 <img src="src/images/location/img-02.png" alt="location" />
                             </a>
@@ -1270,7 +1412,16 @@
                         </div>
                     </div>
                     <div class="col-xl-3 col-md-6">
-                        <div class="location-card">
+                        <div class="location-card"
+                           data-aos="flip-right"
+                        data-aos-offset="100"
+                        data-aos-delay="30"
+                        data-aos-duration="700"
+                        data-aos-easing="ease-in-out"
+                        data-aos-mirror="true"
+                        data-aos-once="false"
+                        data-aos-anchor-placement="top-center"
+                        >
                             <a href="single-ad.html" class="location-card__img-wrapper">
                                 <img src="src/images/location/img-03.png" alt="location" />
                             </a>
@@ -1292,7 +1443,16 @@
                         </div>
                     </div>
                     <div class="col-xl-3 col-md-6">
-                        <div class="location-card">
+                        <div class="location-card"
+                           data-aos="flip-right"
+                        data-aos-offset="100"
+                        data-aos-delay="30"
+                        data-aos-duration="700"
+                        data-aos-easing="ease-in-out"
+                        data-aos-mirror="true"
+                        data-aos-once="false"
+                        data-aos-anchor-placement="top-center"
+                        >
                             <a href="single-ad.html" class="location-card__img-wrapper">
                                 <img src="src/images/location/img-04.png" alt="location" />
                             </a>
@@ -1314,7 +1474,16 @@
                         </div>
                     </div>
                     <div class="col-xl-3 col-md-6">
-                        <div class="location-card">
+                        <div class="location-card"
+                        data-aos="flip-left"
+                        data-aos-offset="100"
+                        data-aos-delay="30"
+                        data-aos-duration="700"
+                        data-aos-easing="ease-in-out"
+                        data-aos-mirror="true"
+                        data-aos-once="false"
+                        data-aos-anchor-placement="top-center"
+                        >
                             <a href="single-ad.html" class="location-card__img-wrapper">
                                 <img src="src/images/location/img-05.png" alt="location" />
                             </a>
@@ -1336,7 +1505,16 @@
                         </div>
                     </div>
                     <div class="col-xl-3 col-md-6">
-                        <div class="location-card">
+                        <div class="location-card"
+                           data-aos="flip-left"
+                        data-aos-offset="100"
+                        data-aos-delay="30"
+                        data-aos-duration="700"
+                        data-aos-easing="ease-in-out"
+                        data-aos-mirror="true"
+                        data-aos-once="false"
+                        data-aos-anchor-placement="top-center"
+                        >
                             <a href="single-ad.html" class="location-card__img-wrapper">
                                 <img src="src/images/location/img-06.png" alt="location" />
                             </a>
@@ -1358,7 +1536,16 @@
                         </div>
                     </div>
                     <div class="col-xl-3 col-md-6">
-                        <div class="location-card">
+                        <div class="location-card"
+                           data-aos="flip-left"
+                        data-aos-offset="100"
+                        data-aos-delay="30"
+                        data-aos-duration="700"
+                        data-aos-easing="ease-in-out"
+                        data-aos-mirror="true"
+                        data-aos-once="false"
+                        data-aos-anchor-placement="top-center"
+                        >
                             <a href="single-ad.html" class="location-card__img-wrapper">
                                 <img src="src/images/location/img-07.png" alt="location" />
                             </a>
@@ -1380,7 +1567,16 @@
                         </div>
                     </div>
                     <div class="col-xl-3 col-md-6">
-                        <div class="location-card">
+                        <div class="location-card"
+                        data-aos="flip-left"
+                        data-aos-offset="100"
+                        data-aos-delay="30"
+                        data-aos-duration="700"
+                        data-aos-easing="ease-in-out"
+                        data-aos-mirror="true"
+                        data-aos-once="false"
+                        data-aos-anchor-placement="top-center"
+                        >
                             <a href="single-ad.html" class="location-card__img-wrapper">
                                 <img src="src/images/location/img-08.png" alt="location" />
                             </a>
@@ -1409,10 +1605,31 @@
         <!-- recent-post section start  -->
         <section class="section recent-post bgcolor--gray-10">
             <div class="container">
-                <h2 class="text--heading-1 section__title">Recently Posted Ads</h2>
+                <h2
+                    class="text--heading-1 section__title"
+                    data-aos="fade-up"
+                    data-aos-offset="0"
+                    data-aos-delay="30"
+                    data-aos-duration="700"
+                    data-aos-easing="ease-in-out"
+                    data-aos-mirror="true"
+                    data-aos-once="false"
+                    data-aos-anchor-placement="top-center"
+                >
+                    Recently Posted Ads
+                </h2>
                 <div class="row">
                     <div class="col-xl-3 col-md-6">
-                        <div class="cards cards--one cards--highlight">
+                        <div class="cards cards--one cards--highlight"
+                        data-aos="fade-right"
+                        data-aos-offset="100"
+                        data-aos-delay="30"
+                        data-aos-duration="700"
+                        data-aos-easing="ease-in-out"
+                        data-aos-mirror="true"
+                        data-aos-once="false"
+                        data-aos-anchor-placement="top-center"
+                        >
                             <a href="single-ad.html" class="cards__img-wrapper">
                                 <img src="src/images/view/img-01.png" alt="card-img" class="img-fluid" />
                             </a>
@@ -1550,7 +1767,18 @@
                         </div>
                     </div>
                     <div class="col-xl-3 col-md-6">
-                        <div class="cards cards--one">
+                        <div class="cards cards--one" 
+                        
+                        data-aos="fade-left"
+                        data-aos-offset="100"
+                        data-aos-delay="30"
+                        data-aos-duration="700"
+                        data-aos-easing="ease-in-out"
+                        data-aos-mirror="true"
+                        data-aos-once="false"
+                        data-aos-anchor-placement="top-center"
+
+                        >
                             <a href="single-ad.html" class="cards__img-wrapper">
                                 <img src="src/images/view/img-04.png" alt="card-img" class="img-fluid" />
                             </a>
@@ -1601,9 +1829,9 @@
         <!-- recent-post section end -->
 
         <!-- membership-call section start  -->
-        <section class="section membership-call" >
+        <section class="section membership-call">
             <div class="container">
-                <div class="membership-call__content" style="background: url('src/images/pattern/img-01.png') center center/cover no-repeat">
+                <div class="membership-call__content" style="background: url('src/images/pattern/img-01.png') center center/cover no-repeat;">
                     <div class="membership-call__left">
                         <h2 class="text--heading-2 membership-call__title">Get Premium Membership</h2>
                         <p class="text--body-3 membership-call__description">
@@ -1768,13 +1996,19 @@
                                     <a href="#" class="social-icon__link">
                                         <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <g clip-path="url(#instagram)">
-                                            <path d="M5.33376 8.55566C5.33376 7.08296 6.52729 5.88878 8 5.88878C9.4727 5.88878 10.6669 7.08296 10.6669 8.55566C10.6669 10.0284 9.4727 11.2225 8 11.2225C6.52729 11.2225 5.33376 10.0284 5.33376 8.55566ZM3.89209 8.55566C3.89209 10.8245 5.7312 12.6636 8 12.6636C10.2688 12.6636 12.1079 10.8245 12.1079 8.55566C12.1079 6.28686 10.2688 4.44776 8 4.44776C5.7312 4.44776 3.89209 6.28686 3.89209 8.55566ZM11.3105 4.28488C11.3104 4.47475 11.3667 4.66038 11.4721 4.81829C11.5775 4.97621 11.7274 5.09931 11.9028 5.17204C12.0782 5.24477 12.2712 5.26386 12.4574 5.22689C12.6437 5.18993 12.8148 5.09856 12.9491 4.96436C13.0834 4.83015 13.1749 4.65913 13.212 4.47293C13.2491 4.28672 13.2302 4.09369 13.1576 3.91824C13.085 3.7428 12.962 3.59282 12.8042 3.48727C12.6464 3.38172 12.4608 3.32534 12.2709 3.32526H12.2705C12.016 3.32538 11.772 3.42651 11.592 3.60644C11.412 3.78636 11.3107 4.03038 11.3105 4.28488ZM4.768 15.0675C3.98803 15.032 3.56409 14.902 3.28237 14.7923C2.90886 14.6469 2.64237 14.4737 2.36218 14.1939C2.08198 13.9141 1.90854 13.6478 1.76378 13.2743C1.65395 12.9927 1.52403 12.5687 1.48858 11.7887C1.44979 10.9454 1.44205 10.6921 1.44205 8.55573C1.44205 6.41934 1.45043 6.16674 1.48858 5.32277C1.5241 4.5428 1.65498 4.11957 1.76378 3.83714C1.90918 3.46363 2.08237 3.19714 2.36218 2.91694C2.64198 2.63675 2.90822 2.46331 3.28237 2.31854C3.56397 2.20872 3.98803 2.0788 4.768 2.04334C5.61126 2.00456 5.86457 1.99682 8 1.99682C10.1354 1.99682 10.389 2.0052 11.233 2.04334C12.0129 2.07886 12.4362 2.20974 12.7186 2.31854C13.0921 2.46331 13.3586 2.63714 13.6388 2.91694C13.919 3.19675 14.0918 3.46363 14.2372 3.83714C14.347 4.11874 14.4769 4.5428 14.5124 5.32277C14.5512 6.16674 14.5589 6.41934 14.5589 8.55573C14.5589 10.6921 14.5512 10.9447 14.5124 11.7887C14.4769 12.5687 14.3463 12.9926 14.2372 13.2743C14.0918 13.6478 13.9186 13.9143 13.6388 14.1939C13.359 14.4734 13.0921 14.6469 12.7186 14.7923C12.437 14.9021 12.0129 15.032 11.233 15.0675C10.3897 15.1063 10.1364 15.114 8 15.114C5.86361 15.114 5.61101 15.1063 4.768 15.0675ZM4.70176 0.604112C3.85011 0.642896 3.26816 0.777936 2.75994 0.975696C2.2336 1.17992 1.78803 1.4539 1.34278 1.89845C0.897536 2.34299 0.624256 2.78926 0.420032 3.3156C0.222272 3.82414 0.087232 4.40578 0.048448 5.25742C0.009024 6.11042 0 6.38312 0 8.55566C0 10.7282 0.009024 11.0009 0.048448 11.8539C0.087232 12.7056 0.222272 13.2872 0.420032 13.7957C0.624256 14.3217 0.8976 14.7685 1.34278 15.2129C1.78797 15.6572 2.2336 15.9308 2.75994 16.1356C3.26912 16.3334 3.85011 16.4684 4.70176 16.5072C5.5552 16.546 5.82745 16.5557 8 16.5557C10.1725 16.5557 10.4452 16.5466 11.2982 16.5072C12.1499 16.4684 12.7315 16.3334 13.2401 16.1356C13.7661 15.9308 14.212 15.6574 14.6572 15.2129C15.1025 14.7683 15.3752 14.3217 15.58 13.7957C15.7777 13.2872 15.9134 12.7056 15.9515 11.8539C15.9903 11.0003 15.9994 10.7282 15.9994 8.55566C15.9994 6.38312 15.9903 6.11042 15.9515 5.25742C15.9128 4.40571 15.7777 3.82382 15.58 3.3156C15.3752 2.78958 15.1018 2.3437 14.6572 1.89845C14.2127 1.4532 13.7661 1.17992 13.2407 0.975696C12.7315 0.777936 12.1499 0.642256 11.2989 0.604112C10.4459 0.565328 10.1732 0.555664 8.00064 0.555664C5.82809 0.555664 5.5552 0.564688 4.70176 0.604112Z" fill="currentColor"/>
-                                            <path d="M5.33376 8.55566C5.33376 7.08296 6.52729 5.88878 8 5.88878C9.4727 5.88878 10.6669 7.08296 10.6669 8.55566C10.6669 10.0284 9.4727 11.2225 8 11.2225C6.52729 11.2225 5.33376 10.0284 5.33376 8.55566ZM3.89209 8.55566C3.89209 10.8245 5.7312 12.6636 8 12.6636C10.2688 12.6636 12.1079 10.8245 12.1079 8.55566C12.1079 6.28686 10.2688 4.44776 8 4.44776C5.7312 4.44776 3.89209 6.28686 3.89209 8.55566ZM11.3105 4.28488C11.3104 4.47475 11.3667 4.66038 11.4721 4.81829C11.5775 4.97621 11.7274 5.09931 11.9028 5.17204C12.0782 5.24477 12.2712 5.26386 12.4574 5.22689C12.6437 5.18993 12.8148 5.09856 12.9491 4.96436C13.0834 4.83015 13.1749 4.65913 13.212 4.47293C13.2491 4.28672 13.2302 4.09369 13.1576 3.91824C13.085 3.7428 12.962 3.59282 12.8042 3.48727C12.6464 3.38172 12.4608 3.32534 12.2709 3.32526H12.2705C12.016 3.32538 11.772 3.42651 11.592 3.60644C11.412 3.78636 11.3107 4.03038 11.3105 4.28488ZM4.768 15.0675C3.98803 15.032 3.56409 14.902 3.28237 14.7923C2.90886 14.6469 2.64237 14.4737 2.36218 14.1939C2.08198 13.9141 1.90854 13.6478 1.76378 13.2743C1.65395 12.9927 1.52403 12.5687 1.48858 11.7887C1.44979 10.9454 1.44205 10.6921 1.44205 8.55573C1.44205 6.41934 1.45043 6.16674 1.48858 5.32277C1.5241 4.5428 1.65498 4.11957 1.76378 3.83714C1.90918 3.46363 2.08237 3.19714 2.36218 2.91694C2.64198 2.63675 2.90822 2.46331 3.28237 2.31854C3.56397 2.20872 3.98803 2.0788 4.768 2.04334C5.61126 2.00456 5.86457 1.99682 8 1.99682C10.1354 1.99682 10.389 2.0052 11.233 2.04334C12.0129 2.07886 12.4362 2.20974 12.7186 2.31854C13.0921 2.46331 13.3586 2.63714 13.6388 2.91694C13.919 3.19675 14.0918 3.46363 14.2372 3.83714C14.347 4.11874 14.4769 4.5428 14.5124 5.32277C14.5512 6.16674 14.5589 6.41934 14.5589 8.55573C14.5589 10.6921 14.5512 10.9447 14.5124 11.7887C14.4769 12.5687 14.3463 12.9926 14.2372 13.2743C14.0918 13.6478 13.9186 13.9143 13.6388 14.1939C13.359 14.4734 13.0921 14.6469 12.7186 14.7923C12.437 14.9021 12.0129 15.032 11.233 15.0675C10.3897 15.1063 10.1364 15.114 8 15.114C5.86361 15.114 5.61101 15.1063 4.768 15.0675ZM4.70176 0.604112C3.85011 0.642896 3.26816 0.777936 2.75994 0.975696C2.2336 1.17992 1.78803 1.4539 1.34278 1.89845C0.897536 2.34299 0.624256 2.78926 0.420032 3.3156C0.222272 3.82414 0.087232 4.40578 0.048448 5.25742C0.009024 6.11042 0 6.38312 0 8.55566C0 10.7282 0.009024 11.0009 0.048448 11.8539C0.087232 12.7056 0.222272 13.2872 0.420032 13.7957C0.624256 14.3217 0.8976 14.7685 1.34278 15.2129C1.78797 15.6572 2.2336 15.9308 2.75994 16.1356C3.26912 16.3334 3.85011 16.4684 4.70176 16.5072C5.5552 16.546 5.82745 16.5557 8 16.5557C10.1725 16.5557 10.4452 16.5466 11.2982 16.5072C12.1499 16.4684 12.7315 16.3334 13.2401 16.1356C13.7661 15.9308 14.212 15.6574 14.6572 15.2129C15.1025 14.7683 15.3752 14.3217 15.58 13.7957C15.7777 13.2872 15.9134 12.7056 15.9515 11.8539C15.9903 11.0003 15.9994 10.7282 15.9994 8.55566C15.9994 6.38312 15.9903 6.11042 15.9515 5.25742C15.9128 4.40571 15.7777 3.82382 15.58 3.3156C15.3752 2.78958 15.1018 2.3437 14.6572 1.89845C14.2127 1.4532 13.7661 1.17992 13.2407 0.975696C12.7315 0.777936 12.1499 0.642256 11.2989 0.604112C10.4459 0.565328 10.1732 0.555664 8.00064 0.555664C5.82809 0.555664 5.5552 0.564688 4.70176 0.604112Z" fill="currentColor"/>
+                                                <path
+                                                    d="M5.33376 8.55566C5.33376 7.08296 6.52729 5.88878 8 5.88878C9.4727 5.88878 10.6669 7.08296 10.6669 8.55566C10.6669 10.0284 9.4727 11.2225 8 11.2225C6.52729 11.2225 5.33376 10.0284 5.33376 8.55566ZM3.89209 8.55566C3.89209 10.8245 5.7312 12.6636 8 12.6636C10.2688 12.6636 12.1079 10.8245 12.1079 8.55566C12.1079 6.28686 10.2688 4.44776 8 4.44776C5.7312 4.44776 3.89209 6.28686 3.89209 8.55566ZM11.3105 4.28488C11.3104 4.47475 11.3667 4.66038 11.4721 4.81829C11.5775 4.97621 11.7274 5.09931 11.9028 5.17204C12.0782 5.24477 12.2712 5.26386 12.4574 5.22689C12.6437 5.18993 12.8148 5.09856 12.9491 4.96436C13.0834 4.83015 13.1749 4.65913 13.212 4.47293C13.2491 4.28672 13.2302 4.09369 13.1576 3.91824C13.085 3.7428 12.962 3.59282 12.8042 3.48727C12.6464 3.38172 12.4608 3.32534 12.2709 3.32526H12.2705C12.016 3.32538 11.772 3.42651 11.592 3.60644C11.412 3.78636 11.3107 4.03038 11.3105 4.28488ZM4.768 15.0675C3.98803 15.032 3.56409 14.902 3.28237 14.7923C2.90886 14.6469 2.64237 14.4737 2.36218 14.1939C2.08198 13.9141 1.90854 13.6478 1.76378 13.2743C1.65395 12.9927 1.52403 12.5687 1.48858 11.7887C1.44979 10.9454 1.44205 10.6921 1.44205 8.55573C1.44205 6.41934 1.45043 6.16674 1.48858 5.32277C1.5241 4.5428 1.65498 4.11957 1.76378 3.83714C1.90918 3.46363 2.08237 3.19714 2.36218 2.91694C2.64198 2.63675 2.90822 2.46331 3.28237 2.31854C3.56397 2.20872 3.98803 2.0788 4.768 2.04334C5.61126 2.00456 5.86457 1.99682 8 1.99682C10.1354 1.99682 10.389 2.0052 11.233 2.04334C12.0129 2.07886 12.4362 2.20974 12.7186 2.31854C13.0921 2.46331 13.3586 2.63714 13.6388 2.91694C13.919 3.19675 14.0918 3.46363 14.2372 3.83714C14.347 4.11874 14.4769 4.5428 14.5124 5.32277C14.5512 6.16674 14.5589 6.41934 14.5589 8.55573C14.5589 10.6921 14.5512 10.9447 14.5124 11.7887C14.4769 12.5687 14.3463 12.9926 14.2372 13.2743C14.0918 13.6478 13.9186 13.9143 13.6388 14.1939C13.359 14.4734 13.0921 14.6469 12.7186 14.7923C12.437 14.9021 12.0129 15.032 11.233 15.0675C10.3897 15.1063 10.1364 15.114 8 15.114C5.86361 15.114 5.61101 15.1063 4.768 15.0675ZM4.70176 0.604112C3.85011 0.642896 3.26816 0.777936 2.75994 0.975696C2.2336 1.17992 1.78803 1.4539 1.34278 1.89845C0.897536 2.34299 0.624256 2.78926 0.420032 3.3156C0.222272 3.82414 0.087232 4.40578 0.048448 5.25742C0.009024 6.11042 0 6.38312 0 8.55566C0 10.7282 0.009024 11.0009 0.048448 11.8539C0.087232 12.7056 0.222272 13.2872 0.420032 13.7957C0.624256 14.3217 0.8976 14.7685 1.34278 15.2129C1.78797 15.6572 2.2336 15.9308 2.75994 16.1356C3.26912 16.3334 3.85011 16.4684 4.70176 16.5072C5.5552 16.546 5.82745 16.5557 8 16.5557C10.1725 16.5557 10.4452 16.5466 11.2982 16.5072C12.1499 16.4684 12.7315 16.3334 13.2401 16.1356C13.7661 15.9308 14.212 15.6574 14.6572 15.2129C15.1025 14.7683 15.3752 14.3217 15.58 13.7957C15.7777 13.2872 15.9134 12.7056 15.9515 11.8539C15.9903 11.0003 15.9994 10.7282 15.9994 8.55566C15.9994 6.38312 15.9903 6.11042 15.9515 5.25742C15.9128 4.40571 15.7777 3.82382 15.58 3.3156C15.3752 2.78958 15.1018 2.3437 14.6572 1.89845C14.2127 1.4532 13.7661 1.17992 13.2407 0.975696C12.7315 0.777936 12.1499 0.642256 11.2989 0.604112C10.4459 0.565328 10.1732 0.555664 8.00064 0.555664C5.82809 0.555664 5.5552 0.564688 4.70176 0.604112Z"
+                                                    fill="currentColor"
+                                                />
+                                                <path
+                                                    d="M5.33376 8.55566C5.33376 7.08296 6.52729 5.88878 8 5.88878C9.4727 5.88878 10.6669 7.08296 10.6669 8.55566C10.6669 10.0284 9.4727 11.2225 8 11.2225C6.52729 11.2225 5.33376 10.0284 5.33376 8.55566ZM3.89209 8.55566C3.89209 10.8245 5.7312 12.6636 8 12.6636C10.2688 12.6636 12.1079 10.8245 12.1079 8.55566C12.1079 6.28686 10.2688 4.44776 8 4.44776C5.7312 4.44776 3.89209 6.28686 3.89209 8.55566ZM11.3105 4.28488C11.3104 4.47475 11.3667 4.66038 11.4721 4.81829C11.5775 4.97621 11.7274 5.09931 11.9028 5.17204C12.0782 5.24477 12.2712 5.26386 12.4574 5.22689C12.6437 5.18993 12.8148 5.09856 12.9491 4.96436C13.0834 4.83015 13.1749 4.65913 13.212 4.47293C13.2491 4.28672 13.2302 4.09369 13.1576 3.91824C13.085 3.7428 12.962 3.59282 12.8042 3.48727C12.6464 3.38172 12.4608 3.32534 12.2709 3.32526H12.2705C12.016 3.32538 11.772 3.42651 11.592 3.60644C11.412 3.78636 11.3107 4.03038 11.3105 4.28488ZM4.768 15.0675C3.98803 15.032 3.56409 14.902 3.28237 14.7923C2.90886 14.6469 2.64237 14.4737 2.36218 14.1939C2.08198 13.9141 1.90854 13.6478 1.76378 13.2743C1.65395 12.9927 1.52403 12.5687 1.48858 11.7887C1.44979 10.9454 1.44205 10.6921 1.44205 8.55573C1.44205 6.41934 1.45043 6.16674 1.48858 5.32277C1.5241 4.5428 1.65498 4.11957 1.76378 3.83714C1.90918 3.46363 2.08237 3.19714 2.36218 2.91694C2.64198 2.63675 2.90822 2.46331 3.28237 2.31854C3.56397 2.20872 3.98803 2.0788 4.768 2.04334C5.61126 2.00456 5.86457 1.99682 8 1.99682C10.1354 1.99682 10.389 2.0052 11.233 2.04334C12.0129 2.07886 12.4362 2.20974 12.7186 2.31854C13.0921 2.46331 13.3586 2.63714 13.6388 2.91694C13.919 3.19675 14.0918 3.46363 14.2372 3.83714C14.347 4.11874 14.4769 4.5428 14.5124 5.32277C14.5512 6.16674 14.5589 6.41934 14.5589 8.55573C14.5589 10.6921 14.5512 10.9447 14.5124 11.7887C14.4769 12.5687 14.3463 12.9926 14.2372 13.2743C14.0918 13.6478 13.9186 13.9143 13.6388 14.1939C13.359 14.4734 13.0921 14.6469 12.7186 14.7923C12.437 14.9021 12.0129 15.032 11.233 15.0675C10.3897 15.1063 10.1364 15.114 8 15.114C5.86361 15.114 5.61101 15.1063 4.768 15.0675ZM4.70176 0.604112C3.85011 0.642896 3.26816 0.777936 2.75994 0.975696C2.2336 1.17992 1.78803 1.4539 1.34278 1.89845C0.897536 2.34299 0.624256 2.78926 0.420032 3.3156C0.222272 3.82414 0.087232 4.40578 0.048448 5.25742C0.009024 6.11042 0 6.38312 0 8.55566C0 10.7282 0.009024 11.0009 0.048448 11.8539C0.087232 12.7056 0.222272 13.2872 0.420032 13.7957C0.624256 14.3217 0.8976 14.7685 1.34278 15.2129C1.78797 15.6572 2.2336 15.9308 2.75994 16.1356C3.26912 16.3334 3.85011 16.4684 4.70176 16.5072C5.5552 16.546 5.82745 16.5557 8 16.5557C10.1725 16.5557 10.4452 16.5466 11.2982 16.5072C12.1499 16.4684 12.7315 16.3334 13.2401 16.1356C13.7661 15.9308 14.212 15.6574 14.6572 15.2129C15.1025 14.7683 15.3752 14.3217 15.58 13.7957C15.7777 13.2872 15.9134 12.7056 15.9515 11.8539C15.9903 11.0003 15.9994 10.7282 15.9994 8.55566C15.9994 6.38312 15.9903 6.11042 15.9515 5.25742C15.9128 4.40571 15.7777 3.82382 15.58 3.3156C15.3752 2.78958 15.1018 2.3437 14.6572 1.89845C14.2127 1.4532 13.7661 1.17992 13.2407 0.975696C12.7315 0.777936 12.1499 0.642256 11.2989 0.604112C10.4459 0.565328 10.1732 0.555664 8.00064 0.555664C5.82809 0.555664 5.5552 0.564688 4.70176 0.604112Z"
+                                                    fill="currentColor"
+                                                />
                                             </g>
                                             <defs>
-                                            <clipPath id="instagram">
-                                            <rect width="16" height="16" fill="currentColor" transform="translate(0 0.555664)"/>
-                                            </clipPath>
+                                                <clipPath id="instagram">
+                                                    <rect width="16" height="16" fill="currentColor" transform="translate(0 0.555664)" />
+                                                </clipPath>
                                             </defs>
                                         </svg>
                                     </a>
@@ -1852,14 +2086,14 @@
         <!-- Back To Top Btn -->
         <button class="scrollTop scrollTop--white" onclick="scrollToTop()">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 20.25V3.75" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M5.25 10.5L12 3.75L18.75 10.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                
+                <path d="M12 20.25V3.75" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M5.25 10.5L12 3.75L18.75 10.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
         </button>
 
         <script src="src/js/plugins/jquery.min.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script src="src/js/plugins/slick.min.js"></script>
         <script src="src/js/pages/home-01.js"></script>
         <script type="module" src="/main.js"></script>
