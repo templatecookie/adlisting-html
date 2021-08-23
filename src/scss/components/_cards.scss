@@ -960,6 +960,7 @@
   overflow: hidden;
   background-color: #fff;
   padding-bottom: 24px;
+  margin-bottom: 24px;
   @include trans(0.4s, ease-in-out);
   &-img-wrapper {
     position: relative;
@@ -979,6 +980,7 @@
       @include trans(0.4s, ease-in-out);
     }
     img {
+      object-fit: contain;
       @include trans(0.3s, ease-in-out);
     }
     .btn {
