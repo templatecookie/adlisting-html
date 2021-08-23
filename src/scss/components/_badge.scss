@@ -1,0 +1,26 @@
+.badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include font(13px, 14px, 400, null);
+  padding: 5px 12px;
+  border-radius: 100px;
+  .icon {
+    margin-right: 5px;
+  }
+
+  &--warning {
+    color: #664c00;
+    background-color: #fff2cc;
+  }
+
+  &--danger {
+    color: #662020;
+    background-color: #ffcccc;
+  }
+
+  &--success {
+    color: #104e00;
+    background-color: #d4f3cc;
+  }
+}

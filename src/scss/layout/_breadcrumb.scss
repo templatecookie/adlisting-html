@@ -1,0 +1,66 @@
+.breedcrumb {
+  position: relative;
+  padding: 60px 0px;
+  overflow: hidden;
+  z-index: 1;
+  text-align: center;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(25, 31, 51, 0.8);
+    z-index: -1;
+  }
+
+  &__title {
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 16px;
+  }
+
+  &__page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-item {
+      margin-right: 8px;
+      &:nth-last-child(1) {
+        margin-right: 0px;
+        .breedcrumb__page-link {
+          opacity: 1;
+          font-weight: 600;
+        }
+      }
+
+      &:nth-last-child(2),
+      &:nth-last-child(3),
+      &:nth-last-child(4),
+      &:nth-last-child(5) {
+        @include max(991px) {
+          display: none;
+        }
+      }
+
+      &:nth-last-child(9),
+      &:nth-last-child(10),
+      &:nth-last-child(11),
+      &:nth-last-child(12) {
+        display: none;
+      }
+    }
+
+    &-link {
+      text-transform: capitalize;
+      color: #fff;
+      opacity: 0.6;
+      &:hover {
+        color: #fff;
+        opacity: 0.6;
+      }
+    }
+  }
+}

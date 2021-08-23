@@ -1,0 +1,27 @@
+.demo-tab {
+  &__nav {
+    justify-content: center;
+    margin-bottom: 50px;
+    &-link {
+      @include font(16px, 50px, 700, gray-3);
+      padding: 0px 20px;
+      text-transform: uppercase;
+      font-family: $fsecondary;
+      border-radius: 4px !important;
+      border: 1px solid #dadde5 !important;
+      margin-right: 16px;
+      @include max(767px) {
+        margin-bottom: 16px;
+      }
+      &.active {
+        background-color: color(primary-4) !important;
+      }
+    }
+  }
+
+  &__card {
+    @include max(1199px) {
+      margin-bottom: 24px;
+    }
+  }
+}
