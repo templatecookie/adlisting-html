@@ -35,4 +35,4 @@ window.addEventListener('scroll', function () {
 });
 
 // Init scroll animation
-AOS.init({ disable: 'mobile' });
+AOS.init({ disable: 'mobile', });
