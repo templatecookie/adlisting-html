@@ -59,7 +59,7 @@
         visibility: hidden;
         pointer-events: all;
         transform: translateY(-10px);
-        @include trans(0.4s, ease-in-out);
+        @include trans(0.3s, ease-in-out);
 
         &__link {
           font-size: 14px;
@@ -70,7 +70,7 @@
           &:hover {
             color: #fff;
             background-color: color(primary-4);
-            @include trans(0.4s, ease-in);
+            @include trans(0.3s, ease-in);
           }
         }
       }
@@ -92,7 +92,7 @@
         @include max(360px) {
           border-radius: 50%;
           right: 12px;
-          @include trans(0.4s, ease-in-out);
+          @include trans(0.3s, ease-in-out);
         }
       }
     }
@@ -106,7 +106,7 @@
       transform: translateY(-50%);
       border-top-left-radius: 0px;
       border-bottom-left-radius: 0px;
-      @include trans(0.6s, ease-in-out);
+      @include trans(0.4s, ease-in-out);
     }
 
     @include max(360px) {
@@ -891,7 +891,7 @@
             background-color: color(danger-4);
             button {
               svg {
-                transition: all 0.4s ease-in-out;
+                transition: all 0.3s ease-in-out;
                 color: #fff;
               }
             }
@@ -998,7 +998,7 @@
                   border-radius: 6px;
                   border: 1px solid #ebeef7;
                   background-color: #fff;
-                  @include trans(0.4s, ease-in-out);
+                  @include trans(0.3s, ease-in-out);
                   @include max(480px) {
                     width: 100%;
                   }
