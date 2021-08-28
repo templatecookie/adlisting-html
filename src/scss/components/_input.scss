@@ -58,7 +58,7 @@
       margin-left: 8px;
       margin-bottom: 4px;
       transform: rotate(45deg);
-      @include trans(0.4s, ease-in-out);
+      @include trans(0.3s, ease-in-out);
 
       &--up {
         margin-bottom: 0px;
@@ -211,7 +211,7 @@
         &:hover {
           color: #fff;
           background-color: color(primary-4);
-          @include trans(0.4s, ease-in-out);
+          @include trans(0.3s, ease-in-out);
           cursor: pointer;
         }
       }

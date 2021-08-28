@@ -13,7 +13,7 @@
     &:hover {
       color: #fff;
       background-color: color(primary-4);
-      @include trans(0.4s, ease-in-out);
+      @include trans(0.3s, ease-in-out);
     }
   }
 }

@@ -6,7 +6,7 @@
     width: 425px;
     max-height: 100%;
     z-index: 999;
-    @include trans(0.6s, ease-in-out);
+    @include trans(0.4s, ease-in-out);
   }
   @include max(420px) {
     width: 100%;
@@ -21,7 +21,7 @@
       max-height: inherit;
       overflow-y: auto;
       z-index: 9999;
-      @include trans(0.4s, ease-in-out);
+      @include trans(0.3s, ease-in-out);
     }
   }
 
@@ -136,7 +136,7 @@
           height: 100%;
           img {
             width: 100%;
-            @include trans(0.4s, ease-in-out);
+            @include trans(0.3s, ease-in-out);
           }
           h2 {
             width: 100%;
@@ -221,7 +221,7 @@
 
         img {
           width: 100%;
-          @include trans(0.4s, ease-in-out);
+          @include trans(0.3s, ease-in-out);
         }
         &:hover {
           img {
@@ -238,6 +238,10 @@
         display: flex;
         align-items: center;
         margin-bottom: 20px;
+        &:nth-last-child(1) {
+          margin-bottom: 0px;
+        }
+
         @include min-max(992px, 1024px) {
           flex-direction: column;
           align-items: flex-start;
@@ -254,7 +258,6 @@
           }
         }
         &:nth-last-child(1) {
-          padding-bottom: 20px;
           margin-bottom: 0px;
         }
         .post-img {
@@ -271,7 +274,7 @@
             margin-bottom: 16px;
           }
           img {
-            @include trans(0.4s, ease-in-out);
+            @include trans(0.3s, ease-in-out);
           }
         }
         .post-info {

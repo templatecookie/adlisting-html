@@ -203,7 +203,7 @@
     a {
       color: color(gray-4);
       margin: 0px 4px;
-      @include trans(0.4s, linear);
+      @include trans(0.3s, linear);
       &:hover {
         color: color(g);
         @include trans(0.3s, linear);

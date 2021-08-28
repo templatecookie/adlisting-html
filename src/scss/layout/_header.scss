@@ -458,7 +458,7 @@
         .icon {
           svg {
             transform: rotate(180deg);
-            @include trans(0.4s, ease-in-out);
+            @include trans(0.3s, ease-in-out);
           }
         }
       }
@@ -473,7 +473,7 @@
     .icon {
       margin-left: 8px;
       svg {
-        @include trans(0.4s, ease-in-out);
+        @include trans(0.3s, ease-in-out);
       }
     }
     &:hover,
@@ -498,7 +498,7 @@
     visibility: hidden;
     pointer-events: all;
     transform: translateY(-15px);
-    @include trans(0.4s, ease-in-out);
+    @include trans(0.3s, ease-in-out);
 
     &__link {
       @include font(16px, 24px, 400, gray-4);
@@ -541,7 +541,7 @@
     pointer-events: none;
     transform: translateY(-35px);
 
-    @include trans(0.4s, ease-in-out);
+    @include trans(0.3s, ease-in-out);
     &__item {
       position: relative;
       padding: 16px 20px;
@@ -560,7 +560,7 @@
           color: color(primary-4);
           .icon {
             transform: rotate(180deg);
-            @include trans(0.4s, ease-in-out);
+            @include trans(0.3s, ease-in-out);
           }
         }
         .menu--sm-dropdown {
@@ -568,7 +568,7 @@
           visibility: visible;
           pointer-events: all;
           height: auto;
-          @include trans(0.6s, ease-in-out);
+          @include trans(0.4s, ease-in-out);
         }
       }
     }
@@ -623,7 +623,7 @@
         .icon {
           svg {
             transform: rotate(270deg);
-            @include trans(0.4s, ease-in-out);
+            @include trans(0.3s, ease-in-out);
           }
         }
       }
@@ -669,7 +669,7 @@
     visibility: hidden;
     pointer-events: all;
     transform: translateY(-16px);
-    @include trans(0.4s, ease-in-out);
+    @include trans(0.3s, ease-in-out);
 
     @include max(767px) {
       max-width: 250px;
@@ -682,7 +682,7 @@
         .category-menu__dropdown__link {
           .drop-icon {
             right: 14px;
-            @include trans(0.4s, ease-in-out);
+            @include trans(0.3s, ease-in-out);
           }
         }
       }
@@ -694,7 +694,7 @@
           opacity: 1;
           visibility: visible;
           pointer-events: all;
-          @include trans(0.6s, ease-in-out);
+          @include trans(0.4s, ease-in-out);
         }
       }
     }
@@ -742,7 +742,7 @@
     opacity: 0;
     visibility: hidden;
     pointer-events: all;
-    @include trans(0.4s, ease-in-out);
+    @include trans(0.3s, ease-in-out);
     &__item {
       &:hover {
         .category-menu__subdropdown {
