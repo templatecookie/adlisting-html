@@ -32,7 +32,7 @@
       height: 280px;
     }
     img {
-      @include trans(0.4s, ease-in-out);
+      @include trans(0.3s, ease-in-out);
     }
 
     @include max(991px) {
@@ -93,7 +93,7 @@
         height: 100%;
       }
       img {
-        @include trans(0.4s, ease-in-out);
+        @include trans(0.3s, ease-in-out);
       }
       .icon {
         position: absolute;

@@ -107,7 +107,7 @@
         visibility: visible;
         pointer-events: all;
         transform: translateY(0px);
-        @include trans(0.4s, ease-in-out);
+        @include trans(0.3s, ease-in-out);
       }
     }
   }
@@ -131,7 +131,7 @@
     visibility: hidden;
     pointer-events: all;
     transform: translateY(15px);
-    @include trans(0.4s, ease-in-out);
+    @include trans(0.3s, ease-in-out);
 
     &__item {
       &:nth-last-child(1) {
@@ -210,7 +210,7 @@
   z-index: 99999;
   opacity: 0;
   visibility: hidden;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.3s ease-in-out;
   @include max(1199px) {
     right: 15px;
     bottom: 60px;

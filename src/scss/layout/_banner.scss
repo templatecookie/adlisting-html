@@ -5,7 +5,6 @@
   &--one {
     display: flex;
     align-items: center;
-    height: 820px;
     z-index: 1;
     @include max(767px) {
       height: auto;
@@ -28,6 +27,7 @@
         color: #fff;
         width: 900px;
         margin: auto;
+        padding-top: 95px;
         margin-bottom: 32px;
         @include max(991px) {
           width: 100%;
@@ -41,6 +41,10 @@
           @include font(28px, 46px, null, null);
         }
       }
+
+      // &__feature {
+      //   padding-bottom: 50px;
+      // }
     }
 
     .search {

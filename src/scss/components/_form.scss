@@ -3,7 +3,7 @@
     margin-bottom: 0px;
 
     input {
-      @include trans(0.4s, ease-in-out);
+      @include trans(0.3s, ease-in-out);
       cursor: pointer;
       &[type='checkbox'] {
         width: 22px;

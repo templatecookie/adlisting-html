@@ -29,7 +29,7 @@
       border-radius: 0px;
       background-color: #fff;
       width: 390px;
-      @include trans(0.4s, ease-in-out);
+      @include trans(0.3s, ease-in-out);
     }
 
     @include max(460px) {
@@ -285,7 +285,7 @@
         cursor: pointer;
         border: 2px solid transparent;
         &.slick-current {
-          transition: all 0.4s ease-in-out;
+          transition: all 0.3s ease-in-out;
           border: 2px solid color(primary-4);
           img {
             transform: scale(0.8);
@@ -309,13 +309,13 @@
         border-radius: 4px;
         background-color: #ebeef7;
         cursor: pointer;
-        @include trans(0.4s, ease-in-out);
+        @include trans(0.3s, ease-in-out);
 
         &:hover {
           background-color: color(gray-6);
           // transform: translateY(-2px);
           margin-top: 2px;
-          @include trans(0.4s, ease-in-out);
+          @include trans(0.3s, ease-in-out);
         }
 
         &--prev {
@@ -411,7 +411,7 @@
       height: 100%;
       overflow-x: visible;
       background-color: #fff;
-      @include trans(0.4s, ease-in-out);
+      @include trans(0.3s, ease-in-out);
     }
 
     @include max(480px) {
@@ -432,7 +432,7 @@
       .btn--fav {
         @include max(480px) {
           margin-right: 50px;
-          @include trans(0.4s, ease-in-out);
+          @include trans(0.3s, ease-in-out);
         }
       }
     }
