@@ -644,7 +644,8 @@
   cursor: pointer;
   background-color: color(gray-10);
   margin-bottom: 16px;
-
+  height: 100%;
+  min-height: 104px;
   &:hover {
     background-color: color(primary-9);
   }
