@@ -452,10 +452,10 @@
 .location-card {
   position: relative;
   text-align: center;
-
   &__img-wrapper {
     width: 264px;
     height: 224px;
+    border-radius: 8px;
     margin: auto;
     overflow: hidden;
     display: flex;
