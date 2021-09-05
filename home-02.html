@@ -13,7 +13,6 @@
     </head>
 
     <body>
-        
         <div class="loader">
             <div class="loader-icon">
                 <img src="src/images/loader.gif" alt="loader" />
@@ -2413,9 +2412,24 @@
 
         <script src="src/js/plugins/jquery.min.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
         <script src="src/js/plugins/purecounter.js"></script>
         <script type="module" src="/main.js"></script>
         <script src="src/js/app.js"></script>
+
+        <script>
+            const toggle = document.querySelector(".toggle-icon");
+            const mainNav = document.querySelector(".header");
+            const mobileNav = document.querySelector(".menu--sm");
+            const logo = document.querySelector('[alt="brand-logo"]');
+
+            let logoChange = false;
+
+            toggle.addEventListener("click", function (e) {
+                e.preventDefault();
+                toggle.classList.toggle("active");
+                mainNav.classList.toggle("active");
+                mobileNav.classList.toggle("active");
+            });
+        </script>
     </body>
 </html>

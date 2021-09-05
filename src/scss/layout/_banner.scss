@@ -31,15 +31,16 @@
         margin-bottom: 32px;
         @include max(991px) {
           width: 100%;
+          @include font(36px, 46px, null, null);
         }
 
-        @include max(767px) {
-          @include font(48px, 62px, null, null);
-        }
+        // @include max(767px) {
+        //   @include font(48px, 62px, null, null);
+        // }
 
-        @include max(575px) {
-          @include font(28px, 46px, null, null);
-        }
+        // @include max(575px) {
+        //   @include font(28px, 46px, null, null);
+        // }
       }
 
       // &__feature {
