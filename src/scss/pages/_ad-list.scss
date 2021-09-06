@@ -305,6 +305,9 @@
         transform: translateY(-50%);
         z-index: 9;
         padding: 12px;
+        @include max(767px) {
+          padding: 8px;
+        }
         border-radius: 4px;
         background-color: #ebeef7;
         cursor: pointer;
@@ -332,6 +335,12 @@
           }
           @include min-max(1200px, 1340px) {
             right: 0;
+          }
+        }
+
+        svg {
+          @include max(767px) {
+            height: 18px;
           }
         }
       }
