@@ -12,9 +12,9 @@ toggle.addEventListener('click', function (e) {
   mainNav.classList.toggle('active');
   mobileNav.classList.toggle('active');
 
+  // logoChange = !logoChange;
   // change logo if it's background are transparent
   logoChange === true
     ? (logo.src = 'src/images/logo.png')
     : (logo.src = 'src/images/logo-dark.png');
-  logoChange = !logoChange;
 });
