@@ -1,6 +1,5 @@
 .error {
   &__img-wrapper {
-    margin-bottom: 85px;
     @include max(767px) {
       margin-bottom: 30px;
     }
