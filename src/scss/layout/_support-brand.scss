@@ -1,4 +1,10 @@
 .support-brand {
+  .title {
+    margin-bottom: 50px;
+    @include max(767px) {
+      margin-bottom: 24px;
+    }
+  }
   &__slider {
     display: flex;
     align-items: center;
