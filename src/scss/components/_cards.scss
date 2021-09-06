@@ -1186,9 +1186,6 @@
             width: 40%;
           }
           &:nth-child(1) {
-            @include max(767px) {
-              order: 2;
-            }
             h6 {
               @include max(767px) {
                 display: none;
@@ -1198,7 +1195,7 @@
           &:nth-child(2) {
             @include max(767px) {
               width: 70%;
-              order: 1;
+              // order: 1;
             }
             h6 {
               @include max(767px) {
@@ -1210,7 +1207,7 @@
             width: 25%;
             @include max(767px) {
               width: 30%;
-              order: 3;
+              // order: 3;
             }
           }
 
