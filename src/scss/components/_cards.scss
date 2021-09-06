@@ -1106,9 +1106,6 @@
   &--recent {
     height: 100%;
     &__activity {
-      // max-height: 350px;
-      // overflow-y: auto;
-
       &-item {
         display: flex;
         align-items: flex-start;
@@ -1294,6 +1291,9 @@
         display: flex;
         align-items: center;
         margin-bottom: 12px;
+        @include max(991px) {
+          justify-content: space-between;
+        }
         &:nth-last-child(1) {
           margin-bottom: 0px;
         }
@@ -1308,6 +1308,11 @@
     }
 
     .dashobard-card--action {
+      display: flex;
+      align-items: center;
+      @include max(991px) {
+        justify-content: space-between;
+      }
       .btn {
         margin-right: 12px;
       }
@@ -1321,7 +1326,6 @@
         @include trans(0.3s, linear);
         color: color(danger-4);
         &:hover {
-          // color: color(gray-2);
           background-color: color(danger-9);
         }
       }
@@ -1341,6 +1345,9 @@
         display: flex;
         align-items: center;
         margin-bottom: 8px;
+        @include max(991px) {
+          justify-content: space-between;
+        }
         &:nth-last-child(1) {
           margin-bottom: 0px;
         }
@@ -1512,7 +1519,6 @@
           }
           &-icon {
             position: static;
-            // color: #fff;
             .icon-toggle {
               color: color(gray-2);
             }
