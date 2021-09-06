@@ -415,6 +415,14 @@
     background-color: #fff;
     color: color(primary-4);
     @include trans(0.3s, ease-in-out);
+    @include max(767px) {
+      padding: 12px;
+    }
+    svg {
+      @include max(767px) {
+        height: 24px;
+      }
+    }
   }
 
   &__list {
