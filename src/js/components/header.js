@@ -17,4 +17,5 @@ toggle.addEventListener('click', function (e) {
   logoChange === true
     ? (logo.src = 'src/images/logo.png')
     : (logo.src = 'src/images/logo-dark.png');
+  logoChange = !logoChange;
 });
