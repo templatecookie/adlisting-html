@@ -1245,7 +1245,8 @@
           &:nth-last-child(1) {
             padding-bottom: 0px;
           }
-          p {
+          p,
+          a {
             color: color(gray-2);
             &:nth-child(1),
             &:nth-child(2) {
