@@ -6,7 +6,6 @@ planBtns.forEach((btn) => {
   btn.addEventListener('click', () => {
     removeActive();
     btn.classList.add('active');
-    console.log(btn.textContent === 'Monthly' ? '/month' : '/annual');
     btn.textContent === 'Monthly'
       ? changeText('/month')
       : changeText('/annual');
