@@ -12,18 +12,12 @@ toggle.addEventListener('click', function (e) {
 
   // change Logo when background added on navbar
 
-  // logo.classList.contains('logo-transparent') ? ;
-
-  let logochange =
-    logo.src == `http://localhost:3000/src/images/logo.png`
-      ? changeLogo('logo-dark')
-      : changeLogo('logo');
+  logo.src == `http://localhost:3000/src/images/logo.png`
+    ? changeLogo('logo-dark')
+    : changeLogo('logo');
 });
 
 // change logo
 function changeLogo(logopath) {
   logo.src = `http://localhost:3000/src/images/${logopath}.png`;
 }
-
-// // remove current logo
-console.log('hello');
