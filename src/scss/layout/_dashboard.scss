@@ -712,10 +712,14 @@
 
     &.active {
       .dashboard__message-users {
-        display: none;
+        @include max(767px) {
+          display: none;
+        }
       }
       .dashboard__message-user {
-        display: block;
+        @include max(767px) {
+          display: block;
+        }
       }
     }
 
@@ -803,8 +807,8 @@
             display: none;
           }
           svg {
-            width: 32px;
-            height: 32px;
+            width: 22px;
+            height: 22px;
           }
         }
         .img {
@@ -854,7 +858,9 @@
         justify-content: space-between;
         padding: 16px 24px;
         border-bottom: 1px solid #ebeef7;
-
+        @include max(767px) {
+          padding: 16px;
+        }
         .user-info {
           .img {
             width: 48px;

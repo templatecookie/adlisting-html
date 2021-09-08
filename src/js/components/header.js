@@ -1,5 +1,3 @@
-'use strict';
-
 // Header Navigation Toggle event
 const toggle = document.querySelector('.toggle-icon');
 const mainNav = document.querySelector('.header');
@@ -14,9 +12,10 @@ toggle.addEventListener('click', function (e) {
   mainNav.classList.toggle('active');
   mobileNav.classList.toggle('active');
 
-  // change logo if it's background are transparent
-  // logoChange === true
-  //   ? (logo.src = 'src/images/logo.png')
-  //   : (logo.src = 'src/images/logo-dark.png');
   // logoChange = !logoChange;
+  // change logo if it's background are transparent
+  logoChange === true
+    ? (logo.src = 'src/images/logo.png')
+    : (logo.src = 'src/images/logo-dark.png');
+  logoChange = !logoChange;
 });

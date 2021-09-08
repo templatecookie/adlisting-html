@@ -63,6 +63,8 @@
       background-color: #fff;
       border-top-right-radius: 4px;
       border-bottom-right-radius: 4px;
+      box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.267);
+
       @include min(1200px) {
         display: none;
       }
@@ -198,6 +200,7 @@
                 line-height: 21px;
                 text-transform: capitalize;
                 color: color(gray-2);
+                cursor: pointer;
               }
             }
 
@@ -279,7 +282,7 @@
         width: 100%;
       }
       &__item {
-        width: 100%;
+        width: 112px !important;
         height: 112px;
         margin: 0px 6px;
         cursor: pointer;
@@ -288,10 +291,8 @@
           transition: all 0.3s ease-in-out;
           border: 2px solid color(primary-4);
           img {
-            transform: scale(0.8);
-            @include max(991px) {
-              transform: scale(0.9);
-            }
+            object-fit: contain;
+            padding: 0px 8px 4px 4px;
           }
         }
 
@@ -306,6 +307,9 @@
         transform: translateY(-50%);
         z-index: 9;
         padding: 12px;
+        @include max(767px) {
+          padding: 8px;
+        }
         border-radius: 4px;
         background-color: #ebeef7;
         cursor: pointer;
@@ -313,13 +317,12 @@
 
         &:hover {
           background-color: color(gray-6);
-          // transform: translateY(-2px);
           margin-top: 2px;
           @include trans(0.3s, ease-in-out);
         }
 
         &--prev {
-          left: -75px;
+          left: -60px;
           @include max(991px) {
             left: 0px;
           }
@@ -328,12 +331,18 @@
           }
         }
         &--next {
-          right: -75px;
+          right: -60px;
           @include max(991px) {
             right: 0px;
           }
           @include min-max(1200px, 1340px) {
             right: 0;
+          }
+        }
+
+        svg {
+          @include max(767px) {
+            height: 18px;
           }
         }
       }
@@ -425,6 +434,7 @@
       .toggle-bar {
         color: color(primary-4);
         @include max(480px) {
+          top: 35px;
           right: 0px;
         }
       }
@@ -439,7 +449,7 @@
 
     .toggle-bar {
       position: absolute;
-      top: 35px;
+      top: 95px;
       right: -45px;
       overflow: visible;
       background-color: #fff;
@@ -447,6 +457,8 @@
       border-top-right-radius: 4px;
       border-bottom-right-radius: 4px;
       z-index: 9;
+      box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.267);
+
       @include min(1200px) {
         display: none;
       }
@@ -541,7 +553,6 @@
       background-color: #fff;
       border: 1px solid #ebeef7;
       .product-ad__sidebar-item {
-        // padding: 32px;
         h2 {
           color: color(g);
           font-weight: 600;
@@ -643,7 +654,8 @@
   cursor: pointer;
   background-color: color(gray-10);
   margin-bottom: 16px;
-
+  height: 100%;
+  min-height: 104px;
   &:hover {
     background-color: color(primary-9);
   }

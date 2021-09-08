@@ -1,6 +1,11 @@
 .counter {
   background-color: color(primary);
-
+  @include max(991px) {
+    padding-bottom: 68px;
+  }
+  @include max(767px) {
+    padding-bottom: 36px;
+  }
   &__item {
     display: flex;
     align-items: center;
