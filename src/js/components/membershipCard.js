@@ -1,0 +1,24 @@
+'use strict';
+
+const planBtns = document.querySelectorAll('.price-plan__link');
+const packageType = document.querySelectorAll('.plan-card__price span');
+planBtns.forEach((btn) => {
+  btn.addEventListener('click', () => {
+    removeActive();
+    btn.classList.add('active');
+    console.log(btn.textContent === 'Monthly' ? '/month' : '/annual');
+    let month = '/monthly';
+    let annualy = '/annualy';
+    btn.textContent === 'Monthly' ? changeText(month) : changeText(annualy);
+  });
+});
+
+// remove active class
+function removeActive() {
+  planBtns.forEach((btn) => btn.classList.remove('active'));
+}
+
+// change text
+function changeText(string) {
+  packageType.forEach((text) => (text.textContent = string));
+}
