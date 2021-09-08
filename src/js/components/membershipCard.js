@@ -7,9 +7,9 @@ planBtns.forEach((btn) => {
     removeActive();
     btn.classList.add('active');
     console.log(btn.textContent === 'Monthly' ? '/month' : '/annual');
-    let month = '/monthly';
-    let annualy = '/annualy';
-    btn.textContent === 'Monthly' ? changeText(month) : changeText(annualy);
+    btn.textContent === 'Monthly'
+      ? changeText('/month')
+      : changeText('/annual');
   });
 });
 
