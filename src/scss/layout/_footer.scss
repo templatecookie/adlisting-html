@@ -43,8 +43,11 @@
       }
       &__copyright {
         p {
-          b {
+          a {
             color: #fff;
+            &:hover {
+              color: color(primary);
+            }
           }
         }
       }
@@ -192,7 +195,7 @@
     }
     p {
       color: color(gray-4);
-      b {
+      a {
         font-weight: 400;
         color: color(g);
       }

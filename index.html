@@ -10,7 +10,9 @@
         <link rel="icon" type="image/png" sizes="32x32" href="src/images/favicon_io/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="src/images/favicon_io/favicon-16x16.png" />
         <link rel="manifest" href="src/images/favicon_io/site.webmanifest" />
-        
+        <link rel="stylesheet" href="src/js/plugins/css/slick.css">
+        <link rel="stylesheet" href="src/js/plugins/select2/css/select2.min.css">
+        <link rel="stylesheet" href="src/js/plugins/select2/css/select2-bootstrap-5-theme.css">
     </head>
 
     <body>
@@ -25,8 +27,7 @@
             <div class="container navigation-bar">
                 <!-- Brand Logo -->
                 <a href="index.html" class="navigation-bar__logo">
-                    <img src="src/images/logo.png" alt="brand-logo" />
-                    <!-- <img src="src/images/logo-dark.png" alt="brand-logo" /> -->
+                    <img src="src/images/logo.png" alt="brand-logo" class="logo-transparent" />
                 </a>
                 <!-- Menu -->
                 <ul class="menu">
@@ -247,7 +248,7 @@
                                 <div class="input-field">
                                     <input type="text" placeholder="Search by ads title, keyword..." />
                                     <span class="icon icon--left">
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path
                                                 d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
                                                 stroke="#00AAFF"
@@ -265,7 +266,7 @@
                                 <div class="input-field">
                                     <input type="text" placeholder="Locations" />
                                     <span class="icon icon--left">
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path
                                                 d="M12 12.75C13.6569 12.75 15 11.4069 15 9.75C15 8.09315 13.6569 6.75 12 6.75C10.3431 6.75 9 8.09315 9 9.75C9 11.4069 10.3431 12.75 12 12.75Z"
                                                 stroke="#00AAFF"
@@ -285,7 +286,18 @@
                                 </div>
                             </div>
                             <!-- Select Category temprorary disable -->
-                            <div class="search__content-item"></div>
+                            <div class="search__content-item">
+                                <div class="input-field">
+                                    <select name="category" id="category" style="width: calc(100% - 60px);">
+                                        <option value="null" style="display: none;">Select Category</option>
+                                        <option value="1">Category 1</option>
+                                        <option value="2">Category 2</option>
+                                    </select>
+                                    <span class="icon icon--left">
+                                        <svg viewBox="0 0 24 24" width="24" height="24" stroke="#00AAFF" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                                    </span>
+                                </div>
+                            </div>
                             <!-- Search Btn -->
                             <div class="search__content-item">
                                 <button class="btn btn--lg">
@@ -331,7 +343,7 @@
                             <h5 class="text--body-2 category-card__title">Mobiles</h5>
                             <div class="category-card__view">
                                 <span class="first view-number">4,391</span>
-                                <a href="single-ad.html" class="second view-btn">
+                                <a href="ad-details.html" class="second view-btn">
                                     View Ads
                                     <span class="icon">
                                         <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -355,7 +367,7 @@
                             <h5 class="text--body-2 category-card__title">Electronics</h5>
                             <div class="category-card__view">
                                 <span class="first view-number">4,391</span>
-                                <a href="single-ad.html" class="second view-btn">
+                                <a href="ad-details.html" class="second view-btn">
                                     View Ads
                                     <span class="icon">
                                         <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -407,7 +419,7 @@
                             <h5 class="text--body-2 category-card__title">Vehicles</h5>
                             <div class="category-card__view">
                                 <span class="first view-number">4,391</span>
-                                <a href="single-ad.html" class="second view-btn">
+                                <a href="ad-details.html" class="second view-btn">
                                     View Ads
                                     <span class="icon">
                                         <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -463,7 +475,7 @@
                             <h5 class="text--body-2 category-card__title">Property</h5>
                             <div class="category-card__view">
                                 <span class="first view-number">4,391</span>
-                                <a href="single-ad.html" class="second view-btn">
+                                <a href="ad-details.html" class="second view-btn">
                                     View Ads
                                     <span class="icon">
                                         <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -491,7 +503,7 @@
                             <h5 class="text--body-2 category-card__title">Essentials</h5>
                             <div class="category-card__view">
                                 <span class="first view-number">4,391</span>
-                                <a href="single-ad.html" class="second view-btn">
+                                <a href="ad-details.html" class="second view-btn">
                                     View Ads
                                     <span class="icon">
                                         <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -527,7 +539,7 @@
                             <h5 class="text--body-2 category-card__title">Home & Living</h5>
                             <div class="category-card__view">
                                 <span class="first view-number">4,391</span>
-                                <a href="single-ad.html" class="second view-btn">
+                                <a href="ad-details.html" class="second view-btn">
                                     View Ads
                                     <span class="icon">
                                         <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -615,7 +627,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-4 col-md-12">
                         <div class="work-card">
                             <span class="work-card__icon">
                                 <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -659,7 +671,7 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="cards cards--two cards--highlight">
-                            <a href="single-ad.html" class="cards__img-wrapper">
+                            <a href="ad-details.html" class="cards__img-wrapper">
                                 <img src="src/images/view/img-01.png" alt="card-img" />
                             </a>
                             <div class="cards__info">
@@ -689,7 +701,7 @@
                                             Featured
                                         </div>
                                     </div>
-                                    <a href="single-ad.html" class="text--body-3-600 cards__caption-title">Xiaomi Poco X2 (8/256) Hot Offer...</a>
+                                    <a href="ad-details.html" class="text--body-3-600 cards__caption-title">Xiaomi Poco X2 (8/256) Hot Offer...</a>
 
                                     <div class="cards__user-details">
                                         <div class="cards__user-details__item">
@@ -763,7 +775,7 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="cards cards--two cards--highlight">
-                            <a href="single-ad.html" class="cards__img-wrapper">
+                            <a href="ad-details.html" class="cards__img-wrapper">
                                 <img src="src/images/view/img-02.png" alt="card-img" />
                             </a>
                             <div class="cards__info">
@@ -777,19 +789,6 @@
                                             </svg>
                                         </span>
                                         Vehicles
-                                        <!-- <div class="tag-label tag-label--member">
-                                            <span class="icon">
-                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <rect width="16" height="16" rx="8" fill="#FF4F4F"/>
-                                                    <path d="M8.17231 10.4505L10.1424 11.6987C10.3943 11.8582 10.7069 11.6209 10.6322 11.327L10.063 9.08782C10.047 9.02546 10.0489 8.95983 10.0685 8.8985C10.0881 8.83716 10.1246 8.78261 10.1738 8.74111L11.9405 7.27066C12.1727 7.07745 12.0529 6.69219 11.7546 6.67284L9.44743 6.5231C9.38528 6.51866 9.32568 6.49666 9.27556 6.45966C9.22543 6.42265 9.18685 6.37217 9.16431 6.31409L8.30382 4.14718C8.28043 4.08553 8.23884 4.03246 8.18458 3.99501C8.13031 3.95756 8.06594 3.9375 8 3.9375C7.93407 3.9375 7.86969 3.95756 7.81543 3.99501C7.76116 4.03246 7.71957 4.08553 7.69618 4.14718L6.8357 6.31409C6.81315 6.37217 6.77457 6.42265 6.72445 6.45966C6.67432 6.49666 6.61472 6.51866 6.55258 6.5231L4.24539 6.67284C3.94715 6.69219 3.82733 7.07745 4.05947 7.27066L5.82616 8.74111C5.87539 8.78261 5.91192 8.83716 5.93152 8.8985C5.95113 8.95983 5.95303 9.02546 5.937 9.08782L5.40912 11.1644C5.31944 11.5171 5.69465 11.8019 5.99685 11.6104L7.82769 10.4505C7.87919 10.4177 7.93896 10.4003 8 10.4003C8.06104 10.4003 8.12082 10.4177 8.17231 10.4505Z" fill="white"/>
-                                                    </svg>
-                                                    
-                                            </span>
-                                            Member
-                                        </div> -->
-                                        <!-- <div class="tag-label tag-label--feature">
-                                            Featured
-                                        </div> -->
                                     </h6>
                                     <a href="#" class="text--body-3-600 cards__caption-title">Xiaomi Poco X2 (8/256) Hot Offer...</a>
 
@@ -865,7 +864,7 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="cards cards--two cards--highlight">
-                            <a href="single-ad.html" class="cards__img-wrapper">
+                            <a href="ad-details.html" class="cards__img-wrapper">
                                 <img src="src/images/view/img-03.png" alt="card-img" />
                             </a>
                             <div class="cards__info">
@@ -880,7 +879,7 @@
                                         </span>
                                         Vehicles
                                     </h6>
-                                    <a href="single-ad.html" class="text--body-3-600 cards__caption-title">Xiaomi Poco X2 (8/256) Hot Offer...</a>
+                                    <a href="ad-details.html" class="text--body-3-600 cards__caption-title">Xiaomi Poco X2 (8/256) Hot Offer...</a>
 
                                     <div class="cards__user-details">
                                         <div class="cards__user-details__item">
@@ -954,7 +953,7 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="cards cards--two">
-                            <a href="single-ad.html" class="cards__img-wrapper">
+                            <a href="ad-details.html" class="cards__img-wrapper">
                                 <img src="src/images/view/img-04.png" alt="card-img" />
                                 <span class="cards__tag text--body-5">
                                     Urgents
@@ -1046,7 +1045,7 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="cards cards--two">
-                            <a href="single-ad.html" class="cards__img-wrapper">
+                            <a href="ad-details.html" class="cards__img-wrapper">
                                 <img src="src/images/view/img-05.png" alt="card-img" />
                             </a>
                             <div class="cards__info">
@@ -1135,7 +1134,7 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="cards cards--two">
-                            <a href="single-ad.html" class="cards__img-wrapper">
+                            <a href="ad-details.html" class="cards__img-wrapper">
                                 <img src="src/images/view/img-06.png" alt="card-img" />
                             </a>
                             <div class="cards__info">
@@ -1248,14 +1247,14 @@
                 <div class="row">
                     <div class="col-xl-3 col-md-6">
                         <div class="location-card">
-                            <a href="single-ad.html" class="location-card__img-wrapper">
+                            <a href="ad-details.html" class="location-card__img-wrapper">
                                 <img src="src/images/location/img-01.png" alt="location" />
                             </a>
                             <div class="location-card__info">
                                 <h2 class="location-card__loc-title text--body-2-600">Las Vegas, Usa</h2>
                                 <div class="location-card__view">
                                     <span class="first view-number">4,391</span>
-                                    <a href="single-ad.html" class="second view-btn">
+                                    <a href="ad-details.html" class="second view-btn">
                                         View Ads
                                         <span class="icon">
                                             <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1270,14 +1269,14 @@
                     </div>
                     <div class="col-xl-3 col-md-6">
                         <div class="location-card">
-                            <a href="single-ad.html" class="location-card__img-wrapper">
+                            <a href="ad-details.html" class="location-card__img-wrapper">
                                 <img src="src/images/location/img-02.png" alt="location" />
                             </a>
                             <div class="location-card__info">
                                 <h2 class="location-card__loc-title text--body-2-600">New York, USA</h2>
                                 <div class="location-card__view">
                                     <span class="first view-number">4,391</span>
-                                    <a href="single-ad.html" class="second view-btn">
+                                    <a href="ad-details.html" class="second view-btn">
                                         View Ads
                                         <span class="icon">
                                             <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1292,14 +1291,14 @@
                     </div>
                     <div class="col-xl-3 col-md-6">
                         <div class="location-card">
-                            <a href="single-ad.html" class="location-card__img-wrapper">
+                            <a href="ad-details.html" class="location-card__img-wrapper">
                                 <img src="src/images/location/img-03.png" alt="location" />
                             </a>
                             <div class="location-card__info">
                                 <h2 class="location-card__loc-title text--body-2-600">Mumbai, India</h2>
                                 <div class="location-card__view">
                                     <span class="first view-number">4,391</span>
-                                    <a href="single-ad.html" class="second view-btn">
+                                    <a href="ad-details.html" class="second view-btn">
                                         View Ads
                                         <span class="icon">
                                             <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1314,14 +1313,14 @@
                     </div>
                     <div class="col-xl-3 col-md-6">
                         <div class="location-card">
-                            <a href="single-ad.html" class="location-card__img-wrapper">
+                            <a href="ad-details.html" class="location-card__img-wrapper">
                                 <img src="src/images/location/img-04.png" alt="location" />
                             </a>
                             <div class="location-card__info">
                                 <h2 class="location-card__loc-title text--body-2-600">Dublin, Ireland</h2>
                                 <div class="location-card__view">
                                     <span class="first view-number">4,391</span>
-                                    <a href="single-ad.html" class="second view-btn">
+                                    <a href="ad-details.html" class="second view-btn">
                                         View Ads
                                         <span class="icon">
                                             <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1336,14 +1335,14 @@
                     </div>
                     <div class="col-xl-3 col-md-6">
                         <div class="location-card">
-                            <a href="single-ad.html" class="location-card__img-wrapper">
+                            <a href="ad-details.html" class="location-card__img-wrapper">
                                 <img src="src/images/location/img-05.png" alt="location" />
                             </a>
                             <div class="location-card__info">
                                 <h2 class="location-card__loc-title text--body-2-600">Manila, Philippines</h2>
                                 <div class="location-card__view">
                                     <span class="first view-number">4,391</span>
-                                    <a href="single-ad.html" class="second view-btn">
+                                    <a href="ad-details.html" class="second view-btn">
                                         View Ads
                                         <span class="icon">
                                             <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1358,14 +1357,14 @@
                     </div>
                     <div class="col-xl-3 col-md-6">
                         <div class="location-card">
-                            <a href="single-ad.html" class="location-card__img-wrapper">
+                            <a href="ad-details.html" class="location-card__img-wrapper">
                                 <img src="src/images/location/img-06.png" alt="location" />
                             </a>
                             <div class="location-card__info">
                                 <h2 class="location-card__loc-title text--body-2-600">Bangkok, Thailand</h2>
                                 <div class="location-card__view">
                                     <span class="first view-number">4,391</span>
-                                    <a href="single-ad.html" class="second view-btn">
+                                    <a href="ad-details.html" class="second view-btn">
                                         View Ads
                                         <span class="icon">
                                             <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1380,14 +1379,14 @@
                     </div>
                     <div class="col-xl-3 col-md-6">
                         <div class="location-card">
-                            <a href="single-ad.html" class="location-card__img-wrapper">
+                            <a href="ad-details.html" class="location-card__img-wrapper">
                                 <img src="src/images/location/img-07.png" alt="location" />
                             </a>
                             <div class="location-card__info">
                                 <h2 class="location-card__loc-title text--body-2-600">kuala Lumpur, Malaysia</h2>
                                 <div class="location-card__view">
                                     <span class="first view-number">4,391</span>
-                                    <a href="single-ad.html" class="second view-btn">
+                                    <a href="ad-details.html" class="second view-btn">
                                         View Ads
                                         <span class="icon">
                                             <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1402,14 +1401,14 @@
                     </div>
                     <div class="col-xl-3 col-md-6">
                         <div class="location-card">
-                            <a href="single-ad.html" class="location-card__img-wrapper">
+                            <a href="ad-details.html" class="location-card__img-wrapper">
                                 <img src="src/images/location/img-08.png" alt="location" />
                             </a>
                             <div class="location-card__info">
                                 <h2 class="location-card__loc-title text--body-2-600">Jakarta, Indonesia</h2>
                                 <div class="location-card__view">
                                     <span class="first view-number">4,391</span>
-                                    <a href="single-ad.html" class="second view-btn">
+                                    <a href="ad-details.html" class="second view-btn">
                                         View Ads
                                         <span class="icon">
                                             <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1436,7 +1435,7 @@
                 <div class="row">
                     <div class="col-xl-3 col-md-6">
                         <div class="cards cards--one cards--highlight">
-                            <a href="single-ad.html" class="cards__img-wrapper">
+                            <a href="ad-details.html" class="cards__img-wrapper">
                                 <img src="src/images/view/img-01.png" alt="card-img" class="img-fluid" />
                             </a>
                             <div class="cards__info">
@@ -1451,7 +1450,7 @@
                                         </span>
                                         Electronics
                                     </h6>
-                                    <a href="single-ad.html" class="text--body-3-600 cards__caption-title">Xiaomi Poco X2 (8/256) Hot Offer...</a>
+                                    <a href="ad-details.html" class="text--body-3-600 cards__caption-title">Xiaomi Poco X2 (8/256) Hot Offer...</a>
                                 </div>
                                 <div class="cards__info-bottom">
                                     <h6 class="cards__location text--body-4">
@@ -1482,7 +1481,7 @@
                     </div>
                     <div class="col-xl-3 col-md-6">
                         <div class="cards cards--one">
-                            <a href="single-ad.html" class="cards__img-wrapper">
+                            <a href="ad-details.html" class="cards__img-wrapper">
                                 <img src="src/images/view/img-02.png" alt="card-img" class="img-fluid" />
                             </a>
                             <div class="cards__info">
@@ -1497,7 +1496,7 @@
                                         </span>
                                         Electronics
                                     </h6>
-                                    <a href="single-ad.html" class="text--body-3-600 cards__caption-title">Xiaomi Poco X2 (8/256) Hot Offer...</a>
+                                    <a href="ad-details.html" class="text--body-3-600 cards__caption-title">Xiaomi Poco X2 (8/256) Hot Offer...</a>
                                 </div>
                                 <div class="cards__info-bottom">
                                     <h6 class="cards__location text--body-4">
@@ -1528,7 +1527,7 @@
                     </div>
                     <div class="col-xl-3 col-md-6">
                         <div class="cards cards--one">
-                            <a href="single-ad.html" class="cards__img-wrapper">
+                            <a href="ad-details.html" class="cards__img-wrapper">
                                 <img src="src/images/view/img-03.png" alt="card-img" class="img-fluid" />
                             </a>
                             <div class="cards__info">
@@ -1543,7 +1542,7 @@
                                         </span>
                                         Electronics
                                     </h6>
-                                    <a href="single-ad.html" class="text--body-3-600 cards__caption-title">Xiaomi Poco X2 (8/256) Hot Offer...</a>
+                                    <a href="ad-details.html" class="text--body-3-600 cards__caption-title">Xiaomi Poco X2 (8/256) Hot Offer...</a>
                                 </div>
                                 <div class="cards__info-bottom">
                                     <h6 class="cards__location text--body-4">
@@ -1574,7 +1573,7 @@
                     </div>
                     <div class="col-xl-3 col-md-6">
                         <div class="cards cards--one">
-                            <a href="single-ad.html" class="cards__img-wrapper">
+                            <a href="ad-details.html" class="cards__img-wrapper">
                                 <img src="src/images/view/img-04.png" alt="card-img" class="img-fluid" />
                             </a>
                             <div class="cards__info">
@@ -1589,7 +1588,7 @@
                                         </span>
                                         Electronics
                                     </h6>
-                                    <a href="single-ad.html" class="text--body-3-600 cards__caption-title">Xiaomi Poco X2 (8/256) Hot Offer...</a>
+                                    <a href="ad-details.html" class="text--body-3-600 cards__caption-title">Xiaomi Poco X2 (8/256) Hot Offer...</a>
                                 </div>
                                 <div class="cards__info-bottom">
                                     <h6 class="cards__location text--body-4">
@@ -1864,7 +1863,7 @@
                 <div class="container">
                     <div class="row footer__copyright">
                         <div class="col-md-6">
-                            <p class="text--body-3">Adlisting - Classified Listing © 2021. Design by <b>Templatecookie</b></p>
+                            <p class="text--body-3">Adlisting - Classified Listing © 2021. Design by <a href="#">Templatecookie</a></p>
                         </div>
                         <div class="col-md-6">
                             <div class="footer__policy-condition">
@@ -1886,11 +1885,13 @@
             </svg>
         </button>
 
+        <script type="module" src="/main.js"></script>
         <script src="src/js/plugins/jquery.min.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
         <script src="src/js/plugins/slick.min.js"></script>
+        <script src="src/js/plugins/select2/js/select2.min.js"></script>
         <script src="src/js/pages/home-01.js"></script>
-        <script type="module" src="/main.js"></script>
         <script src="src/js/app.js"></script>
+        <script src="src/js/components/header.js"></script>
     </body>
 </html>

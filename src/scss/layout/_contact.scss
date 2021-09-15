@@ -29,6 +29,8 @@
       border-right: 1px solid #ebeef7;
       @include max(991px) {
         order: 2;
+        border: 0;
+        border-top: 1px solid #ebeef7;
       }
       @include max(480px) {
         padding-bottom: 0px;
@@ -38,7 +40,6 @@
       width: 60%;
       @include max(991px) {
         order: 1;
-        padding-bottom: 0px;
       }
       @include max(480px) {
         padding-top: 0px;

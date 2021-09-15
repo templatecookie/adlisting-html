@@ -415,6 +415,14 @@
     background-color: #fff;
     color: color(primary-4);
     @include trans(0.3s, ease-in-out);
+    @include max(767px) {
+      padding: 12px;
+    }
+    svg {
+      @include max(767px) {
+        height: 24px;
+      }
+    }
   }
 
   &__list {
@@ -452,10 +460,10 @@
 .location-card {
   position: relative;
   text-align: center;
-
   &__img-wrapper {
     width: 264px;
     height: 224px;
+    border-radius: 8px;
     margin: auto;
     overflow: hidden;
     display: flex;
@@ -1106,9 +1114,6 @@
   &--recent {
     height: 100%;
     &__activity {
-      // max-height: 350px;
-      // overflow-y: auto;
-
       &-item {
         display: flex;
         align-items: flex-start;
@@ -1174,41 +1179,43 @@
       .header {
         display: flex;
         align-items: center;
-        @include max(390px) {
-          // display: none;
+        @include max(767px) {
+          border-bottom: 1px solid #ebeef7;
         }
         &-item {
           border-bottom: 1px solid #ebeef7;
           padding: 0px 24px;
           padding-bottom: 8px;
+          @include max(767px) {
+            border-bottom: 0px;
+          }
           &:nth-child(1),
           &:nth-child(2) {
             width: 40%;
           }
           &:nth-child(1) {
-            @include max(390px) {
-              display: none;
-            }
             h6 {
-              @include max(390px) {
+              @include max(767px) {
                 display: none;
               }
             }
           }
           &:nth-child(2) {
-            @include max(390px) {
+            @include max(767px) {
               width: 70%;
+              // order: 1;
             }
             h6 {
-              @include max(390px) {
+              @include max(767px) {
                 display: none;
               }
             }
           }
           &:nth-child(3) {
             width: 25%;
-            @include max(390px) {
+            @include max(767px) {
               width: 30%;
+              // order: 3;
             }
           }
 
@@ -1218,7 +1225,7 @@
             text-transform: capitalize;
           }
           h5 {
-            @include min(391px) {
+            @include min(768px) {
               display: none;
             }
           }
@@ -1232,14 +1239,14 @@
           justify-content: space-between;
           padding: 0px 24px;
           padding-bottom: 24px;
-          @include max(390px) {
-            // flex-direction: column;
+          @include max(767px) {
             flex-wrap: wrap;
           }
           &:nth-last-child(1) {
             padding-bottom: 0px;
           }
-          p {
+          p,
+          a {
             color: color(gray-2);
             &:nth-child(1),
             &:nth-child(2) {
@@ -1255,7 +1262,7 @@
               width: 50%;
             }
             &:nth-child(2) {
-              @include max(390px) {
+              @include max(767px) {
                 width: 100%;
                 order: 1;
                 margin-bottom: 16px;
@@ -1290,6 +1297,9 @@
         display: flex;
         align-items: center;
         margin-bottom: 12px;
+        @include max(991px) {
+          justify-content: space-between;
+        }
         &:nth-last-child(1) {
           margin-bottom: 0px;
         }
@@ -1304,6 +1314,11 @@
     }
 
     .dashobard-card--action {
+      display: flex;
+      align-items: center;
+      @include max(991px) {
+        justify-content: space-between;
+      }
       .btn {
         margin-right: 12px;
       }
@@ -1317,7 +1332,6 @@
         @include trans(0.3s, linear);
         color: color(danger-4);
         &:hover {
-          // color: color(gray-2);
           background-color: color(danger-9);
         }
       }
@@ -1337,6 +1351,9 @@
         display: flex;
         align-items: center;
         margin-bottom: 8px;
+        @include max(991px) {
+          justify-content: space-between;
+        }
         &:nth-last-child(1) {
           margin-bottom: 0px;
         }
@@ -1508,7 +1525,6 @@
           }
           &-icon {
             position: static;
-            // color: #fff;
             .icon-toggle {
               color: color(gray-2);
             }

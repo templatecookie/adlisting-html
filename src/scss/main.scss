@@ -1,3 +1,10 @@
+// import vendor files
+// @import 'animate.css';
+// @import 'bootstrap/scss/bootstrap.scss';
+// @import '/src/js/plugins/css/slick.css';
+// @import '/src/js/plugins/css/venobox.min.css';
+// @import '/src/js/plugins/css/nouislider.min.css';
+
 // abstracts
 @import 'abstracts/variables';
 @import 'abstracts/functions';
@@ -41,15 +48,9 @@
 @import 'components/search';
 @import 'components/range';
 @import 'components/loader';
+@import 'components/full_page_gallery';
 
 @import 'pages/home';
 @import 'pages/contact';
 @import 'pages/blog';
 @import 'pages/ad-list';
-
-// import vendor files
-@import 'bootstrap/scss/bootstrap.scss';
-@import 'animate.css';
-@import '/src/js/plugins/css/slick.css';
-@import '/src/js/plugins/css/venobox.min.css';
-@import '/src/js/plugins/css/nouislider.min.css';

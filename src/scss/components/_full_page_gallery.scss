@@ -1,0 +1,113 @@
+$mainImageWidth: 250px;
+
+.overlay-view {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(50px);
+  z-index: -1;
+}
+
+.full-screen-gallery {
+  overflow-y: hidden;
+  .content {
+    .cross {
+      position: absolute;
+      right: 100px;
+      top: 25px;
+      color: white;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+
+      @include max(991px) {
+        top: 15px;
+        right: 15px;
+      }
+    }
+    .main-image {
+      text-align: center;
+      img {
+        max-width: calc(100% - #{$mainImageWidth});
+        max-height: calc(100vh - 300px);
+        margin: auto;
+        object-fit: contain;
+        @include max(767px) {
+          max-width: 90%;
+        }
+      }
+
+      &-wrapper {
+        position: relative;
+        margin: 60px 0px;
+      }
+    }
+
+    .gallery-slider {
+      &-left,
+      &-right {
+        position: absolute;
+        top: 50%;
+        width: 60px;
+        height: 60px;
+        color: white;
+        cursor: pointer;
+        z-index: 9;
+        @include max(767px) {
+          width: 30px;
+          height: 30px;
+        }
+        svg {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      &-left {
+        left: 100px;
+        @include max(991px) {
+          left: 5%;
+        }
+      }
+      &-right {
+        right: 100px;
+        @include max(991px) {
+          right: 5%;
+        }
+      }
+    }
+
+    .gallery-images {
+      width: 950px;
+      margin: auto;
+      overflow: hidden;
+      @include max(991px) {
+        width: 90%;
+      }
+      .gallery-item {
+        width: 110px !important;
+        height: 110px;
+        margin-right: 15px;
+        cursor: pointer;
+        @include max(767px) {
+          width: 90px !important;
+          height: 60px;
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+        &.slick-current {
+          border: 4px solid white;
+          box-sizing: border-box;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+}

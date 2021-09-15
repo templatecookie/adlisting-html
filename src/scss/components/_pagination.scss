@@ -5,9 +5,9 @@
   justify-content: center;
   padding-top: 26px;
   &__item {
-    margin-right: 16px;
+    &:nth-child(1),
     &:nth-last-child(1) {
-      margin-right: 0px;
+      margin: 0px 16px;
     }
     &:nth-last-child(2),
     &:nth-last-child(3) {

@@ -10,11 +10,9 @@
         <link rel="icon" type="image/png" sizes="32x32" href="src/images/favicon_io/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="src/images/favicon_io/favicon-16x16.png" />
         <link rel="manifest" href="src/images/favicon_io/site.webmanifest" />
-       
     </head>
 
     <body>
-
         <div class="loader">
             <div class="loader-icon">
                 <img src="src/images/loader.gif" alt="loader" />
@@ -274,516 +272,258 @@
                 <h2 class="price-plan__title text--heading-1">Get Membership right Now</h2>
                 <p class="price-plan__brief text--body-3">Vestibulum ac sollicitudin enim. In hac habitasse platea dictumst. Maecenas efficitur turpis maximus magna dignissim.</p>
                 <nav style="text-align: center;">
-                    <div class="nav nav-tabs price-plan__nav" id="nav-tab" role="tablist">
-                        <button class="nav-link price-plan__link active" id="nav-monthly-tab" data-bs-toggle="tab" data-bs-target="#nav-monthly" type="button" role="tab" aria-controls="nav-monthly" aria-selected="true">Monthly</button>
-                        <button class="nav-link price-plan__link" id="nav-annually-tab" data-bs-toggle="tab" data-bs-target="#nav-annually" type="button" role="tab" aria-controls="nav-annually" aria-selected="false">Annually</button>
+                    <div class="price-plan__nav">
+                        <button class="price-plan__link" type="button">Monthly</button>
+                        <button class="price-plan__link active" type="button">Annually</button>
                     </div>
                 </nav>
-                <div class="tab-content" id="nav-tabContent">
-                    <!-- Monthly -->
-                    <div class="tab-pane fade show active" id="nav-monthly" role="tabpanel" aria-labelledby="nav-monthly-tab">
-                        <div class="row">
-                            <div class="col-xl-4 col-lg-6">
-                                <div class="plan-card">
-                                    <div class="plan-card__top">
-                                        <h2 class="plan-card__title text--body-1">Basic</h2>
-                                        <p class="plan-card__description">
-                                            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere.
-                                        </p>
-                                        <div class="plan-card__price">
-                                            <h5 class="text--display-3">$10</h5>
-                                            <span class="text--body-3">/month</span>
-                                        </div>
-                                        <a href="#" class="plan-card__select-pack btn btn--bg w-100" data-bs-toggle="modal" data-bs-target="#planModal">
-                                            Choose Plan
-                                            <span class="icon--right">
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M3.75 12H20.25" stroke="#00AAFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                    <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="#00AAFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                </svg>
-                                            </span>
-                                        </a>
+                <div id="nav-tabContent">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-6">
+                            <div class="plan-card">
+                                <div class="plan-card__top">
+                                    <h2 class="plan-card__title text--body-1">Basic</h2>
+                                    <p class="plan-card__description">
+                                        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere.
+                                    </p>
+                                    <div class="plan-card__price">
+                                        <h5 class="text--display-3">$10</h5>
+                                        <span class="text--body-3">/annual</span>
                                     </div>
-                                    <div class="plan-card__bottom">
-                                        <div class="plan-card__package">
-                                            <div class="plan-card__package-list active">
-                                                <span class="icon">
-                                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M11.6668 3.5L5.25016 9.91667L2.3335 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                    </svg>
-                                                </span>
-                                                <h5 class="text--body-3">Post 3 Ads per week</h5>
-                                            </div>
-                                            <div class="plan-card__package-list active">
-                                                <span class="icon">
-                                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M11.6668 3.5L5.25016 9.91667L2.3335 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                    </svg>
-                                                </span>
-                                                <h5 class="text--body-3">Multiple-images</h5>
-                                            </div>
-                                            <div class="plan-card__package-list active">
-                                                <span class="icon">
-                                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M11.6668 3.5L5.25016 9.91667L2.3335 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                    </svg>
-                                                </span>
-                                                <h5 class="text--body-3">Basic customer support</h5>
-                                            </div>
-                                            <div class="plan-card__package-list">
-                                                <span class="icon">
-                                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M11.6668 3.5L5.25016 9.91667L2.3335 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                    </svg>
-                                                </span>
-                                                <h5 class="text--body-3">Featured ads</h5>
-                                            </div>
-                                            <div class="plan-card__package-list">
-                                                <span class="icon">
-                                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M11.6668 3.5L5.25016 9.91667L2.3335 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                    </svg>
-                                                </span>
-                                                <h5 class="text--body-3">Special ads badge</h5>
-                                            </div>
-                                            <div class="plan-card__package-list">
-                                                <span class="icon">
-                                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M11.6668 3.5L5.25016 9.91667L2.3335 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                    </svg>
-                                                </span>
-                                                <h5 class="text--body-3">Adlisting membership</h5>
-                                            </div>
-                                            <div class="plan-card__package-list">
-                                                <span class="icon">
-                                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M11.6668 3.5L5.25016 9.91667L2.3335 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                    </svg>
-                                                </span>
-                                                <h5 class="text--body-3">Advertise your brand on Adlistings</h5>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <a href="#" class="plan-card__select-pack btn btn--bg w-100" data-bs-toggle="modal" data-bs-target="#planModal">
+                                        Choose Plan
+                                        <span class="icon--right">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M3.75 12H20.25" stroke="#00AAFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="#00AAFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            </svg>
+                                        </span>
+                                    </a>
                                 </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-6">
-                                <div class="plan-card plan-card--active">
-                                    <div class="plan-card__top">
-                                        <h2 class="plan-card__title text--body-1">Standard</h2>
-                                        <p class="plan-card__description">
-                                            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere.
-                                        </p>
-                                        <div class="plan-card__price">
-                                            <h5 class="text--display-3">$20</h5>
-                                            <span class="text--body-3">/month</span>
-                                        </div>
-
-                                        <a href="#" class="plan-card__select-pack btn btn--bg w-100" data-bs-toggle="modal" data-bs-target="#planModal">
-                                            Choose Plan
-                                            <span class="icon--right">
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M3.75 12H20.25" stroke="#00AAFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                    <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="#00AAFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <div class="plan-card__bottom">
+                                    <div class="plan-card__package">
+                                        <div class="plan-card__package-list active">
+                                            <span class="icon">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.6668 3.5L5.25016 9.91667L2.3335 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                                                 </svg>
                                             </span>
-                                        </a>
-                                    </div>
-                                    <div class="plan-card__bottom">
-                                        <div class="plan-card__package">
-                                            <div class="plan-card__package-list active">
-                                                <span class="icon">
-                                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M11.6668 3.5L5.25016 9.91667L2.3335 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                    </svg>
-                                                </span>
-                                                <h5 class="text--body-3">Post 3 Ads per week</h5>
-                                            </div>
-                                            <div class="plan-card__package-list active">
-                                                <span class="icon">
-                                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M11.6668 3.5L5.25016 9.91667L2.3335 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                    </svg>
-                                                </span>
-                                                <h5 class="text--body-3">Multiple-images</h5>
-                                            </div>
-                                            <div class="plan-card__package-list active">
-                                                <span class="icon">
-                                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M11.6668 3.5L5.25016 9.91667L2.3335 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                    </svg>
-                                                </span>
-                                                <h5 class="text--body-3">Basic customer support</h5>
-                                            </div>
-                                            <div class="plan-card__package-list active">
-                                                <span class="icon">
-                                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M11.6668 3.5L5.25016 9.91667L2.3335 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                    </svg>
-                                                </span>
-                                                <h5 class="text--body-3">Featured ads</h5>
-                                            </div>
-                                            <div class="plan-card__package-list active">
-                                                <span class="icon">
-                                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M11.6668 3.5L5.25016 9.91667L2.3335 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                    </svg>
-                                                </span>
-                                                <h5 class="text--body-3">Special ads badge</h5>
-                                            </div>
-                                            <div class="plan-card__package-list active">
-                                                <span class="icon">
-                                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M11.6668 3.5L5.25016 9.91667L2.3335 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                    </svg>
-                                                </span>
-                                                <h5 class="text--body-3">Adlisting membership</h5>
-                                            </div>
-                                            <div class="plan-card__package-list">
-                                                <span class="icon">
-                                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M11.6668 3.5L5.25016 9.91667L2.3335 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                    </svg>
-                                                </span>
-                                                <h5 class="text--body-3">Advertise your brand on Adlistings</h5>
-                                            </div>
+                                            <h5 class="text--body-3">Post 3 Ads per week</h5>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-6">
-                                <div class="plan-card">
-                                    <div class="plan-card__top">
-                                        <h2 class="plan-card__title text--body-1">Premium</h2>
-                                        <p class="plan-card__description">
-                                            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere.
-                                        </p>
-                                        <div class="plan-card__price">
-                                            <h5 class="text--display-3">$50</h5>
-                                            <span class="text--body-3">/month</span>
-                                        </div>
-                                        <a href="#" class="plan-card__select-pack btn btn--bg w-100" data-bs-toggle="modal" data-bs-target="#planModal">
-                                            Choose Plan
-                                            <span class="icon--right">
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M3.75 12H20.25" stroke="#00AAFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                    <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="#00AAFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <div class="plan-card__package-list active">
+                                            <span class="icon">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.6668 3.5L5.25016 9.91667L2.3335 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                                                 </svg>
                                             </span>
-                                        </a>
-                                    </div>
-                                    <div class="plan-card__bottom">
-                                        <div class="plan-card__package">
-                                            <div class="plan-card__package-list active">
-                                                <span class="icon">
-                                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M11.6668 3.5L5.25016 9.91667L2.3335 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                    </svg>
-                                                </span>
-                                                <h5 class="text--body-3">Post 3 Ads per week</h5>
-                                            </div>
-                                            <div class="plan-card__package-list active">
-                                                <span class="icon">
-                                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M11.6668 3.5L5.25016 9.91667L2.3335 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                    </svg>
-                                                </span>
-                                                <h5 class="text--body-3">Multiple-images</h5>
-                                            </div>
-                                            <div class="plan-card__package-list active">
-                                                <span class="icon">
-                                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M11.6668 3.5L5.25016 9.91667L2.3335 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                    </svg>
-                                                </span>
-                                                <h5 class="text--body-3">Basic customer support</h5>
-                                            </div>
-                                            <div class="plan-card__package-list active">
-                                                <span class="icon">
-                                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M11.6668 3.5L5.25016 9.91667L2.3335 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                    </svg>
-                                                </span>
-                                                <h5 class="text--body-3">Featured ads</h5>
-                                            </div>
-                                            <div class="plan-card__package-list active">
-                                                <span class="icon">
-                                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M11.6668 3.5L5.25016 9.91667L2.3335 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                    </svg>
-                                                </span>
-                                                <h5 class="text--body-3">Special ads badge</h5>
-                                            </div>
-                                            <div class="plan-card__package-list active">
-                                                <span class="icon">
-                                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M11.6668 3.5L5.25016 9.91667L2.3335 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                    </svg>
-                                                </span>
-                                                <h5 class="text--body-3">Adlisting membership</h5>
-                                            </div>
-                                            <div class="plan-card__package-list active">
-                                                <span class="icon">
-                                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M11.6668 3.5L5.25016 9.91667L2.3335 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                    </svg>
-                                                </span>
-                                                <h5 class="text--body-3">Advertise your brand on Adlistings</h5>
-                                            </div>
+                                            <h5 class="text--body-3">Multiple-images</h5>
+                                        </div>
+                                        <div class="plan-card__package-list active">
+                                            <span class="icon">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.6668 3.5L5.25016 9.91667L2.3335 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>
+                                            </span>
+                                            <h5 class="text--body-3">Basic customer support</h5>
+                                        </div>
+                                        <div class="plan-card__package-list">
+                                            <span class="icon">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.6668 3.5L5.25016 9.91667L2.3335 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>
+                                            </span>
+                                            <h5 class="text--body-3">Featured ads</h5>
+                                        </div>
+                                        <div class="plan-card__package-list">
+                                            <span class="icon">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.6668 3.5L5.25016 9.91667L2.3335 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>
+                                            </span>
+                                            <h5 class="text--body-3">Special ads badge</h5>
+                                        </div>
+                                        <div class="plan-card__package-list">
+                                            <span class="icon">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.6668 3.5L5.25016 9.91667L2.3335 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>
+                                            </span>
+                                            <h5 class="text--body-3">Adlisting membership</h5>
+                                        </div>
+                                        <div class="plan-card__package-list">
+                                            <span class="icon">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.6668 3.5L5.25016 9.91667L2.3335 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>
+                                            </span>
+                                            <h5 class="text--body-3">Advertise your brand on Adlistings</h5>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- Annually -->
-                    <div class="tab-pane fade" id="nav-annually" role="tabpanel" aria-labelledby="nav-annually-tab">
-                        <div class="row">
-                            <div class="col-xl-4 col-lg-6">
-                                <div class="plan-card">
-                                    <div class="plan-card__top">
-                                        <h2 class="plan-card__title text--body-1">Basic</h2>
-                                        <p class="plan-card__description">
-                                            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere.
-                                        </p>
-                                        <div class="plan-card__price">
-                                            <h5 class="text--display-3">$100</h5>
-                                            <span class="text--body-3">/annuall</span>
-                                        </div>
-                                        <a href="#" class="plan-card__select-pack btn btn--bg w-100" data-bs-toggle="modal" data-bs-target="#planModal">
-                                            Choose Plan
-                                            <span class="icon--right">
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M3.75 12H20.25" stroke="#00AAFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                    <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="#00AAFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                </svg>
-                                            </span>
-                                        </a>
+                        <div class="col-xl-4 col-lg-6">
+                            <div class="plan-card plan-card--active">
+                                <div class="plan-card__top">
+                                    <h2 class="plan-card__title text--body-1">Standard</h2>
+                                    <p class="plan-card__description">
+                                        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere.
+                                    </p>
+                                    <div class="plan-card__price">
+                                        <h5 class="text--display-3">$20</h5>
+                                        <span class="text--body-3">/annual</span>
                                     </div>
-                                    <div class="plan-card__bottom">
-                                        <div class="plan-card__package">
-                                            <div class="plan-card__package-list active">
-                                                <span class="icon">
-                                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M11.6668 3.5L5.25016 9.91667L2.3335 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                    </svg>
-                                                </span>
-                                                <h5 class="text--body-3">Post 3 Ads per week</h5>
-                                            </div>
-                                            <div class="plan-card__package-list active">
-                                                <span class="icon">
-                                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M11.6668 3.5L5.25016 9.91667L2.3335 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                    </svg>
-                                                </span>
-                                                <h5 class="text--body-3">Multiple-images</h5>
-                                            </div>
-                                            <div class="plan-card__package-list active">
-                                                <span class="icon">
-                                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M11.6668 3.5L5.25016 9.91667L2.3335 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                    </svg>
-                                                </span>
-                                                <h5 class="text--body-3">Basic customer support</h5>
-                                            </div>
-                                            <div class="plan-card__package-list">
-                                                <span class="icon">
-                                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M11.6668 3.5L5.25016 9.91667L2.3335 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                    </svg>
-                                                </span>
-                                                <h5 class="text--body-3">Featured ads</h5>
-                                            </div>
-                                            <div class="plan-card__package-list">
-                                                <span class="icon">
-                                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M11.6668 3.5L5.25016 9.91667L2.3335 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                    </svg>
-                                                </span>
-                                                <h5 class="text--body-3">Special ads badge</h5>
-                                            </div>
-                                            <div class="plan-card__package-list">
-                                                <span class="icon">
-                                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M11.6668 3.5L5.25016 9.91667L2.3335 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                    </svg>
-                                                </span>
-                                                <h5 class="text--body-3">Adlisting membership</h5>
-                                            </div>
-                                            <div class="plan-card__package-list">
-                                                <span class="icon">
-                                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M11.6668 3.5L5.25016 9.91667L2.3335 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                    </svg>
-                                                </span>
-                                                <h5 class="text--body-3">Advertise your brand on Adlistings</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-6">
-                                <div class="plan-card plan-card--active">
-                                    <div class="plan-card__top">
-                                        <h2 class="plan-card__title text--body-1">Standard</h2>
-                                        <p class="plan-card__description">
-                                            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere.
-                                        </p>
-                                        <div class="plan-card__price">
-                                            <h5 class="text--display-3">$200</h5>
-                                            <span class="text--body-3">/annuall</span>
-                                        </div>
 
-                                        <a href="#" class="plan-card__select-pack btn btn--bg w-100" data-bs-toggle="modal" data-bs-target="#planModal">
-                                            Choose Plan
-                                            <span class="icon--right">
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M3.75 12H20.25" stroke="#00AAFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                    <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="#00AAFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <a href="#" class="plan-card__select-pack btn btn--bg w-100" data-bs-toggle="modal" data-bs-target="#planModal">
+                                        Choose Plan
+                                        <span class="icon--right">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M3.75 12H20.25" stroke="#00AAFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="#00AAFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="plan-card__bottom">
+                                    <div class="plan-card__package">
+                                        <div class="plan-card__package-list active">
+                                            <span class="icon">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.6668 3.5L5.25016 9.91667L2.3335 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                                                 </svg>
                                             </span>
-                                        </a>
-                                    </div>
-                                    <div class="plan-card__bottom">
-                                        <div class="plan-card__package">
-                                            <div class="plan-card__package-list active">
-                                                <span class="icon">
-                                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M11.6668 3.5L5.25016 9.91667L2.3335 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                    </svg>
-                                                </span>
-                                                <h5 class="text--body-3">Post 3 Ads per week</h5>
-                                            </div>
-                                            <div class="plan-card__package-list active">
-                                                <span class="icon">
-                                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M11.6668 3.5L5.25016 9.91667L2.3335 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                    </svg>
-                                                </span>
-                                                <h5 class="text--body-3">Multiple-images</h5>
-                                            </div>
-                                            <div class="plan-card__package-list active">
-                                                <span class="icon">
-                                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M11.6668 3.5L5.25016 9.91667L2.3335 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                    </svg>
-                                                </span>
-                                                <h5 class="text--body-3">Basic customer support</h5>
-                                            </div>
-                                            <div class="plan-card__package-list active">
-                                                <span class="icon">
-                                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M11.6668 3.5L5.25016 9.91667L2.3335 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                    </svg>
-                                                </span>
-                                                <h5 class="text--body-3">Featured ads</h5>
-                                            </div>
-                                            <div class="plan-card__package-list active">
-                                                <span class="icon">
-                                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M11.6668 3.5L5.25016 9.91667L2.3335 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                    </svg>
-                                                </span>
-                                                <h5 class="text--body-3">Special ads badge</h5>
-                                            </div>
-                                            <div class="plan-card__package-list active">
-                                                <span class="icon">
-                                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M11.6668 3.5L5.25016 9.91667L2.3335 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                    </svg>
-                                                </span>
-                                                <h5 class="text--body-3">Adlisting membership</h5>
-                                            </div>
-                                            <div class="plan-card__package-list">
-                                                <span class="icon">
-                                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M11.6668 3.5L5.25016 9.91667L2.3335 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                    </svg>
-                                                </span>
-                                                <h5 class="text--body-3">Advertise your brand on Adlistings</h5>
-                                            </div>
+                                            <h5 class="text--body-3">Post 3 Ads per week</h5>
+                                        </div>
+                                        <div class="plan-card__package-list active">
+                                            <span class="icon">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.6668 3.5L5.25016 9.91667L2.3335 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>
+                                            </span>
+                                            <h5 class="text--body-3">Multiple-images</h5>
+                                        </div>
+                                        <div class="plan-card__package-list active">
+                                            <span class="icon">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.6668 3.5L5.25016 9.91667L2.3335 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>
+                                            </span>
+                                            <h5 class="text--body-3">Basic customer support</h5>
+                                        </div>
+                                        <div class="plan-card__package-list active">
+                                            <span class="icon">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.6668 3.5L5.25016 9.91667L2.3335 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>
+                                            </span>
+                                            <h5 class="text--body-3">Featured ads</h5>
+                                        </div>
+                                        <div class="plan-card__package-list active">
+                                            <span class="icon">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.6668 3.5L5.25016 9.91667L2.3335 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>
+                                            </span>
+                                            <h5 class="text--body-3">Special ads badge</h5>
+                                        </div>
+                                        <div class="plan-card__package-list active">
+                                            <span class="icon">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.6668 3.5L5.25016 9.91667L2.3335 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>
+                                            </span>
+                                            <h5 class="text--body-3">Adlisting membership</h5>
+                                        </div>
+                                        <div class="plan-card__package-list">
+                                            <span class="icon">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.6668 3.5L5.25016 9.91667L2.3335 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>
+                                            </span>
+                                            <h5 class="text--body-3">Advertise your brand on Adlistings</h5>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-4 col-lg-6">
-                                <div class="plan-card">
-                                    <div class="plan-card__top">
-                                        <h2 class="plan-card__title text--body-1">Premium</h2>
-                                        <p class="plan-card__description">
-                                            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere.
-                                        </p>
-                                        <div class="plan-card__price">
-                                            <h5 class="text--display-3">$450</h5>
-                                            <span class="text--body-3">/annuall</span>
-                                        </div>
-                                        <a href="#" class="plan-card__select-pack btn btn--bg w-100" data-bs-toggle="modal" data-bs-target="#planModal">
-                                            Choose Plan
-                                            <span class="icon--right">
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M3.75 12H20.25" stroke="#00AAFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                    <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="#00AAFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </div>
+                        <div class="col-xl-4 col-lg-6">
+                            <div class="plan-card">
+                                <div class="plan-card__top">
+                                    <h2 class="plan-card__title text--body-1">Premium</h2>
+                                    <p class="plan-card__description">
+                                        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere.
+                                    </p>
+                                    <div class="plan-card__price">
+                                        <h5 class="text--display-3">$50</h5>
+                                        <span class="text--body-3">/annual</span>
+                                    </div>
+                                    <a href="#" class="plan-card__select-pack btn btn--bg w-100" data-bs-toggle="modal" data-bs-target="#planModal">
+                                        Choose Plan
+                                        <span class="icon--right">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M3.75 12H20.25" stroke="#00AAFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="#00AAFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="plan-card__bottom">
+                                    <div class="plan-card__package">
+                                        <div class="plan-card__package-list active">
+                                            <span class="icon">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.6668 3.5L5.25016 9.91667L2.3335 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                                                 </svg>
                                             </span>
-                                        </a>
-                                    </div>
-                                    <div class="plan-card__bottom">
-                                        <div class="plan-card__package">
-                                            <div class="plan-card__package-list active">
-                                                <span class="icon">
-                                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M11.6668 3.5L5.25016 9.91667L2.3335 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                    </svg>
-                                                </span>
-                                                <h5 class="text--body-3">Post 3 Ads per week</h5>
-                                            </div>
-                                            <div class="plan-card__package-list active">
-                                                <span class="icon">
-                                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M11.6668 3.5L5.25016 9.91667L2.3335 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                    </svg>
-                                                </span>
-                                                <h5 class="text--body-3">Multiple-images</h5>
-                                            </div>
-                                            <div class="plan-card__package-list active">
-                                                <span class="icon">
-                                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M11.6668 3.5L5.25016 9.91667L2.3335 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                    </svg>
-                                                </span>
-                                                <h5 class="text--body-3">Basic customer support</h5>
-                                            </div>
-                                            <div class="plan-card__package-list active">
-                                                <span class="icon">
-                                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M11.6668 3.5L5.25016 9.91667L2.3335 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                    </svg>
-                                                </span>
-                                                <h5 class="text--body-3">Featured ads</h5>
-                                            </div>
-                                            <div class="plan-card__package-list active">
-                                                <span class="icon">
-                                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M11.6668 3.5L5.25016 9.91667L2.3335 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                    </svg>
-                                                </span>
-                                                <h5 class="text--body-3">Special ads badge</h5>
-                                            </div>
-                                            <div class="plan-card__package-list active">
-                                                <span class="icon">
-                                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M11.6668 3.5L5.25016 9.91667L2.3335 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                    </svg>
-                                                </span>
-                                                <h5 class="text--body-3">Adlisting membership</h5>
-                                            </div>
-                                            <div class="plan-card__package-list active">
-                                                <span class="icon">
-                                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M11.6668 3.5L5.25016 9.91667L2.3335 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                    </svg>
-                                                </span>
-                                                <h5 class="text--body-3">Advertise your brand on Adlistings</h5>
-                                            </div>
+                                            <h5 class="text--body-3">Post 3 Ads per week</h5>
+                                        </div>
+                                        <div class="plan-card__package-list active">
+                                            <span class="icon">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.6668 3.5L5.25016 9.91667L2.3335 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>
+                                            </span>
+                                            <h5 class="text--body-3">Multiple-images</h5>
+                                        </div>
+                                        <div class="plan-card__package-list active">
+                                            <span class="icon">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.6668 3.5L5.25016 9.91667L2.3335 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>
+                                            </span>
+                                            <h5 class="text--body-3">Basic customer support</h5>
+                                        </div>
+                                        <div class="plan-card__package-list active">
+                                            <span class="icon">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.6668 3.5L5.25016 9.91667L2.3335 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>
+                                            </span>
+                                            <h5 class="text--body-3">Featured ads</h5>
+                                        </div>
+                                        <div class="plan-card__package-list active">
+                                            <span class="icon">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.6668 3.5L5.25016 9.91667L2.3335 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>
+                                            </span>
+                                            <h5 class="text--body-3">Special ads badge</h5>
+                                        </div>
+                                        <div class="plan-card__package-list active">
+                                            <span class="icon">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.6668 3.5L5.25016 9.91667L2.3335 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>
+                                            </span>
+                                            <h5 class="text--body-3">Adlisting membership</h5>
+                                        </div>
+                                        <div class="plan-card__package-list active">
+                                            <span class="icon">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.6668 3.5L5.25016 9.91667L2.3335 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>
+                                            </span>
+                                            <h5 class="text--body-3">Advertise your brand on Adlistings</h5>
                                         </div>
                                     </div>
                                 </div>
@@ -945,13 +685,19 @@
                                     <a href="#" class="social-icon__link">
                                         <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <g clip-path="url(#instagram)">
-                                            <path d="M5.33376 8.55566C5.33376 7.08296 6.52729 5.88878 8 5.88878C9.4727 5.88878 10.6669 7.08296 10.6669 8.55566C10.6669 10.0284 9.4727 11.2225 8 11.2225C6.52729 11.2225 5.33376 10.0284 5.33376 8.55566ZM3.89209 8.55566C3.89209 10.8245 5.7312 12.6636 8 12.6636C10.2688 12.6636 12.1079 10.8245 12.1079 8.55566C12.1079 6.28686 10.2688 4.44776 8 4.44776C5.7312 4.44776 3.89209 6.28686 3.89209 8.55566ZM11.3105 4.28488C11.3104 4.47475 11.3667 4.66038 11.4721 4.81829C11.5775 4.97621 11.7274 5.09931 11.9028 5.17204C12.0782 5.24477 12.2712 5.26386 12.4574 5.22689C12.6437 5.18993 12.8148 5.09856 12.9491 4.96436C13.0834 4.83015 13.1749 4.65913 13.212 4.47293C13.2491 4.28672 13.2302 4.09369 13.1576 3.91824C13.085 3.7428 12.962 3.59282 12.8042 3.48727C12.6464 3.38172 12.4608 3.32534 12.2709 3.32526H12.2705C12.016 3.32538 11.772 3.42651 11.592 3.60644C11.412 3.78636 11.3107 4.03038 11.3105 4.28488ZM4.768 15.0675C3.98803 15.032 3.56409 14.902 3.28237 14.7923C2.90886 14.6469 2.64237 14.4737 2.36218 14.1939C2.08198 13.9141 1.90854 13.6478 1.76378 13.2743C1.65395 12.9927 1.52403 12.5687 1.48858 11.7887C1.44979 10.9454 1.44205 10.6921 1.44205 8.55573C1.44205 6.41934 1.45043 6.16674 1.48858 5.32277C1.5241 4.5428 1.65498 4.11957 1.76378 3.83714C1.90918 3.46363 2.08237 3.19714 2.36218 2.91694C2.64198 2.63675 2.90822 2.46331 3.28237 2.31854C3.56397 2.20872 3.98803 2.0788 4.768 2.04334C5.61126 2.00456 5.86457 1.99682 8 1.99682C10.1354 1.99682 10.389 2.0052 11.233 2.04334C12.0129 2.07886 12.4362 2.20974 12.7186 2.31854C13.0921 2.46331 13.3586 2.63714 13.6388 2.91694C13.919 3.19675 14.0918 3.46363 14.2372 3.83714C14.347 4.11874 14.4769 4.5428 14.5124 5.32277C14.5512 6.16674 14.5589 6.41934 14.5589 8.55573C14.5589 10.6921 14.5512 10.9447 14.5124 11.7887C14.4769 12.5687 14.3463 12.9926 14.2372 13.2743C14.0918 13.6478 13.9186 13.9143 13.6388 14.1939C13.359 14.4734 13.0921 14.6469 12.7186 14.7923C12.437 14.9021 12.0129 15.032 11.233 15.0675C10.3897 15.1063 10.1364 15.114 8 15.114C5.86361 15.114 5.61101 15.1063 4.768 15.0675ZM4.70176 0.604112C3.85011 0.642896 3.26816 0.777936 2.75994 0.975696C2.2336 1.17992 1.78803 1.4539 1.34278 1.89845C0.897536 2.34299 0.624256 2.78926 0.420032 3.3156C0.222272 3.82414 0.087232 4.40578 0.048448 5.25742C0.009024 6.11042 0 6.38312 0 8.55566C0 10.7282 0.009024 11.0009 0.048448 11.8539C0.087232 12.7056 0.222272 13.2872 0.420032 13.7957C0.624256 14.3217 0.8976 14.7685 1.34278 15.2129C1.78797 15.6572 2.2336 15.9308 2.75994 16.1356C3.26912 16.3334 3.85011 16.4684 4.70176 16.5072C5.5552 16.546 5.82745 16.5557 8 16.5557C10.1725 16.5557 10.4452 16.5466 11.2982 16.5072C12.1499 16.4684 12.7315 16.3334 13.2401 16.1356C13.7661 15.9308 14.212 15.6574 14.6572 15.2129C15.1025 14.7683 15.3752 14.3217 15.58 13.7957C15.7777 13.2872 15.9134 12.7056 15.9515 11.8539C15.9903 11.0003 15.9994 10.7282 15.9994 8.55566C15.9994 6.38312 15.9903 6.11042 15.9515 5.25742C15.9128 4.40571 15.7777 3.82382 15.58 3.3156C15.3752 2.78958 15.1018 2.3437 14.6572 1.89845C14.2127 1.4532 13.7661 1.17992 13.2407 0.975696C12.7315 0.777936 12.1499 0.642256 11.2989 0.604112C10.4459 0.565328 10.1732 0.555664 8.00064 0.555664C5.82809 0.555664 5.5552 0.564688 4.70176 0.604112Z" fill="currentColor"/>
-                                            <path d="M5.33376 8.55566C5.33376 7.08296 6.52729 5.88878 8 5.88878C9.4727 5.88878 10.6669 7.08296 10.6669 8.55566C10.6669 10.0284 9.4727 11.2225 8 11.2225C6.52729 11.2225 5.33376 10.0284 5.33376 8.55566ZM3.89209 8.55566C3.89209 10.8245 5.7312 12.6636 8 12.6636C10.2688 12.6636 12.1079 10.8245 12.1079 8.55566C12.1079 6.28686 10.2688 4.44776 8 4.44776C5.7312 4.44776 3.89209 6.28686 3.89209 8.55566ZM11.3105 4.28488C11.3104 4.47475 11.3667 4.66038 11.4721 4.81829C11.5775 4.97621 11.7274 5.09931 11.9028 5.17204C12.0782 5.24477 12.2712 5.26386 12.4574 5.22689C12.6437 5.18993 12.8148 5.09856 12.9491 4.96436C13.0834 4.83015 13.1749 4.65913 13.212 4.47293C13.2491 4.28672 13.2302 4.09369 13.1576 3.91824C13.085 3.7428 12.962 3.59282 12.8042 3.48727C12.6464 3.38172 12.4608 3.32534 12.2709 3.32526H12.2705C12.016 3.32538 11.772 3.42651 11.592 3.60644C11.412 3.78636 11.3107 4.03038 11.3105 4.28488ZM4.768 15.0675C3.98803 15.032 3.56409 14.902 3.28237 14.7923C2.90886 14.6469 2.64237 14.4737 2.36218 14.1939C2.08198 13.9141 1.90854 13.6478 1.76378 13.2743C1.65395 12.9927 1.52403 12.5687 1.48858 11.7887C1.44979 10.9454 1.44205 10.6921 1.44205 8.55573C1.44205 6.41934 1.45043 6.16674 1.48858 5.32277C1.5241 4.5428 1.65498 4.11957 1.76378 3.83714C1.90918 3.46363 2.08237 3.19714 2.36218 2.91694C2.64198 2.63675 2.90822 2.46331 3.28237 2.31854C3.56397 2.20872 3.98803 2.0788 4.768 2.04334C5.61126 2.00456 5.86457 1.99682 8 1.99682C10.1354 1.99682 10.389 2.0052 11.233 2.04334C12.0129 2.07886 12.4362 2.20974 12.7186 2.31854C13.0921 2.46331 13.3586 2.63714 13.6388 2.91694C13.919 3.19675 14.0918 3.46363 14.2372 3.83714C14.347 4.11874 14.4769 4.5428 14.5124 5.32277C14.5512 6.16674 14.5589 6.41934 14.5589 8.55573C14.5589 10.6921 14.5512 10.9447 14.5124 11.7887C14.4769 12.5687 14.3463 12.9926 14.2372 13.2743C14.0918 13.6478 13.9186 13.9143 13.6388 14.1939C13.359 14.4734 13.0921 14.6469 12.7186 14.7923C12.437 14.9021 12.0129 15.032 11.233 15.0675C10.3897 15.1063 10.1364 15.114 8 15.114C5.86361 15.114 5.61101 15.1063 4.768 15.0675ZM4.70176 0.604112C3.85011 0.642896 3.26816 0.777936 2.75994 0.975696C2.2336 1.17992 1.78803 1.4539 1.34278 1.89845C0.897536 2.34299 0.624256 2.78926 0.420032 3.3156C0.222272 3.82414 0.087232 4.40578 0.048448 5.25742C0.009024 6.11042 0 6.38312 0 8.55566C0 10.7282 0.009024 11.0009 0.048448 11.8539C0.087232 12.7056 0.222272 13.2872 0.420032 13.7957C0.624256 14.3217 0.8976 14.7685 1.34278 15.2129C1.78797 15.6572 2.2336 15.9308 2.75994 16.1356C3.26912 16.3334 3.85011 16.4684 4.70176 16.5072C5.5552 16.546 5.82745 16.5557 8 16.5557C10.1725 16.5557 10.4452 16.5466 11.2982 16.5072C12.1499 16.4684 12.7315 16.3334 13.2401 16.1356C13.7661 15.9308 14.212 15.6574 14.6572 15.2129C15.1025 14.7683 15.3752 14.3217 15.58 13.7957C15.7777 13.2872 15.9134 12.7056 15.9515 11.8539C15.9903 11.0003 15.9994 10.7282 15.9994 8.55566C15.9994 6.38312 15.9903 6.11042 15.9515 5.25742C15.9128 4.40571 15.7777 3.82382 15.58 3.3156C15.3752 2.78958 15.1018 2.3437 14.6572 1.89845C14.2127 1.4532 13.7661 1.17992 13.2407 0.975696C12.7315 0.777936 12.1499 0.642256 11.2989 0.604112C10.4459 0.565328 10.1732 0.555664 8.00064 0.555664C5.82809 0.555664 5.5552 0.564688 4.70176 0.604112Z" fill="currentColor"/>
+                                                <path
+                                                    d="M5.33376 8.55566C5.33376 7.08296 6.52729 5.88878 8 5.88878C9.4727 5.88878 10.6669 7.08296 10.6669 8.55566C10.6669 10.0284 9.4727 11.2225 8 11.2225C6.52729 11.2225 5.33376 10.0284 5.33376 8.55566ZM3.89209 8.55566C3.89209 10.8245 5.7312 12.6636 8 12.6636C10.2688 12.6636 12.1079 10.8245 12.1079 8.55566C12.1079 6.28686 10.2688 4.44776 8 4.44776C5.7312 4.44776 3.89209 6.28686 3.89209 8.55566ZM11.3105 4.28488C11.3104 4.47475 11.3667 4.66038 11.4721 4.81829C11.5775 4.97621 11.7274 5.09931 11.9028 5.17204C12.0782 5.24477 12.2712 5.26386 12.4574 5.22689C12.6437 5.18993 12.8148 5.09856 12.9491 4.96436C13.0834 4.83015 13.1749 4.65913 13.212 4.47293C13.2491 4.28672 13.2302 4.09369 13.1576 3.91824C13.085 3.7428 12.962 3.59282 12.8042 3.48727C12.6464 3.38172 12.4608 3.32534 12.2709 3.32526H12.2705C12.016 3.32538 11.772 3.42651 11.592 3.60644C11.412 3.78636 11.3107 4.03038 11.3105 4.28488ZM4.768 15.0675C3.98803 15.032 3.56409 14.902 3.28237 14.7923C2.90886 14.6469 2.64237 14.4737 2.36218 14.1939C2.08198 13.9141 1.90854 13.6478 1.76378 13.2743C1.65395 12.9927 1.52403 12.5687 1.48858 11.7887C1.44979 10.9454 1.44205 10.6921 1.44205 8.55573C1.44205 6.41934 1.45043 6.16674 1.48858 5.32277C1.5241 4.5428 1.65498 4.11957 1.76378 3.83714C1.90918 3.46363 2.08237 3.19714 2.36218 2.91694C2.64198 2.63675 2.90822 2.46331 3.28237 2.31854C3.56397 2.20872 3.98803 2.0788 4.768 2.04334C5.61126 2.00456 5.86457 1.99682 8 1.99682C10.1354 1.99682 10.389 2.0052 11.233 2.04334C12.0129 2.07886 12.4362 2.20974 12.7186 2.31854C13.0921 2.46331 13.3586 2.63714 13.6388 2.91694C13.919 3.19675 14.0918 3.46363 14.2372 3.83714C14.347 4.11874 14.4769 4.5428 14.5124 5.32277C14.5512 6.16674 14.5589 6.41934 14.5589 8.55573C14.5589 10.6921 14.5512 10.9447 14.5124 11.7887C14.4769 12.5687 14.3463 12.9926 14.2372 13.2743C14.0918 13.6478 13.9186 13.9143 13.6388 14.1939C13.359 14.4734 13.0921 14.6469 12.7186 14.7923C12.437 14.9021 12.0129 15.032 11.233 15.0675C10.3897 15.1063 10.1364 15.114 8 15.114C5.86361 15.114 5.61101 15.1063 4.768 15.0675ZM4.70176 0.604112C3.85011 0.642896 3.26816 0.777936 2.75994 0.975696C2.2336 1.17992 1.78803 1.4539 1.34278 1.89845C0.897536 2.34299 0.624256 2.78926 0.420032 3.3156C0.222272 3.82414 0.087232 4.40578 0.048448 5.25742C0.009024 6.11042 0 6.38312 0 8.55566C0 10.7282 0.009024 11.0009 0.048448 11.8539C0.087232 12.7056 0.222272 13.2872 0.420032 13.7957C0.624256 14.3217 0.8976 14.7685 1.34278 15.2129C1.78797 15.6572 2.2336 15.9308 2.75994 16.1356C3.26912 16.3334 3.85011 16.4684 4.70176 16.5072C5.5552 16.546 5.82745 16.5557 8 16.5557C10.1725 16.5557 10.4452 16.5466 11.2982 16.5072C12.1499 16.4684 12.7315 16.3334 13.2401 16.1356C13.7661 15.9308 14.212 15.6574 14.6572 15.2129C15.1025 14.7683 15.3752 14.3217 15.58 13.7957C15.7777 13.2872 15.9134 12.7056 15.9515 11.8539C15.9903 11.0003 15.9994 10.7282 15.9994 8.55566C15.9994 6.38312 15.9903 6.11042 15.9515 5.25742C15.9128 4.40571 15.7777 3.82382 15.58 3.3156C15.3752 2.78958 15.1018 2.3437 14.6572 1.89845C14.2127 1.4532 13.7661 1.17992 13.2407 0.975696C12.7315 0.777936 12.1499 0.642256 11.2989 0.604112C10.4459 0.565328 10.1732 0.555664 8.00064 0.555664C5.82809 0.555664 5.5552 0.564688 4.70176 0.604112Z"
+                                                    fill="currentColor"
+                                                />
+                                                <path
+                                                    d="M5.33376 8.55566C5.33376 7.08296 6.52729 5.88878 8 5.88878C9.4727 5.88878 10.6669 7.08296 10.6669 8.55566C10.6669 10.0284 9.4727 11.2225 8 11.2225C6.52729 11.2225 5.33376 10.0284 5.33376 8.55566ZM3.89209 8.55566C3.89209 10.8245 5.7312 12.6636 8 12.6636C10.2688 12.6636 12.1079 10.8245 12.1079 8.55566C12.1079 6.28686 10.2688 4.44776 8 4.44776C5.7312 4.44776 3.89209 6.28686 3.89209 8.55566ZM11.3105 4.28488C11.3104 4.47475 11.3667 4.66038 11.4721 4.81829C11.5775 4.97621 11.7274 5.09931 11.9028 5.17204C12.0782 5.24477 12.2712 5.26386 12.4574 5.22689C12.6437 5.18993 12.8148 5.09856 12.9491 4.96436C13.0834 4.83015 13.1749 4.65913 13.212 4.47293C13.2491 4.28672 13.2302 4.09369 13.1576 3.91824C13.085 3.7428 12.962 3.59282 12.8042 3.48727C12.6464 3.38172 12.4608 3.32534 12.2709 3.32526H12.2705C12.016 3.32538 11.772 3.42651 11.592 3.60644C11.412 3.78636 11.3107 4.03038 11.3105 4.28488ZM4.768 15.0675C3.98803 15.032 3.56409 14.902 3.28237 14.7923C2.90886 14.6469 2.64237 14.4737 2.36218 14.1939C2.08198 13.9141 1.90854 13.6478 1.76378 13.2743C1.65395 12.9927 1.52403 12.5687 1.48858 11.7887C1.44979 10.9454 1.44205 10.6921 1.44205 8.55573C1.44205 6.41934 1.45043 6.16674 1.48858 5.32277C1.5241 4.5428 1.65498 4.11957 1.76378 3.83714C1.90918 3.46363 2.08237 3.19714 2.36218 2.91694C2.64198 2.63675 2.90822 2.46331 3.28237 2.31854C3.56397 2.20872 3.98803 2.0788 4.768 2.04334C5.61126 2.00456 5.86457 1.99682 8 1.99682C10.1354 1.99682 10.389 2.0052 11.233 2.04334C12.0129 2.07886 12.4362 2.20974 12.7186 2.31854C13.0921 2.46331 13.3586 2.63714 13.6388 2.91694C13.919 3.19675 14.0918 3.46363 14.2372 3.83714C14.347 4.11874 14.4769 4.5428 14.5124 5.32277C14.5512 6.16674 14.5589 6.41934 14.5589 8.55573C14.5589 10.6921 14.5512 10.9447 14.5124 11.7887C14.4769 12.5687 14.3463 12.9926 14.2372 13.2743C14.0918 13.6478 13.9186 13.9143 13.6388 14.1939C13.359 14.4734 13.0921 14.6469 12.7186 14.7923C12.437 14.9021 12.0129 15.032 11.233 15.0675C10.3897 15.1063 10.1364 15.114 8 15.114C5.86361 15.114 5.61101 15.1063 4.768 15.0675ZM4.70176 0.604112C3.85011 0.642896 3.26816 0.777936 2.75994 0.975696C2.2336 1.17992 1.78803 1.4539 1.34278 1.89845C0.897536 2.34299 0.624256 2.78926 0.420032 3.3156C0.222272 3.82414 0.087232 4.40578 0.048448 5.25742C0.009024 6.11042 0 6.38312 0 8.55566C0 10.7282 0.009024 11.0009 0.048448 11.8539C0.087232 12.7056 0.222272 13.2872 0.420032 13.7957C0.624256 14.3217 0.8976 14.7685 1.34278 15.2129C1.78797 15.6572 2.2336 15.9308 2.75994 16.1356C3.26912 16.3334 3.85011 16.4684 4.70176 16.5072C5.5552 16.546 5.82745 16.5557 8 16.5557C10.1725 16.5557 10.4452 16.5466 11.2982 16.5072C12.1499 16.4684 12.7315 16.3334 13.2401 16.1356C13.7661 15.9308 14.212 15.6574 14.6572 15.2129C15.1025 14.7683 15.3752 14.3217 15.58 13.7957C15.7777 13.2872 15.9134 12.7056 15.9515 11.8539C15.9903 11.0003 15.9994 10.7282 15.9994 8.55566C15.9994 6.38312 15.9903 6.11042 15.9515 5.25742C15.9128 4.40571 15.7777 3.82382 15.58 3.3156C15.3752 2.78958 15.1018 2.3437 14.6572 1.89845C14.2127 1.4532 13.7661 1.17992 13.2407 0.975696C12.7315 0.777936 12.1499 0.642256 11.2989 0.604112C10.4459 0.565328 10.1732 0.555664 8.00064 0.555664C5.82809 0.555664 5.5552 0.564688 4.70176 0.604112Z"
+                                                    fill="currentColor"
+                                                />
                                             </g>
                                             <defs>
-                                            <clipPath id="instagram">
-                                            <rect width="16" height="16" fill="currentColor" transform="translate(0 0.555664)"/>
-                                            </clipPath>
+                                                <clipPath id="instagram">
+                                                    <rect width="16" height="16" fill="currentColor" transform="translate(0 0.555664)" />
+                                                </clipPath>
                                             </defs>
                                         </svg>
                                     </a>
@@ -1012,7 +758,7 @@
                 <div class="container">
                     <div class="row footer__copyright">
                         <div class="col-md-6">
-                            <p class="text--body-3">Adlisting - Classified Listing © 2021. Design by <b>Templatecookie</b></p>
+                            <p class="text--body-3">Adlisting - Classified Listing © 2021. Design by <a href="#">Templatecookie</a></p>
                         </div>
                         <div class="col-md-6">
                             <div class="footer__policy-condition">
@@ -1027,7 +773,7 @@
         <!-- footer section end -->
 
         <!--  Choose Plan Modal -->
-        <div class="modal fade price-plan__modal" id="planModal" tabindex="-1"  aria-hidden="true">
+        <div class="modal fade price-plan__modal" id="planModal" tabindex="-1" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-lg">
                 <div class="modal-content price-plan__modal-content">
                     <div class="modal-header price-plan__modal-header border-0">
@@ -1067,7 +813,7 @@
                                         <path d="M2.24902 9.08008H21.749" stroke="#00AAFF" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
                                 </div>
-                                <input type="text" placeholder="Card Number"  />
+                                <input type="text" placeholder="Card Number" />
 
                                 <div class="card-type">
                                     <div class="card-type__item">
@@ -1137,22 +883,21 @@
             </div>
         </div>
 
-            <!-- Back To Top Btn -->
-            <button class="scrollTop" onclick="scrollToTop()">
+        <!-- Back To Top Btn -->
+        <button class="scrollTop" onclick="scrollToTop()">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12 20.25V3.75" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M5.25 10.5L12 3.75L18.75 10.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12 20.25V3.75" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M5.25 10.5L12 3.75L18.75 10.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
-            </button>
+        </button>
 
-
+        <script type="module" src="/main.js"></script>
         <script src="src/js/plugins/jquery.min.js"></script>
-               <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-       
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
         <script src="src/js/plugins/bvselect.js"></script>
         <script src="src/js/pages/bbselect.js"></script>
-        <script type="module" src="/main.js"></script>
         <script src="src/js/app.js"></script>
-
+        <script src="src/js/components/header.js"></script>
+        <script src="src/js/components/membershipCard.js"></script>
     </body>
 </html>
