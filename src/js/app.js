@@ -41,11 +41,13 @@ const blogSidebar = document.querySelector('.blog__sidebar');
 const toggleBtn = document.querySelector('.blog__sidebar .toggle-icon');
 let body = document.querySelector('body');
 
-toggleBtn.addEventListener('click', function (e) {
-  e.preventDefault();
-  blogSidebar.classList.toggle('active');
-  body.classList.toggle('overlay');
-});
+if (toggleBtn) {
+  toggleBtn.addEventListener('click', function (e) {
+    e.preventDefault();
+    blogSidebar.classList.toggle('active');
+    body.classList.toggle('overlay');
+  });
+}
 
 // Price Plans package
 const planBtns = document.querySelectorAll('.price-plan__link');
