@@ -1,0 +1,23 @@
+.input-field {
+  &--transparent {
+    .select2-container--bootstrap-5 .select2-selection {
+      background-color: transparent !important;
+    }
+    .select2-container--bootstrap-5 .select2-selection--single {
+      position: relative;
+      background-image: none;
+      &::after {
+        content: '';
+        position: absolute;
+        top: 35%;
+        right: 30px;
+        transform: translateY(-50%);
+        border: solid #ffffff63;
+        border-width: 0 1.6px 1.6px 0;
+        display: inline-block;
+        padding: 3px;
+        transform: rotate(45deg);
+      }
+    }
+  }
+}
