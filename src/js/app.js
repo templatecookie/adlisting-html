@@ -43,19 +43,58 @@ $('#category').select2({
   closeOnSelect: !$(this).attr('multiple'),
 });
 
-var item = new BVSelect({
-  selector: '#item',
-  searchbox: false,
-  offset: true,
-  placeholder: 'Select',
-  search_autofocus: true,
-  breakpoint: 450,
-});
-var page = new BVSelect({
-  selector: '#page',
-  searchbox: false,
-  offset: true,
-  placeholder: 'Select',
-  search_autofocus: true,
-  breakpoint: 450,
+// var item = new BVSelect({
+//   selector: '#item',
+//   searchbox: false,
+//   offset: true,
+//   placeholder: 'Select',
+//   search_autofocus: true,
+//   breakpoint: 450,
+// });
+// var page = new BVSelect({
+//   selector: '#page',
+//   searchbox: false,
+//   offset: true,
+//   placeholder: 'Select',
+//   search_autofocus: true,
+//   breakpoint: 450,
+// });
+
+$('.banner__feature-slider').slick({
+  infinite: true,
+  slidesToShow: 6,
+  slidesToScroll: 1,
+  dots: false,
+  arrows: false,
+  autoplay: true,
+  autoplaySpeed: 1500,
+  responsive: [
+    {
+      breakpoint: 1201,
+      settings: {
+        slidesToShow: 5,
+      },
+    },
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+      },
+    },
+    {
+      breakpoint: 991,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 575,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
 });
