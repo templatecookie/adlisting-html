@@ -12,6 +12,7 @@ const editBtn = document.querySelectorAll('.edit-icon');
 
 editBtn.forEach((dropMenu) => {
   dropMenu.addEventListener('click', function () {
+    document.querySelector('.edit').classList.toggle('active');
     dropMenu.classList.toggle('active');
   });
 });
