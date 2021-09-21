@@ -10,7 +10,6 @@
         <link rel="icon" type="image/png" sizes="32x32" href="src/images/favicon_io/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="src/images/favicon_io/favicon-16x16.png" />
         <link rel="manifest" href="src/images/favicon_io/site.webmanifest" />
-
     </head>
 
     <body>
@@ -334,7 +333,11 @@
                                         <option value="2">Category 2</option>
                                     </select>
                                     <span class="icon icon--left">
-                                        <svg viewBox="0 0 24 24" width="24" height="24" stroke="#00AAFF" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                                        <svg viewBox="0 0 24 24" width="24" height="24" stroke="#00AAFF" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
+                                            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                                            <polyline points="2 17 12 22 22 17"></polyline>
+                                            <polyline points="2 12 12 17 22 12"></polyline>
+                                        </svg>
                                     </span>
                                 </div>
                             </div>
@@ -2595,74 +2598,26 @@
         <!-- footer section end -->
 
         <!-- Back To Top Btn -->
-        <button class="scrollTop" >
+        <button class="scrollTop">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M12 20.25V3.75" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
                 <path d="M5.25 10.5L12 3.75L18.75 10.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
         </button>
 
-        <!--  -->
+        <!-- Script Goes Here-->
+        <script src="src/js/plugins/jquery.min.js"></script>
         <script type="module" src="/main.js"></script>
-     
         <script src="src/js/plugins/bvselect.js"></script>
-        <script src="src/js/plugins/nouislider.min.js"></script>
-        <script src="src/js/plugins/wNumb.min.js"></script>
-       
-
+        <script src="src/js/plugins/select2/js/select2.min.js"></script>
         <script>
-
-
-
-            // Slider
-            const sliderRange = document.querySelector(".sliderrange");
-            const output = document.querySelector("#value-range");
-
-            output.innerHTML = `${sliderRange.value} miles`;
-
-            sliderRange.oninput = function () {
-                output.innerHTML = `${this.value} miles`;
-            };
-
-            sliderRange.addEventListener("mousemove", function () {
-                var x = sliderRange.value;
-
-                var color = `linear-gradient(
-    90deg,
-    rgb(0, 170, 255) ${x}%,
-    rgb(218, 221, 229) ${x}%
-  )`;
-
-                sliderRange.style.background = color;
+            $("#category").select2({
+                theme: "bootstrap-5",
+                width: $(this).data("width") ? $(this).data("width") : $(this).hasClass("w-100") ? "100%" : "style",
+                placeholder: "Select Category",
+                allowClear: Boolean($(this).data("allow-clear")),
+                closeOnSelect: !$(this).attr("multiple"),
             });
-
-            const adSidebar = document.querySelector(".list-sidebar");
-            const sidebarToggle = document.querySelector(".list-sidebar .toggle-bar");
-            let body = document.querySelector("body");
-
-            sidebarToggle.addEventListener("click", function (e) {
-                e.preventDefault();
-                adSidebar.classList.toggle("active");
-                body.classList.toggle("overlay");
-            });
-
-            var range = document.getElementById("priceRangeSlider");
-
-            noUiSlider.create(range, {
-                start: [20, 80],
-                connect: true,
-                range: {
-                    min: [0],
-                    max: [500],
-                },
-                format: wNumb({
-                    decimals: 3,
-                    thousand: ".",
-                    suffix: " ($)",
-                }),
-                tooltips: true,
-            });
-
         </script>
     </body>
 </html>
