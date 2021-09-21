@@ -1,0 +1,63 @@
+.upload-wrapper {
+    h3 {
+        font-size: 20px;
+        line-height: 32px;
+        font-weight: 600;
+        margin-bottom: 18px;
+    }
+    .upload-area {
+        padding: 20px 360px 20px 20px;
+        background: #FFFFFF;
+        border: 1px dashed #EBEEF7;
+        box-sizing: border-box;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        &.active {
+            border-color: color(primary-2);
+        }
+    }
+    .uploaded-item, .add-new {
+        height: 120px;
+        width: 120px;
+        border-radius: 6px;
+        position: relative;
+        // overflow: hidden;
+        background: #f5f7fa;
+        margin-left: 10px;
+        margin-right: 10px;
+        ;
+        transition: background 0.3s linear;
+        img {
+            border-radius: 6px;
+        }
+    }
+    .uploaded-item {
+        svg {
+            position: absolute;
+            height: 18px;
+            width: 18px;
+            border-radius: 50%;
+            background-color: #FF4F4F;
+            color: white;
+            right: 0;
+            top: 0;
+            transform: rotate(45deg) translate(0%, -50%);
+            cursor: pointer;
+        } 
+    }
+    .add-new {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #F5F7FA;
+        cursor: pointer;
+        svg {
+            width: 35px;
+            height: 35px;
+        }
+        &:hover {
+            background: darken(#f5f7fa, 10%);
+        }
+    }
+}
