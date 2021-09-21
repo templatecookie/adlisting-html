@@ -8,12 +8,11 @@ window.addEventListener('load', (event) => {
 });
 
 // Cards Edit menu
-const editBtn = document.querySelectorAll('.edit-icon');
-
-editBtn.forEach((dropMenu) => {
-  dropMenu.addEventListener('click', function () {
-    document.querySelector('.edit').classList.toggle('active');
-    dropMenu.classList.toggle('active');
+// const editBtn = document.querySelectorAll('.edit-icon');
+const editBtn = document.querySelectorAll('.edit');
+editBtn.forEach((item) => {
+  item.addEventListener('click', () => {
+    item.classList.toggle('active');
   });
 });
 
@@ -29,11 +28,3 @@ function scrollToTop() {
     behavior: 'smooth',
   });
 }
-// Sticky header
-// window.addEventListener('scroll', function () {
-//   let header = document.querySelector('header');
-//   header.classList.toggle('sticky', window.scrollY > 0);
-// });
-
-// Init scroll animation
-// AOS.init({ disable: 'mobile', });
