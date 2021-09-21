@@ -7,8 +7,31 @@ window.addEventListener('load', (event) => {
   preloader.style.display = 'none';
 });
 
+// Header Navigation Toggle event
+const toggle = document.querySelector('.toggle-icon');
+const mainNav = document.querySelector('.header');
+const mobileNav = document.querySelector('.menu--sm');
+const logo = document.querySelector('.logo-transparent');
+
+toggle.addEventListener('click', function (e) {
+  e.preventDefault();
+  toggle.classList.toggle('active');
+  mainNav.classList.toggle('active');
+  mobileNav.classList.toggle('active');
+
+  // change Logo when background added on navbar
+  // temproary disable
+  // logo.src == `src/images/logo.png`
+  //   ? changeLogo('logo-dark')
+  //   : changeLogo('logo');
+});
+
+// change logo
+// function changeLogo(logopath) {
+//   logo.src = `src/images/${logopath}.png`;
+// }
+
 // Cards Edit menu
-// const editBtn = document.querySelectorAll('.edit-icon');
 const editBtn = document.querySelectorAll('.edit');
 editBtn.forEach((item) => {
   item.addEventListener('click', () => {
@@ -42,7 +65,7 @@ $('#category').select2({
   allowClear: Boolean($(this).data('allow-clear')),
   closeOnSelect: !$(this).attr('multiple'),
 });
-
+// BV Select
 // var item = new BVSelect({
 //   selector: '#item',
 //   searchbox: false,
