@@ -10,8 +10,7 @@
         <link rel="icon" type="image/png" sizes="32x32" href="src/images/favicon_io/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="src/images/favicon_io/favicon-16x16.png" />
         <link rel="manifest" href="src/images/favicon_io/site.webmanifest" />
-        <link rel="stylesheet" href="src/js/plugins/select2/css/select2.min.css">
-        <link rel="stylesheet" href="src/js/plugins/select2/css/select2-bootstrap-5-theme.css">
+
     </head>
 
     <body>
@@ -2609,23 +2608,9 @@
         <script src="src/js/plugins/bvselect.js"></script>
         <script src="src/js/plugins/nouislider.min.js"></script>
         <script src="src/js/plugins/wNumb.min.js"></script>
-       
-        <!-- <script src="src/js/pages/home-01.js"></script> -->
-       
         <script src="src/js/components/header.js"></script>
 
         <script>
-
-
-$('#category').select2( {
-    theme: "bootstrap-5",
-    width: $( this ).data( "width" ) ? $( this ).data( "width" ) : $( this ).hasClass( "w-100" ) ? "100%" : "style",
-    placeholder: 'Select Category',
-    allowClear: Boolean( $( this ).data( "allow-clear" ) ),
-    closeOnSelect: !$( this ).attr( "multiple" ),
-} );
-
-
 
 
 
@@ -2659,23 +2644,6 @@ $('#category').select2( {
                 e.preventDefault();
                 adSidebar.classList.toggle("active");
                 body.classList.toggle("overlay");
-            });
-
-            var item = new BVSelect({
-                selector: "#item",
-                searchbox: false,
-                offset: true,
-                placeholder: "Select",
-                search_autofocus: true,
-                breakpoint: 450,
-            });
-            var page = new BVSelect({
-                selector: "#page",
-                searchbox: false,
-                offset: true,
-                placeholder: "Select",
-                search_autofocus: true,
-                breakpoint: 450,
             });
 
             var range = document.getElementById("priceRangeSlider");

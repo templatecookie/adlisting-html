@@ -42,3 +42,20 @@ $('#category').select2({
   allowClear: Boolean($(this).data('allow-clear')),
   closeOnSelect: !$(this).attr('multiple'),
 });
+
+var item = new BVSelect({
+  selector: '#item',
+  searchbox: false,
+  offset: true,
+  placeholder: 'Select',
+  search_autofocus: true,
+  breakpoint: 450,
+});
+var page = new BVSelect({
+  selector: '#page',
+  searchbox: false,
+  offset: true,
+  placeholder: 'Select',
+  search_autofocus: true,
+  breakpoint: 450,
+});
