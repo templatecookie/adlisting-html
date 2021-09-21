@@ -1,7 +1,4 @@
 .btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   @include font(16px, 50px, 700, null);
   text-transform: capitalize;
   font-family: $fsecondary;
