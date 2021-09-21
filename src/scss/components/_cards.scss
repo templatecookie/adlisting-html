@@ -1529,7 +1529,7 @@
           background-color: color(gray-10);
           transition: all 0.3s ease-in;
           flex-shrink: 0;
-          &:hover,
+
           &.active {
             background-color: color(primary-4) !important;
             .edit-icon {
