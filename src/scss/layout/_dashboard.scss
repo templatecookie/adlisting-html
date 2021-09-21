@@ -1,4 +1,7 @@
 .dashboard {
+  @include min(768px) {
+    padding-bottom: 20px;
+  }
   &__section-info {
     display: flex;
     align-items: center;
@@ -206,6 +209,9 @@
   &__posted-ads-slider {
     &--item {
       margin: 0px 12px;
+      @include min(768px) {
+        margin-bottom: 80px;
+      }
     }
   }
 
@@ -214,7 +220,6 @@
     align-items: center;
     justify-content: space-between;
     @include max(991px) {
-      // text-align: ;
       align-items: flex-start;
       flex-direction: column;
     }
