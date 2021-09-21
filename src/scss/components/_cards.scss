@@ -1002,7 +1002,7 @@
       @include trans(0.3s, ease-in-out);
     }
     img {
-      object-fit: contain;
+      object-fit: cover;
       @include trans(0.3s, ease-in-out);
     }
     .btn {
