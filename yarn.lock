@@ -124,7 +124,7 @@ is-number@^7.0.0:
   resolved "https://registry.yarnpkg.com/is-number/-/is-number-7.0.0.tgz#7535345b896734d5f80c4d06c50955527a14f12b"
   integrity sha512-41Cifkg6e8TylSpdtTpeLVMqvSBEVzTttHvERD741+pnZ8ANv0004MRL43QKPDlK9cGvNp6NZWZUBlbGXYxxng==
 
-jquery@^3.6.0:
+jquery@>=1.7.0, jquery@^3.6.0:
   version "3.6.0"
   resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.6.0.tgz#c72a09f15c1bdce142f49dbf1170bdf8adac2470"
   integrity sha512-JVzAR/AjBvVt2BmYhxRCSYysDsPcssdmTFnzyLEts9qNwmjmu4JTAMYubEfwVOSwpQ1I1sKKFcxhZCI2buerfw==
@@ -208,6 +208,13 @@ to-regex-range@^5.0.1:
   integrity sha512-65P7iz6X5yEr1cwcgvQxbbIw7Uk3gOy5dIdtZ4rDveLqhrdJP+Li/Hx6tyK0NEb+2GCyneCMJiGqrADCSNk8sQ==
   dependencies:
     is-number "^7.0.0"
+
+venobox@^1.9.3:
+  version "1.9.3"
+  resolved "https://registry.yarnpkg.com/venobox/-/venobox-1.9.3.tgz#1125e8193c3af569902250455a0d6643b9689b4a"
+  integrity sha512-+J1WkS4zBe6vZ/5EQU5b/vySMsM1yzvJZ4fbsi6BE5QVV3fzSUoxGIwOW+yD7Yw6igKAtZNR+1A8hvIalNbQeQ==
+  dependencies:
+    jquery ">=1.7.0"
 
 vite@^2.2.3:
   version "2.2.3"

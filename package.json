@@ -16,6 +16,7 @@
     "bootstrap": "^5.0.0-beta3",
     "jquery": "^3.6.0",
     "select2": "^4.1.0-rc.0",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "venobox": "^1.9.3"
   }
 }

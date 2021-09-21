@@ -33,6 +33,20 @@ if (toggle) {
 //   logo.src = `src/images/${logopath}.png`;
 // }
 
+// Sidebar
+
+// = Blog
+
+const blogSidebar = document.querySelector('.blog__sidebar');
+const toggleBtn = document.querySelector('.blog__sidebar .toggle-icon');
+let body = document.querySelector('body');
+
+toggleBtn.addEventListener('click', function (e) {
+  e.preventDefault();
+  blogSidebar.classList.toggle('active');
+  body.classList.toggle('overlay');
+});
+
 // Price Plans package
 const planBtns = document.querySelectorAll('.price-plan__link');
 const packageType = document.querySelectorAll('.plan-card__price span');
@@ -91,13 +105,13 @@ $('#category').select2({
   closeOnSelect: !$(this).attr('multiple'),
 });
 // Veno box
-// $(document).ready(function () {
-//   $('.galleryView').venobox();
-//   $('.yplayer').venobox({
-//     spinner: 'wave',
-//     spinColor: '#00aaff',
-//   });
-// });
+$(document).ready(function () {
+  $('.galleryView').venobox();
+  $('.yplayer').venobox({
+    spinner: 'wave',
+    spinColor: '#00aaff',
+  });
+});
 
 // BV Select
 
