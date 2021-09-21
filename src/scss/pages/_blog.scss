@@ -336,6 +336,17 @@
 
 .promo-link {
   margin-top: 50px;
+  .container {
+    padding: 0;
+  }
+  a {
+    width: inherit;
+    height: 160px;
+    img {
+      height: inherit;
+      object-fit: contain;
+    }
+  }
 }
 
 .blog-list {
