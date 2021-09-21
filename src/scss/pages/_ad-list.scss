@@ -666,7 +666,11 @@
   }
   &__slider {
     &-item {
-      margin: 0px 12px;
+      margin-right: 12px;
+      // disable margin when slider item will be single
+      @include max(767px) {
+        margin-right: 0px;
+      }
     }
   }
 }
