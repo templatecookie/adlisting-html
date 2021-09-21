@@ -13,18 +13,20 @@ const mainNav = document.querySelector('.header');
 const mobileNav = document.querySelector('.menu--sm');
 const logo = document.querySelector('.logo-transparent');
 
-toggle.addEventListener('click', function (e) {
-  e.preventDefault();
-  toggle.classList.toggle('active');
-  mainNav.classList.toggle('active');
-  mobileNav.classList.toggle('active');
+if (toggle) {
+  toggle.addEventListener('click', function (e) {
+    e.preventDefault();
+    toggle.classList.toggle('active');
+    mainNav.classList.toggle('active');
+    mobileNav.classList.toggle('active');
 
-  // change Logo when background added on navbar
-  // temproary disable
-  // logo.src == `src/images/logo.png`
-  //   ? changeLogo('logo-dark')
-  //   : changeLogo('logo');
-});
+    // change Logo when background added on navbar
+    // temproary disable
+    // logo.src == `src/images/logo.png`
+    //   ? changeLogo('logo-dark')
+    //   : changeLogo('logo');
+  });
+}
 
 // change logo
 // function changeLogo(logopath) {

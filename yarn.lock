@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"@srexi/purecounterjs@^1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@srexi/purecounterjs/-/purecounterjs-1.2.1.tgz#7548b2532f28c7c1c29c663950605c4e69cdf35f"
+  integrity sha512-desJ/czQyYWsKB8bVbMZpxF9aWS80GD7NgFDAnOEN0+FjKzFcjgXR8+oewlWksA/GG2MGza42eGoZnhSH9Er/A==
+
 animate.css@^4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/animate.css/-/animate.css-4.1.1.tgz#614ec5a81131d7e4dc362a58143f7406abd68075"
