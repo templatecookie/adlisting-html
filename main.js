@@ -1,12 +1,12 @@
 // 'use strict';
 
 // import vendor files
-import 'bootstrap/scss/bootstrap.scss';
+import './src/js/plugins/jquery.min';
 import 'bootstrap/dist/js/bootstrap.min.js';
+import 'bootstrap/scss/bootstrap.scss';
 import 'animate.css';
-import '/src/js/plugins/css/slick.css';
-import '/src/js/plugins/css/venobox.min.css';
-import '/src/js/plugins/css/nouislider.min.css';
+import './src/js/plugins/bvselect';
+import 'select2/dist/js/select2.min.js';
 
 // import css files
 import './src/scss/main.scss';

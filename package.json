@@ -12,6 +12,8 @@
   },
   "dependencies": {
     "animate.css": "^4.1.1",
-    "bootstrap": "^5.0.0-beta3"
+    "bootstrap": "^5.0.0-beta3",
+    "jquery": "^3.6.0",
+    "select2": "^4.1.0-rc.0"
   }
 }

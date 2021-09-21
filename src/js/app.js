@@ -30,3 +30,15 @@ window.addEventListener('scroll', function () {
   var scroll = document.querySelector('.scrollTop');
   scroll.classList.toggle('active', window.scrollY > 500);
 });
+
+$('#category').select2({
+  theme: 'bootstrap-5',
+  width: $(this).data('width')
+    ? $(this).data('width')
+    : $(this).hasClass('w-100')
+    ? '100%'
+    : 'style',
+  placeholder: 'Select Category',
+  allowClear: Boolean($(this).data('allow-clear')),
+  closeOnSelect: !$(this).attr('multiple'),
+});
