@@ -1,6 +1,9 @@
 .dashboard {
-  @include min(768px) {
-    padding-bottom: 20px;
+  padding-top: 40px;
+  &--user {
+    @include min(768px) {
+      padding-bottom: 20px;
+    }
   }
   &__section-info {
     display: flex;
