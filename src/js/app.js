@@ -33,6 +33,29 @@ if (toggle) {
 //   logo.src = `src/images/${logopath}.png`;
 // }
 
+// Price Plans package
+const planBtns = document.querySelectorAll('.price-plan__link');
+const packageType = document.querySelectorAll('.plan-card__price span');
+planBtns.forEach((btn) => {
+  btn.addEventListener('click', () => {
+    removeActive();
+    btn.classList.add('active');
+    btn.textContent === 'Monthly'
+      ? changeText('/month')
+      : changeText('/annual');
+  });
+});
+
+// remove active class
+function removeActive() {
+  planBtns.forEach((btn) => btn.classList.remove('active'));
+}
+
+// change text
+function changeText(string) {
+  packageType.forEach((text) => (text.textContent = string));
+}
+
 // Cards Edit menu
 const editBtn = document.querySelectorAll('.edit');
 editBtn.forEach((item) => {
@@ -67,23 +90,42 @@ $('#category').select2({
   allowClear: Boolean($(this).data('allow-clear')),
   closeOnSelect: !$(this).attr('multiple'),
 });
+// Veno box
+// $(document).ready(function () {
+//   $('.galleryView').venobox();
+//   $('.yplayer').venobox({
+//     spinner: 'wave',
+//     spinColor: '#00aaff',
+//   });
+// });
+
 // BV Select
-// var item = new BVSelect({
-//   selector: '#item',
-//   searchbox: false,
-//   offset: true,
-//   placeholder: 'Select',
-//   search_autofocus: true,
-//   breakpoint: 450,
-// });
-// var page = new BVSelect({
-//   selector: '#page',
-//   searchbox: false,
-//   offset: true,
-//   placeholder: 'Select',
-//   search_autofocus: true,
-//   breakpoint: 450,
-// });
+
+const selectOne = document.querySelector('#item');
+const selectTwo = document.querySelector('#page');
+const selectors = [selectOne, selectTwo];
+
+if (selectOne) {
+  var item = new BVSelect({
+    selector: '#item',
+    searchbox: false,
+    offset: true,
+    placeholder: 'Select',
+    search_autofocus: true,
+    breakpoint: 450,
+  });
+}
+
+if (selectTwo) {
+  var page = new BVSelect({
+    selector: '#page',
+    searchbox: false,
+    offset: true,
+    placeholder: 'Select',
+    search_autofocus: true,
+    breakpoint: 450,
+  });
+}
 
 $('.banner__feature-slider').slick({
   infinite: true,
