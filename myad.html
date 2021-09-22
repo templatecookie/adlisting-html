@@ -506,7 +506,7 @@
                             <div class="dashboard__filter-right">
                                 <div class="dashboard__filter-group">
                                     <div class="input-select">
-                                        <select id="category">
+                                        <select id="allCategory">
                                             <option value="01">Category 01</option>
                                             <option value="02">Category 02</option>
                                             <option value="03">Category 03</option>
@@ -2278,43 +2278,9 @@
                 <path d="M5.25 10.5L12 3.75L18.75 10.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
         </button>
-
-        <script type="module" src="/main.js"></script>
-     
+        <!-- Scripts Goes Here  -->
+        <script src="src/js/plugins/jquery.min.js"></script>
         <script src="src/js/plugins/bvselect.js"></script>
-        <script src="src/js/pages/dashboard.js"></script>
-       
-       
-
-        <script>
-            document.addEventListener("DOMContentLoaded", function () {
-                var category = new BVSelect({
-                    selector: "#category",
-                    searchbox: false,
-                    offset: true,
-                    placeholder: "All category",
-                    search_autofocus: true,
-                    breakpoint: 450,
-                });
-                var recent = new BVSelect({
-                    selector: "#recent",
-                    searchbox: false,
-                    offset: true,
-                    placeholder: "Recently added",
-                    search_placeholder: "Search...",
-                    search_autofocus: true,
-                    breakpoint: 450,
-                });
-                var all = new BVSelect({
-                    selector: "#view",
-                    searchbox: false,
-                    offset: true,
-                    placeholder: "All",
-                    search_placeholder: "Search...",
-                    search_autofocus: true,
-                    breakpoint: 450,
-                });
-            });
-        </script>
+        <script type="module" src="/main.js"></script>
     </body>
 </html>

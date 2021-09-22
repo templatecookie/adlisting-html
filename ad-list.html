@@ -10,6 +10,8 @@
         <link rel="icon" type="image/png" sizes="32x32" href="src/images/favicon_io/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="src/images/favicon_io/favicon-16x16.png" />
         <link rel="manifest" href="src/images/favicon_io/site.webmanifest" />
+        <link rel="stylesheet" href="src/js/plugins/select2/css/select2.min.css" />
+        <link rel="stylesheet" href="src/js/plugins/select2/css/select2-bootstrap-5-theme.css" />
     </head>
 
     <body>
@@ -2607,17 +2609,9 @@
 
         <!-- Script Goes Here-->
         <script src="src/js/plugins/jquery.min.js"></script>
-        <script type="module" src="/main.js"></script>
-        <script src="src/js/plugins/bvselect.js"></script>
+        <script src="src/js/plugins/slick.min.js"></script>
         <script src="src/js/plugins/select2/js/select2.min.js"></script>
-        <script>
-            $("#category").select2({
-                theme: "bootstrap-5",
-                width: $(this).data("width") ? $(this).data("width") : $(this).hasClass("w-100") ? "100%" : "style",
-                placeholder: "Select Category",
-                allowClear: Boolean($(this).data("allow-clear")),
-                closeOnSelect: !$(this).attr("multiple"),
-            });
-        </script>
+        <script src="src/js/plugins/bvselect.js"></script>
+        <script type="module" src="./main.js"></script>
     </body>
 </html>
