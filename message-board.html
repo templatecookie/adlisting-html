@@ -1102,26 +1102,8 @@
             </div>
         </footer>
         <!-- footer section end -->
-        
+
+        <!-- Scripts Goes Here -->
         <script type="module" src="/main.js"></script>
-     
-        <script src="src/js/pages/dashboard.js"></script>
-        <script src="src/js/app.js"></script>
-        <script src="src/js/components/header.js"></script>
-        <script>
-            const dashboardContainer = document.querySelector(".dashboard__message");
-            const users = document.querySelectorAll(".user--profile");
-            const messageBody = document.querySelector(".dashboard__message-user");
-            const backList = document.querySelector(".back-message--list");
-            users.forEach((user) => {
-                user.addEventListener("click", function (e) {
-                    dashboardContainer.classList.toggle("active");
-                });
-            });
-            // back to message list
-            backList.addEventListener("click", function () {
-                dashboardContainer.classList.remove("active");
-            });
-        </script>
     </body>
 </html>

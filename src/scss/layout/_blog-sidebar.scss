@@ -183,41 +183,25 @@
 
   &-gallery {
     .gallery {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      @include max(767px) {
-        justify-content: start;
-      }
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-flow: row;
+      gap: 12px;
       &-item {
-        width: 112px;
-        height: 112px;
-        border-radius: 4px;
-        overflow: hidden;
-        margin-bottom: 6px;
-        @include max(767px) {
-          margin-right: 6px;
-        }
-        @include max(420px) {
-          width: 112px;
-          height: 112px;
-        }
-        @include max(400px) {
-          margin-right: 16px;
-          margin-bottom: 16px;
-          width: 90px;
-          height: 90px;
-        }
-
-        @include max(360px) {
-          width: 70px;
-          height: 70px;
-          margin: 6px;
-        }
-
-        img {
+        .galleryView {
           width: 100%;
+          border-radius: 4px;
+          overflow: hidden;
+          @include min(992px) {
+            height: 112px;
+          }
+          @include max(767px) {
+            height: 60px;
+          }
+        }
+        img {
+          width: inherit;
+          object-fit: cover;
           @include trans(0.3s, ease-in-out);
         }
         &:hover {

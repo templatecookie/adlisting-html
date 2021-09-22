@@ -434,6 +434,8 @@
     }
 
     &-link {
+      display: inline-block;
+      width: 100%;
       color: color(gray-3);
       transition: all 0.3s ease-in-out;
       @include max(767px) {
@@ -1002,7 +1004,7 @@
       @include trans(0.3s, ease-in-out);
     }
     img {
-      object-fit: contain;
+      object-fit: cover;
       @include trans(0.3s, ease-in-out);
     }
     .btn {
