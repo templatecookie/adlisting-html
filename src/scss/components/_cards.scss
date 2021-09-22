@@ -434,6 +434,8 @@
     }
 
     &-link {
+      display: inline-block;
+      width: 100%;
       color: color(gray-3);
       transition: all 0.3s ease-in-out;
       @include max(767px) {
