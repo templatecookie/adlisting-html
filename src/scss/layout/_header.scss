@@ -1,12 +1,31 @@
 .header {
   position: relative;
+  min-height: 80px;
+  transition: all 0.4s ease-in-out;
+  display: flex;
   &.active {
     background-color: #fff;
     box-shadow: 0px -1px 0px 0px #ebeef7 inset;
     padding: 0px;
     transition: all 0.3s linear;
-    .navigation-bar {
-      height: 80px;
+  }
+
+  &.header--fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 999999;
+  }
+
+  &.active,
+  &.header--fixed {
+    .logo-white {
+      display: none;
+    }
+    .logo-dark {
+      display: block;
     }
   }
 
@@ -18,22 +37,42 @@
     }
   }
 
-  &--home-three {
-    .navigation-bar__buttons {
-      .btn {
-        &:nth-child(1) {
-          @include max(1199px) {
-            margin-right: 0px !important;
-          }
+  &--one,
+  &--three {
+    .logo-dark {
+      display: none;
+    }
+  }
+
+  &--one {
+    &.active,
+    &.header--fixed {
+      .toggle-icon {
+        &__bar {
+          background-color: #191f33 !important;
         }
       }
     }
 
-    .menu {
-      &__item {
-        @include max(1199px) {
-          margin-right: 12px !important;
+    &.header--fixed {
+      .menu {
+        &__link {
+          &:hover {
+            color: #767e94;
+          }
+          &.active {
+            color: #767e94;
+            font-weight: 600;
+          }
         }
+      }
+
+      .navigation-bar__buttons .btn:nth-child(1) {
+        color: #767e94 !important;
+      }
+      .navigation-bar__buttons .btn:nth-child(2) {
+        background-color: #00aaff;
+        color: #fff;
       }
     }
   }
@@ -47,6 +86,7 @@
     @include max(991px) {
       padding: 0px;
     }
+
     .menu {
       &__item {
         @include max(1199px) {
@@ -145,6 +185,26 @@
           &:nth-child(1) {
             margin-right: 12px;
           }
+        }
+      }
+    }
+  }
+
+  &--home-three {
+    .navigation-bar__buttons {
+      .btn {
+        &:nth-child(1) {
+          @include max(1199px) {
+            margin-right: 0px !important;
+          }
+        }
+      }
+    }
+
+    .menu {
+      &__item {
+        @include max(1199px) {
+          margin-right: 12px !important;
         }
       }
     }

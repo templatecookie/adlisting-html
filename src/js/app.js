@@ -65,7 +65,16 @@ if (backList) {
     dashboardContainer.classList.remove('active');
   });
 }
+
 // ===== mobile Navigation ===== \\
+
+$(window).scroll(function () {
+  var sticky = $('.header'),
+    scroll = $(window).scrollTop();
+  if (scroll >= 100) sticky.addClass('header--fixed');
+  else sticky.removeClass('header--fixed');
+});
+
 if (toggle) {
   toggle.addEventListener('click', function (e) {
     e.preventDefault();
