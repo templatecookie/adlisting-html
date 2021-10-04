@@ -10,6 +10,7 @@ const viewFor = document.querySelector('.product-sliderview-for');
 const viewNav = document.querySelector('.product-sliderview-nav');
 const testimonialSlider = document.querySelector('.testimonial-slider');
 const brandSlider = document.querySelector('.support-brand__slider');
+const relatedPostSlider = document.querySelector('#relatedPostSlider');
 const categorySelect = document.querySelector('#category');
 const toggle = document.querySelector('.toggle-icon');
 const mainNav = document.querySelector('.header');
@@ -35,9 +36,7 @@ const brandSelect = document.querySelector('#brand');
 const modelSelect = document.querySelector('#model');
 const conditionSelect = document.querySelector('#conditions');
 const authenSelect = document.querySelector('#authenticity');
-const toggleSidebar = document.querySelector(
-  '.dashboard__navigation-toggle-btn'
-);
+const toggleSidebar = document.querySelector('.dashboard__navigation-toggle-btn');
 const inputNumber = document.querySelector('#telephone');
 const ctx = document.querySelector('#adsview');
 let body = document.querySelector('body');
@@ -48,7 +47,7 @@ const backList = document.querySelector('.back-message--list');
 
 // ===== Page Loader ===== \\
 window.addEventListener('load', (event) => {
-  preloader.style.display = 'none';
+    preloader.style.display = 'none';
 });
 
 // ===== mobile Navigation ===== \\
@@ -281,6 +280,7 @@ if (brandSlider) {
     ],
   });
 }
+
 if (postSlider) {
   $('.dashboard__posted-ads-slider').slick({
     infinite: true,
@@ -309,6 +309,47 @@ if (postSlider) {
       },
     ],
   });
+}
+
+if(relatedPostSlider){
+    $(".related-post__slider").slick({
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: true,
+        autoplay: false,
+        autoplaySpeed: 1500,
+        adaptiveHeight: true,
+        prevArrow: ".slider-btn--prev",
+        nextArrow: ".slider-btn--next",
+        responsive: [
+            {
+                breakpoint: 1201,
+                settings: {
+                    slidesToShow: 3,
+                },
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 3,
+                },
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 2,
+                },
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                },
+            },
+        ],
+    });
 }
 
 // ===== Select2 ===== \\
