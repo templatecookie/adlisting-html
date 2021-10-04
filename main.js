@@ -92,11 +92,24 @@ function addNewfile(file) {
 }
 
 // remove item
-let removeBtn = document.querySelector('.remove-icon')
+let removeBtn = document.getElementsByClassName('remove-icon')
+
+// if(removeBtn){
+//     removeBtn.addEventListener('click', (event) => {
+//         console.log(event.target)
+//     });
+// }
 
 if(removeBtn){
-    removeBtn.addEventListener('click', (event) => {
-        console.log(event.target)
-    });
+    for (var i = 0; i < removeBtn.length; i++) {
+        console.log(i);
+        // Here we have the same `onclick`
+        removeBtn[i].addEventListener('click', function (event) {
+            console.log('Element ' + event.target.innerHTML + ' was just clicked')
+            let item = event.target.closest('.uploaded-item');
+            console.log(item);
+            item.remove();
+        })
+    }
 }
 
