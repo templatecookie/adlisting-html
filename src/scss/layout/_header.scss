@@ -2,7 +2,6 @@
   position: relative;
   min-height: 80px;
   transition: all 0.4s ease-in-out;
-  display: flex;
   &.active {
     background-color: #fff;
     box-shadow: 0px -1px 0px 0px #ebeef7 inset;
@@ -39,6 +38,8 @@
 
   &--one,
   &--three {
+    display: flex;
+    align-items: center;
     .logo-dark {
       display: none;
     }
@@ -705,6 +706,7 @@
     font-family: $fsecondary;
     padding: 0px 24px;
     background-color: color(gray-10);
+    white-space: nowrap;
     &:hover {
       color: inherit;
     }
