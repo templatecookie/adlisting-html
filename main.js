@@ -2,7 +2,6 @@
 
 // import vendor files
 import './src/js/app';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 // import css files
 import './src/scss/main.scss';
