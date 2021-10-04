@@ -41,13 +41,15 @@ const toggleSidebar = document.querySelector(
 const inputNumber = document.querySelector('#telephone');
 const ctx = document.querySelector('#adsview');
 let body = document.querySelector('body');
+const dashboardContainer = document.querySelector('.dashboard__message');
+const users = document.querySelectorAll('.user--profile');
+const messageBody = document.querySelector('.dashboard__message-user');
+const backList = document.querySelector('.back-message--list');
 
 // ===== Page Loader ===== \\
 window.addEventListener('load', (event) => {
   preloader.style.display = 'none';
 });
-
-// ===== ===== \\
 
 // ===== mobile Navigation ===== \\
 if (toggle) {
@@ -551,5 +553,20 @@ if (ctx) {
 if (inputNumber) {
   window.intlTelInput(inputNumber, {
     preferredCountries: ['us', 'bd'],
+  });
+}
+
+// ===== Message Dashboard ===== \\
+if (users) {
+  users.forEach((user) => {
+    user.addEventListener('click', function (e) {
+      dashboardContainer.classList.toggle('active');
+    });
+  });
+}
+if (backList) {
+  // back to message list
+  backList.addEventListener('click', function () {
+    dashboardContainer.classList.remove('active');
   });
 }
