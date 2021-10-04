@@ -10,7 +10,6 @@ const viewFor = document.querySelector('.product-sliderview-for');
 const viewNav = document.querySelector('.product-sliderview-nav');
 const testimonialSlider = document.querySelector('.testimonial-slider');
 const brandSlider = document.querySelector('.support-brand__slider');
-const relatedPostSlider = document.querySelector('#relatedPostSlider');
 const categorySelect = document.querySelector('#category');
 const toggle = document.querySelector('.toggle-icon');
 const mainNav = document.querySelector('.header');
@@ -36,7 +35,9 @@ const brandSelect = document.querySelector('#brand');
 const modelSelect = document.querySelector('#model');
 const conditionSelect = document.querySelector('#conditions');
 const authenSelect = document.querySelector('#authenticity');
-const toggleSidebar = document.querySelector('.dashboard__navigation-toggle-btn');
+const toggleSidebar = document.querySelector(
+  '.dashboard__navigation-toggle-btn'
+);
 const inputNumber = document.querySelector('#telephone');
 const ctx = document.querySelector('#adsview');
 let body = document.querySelector('body');
@@ -47,9 +48,23 @@ const backList = document.querySelector('.back-message--list');
 
 // ===== Page Loader ===== \\
 window.addEventListener('load', (event) => {
-    preloader.style.display = 'none';
+  preloader.style.display = 'none';
 });
 
+// ===== Message Dashboard ===== \\
+if (users) {
+  users.forEach((user) => {
+    user.addEventListener('click', function (e) {
+      dashboardContainer.classList.toggle('active');
+    });
+  });
+}
+if (backList) {
+  // back to message list
+  backList.addEventListener('click', function () {
+    dashboardContainer.classList.remove('active');
+  });
+}
 // ===== mobile Navigation ===== \\
 if (toggle) {
   toggle.addEventListener('click', function (e) {
@@ -280,7 +295,6 @@ if (brandSlider) {
     ],
   });
 }
-
 if (postSlider) {
   $('.dashboard__posted-ads-slider').slick({
     infinite: true,
@@ -309,47 +323,6 @@ if (postSlider) {
       },
     ],
   });
-}
-
-if(relatedPostSlider){
-    $(".related-post__slider").slick({
-        infinite: true,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        dots: false,
-        arrows: true,
-        autoplay: false,
-        autoplaySpeed: 1500,
-        adaptiveHeight: true,
-        prevArrow: ".slider-btn--prev",
-        nextArrow: ".slider-btn--next",
-        responsive: [
-            {
-                breakpoint: 1201,
-                settings: {
-                    slidesToShow: 3,
-                },
-            },
-            {
-                breakpoint: 992,
-                settings: {
-                    slidesToShow: 3,
-                },
-            },
-            {
-                breakpoint: 992,
-                settings: {
-                    slidesToShow: 2,
-                },
-            },
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 1,
-                },
-            },
-        ],
-    });
 }
 
 // ===== Select2 ===== \\
@@ -597,17 +570,105 @@ if (inputNumber) {
   });
 }
 
-// ===== Message Dashboard ===== \\
-if (users) {
-  users.forEach((user) => {
-    user.addEventListener('click', function (e) {
-      dashboardContainer.classList.toggle('active');
-    });
+// File Uploads
+
+const uploadArea = document.querySelector('.upload-area');
+const uploadedItems = document.querySelector('.uploaded-items');
+const input = document.querySelector('#addNew');
+const inputButton = document.querySelector('.add-new');
+
+// add new file
+if (inputButton) {
+  inputButton.addEventListener('click', (event) => {
+    handleDragArea(true);
+    input.click();
   });
 }
-if (backList) {
-  // back to message list
-  backList.addEventListener('click', function () {
-    dashboardContainer.classList.remove('active');
+
+// display file on file upload
+if (input) {
+  input.addEventListener('change', (event) => {
+    let file = event.target.files[0];
+    displayFile(file);
+    handleDragArea(false);
   });
 }
+
+// dragover event
+if (uploadArea) {
+  uploadArea.addEventListener('dragover', (event) => {
+    handleDragArea(true);
+    event.preventDefault();
+  });
+}
+
+// dragleave event
+if (uploadArea) {
+  uploadArea.addEventListener('dragleave', (event) => {
+    handleDragArea(false);
+  });
+}
+
+// drop event
+if (uploadArea) {
+  uploadArea.addEventListener('drop', (event) => {
+    event.preventDefault();
+    let file = event.dataTransfer.files[0];
+
+    displayFile(file);
+  });
+}
+
+// Handle drag over and drag leave effect
+function handleDragArea(param) {
+  if (param == true) {
+    uploadArea.classList.add('active');
+  } else {
+    uploadArea.classList.remove('active');
+  }
+}
+
+// display uploadedFile
+function displayFile(file) {
+  let fileType = file.type;
+  let validExtensions = ['image/jpeg', 'image/png', 'image/jpg'];
+  let fileURL;
+
+  if (validExtensions.includes(fileType)) {
+    let fileReader = new FileReader();
+
+    fileReader.onload = () => {
+      fileURL = fileReader.result;
+      addNewfile(fileURL);
+    };
+    fileReader.readAsDataURL(file);
+  } else {
+    alert('File type not supported');
+    handleDragArea(false);
+  }
+}
+
+// Append New File in HTML
+function addNewfile(file) {
+  let imgTag = `
+    <div class="uploaded-item">
+        <img src="${file}" alt="">
+        <div class="remove-icon">
+            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+        </div>
+    </div>`;
+  uploadedItems.insertAdjacentHTML('beforeend', imgTag);
+}
+
+// if (removeBtn) {
+//   for (var i = 0; i < removeBtn.length; i++) {
+//     console.log(i);
+//     // Here we have the same `onclick`
+//     removeBtn[i].addEventListener('click', function (event) {
+//       console.log('Element ' + event.target.innerHTML + ' was just clicked');
+//       let item = event.target.closest('.uploaded-item');
+//       console.log(item);
+//       item.remove();
+//     });
+//   }
+// }   // Not working because of removeBtn was not defined anywhery
