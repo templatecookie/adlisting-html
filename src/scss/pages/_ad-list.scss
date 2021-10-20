@@ -216,7 +216,7 @@
   }
 }
 
-.product-ad {
+.product-item {
   padding-top: 50px;
   &__badge {
     display: flex;
@@ -495,7 +495,7 @@
       border: 1px solid #ebeef7;
       height: 100%;
       overflow-y: auto;
-      .product-ad__sidebar-item {
+      .product-item__sidebar-item {
         padding: 32px;
         border-bottom: 1px solid #ebeef7;
         @include max(480px) {
@@ -576,7 +576,7 @@
       border-radius: 12px;
       background-color: #fff;
       border: 1px solid #ebeef7;
-      .product-ad__sidebar-item {
+      .product-item__sidebar-item {
         h2 {
           color: color(g);
           font-weight: 600;
