@@ -337,6 +337,11 @@
   @include max(767px) {
     margin: 15px 0px;
   }
+  .container {
+    @include min(767px) {
+      padding: 0;
+    }
+  }
   a {
     width: inherit;
     height: 160px;
