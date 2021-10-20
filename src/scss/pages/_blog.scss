@@ -4,8 +4,6 @@
   &__lg-img-wrapper,
   &__sm-img-wrapper {
     width: 100%;
-    // height: 720px;
-    // margin-bottom: 50px;
     img {
       width: inherit;
       height: inherit;
@@ -336,12 +334,15 @@
 
 .promo-link {
   margin-top: 50px;
-  .container {
-    padding: 0;
+  @include max(767px) {
+    margin: 15px 0px;
   }
   a {
     width: inherit;
     height: 160px;
+    @include max(767px) {
+      height: 65px;
+    }
     img {
       height: inherit;
       object-fit: contain;
@@ -351,6 +352,9 @@
 
 .blog-list {
   padding-top: 50px !important;
+  @include max(767px) {
+    padding-top: 20px !important;
+  }
   &__wrapper {
     &-item {
       margin-bottom: 24px;
