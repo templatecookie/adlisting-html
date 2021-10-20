@@ -716,41 +716,45 @@ if (sidebarToggle) {
 // Slider
 const sliderRange = document.querySelector('.sliderrange');
 const output = document.querySelector('#value-range');
+if (output) {
+  output.innerHTML = `${sliderRange.value} miles`;
+}
 
-output.innerHTML = `${sliderRange.value} miles`;
+if (sliderRange) {
+  sliderRange.oninput = function () {
+    output.innerHTML = `${this.value} miles`;
+  };
 
-sliderRange.oninput = function () {
-  output.innerHTML = `${this.value} miles`;
-};
+  sliderRange.addEventListener('mousemove', function () {
+    var x = sliderRange.value;
 
-sliderRange.addEventListener('mousemove', function () {
-  var x = sliderRange.value;
+    var color = `linear-gradient(
+      90deg,
+      rgb(0, 170, 255) ${x}%,
+      rgb(218, 221, 229) ${x}%
+    )`;
 
-  var color = `linear-gradient(
-    90deg,
-    rgb(0, 170, 255) ${x}%,
-    rgb(218, 221, 229) ${x}%
-  )`;
-
-  sliderRange.style.background = color;
-});
+    sliderRange.style.background = color;
+  });
+}
 
 var range = document.getElementById('priceRangeSlider');
-
-noUiSlider.create(range, {
-  start: [20, 80],
-  connect: true,
-  range: {
-    min: [0],
-    max: [500],
-  },
-  format: wNumb({
-    decimals: 3,
-    thousand: '.',
-    suffix: ' ($)',
-  }),
-  tooltips: true,
-});
+if (range) {
+  noUiSlider.create(range, {
+    start: [20, 80],
+    connect: true,
+    range: {
+      min: [0],
+      max: [500],
+    },
+    format: wNumb({
+      decimals: 3,
+      thousand: '.',
+      suffix: ' ($)',
+    }),
+    tooltips: true,
+  });
+}
 
 // if (removeBtn) {
 //   for (var i = 0; i < removeBtn.length; i++) {
