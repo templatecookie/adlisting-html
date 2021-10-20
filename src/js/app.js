@@ -50,6 +50,8 @@ const backList = document.querySelector('.back-message--list');
 const adSidebar = document.querySelector('.list-sidebar');
 const sidebarToggle = document.querySelector('.list-sidebar .toggle-bar');
 let backBtn = document.querySelector('.scrollTop');
+const editBtn = document.querySelectorAll('.edit');
+var range = document.getElementById('priceRangeSlider');
 
 // ===== Page Loader ===== \\
 window.addEventListener('load', (event) => {
@@ -746,7 +748,6 @@ if (sliderRange) {
   });
 }
 
-var range = document.getElementById('priceRangeSlider');
 if (range) {
   noUiSlider.create(range, {
     start: [20, 80],
@@ -765,7 +766,6 @@ if (range) {
 }
 
 // Cards Edit menu
-const editBtn = document.querySelectorAll('.edit');
 if (editBtn) {
   editBtn.forEach((item) => {
     item.addEventListener('click', () => {
@@ -786,7 +786,9 @@ if (backBtn) {
 
 window.addEventListener('scroll', function () {
   var scroll = document.querySelector('.scrollTop');
-  scroll.classList.toggle('active', window.scrollY > 500);
+  if (scroll) {
+    scroll.classList.toggle('active', window.scrollY > 500);
+  }
 });
 
 // if (removeBtn) {
