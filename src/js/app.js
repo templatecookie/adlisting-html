@@ -763,6 +763,16 @@ if (range) {
   });
 }
 
+// Cards Edit menu
+const editBtn = document.querySelectorAll('.edit');
+if (editBtn) {
+  editBtn.forEach((item) => {
+    item.addEventListener('click', () => {
+      item.classList.toggle('active');
+    });
+  });
+}
+
 // if (removeBtn) {
 //   for (var i = 0; i < removeBtn.length; i++) {
 //     console.log(i);
