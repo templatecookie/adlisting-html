@@ -247,6 +247,47 @@ if (sliderFor || sliderNav) {
   });
 }
 
+if(relatedSlider){
+    $(".related-post__slider").slick({
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: true,
+        autoplay: false,
+        autoplaySpeed: 1500,
+        adaptiveHeight: true,
+        prevArrow: ".slider-btn--prev",
+        nextArrow: ".slider-btn--next",
+        responsive: [
+            {
+                breakpoint: 1201,
+                settings: {
+                    slidesToShow: 3,
+                },
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 3,
+                },
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 2,
+                },
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                },
+            },
+        ],
+    });
+}
+
 if (testimonialSlider) {
   $('.testimonial-slider').slick({
     infinite: true,
