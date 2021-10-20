@@ -49,6 +49,7 @@ const messageBody = document.querySelector('.dashboard__message-user');
 const backList = document.querySelector('.back-message--list');
 const adSidebar = document.querySelector('.list-sidebar');
 const sidebarToggle = document.querySelector('.list-sidebar .toggle-bar');
+let backBtn = document.querySelector('.scrollTop');
 
 // ===== Page Loader ===== \\
 window.addEventListener('load', (event) => {
@@ -772,6 +773,21 @@ if (editBtn) {
     });
   });
 }
+
+// Back to Top Btn
+if (backBtn) {
+  backBtn.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  });
+}
+
+window.addEventListener('scroll', function () {
+  var scroll = document.querySelector('.scrollTop');
+  scroll.classList.toggle('active', window.scrollY > 500);
+});
 
 // if (removeBtn) {
 //   for (var i = 0; i < removeBtn.length; i++) {
