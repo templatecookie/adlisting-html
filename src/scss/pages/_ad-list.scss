@@ -22,7 +22,7 @@
 
     @include max(1199px) {
       position: fixed;
-      top: 0;
+      top: 95px;
       left: -390px;
       height: 100%;
       z-index: 9;
@@ -385,6 +385,9 @@
   }
 
   &__slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 645px;
     height: inherit;
     margin: auto;
@@ -437,7 +440,7 @@
   &__sidebar {
     @include max(1199px) {
       position: fixed;
-      top: 0;
+      top: 95px;
       left: -390px;
       z-index: 9;
       width: 390px;
