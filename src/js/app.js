@@ -21,8 +21,10 @@ const youtubeVeno = document.querySelector('.yplayer');
 const selectOne = document.querySelector('#item');
 const selectTwo = document.querySelector('#page');
 const cardNumber = document.querySelector('.card-number');
-const blogSidebar = document.querySelector('.product-item__sidebar');
+const productSidebar = document.querySelector('.product-item__sidebar');
 const toggleBtn = document.querySelector('.product-item__sidebar .toggle-bar');
+const blogSidebar = document.querySelector('.blog__sidebar');
+const blogToggle = document.querySelector('.blog__sidebar .toggle-icon');
 const navSidebar = document.querySelector('.dashboard__navigation');
 const allCategory = document.querySelector('#allCategory');
 const recentSelect = document.querySelector('#recent');
@@ -94,17 +96,22 @@ function changeLogo(logopath) {
 // ===== Sidebar ===== \\
 
 if (toggleBtn) {
-  toggleBtn.addEventListener('click', function (e) {
-    e.preventDefault();
-    blogSidebar.classList.toggle('active');
+  toggleBtn.addEventListener('click', function () {
+    productSidebar.classList.toggle('active');
     body.classList.toggle('overlay');
   });
 }
 
 if (toggleSidebar) {
-  toggleSidebar.addEventListener('click', function (e) {
-    e.preventDefault();
+  toggleSidebar.addEventListener('click', function () {
     navSidebar.classList.toggle('active');
+    body.classList.toggle('overlay');
+  });
+}
+
+if (blogToggle) {
+  blogToggle.addEventListener('click', function () {
+    blogSidebar.classList.toggle('active');
     body.classList.toggle('overlay');
   });
 }
