@@ -356,6 +356,7 @@
     @include font(80px, 96px, 400, null);
     color: #ebeef7;
     text-align: right;
+    user-select: none;
   }
 
   &__title {

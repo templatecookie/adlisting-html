@@ -21,8 +21,10 @@ const youtubeVeno = document.querySelector('.yplayer');
 const selectOne = document.querySelector('#item');
 const selectTwo = document.querySelector('#page');
 const cardNumber = document.querySelector('.card-number');
-const blogSidebar = document.querySelector('.product-item__sidebar');
+const productSidebar = document.querySelector('.product-item__sidebar');
 const toggleBtn = document.querySelector('.product-item__sidebar .toggle-bar');
+const blogSidebar = document.querySelector('.blog__sidebar');
+const blogToggle = document.querySelector('.blog__sidebar .toggle-icon');
 const navSidebar = document.querySelector('.dashboard__navigation');
 const allCategory = document.querySelector('#allCategory');
 const recentSelect = document.querySelector('#recent');
@@ -45,6 +47,11 @@ const dashboardContainer = document.querySelector('.dashboard__message');
 const users = document.querySelectorAll('.user--profile');
 const messageBody = document.querySelector('.dashboard__message-user');
 const backList = document.querySelector('.back-message--list');
+const adSidebar = document.querySelector('.list-sidebar');
+const sidebarToggle = document.querySelector('.list-sidebar .toggle-bar');
+let backBtn = document.querySelector('.scrollTop');
+const editBtn = document.querySelectorAll('.edit');
+var range = document.getElementById('priceRangeSlider');
 
 // ===== Page Loader ===== \\
 window.addEventListener('load', (event) => {
@@ -81,12 +88,6 @@ if (toggle) {
     toggle.classList.toggle('active');
     mainNav.classList.toggle('active');
     mobileNav.classList.toggle('active');
-
-    // change Logo when background added on navbar
-    // temproary disable
-    // logo.src == `src/images/logo.png`
-    //   ? changeLogo('logo-dark')
-    //   : changeLogo('logo');
   });
 }
 
@@ -98,17 +99,22 @@ function changeLogo(logopath) {
 // ===== Sidebar ===== \\
 
 if (toggleBtn) {
-  toggleBtn.addEventListener('click', function (e) {
-    e.preventDefault();
-    blogSidebar.classList.toggle('active');
+  toggleBtn.addEventListener('click', function () {
+    productSidebar.classList.toggle('active');
     body.classList.toggle('overlay');
   });
 }
 
 if (toggleSidebar) {
-  toggleSidebar.addEventListener('click', function (e) {
-    e.preventDefault();
+  toggleSidebar.addEventListener('click', function () {
     navSidebar.classList.toggle('active');
+    body.classList.toggle('overlay');
+  });
+}
+
+if (blogToggle) {
+  blogToggle.addEventListener('click', function () {
+    blogSidebar.classList.toggle('active');
     body.classList.toggle('overlay');
   });
 }
@@ -247,45 +253,45 @@ if (sliderFor || sliderNav) {
   });
 }
 
-if(relatedSlider){
-    $(".related-post__slider").slick({
-        infinite: true,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        dots: false,
-        arrows: true,
-        autoplay: false,
-        autoplaySpeed: 1500,
-        adaptiveHeight: true,
-        prevArrow: ".slider-btn--prev",
-        nextArrow: ".slider-btn--next",
-        responsive: [
-            {
-                breakpoint: 1201,
-                settings: {
-                    slidesToShow: 3,
-                },
-            },
-            {
-                breakpoint: 992,
-                settings: {
-                    slidesToShow: 3,
-                },
-            },
-            {
-                breakpoint: 992,
-                settings: {
-                    slidesToShow: 2,
-                },
-            },
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 1,
-                },
-            },
-        ],
-    });
+if (relatedSlider) {
+  $('.related-post__slider').slick({
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    dots: false,
+    arrows: true,
+    autoplay: false,
+    autoplaySpeed: 1500,
+    adaptiveHeight: true,
+    prevArrow: '.slider-btn--prev',
+    nextArrow: '.slider-btn--next',
+    responsive: [
+      {
+        breakpoint: 1201,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  });
 }
 
 if (testimonialSlider) {
@@ -720,6 +726,81 @@ function addNewfile(file) {
     </div>`;
   uploadedItems.insertAdjacentHTML('beforeend', imgTag);
 }
+
+if (sidebarToggle) {
+  sidebarToggle.addEventListener('click', function (e) {
+    adSidebar.classList.toggle('active');
+    body.classList.toggle('overlay');
+  });
+}
+
+// Slider
+const sliderRange = document.querySelector('.sliderrange');
+const output = document.querySelector('#value-range');
+if (output) {
+  output.innerHTML = `${sliderRange.value} miles`;
+}
+
+if (sliderRange) {
+  sliderRange.oninput = function () {
+    output.innerHTML = `${this.value} miles`;
+  };
+
+  sliderRange.addEventListener('mousemove', function () {
+    var x = sliderRange.value;
+
+    var color = `linear-gradient(
+      90deg,
+      rgb(0, 170, 255) ${x}%,
+      rgb(218, 221, 229) ${x}%
+    )`;
+
+    sliderRange.style.background = color;
+  });
+}
+
+if (range) {
+  noUiSlider.create(range, {
+    start: [20, 80],
+    connect: true,
+    range: {
+      min: [0],
+      max: [500],
+    },
+    format: wNumb({
+      decimals: 3,
+      thousand: '.',
+      suffix: ' ($)',
+    }),
+    tooltips: true,
+  });
+}
+
+// Cards Edit menu
+if (editBtn) {
+  editBtn.forEach((item) => {
+    item.addEventListener('click', () => {
+      item.classList.toggle('active');
+    });
+  });
+}
+
+// Back to Top Btn
+if (backBtn) {
+  backBtn.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  });
+}
+
+window.addEventListener('scroll', function () {
+  var scroll = document.querySelector('.scrollTop');
+  if (scroll) {
+    scroll.classList.toggle('active', window.scrollY > 500);
+  }
+});
 
 // if (removeBtn) {
 //   for (var i = 0; i < removeBtn.length; i++) {

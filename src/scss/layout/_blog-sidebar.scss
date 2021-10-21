@@ -15,7 +15,7 @@
   &-wrapper {
     @include max(991px) {
       position: fixed;
-      top: 0;
+      top: 95px;
       left: -425px;
       width: inherit;
       max-height: inherit;
@@ -27,7 +27,7 @@
 
   .toggle-icon {
     position: absolute;
-    top: 85px;
+    top: 95px;
     right: auto;
     left: 0;
     color: color(g);
@@ -48,7 +48,7 @@
       @include max(460px) {
         padding: 0px;
         right: 32px;
-        top: 32px;
+        top: 125px;
       }
     }
     .blog__sidebar {
@@ -66,6 +66,9 @@
     @include max(991px) {
       border-radius: 0px;
       margin-bottom: 0px;
+    }
+    @include max(767px) {
+      padding: 16px;
     }
     .item-title {
       color: color(g);

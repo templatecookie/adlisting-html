@@ -156,7 +156,7 @@
     p {
       width: 424px;
       color: color(gray-4);
-      @include max(580px) {
+      @include max(1200px) {
         width: 100%;
       }
     }
