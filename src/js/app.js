@@ -559,17 +559,38 @@ if (cardNumber) {
 }
 
 // ===== Price Plan ===== \\
+const priceElements = document.querySelectorAll('.plan-card__price h5');
 const planBtns = document.querySelectorAll('.price-plan__link');
 const packageType = document.querySelectorAll('.plan-card__price span');
+
+function setMonthlyContent(){
+    changeText('/month');
+    let prices = [2, 3, 7];
+
+    priceElements.forEach( (btn, index) => {
+        btn.textContent = '$' + prices[index]
+    })
+}
+
+function setYearlyContent(){
+    changeText('/annual');
+    let prices = [10, 20, 50];
+
+    priceElements.forEach( (btn, index) => {
+        btn.textContent = '$' + prices[index]
+    })
+}
+
 planBtns.forEach((btn) => {
   btn.addEventListener('click', () => {
     removeActive();
     btn.classList.add('active');
     btn.textContent === 'Monthly'
-      ? changeText('/month')
-      : changeText('/annual');
+      ? setMonthlyContent()
+      : setYearlyContent();
   });
 });
+
 // change text
 function changeText(string) {
   packageType.forEach((text) => (text.textContent = string));
