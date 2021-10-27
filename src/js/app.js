@@ -727,6 +727,24 @@ function addNewfile(file) {
   uploadedItems.insertAdjacentHTML('beforeend', imgTag);
 }
 
+// document.addEventListener('click', function (event) {
+//   // console.log(event.target);
+// 	// If the clicked element doesn't have the right selector, bail
+// 	if (!event.target.matches('.remove-icon')) return;
+
+// 	// Don't follow the link
+// 	event.preventDefault();
+
+// 	// Log the clicked element in the console
+// 	// console.log(event.target);
+//   event.target.closest('.uploaded-item').remove();
+// }, false);
+
+$(document).on('click', '.remove-icon', function(){ 
+  $(this).closest('.uploaded-item').remove()
+}); 
+
+
 if (sidebarToggle) {
   sidebarToggle.addEventListener('click', function (e) {
     adSidebar.classList.toggle('active');
