@@ -1,0 +1,77 @@
+.upload-wrapper {
+    h3 {
+        font-size: 20px;
+        line-height: 32px;
+        font-weight: 600;
+        margin-bottom: 18px;
+    }
+    .upload-area {
+        padding: 20px;
+        background: #FFFFFF;
+        border: 1px dashed #EBEEF7;
+        box-sizing: border-box;
+        border-radius: 8px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        &.active {
+            border-color: color(primary-2);
+        }
+    }
+    .uploaded-items {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .uploaded-item, .add-new {
+        height: 120px;
+        width: 120px;
+        border-radius: 6px;
+        position: relative;
+        // overflow: hidden;
+        background: #f5f7fa;
+        margin: 10px;
+        ;
+        transition: background 0.3s linear;
+        img {
+            border-radius: 6px;
+        }
+    }
+    .uploaded-item {
+        .remove-icon {
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            background-color: #FF4F4F;
+            color: white;
+            right: 0;
+            top: 0;
+            transform: rotate(45deg) translate(0%, -50%);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            svg {   
+                height: 16px;
+                width: 16px;
+                pointer-events: none;
+            }
+        } 
+    }
+    .add-new {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #F5F7FA;
+        cursor: pointer;
+        flex-shrink: 0;
+        svg {
+            width: 35px;
+            height: 35px;
+        }
+        &:hover {
+            background: darken(#f5f7fa, 10%);
+        }
+    }
+}

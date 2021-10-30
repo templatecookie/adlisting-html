@@ -1,0 +1,52 @@
+.form {
+  &-check {
+    margin-bottom: 0px;
+
+    input {
+      @include trans(0.3s, ease-in-out);
+      cursor: pointer;
+      &[type='checkbox'] {
+        width: 22px;
+        height: 22px;
+        border-radius: 3px;
+        border: 1.5px solid #dadde5;
+        background-color: #fff;
+      }
+      &[type='radio'] {
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        border: 1.5px solid #dadde5;
+        background-color: #fff;
+      }
+
+      &:disabled {
+        background-color: #f5f7fa;
+        border: 1.5px solid #dadde5;
+      }
+
+      &:checked {
+        background-color: color(primary-4);
+      }
+
+      &:hover {
+        border-color: color(primary-4);
+      }
+
+      &:focus {
+        box-shadow: none;
+      }
+    }
+
+    &-label {
+      font-size: 14px;
+      line-height: 20px;
+      text-transform: capitalize;
+      color: #636a80;
+      margin-top: 4px;
+      a {
+        color: color(primary-4);
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+// import vendor files
+// @import 'animate.css';
+// @import 'bootstrap/scss/bootstrap.scss';
+// @import '/assets/plugins/css/slick.css';
+// @import '/assets/plugins/css/venobox.min.css';
+// @import '/assets/plugins/css/nouislider.min.css';
+
+// abstracts
+@import 'abstracts/variables';
+@import 'abstracts/functions';
+
+@import 'base/typography';
+@import 'base/reset';
+
+@import 'layout/section';
+@import 'layout/header';
+@import 'layout/banner';
+@import 'layout/feature-demo';
+@import 'layout/subscribe';
+@import 'layout/demo-tab';
+@import 'layout/other-template';
+@import 'layout/download-app';
+@import 'layout/counter';
+@import 'layout/price-plan';
+@import 'layout/about';
+@import 'layout/benefits';
+@import 'layout/service';
+@import 'layout/breadcrumb';
+@import 'layout/error';
+@import 'layout/_testimonial';
+@import 'layout/support-brand';
+@import 'layout/registration';
+@import 'layout/faq';
+@import 'layout/contact';
+@import 'layout/map';
+@import 'layout/dashboard';
+@import 'layout/blog-sidebar';
+@import 'layout/footer';
+
+@import 'components/buttons';
+@import 'components/badge';
+@import 'components/social-icon';
+@import 'components/mobile-app';
+@import 'components/cards';
+@import 'components/form';
+@import 'components/input';
+@import 'components/pagination';
+@import 'components/search';
+@import 'components/range';
+@import 'components/loader';
+@import 'components/full_page_gallery';
+@import 'components/select';
+
+@import 'pages/home';
+@import 'pages/contact';
+@import 'pages/blog';
+@import 'pages/ad-list';
+@import 'pages/post_ads';

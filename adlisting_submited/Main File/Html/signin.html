@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>AdListing || Sign In</title>
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="512x512" href="assets/images/favicon_io/android-chrome-512x512.png" />
+        <link rel="apple-touch-icon" sizes="192x192" href="assets/images/favicon_io/android-chrome-192x192.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon_io/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon_io/favicon-16x16.png" />
+        <link rel="manifest" href="assets/images/favicon_io/site.webmanifest" />
+        <link rel="stylesheet" href="assets/plugins/css/bootstrap.min.css">
+</head>
+
+    <body>
+        <div class="loader">
+            <div class="loader-icon">
+                <img src="assets/images/loader.gif" alt="loader" />
+            </div>
+        </div>
+
+        <!-- header section start  -->
+        <header class="header header--three">
+            <div class="container navigation-bar">
+                <div class="navigation-bar__left">
+                    <!-- Brand Logo -->
+                    <a href="index.html" class="navigation-bar__logo">
+                        <img src="assets/images/logo-dark.png" alt="brand-logo" />
+                    </a>
+                    <!-- Menu -->
+                    <ul class="menu">
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">
+                                Home
+                                <span class="icon">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3 6L8 11L13 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </span>
+                            </a>
+                            <ul class="menu-dropdown">
+                                <li class="menu-dropdown__item">
+                                    <a href="index.html" class="menu-dropdown__link">Homepage 01</a>
+                                </li>
+                                <li class="menu-dropdown__item">
+                                    <a href="home-02.html" class="menu-dropdown__link">Homepage 02</a>
+                                </li>
+                                <li class="menu-dropdown__item">
+                                    <a href="home-03.html" class="menu-dropdown__link">Homepage 03</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu__item">
+                            <a href="ad-list.html" class="menu__link">Listing</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link active">
+                                Pages
+                                <span class="icon">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3 6L8 11L13 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </span>
+                            </a>
+                            <ul class="menu-dropdown">
+                                <li class="menu-dropdown__item">
+                                    <a href="blog-list.html" class="menu-dropdown__link">Blog List</a>
+                                </li>
+                                <li class="menu-dropdown__item">
+                                    <a href="blog-details.html" class="menu-dropdown__link">Single Blogs</a>
+                                </li>
+                                <li class="menu-dropdown__item">
+                                    <a href="about.html" class="menu-dropdown__link">About</a>
+                                </li>
+                                <li class="menu-dropdown__item">
+                                    <a href="price-plan.html" class="menu-dropdown__link">Pricing Plans</a>
+                                </li>
+                                <li class="menu-dropdown__item">
+                                    <a href="signin.html" class="menu-dropdown__link active">Sign In</a>
+                                </li>
+                                <li class="menu-dropdown__item">
+                                    <a href="signup.html" class="menu-dropdown__link">Sign Up</a>
+                                </li>
+                                <li class="menu-dropdown__item">
+                                    <a href="dashboard.html" class="menu-dropdown__link">user Dashboard</a>
+                                </li>
+                                <li class="menu-dropdown__item">
+                                    <a href="faq.html" class="menu-dropdown__link">Faqs</a>
+                                </li>
+                                <li class="menu-dropdown__item">
+                                    <a href="404-error.html" class="menu-dropdown__link">404 Error Pages</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu__item">
+                            <a href="get-membership.html" class="menu__link">Get Membership</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="contact.html" class="menu__link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navigation-bar__right">
+                    <!-- Action Buttons -->
+                    <div class="navigation-bar__buttons">
+                        <a href="message-board.html" class="message">
+                            <span class="icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M4.25895 16.5939C3.14076 14.7089 2.74916 12.4805 3.15768 10.3272C3.56621 8.1739 4.74675 6.2438 6.47764 4.89933C8.20853 3.55486 10.3707 2.8885 12.5581 3.02539C14.7455 3.16227 16.8078 4.09298 18.3575 5.64274C19.9073 7.19251 20.838 9.25472 20.9749 11.4421C21.1118 13.6296 20.4455 15.7917 19.101 17.5226C17.7565 19.2535 15.8264 20.4341 13.6732 20.8426C11.5199 21.2511 9.29149 20.8596 7.40649 19.7414L7.40651 19.7413L4.29808 20.6294C4.16947 20.6662 4.03338 20.6678 3.90391 20.6343C3.77443 20.6007 3.65628 20.5332 3.5617 20.4386C3.46713 20.344 3.39956 20.2259 3.36601 20.0964C3.33246 19.9669 3.33415 19.8308 3.37089 19.7022L4.25901 16.5938L4.25895 16.5939Z"
+                                        stroke="#767E94"
+                                        stroke-width="1.6"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path d="M12 13.125C12.6213 13.125 13.125 12.6213 13.125 12C13.125 11.3787 12.6213 10.875 12 10.875C11.3787 10.875 10.875 11.3787 10.875 12C10.875 12.6213 11.3787 13.125 12 13.125Z" fill="#767E94" />
+                                    <path d="M7.5 13.125C8.12132 13.125 8.625 12.6213 8.625 12C8.625 11.3787 8.12132 10.875 7.5 10.875C6.87868 10.875 6.375 11.3787 6.375 12C6.375 12.6213 6.87868 13.125 7.5 13.125Z" fill="#767E94" />
+                                    <path
+                                        d="M16.5 13.125C17.1213 13.125 17.625 12.6213 17.625 12C17.625 11.3787 17.1213 10.875 16.5 10.875C15.8787 10.875 15.375 11.3787 15.375 12C15.375 12.6213 15.8787 13.125 16.5 13.125Z"
+                                        fill="#767E94"
+                                    />
+                                </svg>
+                            </span>
+                        </a>
+                        <a href="dashboard.html" class="user">
+                            <div class="user__img-wrapper">
+                                <img src="assets/images/users/img-01.png" alt="user-img" />
+                            </div>
+                        </a>
+                        <a href="#" class="btn">
+                            <span class="icon--left">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="currentColor" stroke-width="1.6" stroke-miterlimit="10"></path>
+                                    <path d="M8.25 12H15.75" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M12 8.25V15.75" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </span>
+                            Post Ads
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Responsive Navigation Menu -->
+                <button class="toggle-icon">
+                    <span class="toggle-icon__bar"></span>
+                    <span class="toggle-icon__bar"></span>
+                    <span class="toggle-icon__bar"></span>
+                </button>
+                <ul class="menu--sm">
+                    <li class="menu--sm__item">
+                        <a href="#" class="menu--sm__link">
+                            Home
+                            <span class="icon">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3 6L8 11L13 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                        </a>
+                        <ul class="menu--sm-dropdown">
+                            <li class="menu--sm-dropdown__item">
+                                <a href="index.html" class="menu--sm-dropdown__link">Homepage 01</a>
+                            </li>
+                            <li class="menu--sm-dropdown__item">
+                                <a href="home-02.html" class="menu--sm-dropdown__link">Homepage 02</a>
+                            </li>
+                            <li class="menu--sm-dropdown__item">
+                                <a href="home-03.html" class="menu--sm-dropdown__link">Homepage 03</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu--sm__item">
+                        <a href="#" class="menu--sm__link">
+                            All Category
+                            <span class="icon">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3 6L8 11L13 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                        </a>
+                        <ul class="menu--sm-dropdown">
+                            <li class="menu--sm-dropdown__item">
+                                <a href="#" class="menu--sm-dropdown__link">Mobile</a>
+                            </li>
+                            <li class="menu--sm-dropdown__item">
+                                <a href="#" class="menu--sm-dropdown__link">Electronics</a>
+                            </li>
+                            <li class="menu--sm-dropdown__item">
+                                <a href="#" class="menu--sm-dropdown__link">Vehicles</a>
+                            </li>
+                            <li class="menu--sm-dropdown__item">
+                                <a href="#" class="menu--sm-dropdown__link">Property</a>
+                            </li>
+                            <li class="menu--sm-dropdown__item">
+                                <a href="#" class="menu--sm-dropdown__link">Essentials</a>
+                            </li>
+                            <li class="menu--sm-dropdown__item">
+                                <a href="#" class="menu--sm-dropdown__link">Home & Living</a>
+                            </li>
+                            <li class="menu--sm-dropdown__item">
+                                <a href="#" class="menu--sm-dropdown__link">Business Industry</a>
+                            </li>
+                            <li class="menu--sm-dropdown__item">
+                                <a href="#" class="menu--sm-dropdown__link">Education</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu--sm__item">
+                        <a href="ad-list.html" class="menu--sm__link">ads Listing</a>
+                    </li>
+                    <li class="menu--sm__item">
+                        <a href="#" class="menu--sm__link active">
+                            Pages
+                            <span class="icon">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3 6L8 11L13 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                        </a>
+                        <ul class="menu--sm-dropdown">
+                            <li class="menu--sm-dropdown__item">
+                                <a href="blog-list.html" class="menu--sm-dropdown__link">Blog List</a>
+                            </li>
+                            <li class="menu--sm-dropdown__item">
+                                <a href="blog-details.html" class="menu--sm-dropdown__link">Single Blogs</a>
+                            </li>
+                            <li class="menu--sm-dropdown__item">
+                                <a href="about.html" class="menu--sm-dropdown__link">About</a>
+                            </li>
+                            <li class="menu--sm-dropdown__item">
+                                <a href="price-plan.html" class="menu--sm-dropdown__link">Pricing Plans</a>
+                            </li>
+                            <li class="menu--sm-dropdown__item">
+                                <a href="signin.html" class="menu--sm-dropdown__link active">Sign In</a>
+                            </li>
+                            <li class="menu--sm-dropdown__item">
+                                <a href="signup.html" class="menu--sm-dropdown__link">Sign Up</a>
+                            </li>
+                            <li class="menu--sm-dropdown__item">
+                                <a href="dashboard.html" class="menu--sm-dropdown__link">user Dashboard</a>
+                            </li>
+                            <li class="menu--sm-dropdown__item">
+                                <a href="faq.html" class="menu--sm-dropdown__link">Faqs</a>
+                            </li>
+                            <li class="menu--sm-dropdown__item">
+                                <a href="404-error.html" class="menu--sm-dropdown__link">404 Error Pages</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu--sm__item">
+                        <a href="get-membership.html" class="menu--sm__link">Get Membership</a>
+                    </li>
+                    <li class="menu--sm__item">
+                        <a href="contact.html" class="menu--sm__link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <!-- header section end   -->
+
+        <!-- breedcrumb section start  -->
+        <section class="breedcrumb" style="background: url('assets/images/bg/bg-04.jpg') center center/cover no-repeat;">
+            <div class="container">
+                <h2 class="breedcrumb__title text--heading-2">Sign In</h2>
+                <ul class="breedcrumb__page">
+                    <li class="breedcrumb__page-item">
+                        <a href="index.html" class="breedcrumb__page-link text--body-3">Home</a>
+                    </li>
+                    <li class="breedcrumb__page-item">
+                        <a href="#" class="breedcrumb__page-link text--body-3">/</a>
+                    </li>
+                    <li class="breedcrumb__page-item">
+                        <a href="#" class="breedcrumb__page-link text--body-3">Account</a>
+                    </li>
+                    <li class="breedcrumb__page-item">
+                        <a href="#" class="breedcrumb__page-link text--body-3">/</a>
+                    </li>
+                    <li class="breedcrumb__page-item">
+                        <a href="#" class="breedcrumb__page-link text--body-3">Sign In</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- breedcrumb section end  -->
+
+        <!-- registration section start   -->
+        <section class="section registration">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 order-2 order-lg-0">
+                        <div class="registration__features">
+                            <div class="registration__features-item">
+                                <span class="icon">
+                                    <img src="assets/images/icon/chart.png" alt="chart" />
+                                </span>
+                                <div class="registration__features-info">
+                                    <h2 class="text--body-2-600">Manage Your Ads</h2>
+                                    <p class="text--body-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam commodo vel ligula.</p>
+                                </div>
+                            </div>
+                            <div class="registration__features-item">
+                                <span class="icon">
+                                    <img src="assets/images/icon/chart-circle.png" alt="chart" />
+                                </span>
+                                <div class="registration__features-info">
+                                    <h2 class="text--body-2-600">Chat with Anyone, Anytime</h2>
+                                    <p class="text--body-3">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                                </div>
+                            </div>
+                            <div class="registration__features-item">
+                                <span class="icon">
+                                    <img src="assets/images/icon/chart.png" alt="chart" />
+                                </span>
+                                <div class="registration__features-info">
+                                    <h2 class="text--body-2-600">245,365 Verified User</h2>
+                                    <p class="text--body-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam commodo vel ligula.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 order-1 order-lg-0">
+                        <div class="registration-form">
+                            <h2 class="text-center text--heading-1 registration-form__title">Sign in</h2>
+
+                            <div class="registration-form__sign-btns">
+                                <a href="#" class="btn-sign">
+                                    <span class="icon">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M4.43242 12.0865L3.73625 14.6854L1.19176 14.7393C0.431328 13.3288 0 11.7151 0 10.0003C0 8.34203 0.403281 6.77828 1.11812 5.40137H1.11867L3.38398 5.81668L4.37633 8.0684C4.16863 8.67391 4.05543 9.32391 4.05543 10.0003C4.05551 10.7343 4.18848 11.4377 4.43242 12.0865Z"
+                                                fill="#FBBB00"
+                                            />
+                                            <path
+                                                d="M19.8253 8.13184C19.9401 8.73676 20 9.36148 20 9.99996C20 10.7159 19.9247 11.4143 19.7813 12.0879C19.2945 14.3802 18.0225 16.3818 16.2605 17.7983L16.2599 17.7978L13.4066 17.6522L13.0028 15.1313C14.172 14.4456 15.0858 13.3725 15.5671 12.0879H10.2198V8.13184H15.6451H19.8253Z"
+                                                fill="#518EF8"
+                                            />
+                                            <path
+                                                d="M16.2599 17.7975L16.2604 17.798C14.5467 19.1755 12.3698 19.9997 10 19.9997C6.19177 19.9997 2.8808 17.8711 1.19177 14.7387L4.43244 12.0859C5.27693 14.3398 7.45111 15.9442 10 15.9442C11.0956 15.9442 12.122 15.648 13.0027 15.131L16.2599 17.7975Z"
+                                                fill="#28B446"
+                                            />
+                                            <path
+                                                d="M16.383 2.30219L13.1434 4.95437C12.2319 4.38461 11.1544 4.05547 10 4.05547C7.39344 4.05547 5.17859 5.73348 4.37641 8.06812L1.11871 5.40109H1.11816C2.78246 2.1923 6.13519 0 10 0C12.4264 0 14.6511 0.864297 16.383 2.30219Z"
+                                                fill="#F14336"
+                                            />
+                                        </svg>
+                                    </span>
+                                    Sign in With Google
+                                </a>
+                                <a href="#" class="btn-sign">
+                                    <span class="icon">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M11.6666 20H7.70126V10.1414H5V6.9316H7.70116V4.64762C7.70116 1.9411 8.89588 0 12.8505 0C13.6869 0 15 0.168134 15 0.168134V3.14858H13.6208C12.2155 3.14858 11.6668 3.5749 11.6668 4.75352V6.9316H14.9474L14.6553 10.1414H11.6667L11.6666 20Z"
+                                                fill="#1877F2"
+                                            />
+                                        </svg>
+                                    </span>
+                                    Sign in With Facebook
+                                </a>
+                            </div>
+
+                            <h2 class="registration-form__alternative-title text--body-3">or Sign in With Email</h2>
+
+                            <div class="registration-form__wrapper">
+                                <form action="#">
+                                    <div class="input-field">
+                                        <input type="text" placeholder="Username or email address" />
+                                        <span class="icon icon--success">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect width="20" height="20" rx="10" fill="#27C200" />
+                                                <path d="M14 7L8.5 12.5L6 10" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </span>
+                                        <span class="icon icon--alart">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M10.29 3.86L1.82002 18C1.64539 18.3024 1.55299 18.6453 1.55201 18.9945C1.55103 19.3437 1.64151 19.6871 1.81445 19.9905C1.98738 20.2939 2.23675 20.5467 2.53773 20.7239C2.83871 20.901 3.18082 20.9962 3.53002 21H20.47C20.8192 20.9962 21.1613 20.901 21.4623 20.7239C21.7633 20.5467 22.0127 20.2939 22.1856 19.9905C22.3585 19.6871 22.449 19.3437 22.448 18.9945C22.4471 18.6453 22.3547 18.3024 22.18 18L13.71 3.86C13.5318 3.56611 13.2807 3.32312 12.9812 3.15448C12.6817 2.98585 12.3438 2.89725 12 2.89725C11.6563 2.89725 11.3184 2.98585 11.0188 3.15448C10.7193 3.32312 10.4683 3.56611 10.29 3.86Z"
+                                                    fill="#FF4F4F"
+                                                />
+                                                <path d="M12 9V13" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M12 17H12.01" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <div class="input-field">
+                                        <input type="password" placeholder="Password" id="password" />
+                                        <span class="icon icon--eye" onclick="showPassword('password',this)">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 12C1 12 5 4 12 4C19 4 23 12 23 12C23 12 19 20 12 20C5 20 1 12 1 12Z" stroke="#191F33" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path
+                                                    d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z"
+                                                    stroke="#191F33"
+                                                    stroke-width="1.3"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                            </svg>
+                                        </span>
+                                        <span class="icon icon--success">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect width="20" height="20" rx="10" fill="#27C200" />
+                                                <path d="M14 7L8.5 12.5L6 10" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </span>
+                                        <span class="icon icon--alart">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M10.29 3.86L1.82002 18C1.64539 18.3024 1.55299 18.6453 1.55201 18.9945C1.55103 19.3437 1.64151 19.6871 1.81445 19.9905C1.98738 20.2939 2.23675 20.5467 2.53773 20.7239C2.83871 20.901 3.18082 20.9962 3.53002 21H20.47C20.8192 20.9962 21.1613 20.901 21.4623 20.7239C21.7633 20.5467 22.0127 20.2939 22.1856 19.9905C22.3585 19.6871 22.449 19.3437 22.448 18.9945C22.4471 18.6453 22.3547 18.3024 22.18 18L13.71 3.86C13.5318 3.56611 13.2807 3.32312 12.9812 3.15448C12.6817 2.98585 12.3438 2.89725 12 2.89725C11.6563 2.89725 11.3184 2.98585 11.0188 3.15448C10.7193 3.32312 10.4683 3.56611 10.29 3.86Z"
+                                                    fill="#FF4F4F"
+                                                />
+                                                <path d="M12 9V13" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M12 17H12.01" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </span>
+                                    </div>
+
+                                    <div class="registration-form__option">
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="checkme" />
+                                            <label class="form-check-label" for="checkme">Keep me logged </label>
+                                        </div>
+
+                                        <div class="registration-form__forget-pass text--body-4">
+                                            <a href="#">Forget Password</a>
+                                        </div>
+                                    </div>
+
+                                    <button class="btn btn--lg w-100 registration-form__btns" type="submit">
+                                        Sign In
+                                        <span class="icon--right">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M3.75 12H20.25" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </span>
+                                    </button>
+
+                                    <p class="text--body-3 registration-form__redirect">Don't Have Account ? <a href="signup.html">Sign Up</a></p>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- registration section  end    -->
+
+        <!-- footer section start  -->
+        <footer class="footer footer--dark">
+            <div class="footer__top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-3">
+                            <div class="footer__brand-logo">
+                                <img src="assets/images/logo.png" alt="logo-brand" />
+                            </div>
+                            <div class="footer__loc-info">
+                                <p class="text--body-3">
+                                    4517 Washington Ave. Manchester, Kentucky 39495
+                                </p>
+                                <p class="text--body-3 phone">
+                                    Phone: (405) 555-0128
+                                </p>
+                                <p class="text--body-3 email">
+                                    Mail: adlisting@gmail.com
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-sm-4 col-6">
+                            <h2 class="footer__title text--body-2-600">Supports</h2>
+
+                            <ul class="footer-menu">
+                                <li class="footer-menu__item">
+                                    <a href="contact.html" class="footer-menu__link text--body-3">Contact</a>
+                                </li>
+                                <li class="footer-menu__item">
+                                    <a href="faq.html" class="footer-menu__link text--body-3">Faqs</a>
+                                </li>
+                                <li class="footer-menu__item">
+                                    <a href="price-plan.html" class="footer-menu__link text--body-3">Pricing Plans</a>
+                                </li>
+                                <li class="footer-menu__item">
+                                    <a href="sitemap.html" class="footer-menu__link text--body-3">Sitemap</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-sm-4 col-6">
+                            <h2 class="footer__title text--body-2-600">Quick Links</h2>
+
+                            <ul class="footer-menu">
+                                <li class="footer-menu__item">
+                                    <a href="about.html" class="footer-menu__link text--body-3">About</a>
+                                </li>
+                                <li class="footer-menu__item">
+                                    <a href="get-membership.html" class="footer-menu__link text--body-3">Get Membership</a>
+                                </li>
+                                <li class="footer-menu__item">
+                                    <a href="post-ads.html" class="footer-menu__link text--body-3">Pricing Plans</a>
+                                </li>
+                                <li class="footer-menu__item">
+                                    <a href="blog-list.html" class="footer-menu__link text--body-3">Blog</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-sm-4 col-6">
+                            <h2 class="footer__title text--body-2-600">Category</h2>
+
+                            <ul class="footer-menu">
+                                <li class="footer-menu__item">
+                                    <a href="#" class="footer-menu__link text--body-3">Mobile</a>
+                                </li>
+                                <li class="footer-menu__item">
+                                    <a href="#" class="footer-menu__link text--body-3">Electronics</a>
+                                </li>
+                                <li class="footer-menu__item">
+                                    <a href="#" class="footer-menu__link text--body-3">Vehicles</a>
+                                </li>
+                                <li class="footer-menu__item">
+                                    <a href="#" class="footer-menu__link text--body-3">Property</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-xl-4 col-lg-6">
+                            <h2 class="footer__title text--body-2-600">Download our app</h2>
+                            <div class="footer__mobile-app">
+                                <a href="#" class="app">
+                                    <div class="app-logo">
+                                        <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#googlePlay)">
+                                                <path
+                                                    d="M20.087 15.4109L6.29177 1.48889L23.8438 11.6301L20.087 15.4109ZM2.69017 0.670898C1.87737 1.09922 1.33337 1.87857 1.33337 2.89301V30.6533C1.33337 31.6677 1.87737 32.4471 2.69017 32.8754L18.7334 16.7699L2.69017 0.670898ZM29.271 14.8634L25.5894 12.7186L21.4822 16.7764L25.5894 20.8341L29.3462 18.6893C30.471 17.7892 30.471 15.7635 29.271 14.8634ZM6.29177 32.0638L23.8438 21.9226L20.087 18.1418L6.29177 32.0638Z"
+                                                    fill="currentColor"
+                                                ></path>
+                                            </g>
+                                            <defs>
+                                                <clipPath id="googlePlay">
+                                                    <rect width="32" height="32.2045" fill="white"></rect>
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                    <div class="app-info">
+                                        <h5 class="text--body-5">Get it now</h5>
+                                        <h2 class="text--body-3-600">Google Play</h2>
+                                    </div>
+                                </a>
+
+                                <a href="#" class="app">
+                                    <div class="app-logo">
+                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#appstore)">
+                                                <path
+                                                    d="M29.056 24.938C28.5893 26.0249 28.013 27.0614 27.336 28.0313C26.4306 29.3213 25.69 30.214 25.1193 30.71C24.2346 31.5233 23.286 31.9407 22.2706 31.964C21.542 31.964 20.6633 31.7567 19.64 31.336C18.6133 30.9173 17.67 30.7093 16.8073 30.7093C15.9026 30.7093 14.9326 30.9173 13.8946 31.336C12.8553 31.7567 12.018 31.976 11.378 31.9973C10.4046 32.0393 9.43396 31.6107 8.46463 30.71C7.84663 30.17 7.07396 29.246 6.14729 27.9367C5.15329 26.538 4.33596 24.9167 3.69596 23.0673C3.01063 21.0707 2.66663 19.1367 2.66663 17.2647C2.66663 15.12 3.12996 13.2707 4.05796 11.7207C4.78796 10.4753 5.75796 9.494 6.97263 8.77267C8.16428 8.05956 9.52398 7.67581 10.9126 7.66067C11.686 7.66067 12.7 7.9 13.9606 8.37C15.2173 8.84133 16.024 9.08067 16.378 9.08067C16.642 9.08067 17.5386 8.80067 19.058 8.24333C20.4953 7.726 21.708 7.512 22.7013 7.59667C25.394 7.814 27.4166 8.87533 28.7613 10.7873C26.354 12.246 25.1626 14.2893 25.1866 16.9107C25.208 18.9527 25.9486 20.652 27.4046 22.0007C28.0646 22.6273 28.8013 23.1113 29.6206 23.4547C29.4488 23.9552 29.2605 24.4499 29.056 24.938ZM22.8813 0.640667C22.8813 2.24067 22.2966 3.73533 21.1313 5.118C19.7246 6.76267 18.024 7.71267 16.1793 7.56267C16.1545 7.36139 16.142 7.15879 16.142 6.956C16.142 5.42 16.8106 3.776 17.9986 2.43133C18.592 1.75067 19.3453 1.18467 20.26 0.733333C21.1733 0.288667 22.036 0.0426667 22.848 0C22.8713 0.214 22.8813 0.428 22.8813 0.64V0.640667Z"
+                                                    fill="currentColor"
+                                                ></path>
+                                            </g>
+                                            <defs>
+                                                <clipPath id="appstore">
+                                                    <rect width="32" height="32" fill="white"></rect>
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                    <div class="app-info">
+                                        <h5 class="text--body-5">Get it now</h5>
+                                        <h2 class="text--body-3-600">App Store</h2>
+                                    </div>
+                                </a>
+                            </div>
+                            <ul class="social-icon">
+                                <!-- facebook -->
+                                <li class="social-icon__item">
+                                    <a href="#" class="social-icon__link">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M9.33328 16H6.16101V8.1131H4V5.54528H6.16092V3.7181C6.16092 1.55288 7.1167 0 10.2804 0C10.9495 0 12 0.134507 12 0.134507V2.51887H10.8966C9.7724 2.51887 9.33345 2.85992 9.33345 3.80281V5.54528H11.9579L11.7242 8.1131H9.33336L9.33328 16Z"
+                                                fill="currentColor"
+                                            ></path>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <!-- Twitter -->
+                                <li class="social-icon__item">
+                                    <a href="#" class="social-icon__link">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M5.00378 14.4021C11.0081 14.4021 14.2917 9.45627 14.2917 5.1674C14.2917 5.02694 14.2888 4.88712 14.2824 4.74789C14.9214 4.28823 15.4728 3.71911 15.9108 3.06719C15.3259 3.32574 14.6965 3.49976 14.0362 3.57821C14.7101 3.17641 15.2275 2.54074 15.4716 1.78303C14.8308 2.16099 14.1298 2.42742 13.3988 2.57086C12.8031 1.93998 11.955 1.54541 11.016 1.54541C9.21328 1.54541 7.75143 2.99892 7.75143 4.7906C7.75143 5.04532 7.78011 5.29301 7.83612 5.53067C5.12304 5.39493 2.71728 4.10341 1.10722 2.13958C0.817235 2.6349 0.664706 3.19784 0.665213 3.7709C0.665213 4.89696 1.24149 5.89101 2.11788 6.47258C1.59949 6.45684 1.09247 6.31762 0.639471 6.06663C0.638986 6.08026 0.638986 6.09353 0.638986 6.10809C0.638986 7.67992 1.76419 8.9923 3.25786 9.28967C2.97733 9.36564 2.68785 9.40404 2.39709 9.40387C2.18712 9.40387 1.98248 9.38334 1.78359 9.34538C2.19918 10.635 3.40426 11.5734 4.83303 11.5996C3.71575 12.4703 2.30832 12.9889 0.778658 12.9889C0.518442 12.9892 0.258439 12.9741 0 12.944C1.44471 13.8647 3.16017 14.4019 5.00394 14.4019"
+                                                fill="currentColor"
+                                            ></path>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <!-- Instagram -->
+                                <li class="social-icon__item">
+                                    <a href="#" class="social-icon__link">
+                                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#instagram)">
+                                                <path
+                                                    d="M5.33376 8.55566C5.33376 7.08296 6.52729 5.88878 8 5.88878C9.4727 5.88878 10.6669 7.08296 10.6669 8.55566C10.6669 10.0284 9.4727 11.2225 8 11.2225C6.52729 11.2225 5.33376 10.0284 5.33376 8.55566ZM3.89209 8.55566C3.89209 10.8245 5.7312 12.6636 8 12.6636C10.2688 12.6636 12.1079 10.8245 12.1079 8.55566C12.1079 6.28686 10.2688 4.44776 8 4.44776C5.7312 4.44776 3.89209 6.28686 3.89209 8.55566ZM11.3105 4.28488C11.3104 4.47475 11.3667 4.66038 11.4721 4.81829C11.5775 4.97621 11.7274 5.09931 11.9028 5.17204C12.0782 5.24477 12.2712 5.26386 12.4574 5.22689C12.6437 5.18993 12.8148 5.09856 12.9491 4.96436C13.0834 4.83015 13.1749 4.65913 13.212 4.47293C13.2491 4.28672 13.2302 4.09369 13.1576 3.91824C13.085 3.7428 12.962 3.59282 12.8042 3.48727C12.6464 3.38172 12.4608 3.32534 12.2709 3.32526H12.2705C12.016 3.32538 11.772 3.42651 11.592 3.60644C11.412 3.78636 11.3107 4.03038 11.3105 4.28488ZM4.768 15.0675C3.98803 15.032 3.56409 14.902 3.28237 14.7923C2.90886 14.6469 2.64237 14.4737 2.36218 14.1939C2.08198 13.9141 1.90854 13.6478 1.76378 13.2743C1.65395 12.9927 1.52403 12.5687 1.48858 11.7887C1.44979 10.9454 1.44205 10.6921 1.44205 8.55573C1.44205 6.41934 1.45043 6.16674 1.48858 5.32277C1.5241 4.5428 1.65498 4.11957 1.76378 3.83714C1.90918 3.46363 2.08237 3.19714 2.36218 2.91694C2.64198 2.63675 2.90822 2.46331 3.28237 2.31854C3.56397 2.20872 3.98803 2.0788 4.768 2.04334C5.61126 2.00456 5.86457 1.99682 8 1.99682C10.1354 1.99682 10.389 2.0052 11.233 2.04334C12.0129 2.07886 12.4362 2.20974 12.7186 2.31854C13.0921 2.46331 13.3586 2.63714 13.6388 2.91694C13.919 3.19675 14.0918 3.46363 14.2372 3.83714C14.347 4.11874 14.4769 4.5428 14.5124 5.32277C14.5512 6.16674 14.5589 6.41934 14.5589 8.55573C14.5589 10.6921 14.5512 10.9447 14.5124 11.7887C14.4769 12.5687 14.3463 12.9926 14.2372 13.2743C14.0918 13.6478 13.9186 13.9143 13.6388 14.1939C13.359 14.4734 13.0921 14.6469 12.7186 14.7923C12.437 14.9021 12.0129 15.032 11.233 15.0675C10.3897 15.1063 10.1364 15.114 8 15.114C5.86361 15.114 5.61101 15.1063 4.768 15.0675ZM4.70176 0.604112C3.85011 0.642896 3.26816 0.777936 2.75994 0.975696C2.2336 1.17992 1.78803 1.4539 1.34278 1.89845C0.897536 2.34299 0.624256 2.78926 0.420032 3.3156C0.222272 3.82414 0.087232 4.40578 0.048448 5.25742C0.009024 6.11042 0 6.38312 0 8.55566C0 10.7282 0.009024 11.0009 0.048448 11.8539C0.087232 12.7056 0.222272 13.2872 0.420032 13.7957C0.624256 14.3217 0.8976 14.7685 1.34278 15.2129C1.78797 15.6572 2.2336 15.9308 2.75994 16.1356C3.26912 16.3334 3.85011 16.4684 4.70176 16.5072C5.5552 16.546 5.82745 16.5557 8 16.5557C10.1725 16.5557 10.4452 16.5466 11.2982 16.5072C12.1499 16.4684 12.7315 16.3334 13.2401 16.1356C13.7661 15.9308 14.212 15.6574 14.6572 15.2129C15.1025 14.7683 15.3752 14.3217 15.58 13.7957C15.7777 13.2872 15.9134 12.7056 15.9515 11.8539C15.9903 11.0003 15.9994 10.7282 15.9994 8.55566C15.9994 6.38312 15.9903 6.11042 15.9515 5.25742C15.9128 4.40571 15.7777 3.82382 15.58 3.3156C15.3752 2.78958 15.1018 2.3437 14.6572 1.89845C14.2127 1.4532 13.7661 1.17992 13.2407 0.975696C12.7315 0.777936 12.1499 0.642256 11.2989 0.604112C10.4459 0.565328 10.1732 0.555664 8.00064 0.555664C5.82809 0.555664 5.5552 0.564688 4.70176 0.604112Z"
+                                                    fill="currentColor"
+                                                />
+                                                <path
+                                                    d="M5.33376 8.55566C5.33376 7.08296 6.52729 5.88878 8 5.88878C9.4727 5.88878 10.6669 7.08296 10.6669 8.55566C10.6669 10.0284 9.4727 11.2225 8 11.2225C6.52729 11.2225 5.33376 10.0284 5.33376 8.55566ZM3.89209 8.55566C3.89209 10.8245 5.7312 12.6636 8 12.6636C10.2688 12.6636 12.1079 10.8245 12.1079 8.55566C12.1079 6.28686 10.2688 4.44776 8 4.44776C5.7312 4.44776 3.89209 6.28686 3.89209 8.55566ZM11.3105 4.28488C11.3104 4.47475 11.3667 4.66038 11.4721 4.81829C11.5775 4.97621 11.7274 5.09931 11.9028 5.17204C12.0782 5.24477 12.2712 5.26386 12.4574 5.22689C12.6437 5.18993 12.8148 5.09856 12.9491 4.96436C13.0834 4.83015 13.1749 4.65913 13.212 4.47293C13.2491 4.28672 13.2302 4.09369 13.1576 3.91824C13.085 3.7428 12.962 3.59282 12.8042 3.48727C12.6464 3.38172 12.4608 3.32534 12.2709 3.32526H12.2705C12.016 3.32538 11.772 3.42651 11.592 3.60644C11.412 3.78636 11.3107 4.03038 11.3105 4.28488ZM4.768 15.0675C3.98803 15.032 3.56409 14.902 3.28237 14.7923C2.90886 14.6469 2.64237 14.4737 2.36218 14.1939C2.08198 13.9141 1.90854 13.6478 1.76378 13.2743C1.65395 12.9927 1.52403 12.5687 1.48858 11.7887C1.44979 10.9454 1.44205 10.6921 1.44205 8.55573C1.44205 6.41934 1.45043 6.16674 1.48858 5.32277C1.5241 4.5428 1.65498 4.11957 1.76378 3.83714C1.90918 3.46363 2.08237 3.19714 2.36218 2.91694C2.64198 2.63675 2.90822 2.46331 3.28237 2.31854C3.56397 2.20872 3.98803 2.0788 4.768 2.04334C5.61126 2.00456 5.86457 1.99682 8 1.99682C10.1354 1.99682 10.389 2.0052 11.233 2.04334C12.0129 2.07886 12.4362 2.20974 12.7186 2.31854C13.0921 2.46331 13.3586 2.63714 13.6388 2.91694C13.919 3.19675 14.0918 3.46363 14.2372 3.83714C14.347 4.11874 14.4769 4.5428 14.5124 5.32277C14.5512 6.16674 14.5589 6.41934 14.5589 8.55573C14.5589 10.6921 14.5512 10.9447 14.5124 11.7887C14.4769 12.5687 14.3463 12.9926 14.2372 13.2743C14.0918 13.6478 13.9186 13.9143 13.6388 14.1939C13.359 14.4734 13.0921 14.6469 12.7186 14.7923C12.437 14.9021 12.0129 15.032 11.233 15.0675C10.3897 15.1063 10.1364 15.114 8 15.114C5.86361 15.114 5.61101 15.1063 4.768 15.0675ZM4.70176 0.604112C3.85011 0.642896 3.26816 0.777936 2.75994 0.975696C2.2336 1.17992 1.78803 1.4539 1.34278 1.89845C0.897536 2.34299 0.624256 2.78926 0.420032 3.3156C0.222272 3.82414 0.087232 4.40578 0.048448 5.25742C0.009024 6.11042 0 6.38312 0 8.55566C0 10.7282 0.009024 11.0009 0.048448 11.8539C0.087232 12.7056 0.222272 13.2872 0.420032 13.7957C0.624256 14.3217 0.8976 14.7685 1.34278 15.2129C1.78797 15.6572 2.2336 15.9308 2.75994 16.1356C3.26912 16.3334 3.85011 16.4684 4.70176 16.5072C5.5552 16.546 5.82745 16.5557 8 16.5557C10.1725 16.5557 10.4452 16.5466 11.2982 16.5072C12.1499 16.4684 12.7315 16.3334 13.2401 16.1356C13.7661 15.9308 14.212 15.6574 14.6572 15.2129C15.1025 14.7683 15.3752 14.3217 15.58 13.7957C15.7777 13.2872 15.9134 12.7056 15.9515 11.8539C15.9903 11.0003 15.9994 10.7282 15.9994 8.55566C15.9994 6.38312 15.9903 6.11042 15.9515 5.25742C15.9128 4.40571 15.7777 3.82382 15.58 3.3156C15.3752 2.78958 15.1018 2.3437 14.6572 1.89845C14.2127 1.4532 13.7661 1.17992 13.2407 0.975696C12.7315 0.777936 12.1499 0.642256 11.2989 0.604112C10.4459 0.565328 10.1732 0.555664 8.00064 0.555664C5.82809 0.555664 5.5552 0.564688 4.70176 0.604112Z"
+                                                    fill="currentColor"
+                                                />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="instagram">
+                                                    <rect width="16" height="16" fill="currentColor" transform="translate(0 0.555664)" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <!-- Youtube -->
+                                <li class="social-icon__item">
+                                    <a href="#" class="social-icon__link">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M8.35464 13.6327L5.07201 13.5714C4.00914 13.5501 2.94366 13.5927 1.90168 13.3715C0.316517 13.0411 0.204224 11.4209 0.0867073 10.0618C-0.0752042 8.15113 -0.0125288 6.20581 0.293014 4.31112C0.465371 3.24786 1.14435 2.61363 2.19417 2.54434C5.73794 2.29385 9.30522 2.32316 12.8412 2.44041C13.2146 2.45107 13.5906 2.5097 13.9589 2.57632C15.7765 2.90143 15.8208 4.73749 15.9384 6.28309C16.0559 7.84468 16.0063 9.41426 15.7817 10.9652C15.6015 12.2496 15.2568 13.3262 13.8022 13.4301C11.9794 13.5661 10.1983 13.6753 8.37031 13.6407C8.37031 13.6327 8.35986 13.6327 8.35464 13.6327ZM6.42476 10.3816C7.79839 9.57681 9.14592 8.78536 10.5117 7.98591C9.13547 7.18114 7.79056 6.38968 6.42476 5.59024V10.3816Z"
+                                                fill="currentColor"
+                                            ></path>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <!-- Linked in -->
+                                <li class="social-icon__item">
+                                    <a href="#" class="social-icon__link">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#linkedin)">
+                                                <path
+                                                    d="M15.9961 16V15.9993H16.0001V10.1313C16.0001 7.26065 15.3821 5.04932 12.0261 5.04932C10.4128 5.04932 9.33009 5.93465 8.88809 6.77399H8.84142V5.31732H5.65942V15.9993H8.97276V10.71C8.97276 9.31732 9.23676 7.97065 10.9614 7.97065C12.6608 7.97065 12.6861 9.55999 12.6861 10.7993V16H15.9961Z"
+                                                    fill="currentColor"
+                                                ></path>
+                                                <path d="M0.263794 5.31787H3.58113V15.9999H0.263794V5.31787Z" fill="currentColor"></path>
+                                                <path
+                                                    d="M1.92133 0C0.860667 0 0 0.860667 0 1.92133C0 2.982 0.860667 3.86067 1.92133 3.86067C2.982 3.86067 3.84267 2.982 3.84267 1.92133C3.842 0.860667 2.98133 0 1.92133 0V0Z"
+                                                    fill="currentColor"
+                                                ></path>
+                                            </g>
+                                            <defs>
+                                                <clipPath id="linkedin">
+                                                    <rect width="16" height="16" fill="white"></rect>
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <!-- whats app -->
+                                <li class="social-icon__item">
+                                    <a href="#" class="social-icon__link">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                fill-rule="evenodd"
+                                                clip-rule="evenodd"
+                                                d="M13.3057 2.67206C11.9024 1.26709 10.0361 0.493011 8.04782 0.492188C3.95084 0.492188 0.616486 3.82645 0.614838 7.92453C0.614288 9.23456 0.956512 10.5134 1.60699 11.6406L0.55249 15.4922L4.49283 14.4586C5.57855 15.0508 6.80087 15.3629 8.0448 15.3633H8.04791C12.1444 15.3633 15.4792 12.0287 15.4807 7.93048C15.4815 5.94433 14.7091 4.07693 13.3057 2.67206ZM8.04782 14.108H8.04526C6.93674 14.1075 5.84955 13.8096 4.90088 13.2469L4.67538 13.1129L2.33713 13.7263L2.96124 11.4466L2.8143 11.2128C2.19586 10.2292 1.86929 9.09228 1.86984 7.92499C1.87112 4.51877 4.64261 1.74756 8.05029 1.74756C9.70044 1.74811 11.2516 2.39154 12.418 3.5593C13.5844 4.72705 14.2263 6.27923 14.2258 7.93002C14.2243 11.3365 11.453 14.108 8.04782 14.108ZM11.4366 9.48102C11.2509 9.388 10.3377 8.93884 10.1674 8.87677C9.99734 8.81479 9.87338 8.78393 9.74969 8.96979C9.62582 9.15564 9.26996 9.57403 9.16156 9.6979C9.05316 9.82187 8.94495 9.83743 8.75918 9.74441C8.57342 9.65149 7.97504 9.45529 7.26559 8.82257C6.71353 8.33011 6.34082 7.72192 6.23242 7.53607C6.12421 7.35004 6.23151 7.25922 6.3139 7.15704C6.51495 6.90738 6.71628 6.64563 6.77817 6.52176C6.84015 6.3978 6.80911 6.28931 6.7626 6.19638C6.71628 6.10345 6.34485 5.1893 6.19012 4.81732C6.03925 4.45532 5.88626 4.50421 5.77219 4.49853C5.66397 4.49313 5.5401 4.49203 5.41623 4.49203C5.29245 4.49203 5.09122 4.53845 4.92093 4.72449C4.75073 4.91043 4.271 5.35968 4.271 6.27383C4.271 7.18799 4.93649 8.0711 5.02933 8.19507C5.12216 8.31903 6.33899 10.1949 8.202 10.9993C8.64511 11.1909 8.991 11.305 9.2608 11.3906C9.70575 11.532 10.1105 11.512 10.4306 11.4642C10.7874 11.4109 11.5293 11.0149 11.6842 10.5811C11.8389 10.1472 11.8389 9.77545 11.7924 9.6979C11.7461 9.62045 11.6222 9.57403 11.4366 9.48102Z"
+                                                fill="currentColor"
+                                            ></path>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="container">
+                    <div class="row footer__copyright">
+                        <div class="col-md-6">
+                            <p class="text--body-3">Adlisting - Classified Listing © 2021. Design by <a href="#">Templatecookie</a></p>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="footer__policy-condition">
+                                <a href="#" class="text--body-3">Privacy Policy</a> |
+                                <a href="#" class="text--body-3">Terms &amp; Conditions</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer section end -->
+
+        <!-- Back To Top Btn -->
+        <button class="scrollTop" >
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 20.25V3.75" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M5.25 10.5L12 3.75L18.75 10.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </button>
+
+        <script src="assets/plugins/jquery.min.js"></script>
+        <script src="assets/plugins/bootstrap.bundle.min.js"></script>
+        
+        <script src="src/js/passwordType.js"></script>
+        <script src="assets/js/app.js"></script>
+    </body>
+</html>

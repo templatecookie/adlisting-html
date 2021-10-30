@@ -1,0 +1,19 @@
+.social-icon {
+  @include flex(center, null);
+
+  &__link {
+    color: color(gray-4);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 6px;
+    @include flex(center, center);
+    @include trans(0.3s, ease-in-out);
+
+    &:hover {
+      color: #fff;
+      background-color: color(primary-4);
+      @include trans(0.3s, ease-in-out);
+    }
+  }
+}

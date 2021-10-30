@@ -1,0 +1,56 @@
+.service {
+  &__title {
+    color: color(g);
+    text-transform: capitalize;
+    margin-bottom: 24px;
+  }
+  &__brief {
+    width: 512px;
+    color: color(gray-4);
+    margin: auto;
+    margin-bottom: 50px;
+    @include max(767px) {
+      width: 100%;
+    }
+    @include max(480px) {
+      margin-bottom: 0px;
+    }
+  }
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include max(480px) {
+    flex-direction: column;
+  }
+  &__item {
+    padding: 0px 32px;
+    border-right: 1px solid #ebeef7;
+    @include max(480px) {
+      padding: 32px 0px;
+      border-right: 0px;
+      border-bottom: 1px solid #ebeef7;
+    }
+    &:nth-last-child(1) {
+      border: 0px;
+    }
+
+    h2 {
+      color: color(g);
+      text-transform: lowercase;
+    }
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+    color: color(gray-4);
+    .icon {
+      margin-right: 6px;
+    }
+  }
+}

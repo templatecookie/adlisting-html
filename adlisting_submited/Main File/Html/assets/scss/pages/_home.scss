@@ -1,0 +1,103 @@
+.work {
+  &-card {
+    @include max(991px) {
+      height: auto;
+      margin-bottom: 24px;
+    }
+  }
+}
+
+.feature-ads {
+  box-shadow: 0px -1px 0px 0px #ebeef7 inset;
+
+  .cards {
+    margin-bottom: 24px;
+  }
+  &__btn {
+    text-align: center;
+    margin-top: 26px;
+  }
+}
+
+.popular-location {
+  .location-card {
+    margin-bottom: 24px;
+  }
+}
+
+.recent-post {
+  box-shadow: 0px 1px 0px 0px rgba(235, 238, 247, 1) inset;
+
+  .cards {
+    margin-bottom: 24px;
+  }
+  &__btn {
+    text-align: center;
+    margin-top: 26px;
+  }
+}
+
+.membership-call {
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 70px;
+    border-radius: 12px;
+    background-color: color(primary) !important;
+    @include max(991px) {
+      flex-direction: column;
+    }
+    @include max(767px) {
+      padding: 50px 24px;
+    }
+  }
+
+  &__title {
+    color: #fff;
+    position: relative;
+    @include max(991px) {
+      text-align: center;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -20px;
+      left: 0px;
+      width: 48px;
+      height: 4px;
+      background-color: color(primary-4);
+      @include max(991px) {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+
+  &__description {
+    width: 420px;
+    padding-top: 45px;
+    color: color(gray-4);
+    @include max(991px) {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    @include max(767px) {
+      width: 100%;
+    }
+  }
+}
+
+.popular-category {
+  .row {
+    @include max(480px) {
+      flex-direction: column;
+      align-items: center;
+    }
+    .col-6 {
+      @include max(480px) {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.app {
+  position: relative;
+  @include flex(center, null);
+  flex-shrink: 0;
+  padding: 14px 16px;
+  border-radius: 8px;
+  border: 1px solid #ebeef7;
+  background-color: #fff;
+  &-logo {
+    color: color(g);
+    margin-right: 12px;
+    @include trans(0.3s, ease-in-out);
+  }
+  &-info {
+    h5 {
+      color: color(gray-4);
+    }
+    h2 {
+      color: color(g);
+    }
+  }
+
+  &:hover {
+    box-shadow: 0px 12px 48px 0px #002c6d1a;
+    @include trans(0.3s, ease-in-out);
+    .app-logo {
+      color: color(primary-4);
+      @include trans(0.3s, ease-in-out);
+    }
+  }
+}
