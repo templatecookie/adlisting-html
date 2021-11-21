@@ -565,17 +565,28 @@ if (cardNumber) {
 }
 
 // ===== Price Plan ===== \\
+const priceElements = document.querySelectorAll('.plan-card__price h5');
 const planBtns = document.querySelectorAll('.price-plan__link');
 const packageType = document.querySelectorAll('.plan-card__price span');
+
+function setPricePlanContent(chargeType, prices){
+    changeText('/' + chargeType);
+
+    priceElements.forEach( (btn, index) => {
+        btn.textContent = '$' + prices[index]
+    })
+}
+
 planBtns.forEach((btn) => {
   btn.addEventListener('click', () => {
     removeActive();
     btn.classList.add('active');
     btn.textContent === 'Monthly'
-      ? changeText('/month')
-      : changeText('/annual');
+      ? setPricePlanContent('monthly', [2, 3, 7])
+      : setPricePlanContent('annual', [10, 20, 50]);
   });
 });
+
 // change text
 function changeText(string) {
   packageType.forEach((text) => (text.textContent = string));
@@ -715,6 +726,24 @@ function addNewfile(file) {
     </div>`;
   uploadedItems.insertAdjacentHTML('beforeend', imgTag);
 }
+
+// document.addEventListener('click', function (event) {
+//   // console.log(event.target);
+// 	// If the clicked element doesn't have the right selector, bail
+// 	if (!event.target.matches('.remove-icon')) return;
+
+// 	// Don't follow the link
+// 	event.preventDefault();
+
+// 	// Log the clicked element in the console
+// 	// console.log(event.target);
+//   event.target.closest('.uploaded-item').remove();
+// }, false);
+
+$(document).on('click', '.remove-icon', function(){ 
+  $(this).closest('.uploaded-item').remove()
+}); 
+
 
 if (sidebarToggle) {
   sidebarToggle.addEventListener('click', function (e) {
