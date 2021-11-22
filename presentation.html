@@ -10,7 +10,8 @@
         <link rel="icon" type="image/png" sizes="32x32" href="src/images/favicon_io/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="src/images/favicon_io/favicon-16x16.png" />
         <link rel="manifest" href="src/images/favicon_io/site.webmanifest" />
-    </head>
+        <link rel="stylesheet" href="src/plugins/css/bootstrap.min.css">
+</head>
 
     <body>
         <div class="loader">
@@ -21,7 +22,7 @@
 
         <!-- header Section Start -->
         <header class="header-demo">
-            <nav class="navbar header-demo__navbar navbar-expand-lg">
+            <nav class="navbar header-demo__navbar navbar-expand-lg navbar-light">
                 <div class="container">
                     <a class="navbar-brand header-demo__brand" href="index.html">
                         <img src="src/images/logo-dark.png" alt="" />
@@ -34,10 +35,10 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav header-demo__nav mx-auto">
                             <li class="nav-item header-demo__item">
-                                <a class="nav-link header-demo__link active" aria-current="page" href="#">Demos</a>
+                                <a class="nav-link header-demo__link active" aria-current="page" href="#demoContent">Demos</a>
                             </li>
                             <li class="nav-item header-demo__item">
-                                <a class="nav-link header-demo__link" href="#">Feature</a>
+                                <a class="nav-link header-demo__link" href="#featureContent">Feature</a>
                             </li>
                             <li class="nav-item header-demo__item">
                                 <a class="nav-link header-demo__link" href="#">Documentation</a>
@@ -87,7 +88,7 @@
                                 </svg>
                             </span>
                         </a>
-                        <a href="#" class="btn btn--lg">
+                        <a href="#demoContent" class="btn btn--lg">
                             View Demo
                         </a>
                     </div>
@@ -145,7 +146,7 @@
         <!-- Banner Section End -->
 
         <!-- feature Section Start -->
-        <section class="section feature-demo">
+        <section class="section feature-demo" id="featureContent">
             <div class="container">
                 <h2 class="section__title-demo">Template Feature</h2>
                 <div class="feature-demo__content">
@@ -203,7 +204,7 @@
         <!-- feature Section End -->
 
         <!-- demo Section Start -->
-        <section class="section demo-tab bgcolor--gray-10">
+        <section class="section demo-tab bgcolor--gray-10" id="demoContent">
             <div class="container">
                 <h2 class="section__title-demo">World-Class Demos</h2>
                 <ul class="nav nav-pills demo-tab__nav" id="pills-tab" role="tablist">
@@ -377,7 +378,7 @@
                                 <div class="demo-tab__card">
                                     <div class="demo-tab__card-img-wrapper">
                                         <img src="src/images/preview/sign-in.png" alt="preview" />
-                                        <a href="sign-in.html" class="btn">
+                                        <a href="signin.html" class="btn">
                                             View Demo
                                             <span class="icon--right">
                                                 <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -394,7 +395,7 @@
                                 <div class="demo-tab__card">
                                     <div class="demo-tab__card-img-wrapper">
                                         <img src="src/images/preview/sign-up.png" alt="preview" />
-                                        <a href="sign-in.html" class="btn">
+                                        <a href="signin.html" class="btn">
                                             View Demo
                                             <span class="icon--right">
                                                 <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -445,7 +446,7 @@
                                 <div class="demo-tab__card">
                                     <div class="demo-tab__card-img-wrapper">
                                         <img src="src/images/preview/single-blog.png" alt="preview" />
-                                        <a href="single-blog.html" class="btn">
+                                        <a href="blog-details.html" class="btn">
                                             View Demo
                                             <span class="icon--right">
                                                 <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -578,16 +579,16 @@
         <!-- footer Section End -->
 
         <!-- Back To Top Btn -->
-        <button class="scrollTop scrollTop--white" onclick="scrollToTop()">
+        <button class="scrollTop scrollTop--white" >
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M12 20.25V3.75" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
                 <path d="M5.25 10.5L12 3.75L18.75 10.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
         </button>
-
+        
+        <!-- Script Goes Here -->
+        <script src="src/plugins/jquery.min.js"></script>
+        <script src="src/plugins/bootstrap.bundle.min.js"></script>
         <script type="module" src="/main.js"></script>
-        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-        <script src="src/js/presentation.js"></script>
-        <script src="src/js/app.js"></script>
     </body>
 </html>

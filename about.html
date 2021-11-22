@@ -10,12 +10,12 @@
         <link rel="icon" type="image/png" sizes="32x32" href="src/images/favicon_io/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="src/images/favicon_io/favicon-16x16.png" />
         <link rel="manifest" href="src/images/favicon_io/site.webmanifest" />
-        <link rel="stylesheet" href="src/js/plugins/css/venobox.min.css" />
-        <link rel="stylesheet" href="src/js/plugins/css/slick.css">
-    </head>
+        <link rel="stylesheet" href="src/plugins/css/slick.css">
+        <link rel="stylesheet" href="src/plugins/css/venobox.min.css" />
+        <link rel="stylesheet" href="src/plugins/css/bootstrap.min.css">
+</head>
 
     <body>
-
         <div class="loader">
             <div class="loader-icon">
                 <img src="src/images/loader.gif" alt="loader" />
@@ -69,7 +69,7 @@
                                 <a href="blog-list.html" class="menu-dropdown__link">Blog List</a>
                             </li>
                             <li class="menu-dropdown__item">
-                                <a href="single-blog.html" class="menu-dropdown__link">Single Blogs</a>
+                                <a href="blog-details.html" class="menu-dropdown__link">Single Blogs</a>
                             </li>
                             <li class="menu-dropdown__item">
                                 <a href="about.html" class="menu-dropdown__link active">About</a>
@@ -78,10 +78,10 @@
                                 <a href="price-plan.html" class="menu-dropdown__link">Pricing Plans</a>
                             </li>
                             <li class="menu-dropdown__item">
-                                <a href="sign-in.html" class="menu-dropdown__link">Sign In</a>
+                                <a href="signin.html" class="menu-dropdown__link">Sign In</a>
                             </li>
                             <li class="menu-dropdown__item">
-                                <a href="sign-up.html" class="menu-dropdown__link">Sign Up</a>
+                                <a href="signup.html" class="menu-dropdown__link">Sign Up</a>
                             </li>
                             <li class="menu-dropdown__item">
                                 <a href="dashboard.html" class="menu-dropdown__link">user Dashboard</a>
@@ -103,7 +103,7 @@
                 </ul>
                 <!-- Action Buttons -->
                 <div class="navigation-bar__buttons">
-                    <a href="#" class="btn">
+                    <a href="signup.html" class="btn">
                         <span class="icon--left">
                             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g opacity="0.6">
@@ -214,7 +214,7 @@
                                 <a href="blog-list.html" class="menu--sm-dropdown__link">Blog List</a>
                             </li>
                             <li class="menu--sm-dropdown__item">
-                                <a href="single-blog.html" class="menu--sm-dropdown__link">Single Blogs</a>
+                                <a href="blog-details.html" class="menu--sm-dropdown__link">Single Blogs</a>
                             </li>
                             <li class="menu--sm-dropdown__item">
                                 <a href="about.html" class="menu--sm-dropdown__link">About</a>
@@ -223,10 +223,10 @@
                                 <a href="price-plan.html" class="menu--sm-dropdown__link">Pricing Plans</a>
                             </li>
                             <li class="menu--sm-dropdown__item">
-                                <a href="sign-in.html" class="menu--sm-dropdown__link">Sign In</a>
+                                <a href="signin.html" class="menu--sm-dropdown__link">Sign In</a>
                             </li>
                             <li class="menu--sm-dropdown__item">
-                                <a href="sign-up.html" class="menu--sm-dropdown__link">Sign Up</a>
+                                <a href="signup.html" class="menu--sm-dropdown__link">Sign Up</a>
                             </li>
                             <li class="menu--sm-dropdown__item">
                                 <a href="dashboard.html" class="menu--sm-dropdown__link">user Dashboard</a>
@@ -898,23 +898,18 @@
         <!-- footer section end -->
 
         <!-- Back To Top Btn -->
-        <button class="scrollTop" onclick="scrollToTop()">
+        <button class="scrollTop" >
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M12 20.25V3.75" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M5.25 10.5L12 3.75L18.75 10.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                
+            </svg>
         </button>
 
-
+        <script src="src/plugins/jquery.min.js"></script>
+        <script src="src/plugins/bootstrap.bundle.min.js"></script>
+        
+        <script src="src/plugins/slick.min.js"></script>
+        <script src="src/plugins/venobox.min.js"></script>
         <script type="module" src="/main.js"></script>
-        <script src="src/js/plugins/jquery.min.js"></script>
-        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-        <script src="src/js/plugins/slick.min.js"></script>
-        <script src="src/js/plugins/venobox.min.js"></script>
-        <script src="src/js/pages/about.js"></script>
-        <script src="src/js/app.js"></script>
-        <script src="src/js/components/header.js"></script>
-        <script src="src/js/components/venobox.js"></script>
     </body>
 </html>

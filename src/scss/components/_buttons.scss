@@ -94,22 +94,22 @@
 .edit {
   width: 24px;
   height: 24px;
+  &.active {
+    .icon-toggle {
+      color: color(g);
+    }
+
+    .edit-dropdown {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: all;
+      transform: translateY(0px);
+      @include trans(0.3s, ease-in-out);
+    }
+  }
   &-icon {
     position: relative;
     cursor: pointer;
-    &.active {
-      .icon-toggle {
-        color: color(g);
-      }
-
-      .edit-dropdown {
-        opacity: 1;
-        visibility: visible;
-        pointer-events: all;
-        transform: translateY(0px);
-        @include trans(0.3s, ease-in-out);
-      }
-    }
   }
 
   .icon-toggle {

@@ -10,9 +10,9 @@
         <link rel="icon" type="image/png" sizes="32x32" href="src/images/favicon_io/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="src/images/favicon_io/favicon-16x16.png" />
         <link rel="manifest" href="src/images/favicon_io/site.webmanifest" />
-
-        <link rel="stylesheet" href="src/js/plugins/css/venobox.min.css" />
-    </head>
+        <link rel="stylesheet" href="src/plugins/css/venobox.min.css" />
+        <link rel="stylesheet" href="src/plugins/css/bootstrap.min.css">
+</head>
 
     <body>
         <div class="loader">
@@ -68,7 +68,7 @@
                                 <a href="blog-list.html" class="menu-dropdown__link active">Blog List</a>
                             </li>
                             <li class="menu-dropdown__item">
-                                <a href="single-blog.html" class="menu-dropdown__link">Single Blogs</a>
+                                <a href="blog-details.html" class="menu-dropdown__link">Single Blogs</a>
                             </li>
                             <li class="menu-dropdown__item">
                                 <a href="about.html" class="menu-dropdown__link">About</a>
@@ -77,10 +77,10 @@
                                 <a href="price-plan.html" class="menu-dropdown__link">Pricing Plans</a>
                             </li>
                             <li class="menu-dropdown__item">
-                                <a href="sign-in.html" class="menu-dropdown__link">Sign In</a>
+                                <a href="signin.html" class="menu-dropdown__link">Sign In</a>
                             </li>
                             <li class="menu-dropdown__item">
-                                <a href="sign-up.html" class="menu-dropdown__link">Sign Up</a>
+                                <a href="signup.html" class="menu-dropdown__link">Sign Up</a>
                             </li>
                             <li class="menu-dropdown__item">
                                 <a href="dashboard.html" class="menu-dropdown__link">user Dashboard</a>
@@ -102,7 +102,7 @@
                 </ul>
                 <!-- Action Buttons -->
                 <div class="navigation-bar__buttons">
-                    <a href="#" class="btn">
+                    <a href="signup.html" class="btn">
                         <span class="icon--left">
                             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g opacity="0.6">
@@ -213,7 +213,7 @@
                                 <a href="blog-list.html" class="menu--sm-dropdown__link active">Blog List</a>
                             </li>
                             <li class="menu--sm-dropdown__item">
-                                <a href="single-blog.html" class="menu--sm-dropdown__link">Single Blogs</a>
+                                <a href="blog-details.html" class="menu--sm-dropdown__link">Single Blogs</a>
                             </li>
                             <li class="menu--sm-dropdown__item">
                                 <a href="about.html" class="menu--sm-dropdown__link">About</a>
@@ -222,10 +222,10 @@
                                 <a href="price-plan.html" class="menu--sm-dropdown__link">Pricing Plans</a>
                             </li>
                             <li class="menu--sm-dropdown__item">
-                                <a href="sign-in.html" class="menu--sm-dropdown__link">Sign In</a>
+                                <a href="signin.html" class="menu--sm-dropdown__link">Sign In</a>
                             </li>
                             <li class="menu--sm-dropdown__item">
-                                <a href="sign-up.html" class="menu--sm-dropdown__link">Sign Up</a>
+                                <a href="signup.html" class="menu--sm-dropdown__link">Sign Up</a>
                             </li>
                             <li class="menu--sm-dropdown__item">
                                 <a href="dashboard.html" class="menu--sm-dropdown__link">user Dashboard</a>
@@ -269,28 +269,14 @@
         <!-- breedcrumb section end  -->
 
         <!-- Blog-list Promo Section Start   -->
-        <section class="blog-promo">
+        <section class="promo-link">
             <div class="container">
-                <div class="blog-promo__img-content" style="background: url('src/images/bg/bg-05.jpg') center center/cover no-repeat;">
-                    <div class="blog-promo__content">
-                        <div class="logo blog-promo__content-item">
-                            <img src="src/images/savan-logo.png" alt="promo-logo" class="img-fluid" />
-                        </div>
-                        <div class="slogan blog-promo__content-item">
-                            <h2>All Your Music.</h2>
-                            <p>Anytime, anywhere.</p>
-                        </div>
-                        <div class="promo-text blog-promo__content-item">
-                            <span class="tag">Free</span>
-                            <h2>Music</h2>
-                        </div>
-                        <div class="reg blog-promo__content-item">
-                            <a href="#" class="reg-btn">Register Now</a>
-                        </div>
-                    </div>
-                </div>
+                <a href="#">
+                    <img src="src/images/promo-img-02.png" alt="" class="img-fluid">
+                </a>
             </div>
         </section>
+
         <!-- Blog-list Promo Section End   -->
 
         <!-- Blog-list section start  -->
@@ -341,7 +327,6 @@
                                 <div class="blog__sidebar-category blog__sidebar-item">
                                     <h2 class="text--body-2-600 item-title">Top Category</h2>
                                     <div class="category">
-                                        <div class="category-left">
                                             <div class="category-item">
                                                 <a href="#">
                                                     <img src="src/images/category/img-01.jpg" alt="category-img" />
@@ -360,8 +345,6 @@
                                                     <h2 class="text--body-3">Productivity</h2>
                                                 </a>
                                             </div>
-                                        </div>
-                                        <div class="category-right">
                                             <div class="category-item">
                                                 <a href="#">
                                                     <img src="src/images/category/img-04.jpg" alt="category-img" />
@@ -380,7 +363,6 @@
                                                     <h2 class="text--body-3">Business</h2>
                                                 </a>
                                             </div>
-                                        </div>
                                     </div>
                                 </div>
                                 <!-- Popular Tag -->
@@ -397,7 +379,7 @@
                                         <span class="tags-item text--body-3">learning</span>
                                     </div>
                                 </div>
-                                <!-- Galler -->
+                                <!-- Gallery -->
                                 <div class="blog__sidebar-gallery blog__sidebar-item">
                                     <h2 class="text--body-2-600 item-title">Gallery</h2>
                                     <div class="gallery">
@@ -479,27 +461,10 @@
                                     </div>
                                 </div>
                                 <!-- Banner Promo -->
-                                <div class="blog__sidebar-banner blog__sidebar-item">
-                                    <div class="img">
-                                        <img src="src/images/bg/bg-06.png" alt="banner-promo" />
-
-                                        <div class="text__content">
-                                            <div class="logo">
-                                                <img src="src/images/savan-logo.png" alt="promo-logo" />
-                                            </div>
-                                            <div class="text">
-                                                <h2>All Your Music.</h2>
-                                                <p>Anytime, anywhere</p>
-                                            </div>
-                                            <a href="#" class="reg-btn">
-                                                Register Now
-                                            </a>
-                                            <div class="free">
-                                                <span class="tag">Free</span>
-                                                <h2 class="text--body-1">Music</h2>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="blog__sidebar-item blog-promo__img">
+                                    <a href="#">
+                                        <img src="src/images/promo-img-01.png" alt="" class="img-fluid">
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -570,7 +535,7 @@
                                                 <h5 class="text--body-4 blog-card__coment-num">36 Comments</h5>
                                             </li>
                                         </ul>
-                                        <a href="single-blog.html" class="blog-card__blog-caption text--body-2">
+                                        <a href="blog-details.html" class="blog-card__blog-caption text--body-2">
                                             Dictum pretium magna ac mattis. Maecenas lobortis
                                         </a>
                                         <p class="blog-card__description text--body-4">
@@ -578,7 +543,7 @@
                                             condimentum.
                                         </p>
 
-                                        <a href="single-blog.html" class="blog-card__readmore">
+                                        <a href="blog-details.html" class="blog-card__readmore">
                                             Read more
                                             <span class="icon">
                                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -593,7 +558,7 @@
                             <div class="blog-list__wrapper-item">
                                 <div class="blog-card">
                                     <div class="blog-card__left">
-                                        <a href="single-blog.html" class="blog-card__img-wrapper">
+                                        <a href="blog-details.html" class="blog-card__img-wrapper">
                                             <img src="src/images/blogs/img-02.png" alt="blog-img" />
                                         </a>
                                     </div>
@@ -648,7 +613,7 @@
                                                 <h5 class="text--body-4 blog-card__coment-num">36 Comments</h5>
                                             </li>
                                         </ul>
-                                        <a href="single-blog.html" class="blog-card__blog-caption text--body-2">
+                                        <a href="blog-details.html" class="blog-card__blog-caption text--body-2">
                                             Dictum pretium magna ac mattis. Maecenas lobortis
                                         </a>
                                         <p class="blog-card__description text--body-4">
@@ -656,7 +621,7 @@
                                             condimentum.
                                         </p>
 
-                                        <a href="single-blog.html" class="blog-card__readmore">
+                                        <a href="blog-details.html" class="blog-card__readmore">
                                             Read more
                                             <span class="icon">
                                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -671,7 +636,7 @@
                             <div class="blog-list__wrapper-item">
                                 <div class="blog-card">
                                     <div class="blog-card__left">
-                                        <a href="single-blog.html" class="blog-card__img-wrapper">
+                                        <a href="blog-details.html" class="blog-card__img-wrapper">
                                             <img src="src/images/blogs/img-03.png" alt="blog-img" />
                                         </a>
                                     </div>
@@ -726,7 +691,7 @@
                                                 <h5 class="text--body-4 blog-card__coment-num">36 Comments</h5>
                                             </li>
                                         </ul>
-                                        <a href="single-blog.html" class="blog-card__blog-caption text--body-2">
+                                        <a href="blog-details.html" class="blog-card__blog-caption text--body-2">
                                             Dictum pretium magna ac mattis. Maecenas lobortis
                                         </a>
                                         <p class="blog-card__description text--body-4">
@@ -734,7 +699,7 @@
                                             condimentum.
                                         </p>
 
-                                        <a href="single-blog.html" class="blog-card__readmore">
+                                        <a href="blog-details.html" class="blog-card__readmore">
                                             Read more
                                             <span class="icon">
                                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -749,7 +714,7 @@
                             <div class="blog-list__wrapper-item">
                                 <div class="blog-card">
                                     <div class="blog-card__left">
-                                        <a href="single-blog.html" class="blog-card__img-wrapper">
+                                        <a href="blog-details.html" class="blog-card__img-wrapper">
                                             <img src="src/images/blogs/img-04.png" alt="blog-img" />
                                         </a>
                                     </div>
@@ -804,7 +769,7 @@
                                                 <h5 class="text--body-4 blog-card__coment-num">36 Comments</h5>
                                             </li>
                                         </ul>
-                                        <a href="single-blog.html" class="blog-card__blog-caption text--body-2">
+                                        <a href="blog-details.html" class="blog-card__blog-caption text--body-2">
                                             Dictum pretium magna ac mattis. Maecenas lobortis
                                         </a>
                                         <p class="blog-card__description text--body-4">
@@ -812,7 +777,7 @@
                                             condimentum.
                                         </p>
 
-                                        <a href="single-blog.html" class="blog-card__readmore">
+                                        <a href="blog-details.html" class="blog-card__readmore">
                                             Read more
                                             <span class="icon">
                                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -827,7 +792,7 @@
                             <div class="blog-list__wrapper-item">
                                 <div class="blog-card">
                                     <div class="blog-card__left">
-                                        <a href="single-blog.html" class="blog-card__img-wrapper">
+                                        <a href="blog-details.html" class="blog-card__img-wrapper">
                                             <img src="src/images/blogs/img-05.png" alt="blog-img" />
                                         </a>
                                     </div>
@@ -882,7 +847,7 @@
                                                 <h5 class="text--body-4 blog-card__coment-num">36 Comments</h5>
                                             </li>
                                         </ul>
-                                        <a href="single-blog.html" class="blog-card__blog-caption text--body-2">
+                                        <a href="blog-details.html" class="blog-card__blog-caption text--body-2">
                                             Dictum pretium magna ac mattis. Maecenas lobortis
                                         </a>
                                         <p class="blog-card__description text--body-4">
@@ -890,7 +855,7 @@
                                             condimentum.
                                         </p>
 
-                                        <a href="single-blog.html" class="blog-card__readmore">
+                                        <a href="blog-details.html" class="blog-card__readmore">
                                             Read more
                                             <span class="icon">
                                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -905,7 +870,7 @@
                             <div class="blog-list__wrapper-item">
                                 <div class="blog-card">
                                     <div class="blog-card__left">
-                                        <a href="single-blog.html" class="blog-card__img-wrapper">
+                                        <a href="blog-details.html" class="blog-card__img-wrapper">
                                             <img src="src/images/blogs/img-06.png" alt="blog-img" />
                                         </a>
                                     </div>
@@ -960,7 +925,7 @@
                                                 <h5 class="text--body-4 blog-card__coment-num">36 Comments</h5>
                                             </li>
                                         </ul>
-                                        <a href="single-blog.html" class="blog-card__blog-caption text--body-2">
+                                        <a href="blog-details.html" class="blog-card__blog-caption text--body-2">
                                             Dictum pretium magna ac mattis. Maecenas lobortis
                                         </a>
                                         <p class="blog-card__description text--body-4">
@@ -968,7 +933,7 @@
                                             condimentum.
                                         </p>
 
-                                        <a href="single-blog.html" class="blog-card__readmore">
+                                        <a href="blog-details.html" class="blog-card__readmore">
                                             Read more
                                             <span class="icon">
                                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -983,7 +948,7 @@
                             <div class="blog-list__wrapper-item">
                                 <div class="blog-card">
                                     <div class="blog-card__left">
-                                        <a href="single-blog.html" class="blog-card__img-wrapper">
+                                        <a href="blog-details.html" class="blog-card__img-wrapper">
                                             <img src="src/images/blogs/img-07.png" alt="blog-img" />
                                         </a>
                                     </div>
@@ -1038,7 +1003,7 @@
                                                 <h5 class="text--body-4 blog-card__coment-num">36 Comments</h5>
                                             </li>
                                         </ul>
-                                        <a href="single-blog.html" class="blog-card__blog-caption text--body-2">
+                                        <a href="blog-details.html" class="blog-card__blog-caption text--body-2">
                                             Dictum pretium magna ac mattis. Maecenas lobortis
                                         </a>
                                         <p class="blog-card__description text--body-4">
@@ -1046,7 +1011,7 @@
                                             condimentum.
                                         </p>
 
-                                        <a href="single-blog.html" class="blog-card__readmore">
+                                        <a href="blog-details.html" class="blog-card__readmore">
                                             Read more
                                             <span class="icon">
                                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1122,7 +1087,7 @@
                                                 <h5 class="text--body-4 blog-card__coment-num">36 Comments</h5>
                                             </li>
                                         </ul>
-                                        <a href="single-blog.html" class="blog-card__blog-caption text--body-2">
+                                        <a href="blog-details.html" class="blog-card__blog-caption text--body-2">
                                             Dictum pretium magna ac mattis. Maecenas lobortis
                                         </a>
                                         <p class="blog-card__description text--body-4">
@@ -1130,7 +1095,7 @@
                                             condimentum.
                                         </p>
 
-                                        <a href="single-blog.html" class="blog-card__readmore">
+                                        <a href="blog-details.html" class="blog-card__readmore">
                                             Read more
                                             <span class="icon">
                                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1145,7 +1110,7 @@
                             <div class="blog-list__wrapper-item">
                                 <div class="blog-card">
                                     <div class="blog-card__left">
-                                        <a href="single-blog.html" class="blog-card__img-wrapper">
+                                        <a href="blog-details.html" class="blog-card__img-wrapper">
                                             <img src="src/images/blogs/img-09.png" alt="blog-img" />
                                         </a>
                                     </div>
@@ -1200,7 +1165,7 @@
                                                 <h5 class="text--body-4 blog-card__coment-num">36 Comments</h5>
                                             </li>
                                         </ul>
-                                        <a href="single-blog.html" class="blog-card__blog-caption text--body-2">
+                                        <a href="blog-details.html" class="blog-card__blog-caption text--body-2">
                                             Dictum pretium magna ac mattis. Maecenas lobortis
                                         </a>
                                         <p class="blog-card__description text--body-4">
@@ -1208,7 +1173,7 @@
                                             condimentum.
                                         </p>
 
-                                        <a href="single-blog.html" class="blog-card__readmore">
+                                        <a href="blog-details.html" class="blog-card__readmore">
                                             Read more
                                             <span class="icon">
                                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1223,7 +1188,7 @@
                             <div class="blog-list__wrapper-item">
                                 <div class="blog-card">
                                     <div class="blog-card__left">
-                                        <a href="single-blog.html" class="blog-card__img-wrapper">
+                                        <a href="blog-details.html" class="blog-card__img-wrapper">
                                             <img src="src/images/blogs/img-10.png" alt="blog-img" />
                                         </a>
                                     </div>
@@ -1278,7 +1243,7 @@
                                                 <h5 class="text--body-4 blog-card__coment-num">36 Comments</h5>
                                             </li>
                                         </ul>
-                                        <a href="single-blog.html" class="blog-card__blog-caption text--body-2">
+                                        <a href="blog-details.html" class="blog-card__blog-caption text--body-2">
                                             Dictum pretium magna ac mattis. Maecenas lobortis
                                         </a>
                                         <p class="blog-card__description text--body-4">
@@ -1286,7 +1251,7 @@
                                             condimentum.
                                         </p>
 
-                                        <a href="single-blog.html" class="blog-card__readmore">
+                                        <a href="blog-details.html" class="blog-card__readmore">
                                             Read more
                                             <span class="icon">
                                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1572,22 +1537,20 @@
             </div>
         </footer>
         <!-- footer section end -->
+
         <!-- Back To Top Btn -->
-        <button class="scrollTop" onclick="scrollToTop()">
+        <button class="scrollTop" >
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M12 20.25V3.75" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
                 <path d="M5.25 10.5L12 3.75L18.75 10.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
         </button>
-
+        
+        <!-- Script Goes Here -->
+        <script src="src/plugins/jquery.min.js"></script>
+        <script src="src/plugins/bootstrap.bundle.min.js"></script>
+        
+        <script src="src/plugins/venobox.min.js"></script>
         <script type="module" src="/main.js"></script>
-        <script src="src/js/plugins/jquery.min.js"></script>
-        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-        <script src="src/js/plugins/bvselect.js"></script>
-        <script src="src/js/plugins/venobox.min.js"></script>
-        <script src="src/js/pages/blog.js"></script>
-        <script src="src/js/app.js"></script>
-        <script src="src/js/components/header.js"></script>
-        <script src="src/js/components/venobox.js"></script>
     </body>
 </html>

@@ -11,7 +11,15 @@
     "vite": "^2.2.3"
   },
   "dependencies": {
+    "@popperjs/core": "^2.10.1",
+    "@srexi/purecounterjs": "^1.2.1",
     "animate.css": "^4.1.1",
-    "bootstrap": "^5.0.0-beta3"
+    "bootstrap": "^5.1.1",
+    "jquery": "^3.6.0",
+    "nouislider": "^15.4.0",
+    "select2": "^4.1.0-rc.0",
+    "slick-carousel": "^1.8.1",
+    "venobox": "^1.9.3",
+    "wnumb": "^1.2.0"
   }
 }

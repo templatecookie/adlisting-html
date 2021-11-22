@@ -110,7 +110,6 @@
 
       &:not(.collapsed) {
         color: color(g);
-        // box-shadow: none;
         border-bottom-left-radius: 0px !important;
         border-bottom-right-radius: 0px !important;
         border-color: transparent !important;
@@ -141,6 +140,11 @@
         @include trans(0.3s, ease-in-out);
         @include max(767px) {
           right: 5px;
+        }
+      }
+      span {
+        @media (max-width: 767px) {
+          max-width: 265px;
         }
       }
     }

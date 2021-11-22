@@ -10,10 +10,11 @@
         <link rel="icon" type="image/png" sizes="32x32" href="src/images/favicon_io/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="src/images/favicon_io/favicon-16x16.png" />
         <link rel="manifest" href="src/images/favicon_io/site.webmanifest" />
-        <link rel="stylesheet" href="src/js/plugins/css/slick.css">
-        <link rel="stylesheet" href="src/js/plugins/select2/css/select2.min.css">
-        <link rel="stylesheet" href="src/js/plugins/select2/css/select2-bootstrap-5-theme.css">
-    </head>
+        <link rel="stylesheet" href="src/plugins/css/slick.css" />
+        <link rel="stylesheet" href="src/plugins/select2/css/select2.min.css" />
+        <link rel="stylesheet" href="src/plugins/select2/css/select2-bootstrap-5-theme.css" />
+        <link rel="stylesheet" href="src/plugins/css/bootstrap.min.css">
+</head>
 
     <body>
         <div class="loader">
@@ -27,7 +28,8 @@
             <div class="container navigation-bar">
                 <!-- Brand Logo -->
                 <a href="index.html" class="navigation-bar__logo">
-                    <img src="src/images/logo.png" alt="brand-logo" class="logo-transparent" />
+                    <img src="src/images/logo.png" alt="brand-logo" class="logo-white" />
+                    <img src="src/images/logo-dark.png" alt="brand-logo" class="logo-dark">
                 </a>
                 <!-- Menu -->
                 <ul class="menu">
@@ -69,7 +71,7 @@
                                 <a href="blog-list.html" class="menu-dropdown__link">Blog List</a>
                             </li>
                             <li class="menu-dropdown__item">
-                                <a href="single-blog.html" class="menu-dropdown__link">Single Blogs</a>
+                                <a href="blog-details.html" class="menu-dropdown__link">Single Blogs</a>
                             </li>
                             <li class="menu-dropdown__item">
                                 <a href="about.html" class="menu-dropdown__link">About</a>
@@ -78,10 +80,10 @@
                                 <a href="price-plan.html" class="menu-dropdown__link">Pricing Plans</a>
                             </li>
                             <li class="menu-dropdown__item">
-                                <a href="sign-in.html" class="menu-dropdown__link">Sign In</a>
+                                <a href="signin.html" class="menu-dropdown__link">Sign In</a>
                             </li>
                             <li class="menu-dropdown__item">
-                                <a href="sign-up.html" class="menu-dropdown__link">Sign Up</a>
+                                <a href="signup.html" class="menu-dropdown__link">Sign Up</a>
                             </li>
                             <li class="menu-dropdown__item">
                                 <a href="dashboard.html" class="menu-dropdown__link">user Dashboard</a>
@@ -103,7 +105,7 @@
                 </ul>
                 <!-- Action Buttons -->
                 <div class="navigation-bar__buttons">
-                    <a href="sign-in.html" class="btn btn--bg">Sign in</a>
+                    <a href="signin.html" class="btn btn--bg">Sign in</a>
                     <a href="post-ads.html" class="btn">
                         <span class="icon--left">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -196,7 +198,7 @@
                                 <a href="blog-list.html" class="menu--sm-dropdown__link">Blog List</a>
                             </li>
                             <li class="menu--sm-dropdown__item">
-                                <a href="single-blog.html" class="menu--sm-dropdown__link">Single Blogs</a>
+                                <a href="blog-details.html" class="menu--sm-dropdown__link">Single Blogs</a>
                             </li>
                             <li class="menu--sm-dropdown__item">
                                 <a href="about.html" class="menu--sm-dropdown__link">About</a>
@@ -205,10 +207,10 @@
                                 <a href="price-plan.html" class="menu--sm-dropdown__link">Pricing Plans</a>
                             </li>
                             <li class="menu--sm-dropdown__item">
-                                <a href="sign-in.html" class="menu--sm-dropdown__link">Sign In</a>
+                                <a href="signin.html" class="menu--sm-dropdown__link">Sign In</a>
                             </li>
                             <li class="menu--sm-dropdown__item">
-                                <a href="sign-up.html" class="menu--sm-dropdown__link">Sign Up</a>
+                                <a href="signup.html" class="menu--sm-dropdown__link">Sign Up</a>
                             </li>
                             <li class="menu--sm-dropdown__item">
                                 <a href="dashboard.html" class="menu--sm-dropdown__link">user Dashboard</a>
@@ -294,7 +296,11 @@
                                         <option value="2">Category 2</option>
                                     </select>
                                     <span class="icon icon--left">
-                                        <svg viewBox="0 0 24 24" width="24" height="24" stroke="#00AAFF" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                                        <svg viewBox="0 0 24 24" width="24" height="24" stroke="#00AAFF" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
+                                            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                                            <polyline points="2 17 12 22 22 17"></polyline>
+                                            <polyline points="2 12 12 17 22 12"></polyline>
+                                        </svg>
                                     </span>
                                 </div>
                             </div>
@@ -359,9 +365,15 @@
                         <div class="category-card">
                             <div class="category-card__icon">
                                 <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M41.6669 6.25H8.33354C6.03235 6.25 4.16687 8.11548 4.16687 10.4167V31.25C4.16687 33.5512 6.03235 35.4167 8.33354 35.4167H41.6669C43.9681 35.4167 45.8335 33.5512 45.8335 31.25V10.4167C45.8335 8.11548 43.9681 6.25 41.6669 6.25Z" stroke="#00AAFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M16.6669 43.75H33.3335" stroke="#00AAFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M25 35.4167V43.75" stroke="#00AAFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path
+                                        d="M41.6669 6.25H8.33354C6.03235 6.25 4.16687 8.11548 4.16687 10.4167V31.25C4.16687 33.5512 6.03235 35.4167 8.33354 35.4167H41.6669C43.9681 35.4167 45.8335 33.5512 45.8335 31.25V10.4167C45.8335 8.11548 43.9681 6.25 41.6669 6.25Z"
+                                        stroke="#00AAFF"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path d="M16.6669 43.75H33.3335" stroke="#00AAFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M25 35.4167V43.75" stroke="#00AAFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
                             </div>
                             <h5 class="text--body-2 category-card__title">Electronics</h5>
@@ -669,7 +681,7 @@
                     Featured Ads
                 </h2>
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-xl-6">
                         <div class="cards cards--two cards--highlight">
                             <a href="ad-details.html" class="cards__img-wrapper">
                                 <img src="src/images/view/img-01.png" alt="card-img" />
@@ -773,7 +785,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-xl-6">
                         <div class="cards cards--two cards--highlight">
                             <a href="ad-details.html" class="cards__img-wrapper">
                                 <img src="src/images/view/img-02.png" alt="card-img" />
@@ -862,7 +874,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-xl-6">
                         <div class="cards cards--two cards--highlight">
                             <a href="ad-details.html" class="cards__img-wrapper">
                                 <img src="src/images/view/img-03.png" alt="card-img" />
@@ -951,7 +963,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-xl-6">
                         <div class="cards cards--two">
                             <a href="ad-details.html" class="cards__img-wrapper">
                                 <img src="src/images/view/img-04.png" alt="card-img" />
@@ -1043,7 +1055,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-xl-6">
                         <div class="cards cards--two">
                             <a href="ad-details.html" class="cards__img-wrapper">
                                 <img src="src/images/view/img-05.png" alt="card-img" />
@@ -1132,7 +1144,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-xl-6">
                         <div class="cards cards--two">
                             <a href="ad-details.html" class="cards__img-wrapper">
                                 <img src="src/images/view/img-06.png" alt="card-img" />
@@ -1878,20 +1890,19 @@
         <!-- footer section end -->
 
         <!-- Back To Top Btn -->
-        <button class="scrollTop scrollTop--white" onclick="scrollToTop()">
+        <button class="scrollTop scrollTop--white">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M12 20.25V3.75" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
                 <path d="M5.25 10.5L12 3.75L18.75 10.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
         </button>
-
-        <script type="module" src="/main.js"></script>
-        <script src="src/js/plugins/jquery.min.js"></script>
-        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-        <script src="src/js/plugins/slick.min.js"></script>
-        <script src="src/js/plugins/select2/js/select2.min.js"></script>
-        <script src="src/js/pages/home-01.js"></script>
-        <script src="src/js/app.js"></script>
-        <script src="src/js/components/header.js"></script>
+        
+        <!-- Scripts goes here -->
+        <script src="src/plugins/jquery.min.js"></script>
+        <script src="src/plugins/bootstrap.bundle.min.js"></script>
+        
+        <script src="src/plugins/slick.min.js"></script>
+        <script src="src/plugins/select2/js/select2.min.js"></script>
+        <script type="module" src="./main.js"></script>
     </body>
 </html>

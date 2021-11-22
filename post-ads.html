@@ -11,8 +11,9 @@
         <link rel="icon" type="image/png" sizes="16x16" href="src/images/favicon_io/favicon-16x16.png" />
         <link rel="manifest" href="src/images/favicon_io/site.webmanifest" />
 
-        <link rel="stylesheet" href="src/js/plugins/css/intlTelInput.css" />
-    </head>
+        <link rel="stylesheet" href="src/plugins/css/intlTelInput.css" />
+        <link rel="stylesheet" href="src/plugins/css/bootstrap.min.css">
+</head>
 
     <body>
         <div class="loader">
@@ -68,7 +69,7 @@
                                     <a href="blog-list.html" class="menu-dropdown__link">Blog List</a>
                                 </li>
                                 <li class="menu-dropdown__item">
-                                    <a href="single-blog.html" class="menu-dropdown__link">Single Blogs</a>
+                                    <a href="blog-details.html" class="menu-dropdown__link">Single Blogs</a>
                                 </li>
                                 <li class="menu-dropdown__item">
                                     <a href="about.html" class="menu-dropdown__link">About</a>
@@ -77,10 +78,10 @@
                                     <a href="price-plan.html" class="menu-dropdown__link">Pricing Plans</a>
                                 </li>
                                 <li class="menu-dropdown__item">
-                                    <a href="sign-in.html" class="menu-dropdown__link">Sign In</a>
+                                    <a href="signin.html" class="menu-dropdown__link">Sign In</a>
                                 </li>
                                 <li class="menu-dropdown__item">
-                                    <a href="sign-up.html" class="menu-dropdown__link">Sign Up</a>
+                                    <a href="signup.html" class="menu-dropdown__link">Sign Up</a>
                                 </li>
                                 <li class="menu-dropdown__item">
                                     <a href="dashboard.html" class="menu-dropdown__link active">user Dashboard</a>
@@ -222,7 +223,7 @@
                                 <a href="blog-list.html" class="menu--sm-dropdown__link">Blog List</a>
                             </li>
                             <li class="menu--sm-dropdown__item">
-                                <a href="single-blog.html" class="menu--sm-dropdown__link">Single Blogs</a>
+                                <a href="blog-details.html" class="menu--sm-dropdown__link">Single Blogs</a>
                             </li>
                             <li class="menu--sm-dropdown__item">
                                 <a href="about.html" class="menu--sm-dropdown__link">About</a>
@@ -231,10 +232,10 @@
                                 <a href="price-plan.html" class="menu--sm-dropdown__link">Pricing Plans</a>
                             </li>
                             <li class="menu--sm- dropdown__item">
-                                <a href="sign-in.html" class="menu--sm-dropdown__link">Sign In</a>
+                                <a href="signin.html" class="menu--sm-dropdown__link">Sign In</a>
                             </li>
                             <li class="menu--sm-dropdown__item">
-                                <a href="sign-up.html" class="menu--sm-dropdown__link">Sign Up</a>
+                                <a href="signup.html" class="menu--sm-dropdown__link">Sign Up</a>
                             </li>
                             <li class="menu--sm-dropdown__item">
                                 <a href="dashboard.html" class="menu--sm-dropdown__link active">user Dashboard</a>
@@ -583,7 +584,7 @@
                                                 <div class="input-field__group">
                                                     <div class="input-select">
                                                         <label for="category">Category</label>
-                                                        <select id="category">
+                                                        <select id="allCategory">
                                                             <option value="01">Category 01</option>
                                                             <option value="02">Category 02</option>
                                                             <option value="03">Category 03</option>
@@ -677,6 +678,29 @@
                                             <label for="feature">Feature <span>(optional)</span> </label>
                                             <textarea placeholder="Write a feature in each line..." id="feature"></textarea>
                                         </div>
+                                        <div class="upload-wrapper">
+                                            <h3>Upload Photos</h3>
+                                            <div class="upload-area">
+                                                <div class="uploaded-items">
+                                                    <div class="uploaded-item">
+                                                        <img src="src/images/blogs/img-02.png" alt="">
+                                                        <div class="remove-icon">
+                                                            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                                                        </div>
+                                                    </div>
+                                                    <div class="uploaded-item">
+                                                        <img src="src/images/blogs/img-03.png" alt="">
+                                                        <div class="remove-icon">
+                                                            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="add-new">
+                                                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+                                                    <input type="file" hidden id="addNew">
+                                                </div>
+                                            </div>
+                                        </div>
 
                                         <div class="dashboard-post__action-btns">
                                             <a href="#" class="btn btn--lg btn--outline">
@@ -700,12 +724,12 @@
                                         <form action="#">
                                             <div class="input-field__group">
                                                 <div class="input-field">
-                                                    <label for="telephone">phone Number</label>
-                                                    <input type="tel" class="telephone" placeholder="Phone" id="telephone" />
+                                                    <label for="phoneNumber">phone Number</label>
+                                                    <input type="tel" class="telephone" placeholder="Phone" id="phoneNumber" />
                                                 </div>
                                                 <div class="input-field">
-                                                    <label for="telephone">Backup phone Number <span>(optional)</span> </label>
-                                                    <input type="tel" class="telephone" placeholder="Phone Number" />
+                                                    <label for="backupPhone">Backup phone Number <span>(optional)</span> </label>
+                                                    <input type="tel" class="backupPhone" placeholder="Phone Number" />
                                                 </div>
                                             </div>
                                             <div class="input-field__group">
@@ -775,7 +799,7 @@
                                                 <a href="#" class="btn btn--lg btn--outline">
                                                     Previous
                                                 </a>
-                                                <a href="#" class="btn btn--lg">
+                                                <a href="post-ad-success.html" class="btn btn--lg">
                                                     Post Ads
                                                     <span class="icon--right">
                                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1027,110 +1051,17 @@
         <!-- footer section end -->
 
         <!-- Back To Top Btn -->
-        <button class="scrollTop scrollTop--white" onclick="scrollToTop()">
+        <button class="scrollTop scrollTop--white" >
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M12 20.25V3.75" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
                 <path d="M5.25 10.5L12 3.75L18.75 10.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
         </button>
 
+        <script src="src/plugins/jquery.min.js"></script>
+        <script src="src/plugins/bootstrap.bundle.min.js"></script>
+        
+        <script src="src/plugins/bvselect.js"></script>
         <script type="module" src="/main.js"></script>
-        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-        <script src="src/js/plugins/bvselect.js"></script>
-        <script src="src/js/plugins/intlTelInput.min.js"></script>
-        <script src="src/js/app.js"></script>
-        <script src="src/js/components/header.js"></script>
-        <script src="src/js/pages/dashboard.js"></script>
-        <script>
-            var input = document.querySelectorAll(".telephone");
-            input.forEach((item) => {
-                window.intlTelInput(item, {
-                    preferredCountries: ["us", "bd"],
-                });
-            });
-            document.addEventListener("DOMContentLoaded", function () {
-                var category = new BVSelect({
-                    selector: "#category",
-                    searchbox: false,
-                    offset: true,
-                    placeholder: "select...",
-                    search_autofocus: true,
-                    breakpoint: 450,
-                });
-
-                var country = new BVSelect({
-                    selector: "#country",
-                    searchbox: false,
-                    offset: true,
-                    placeholder: "select...",
-                    search_autofocus: true,
-                    breakpoint: 450,
-                });
-
-                var city = new BVSelect({
-                    selector: "#city",
-                    searchbox: false,
-                    offset: true,
-                    placeholder: "select...",
-                    search_autofocus: true,
-                    breakpoint: 450,
-                });
-
-                var state = new BVSelect({
-                    selector: "#state",
-                    searchbox: false,
-                    offset: true,
-                    placeholder: "select...",
-                    search_autofocus: true,
-                    breakpoint: 450,
-                });
-
-                var subcategory = new BVSelect({
-                    selector: "#subcategory",
-                    searchbox: false,
-                    offset: true,
-                    placeholder: "select...",
-                    search_placeholder: "Search...",
-                    search_autofocus: true,
-                    breakpoint: 450,
-                });
-                var brand = new BVSelect({
-                    selector: "#brand",
-                    searchbox: false,
-                    offset: true,
-                    placeholder: "All",
-                    search_placeholder: "Search...",
-                    search_autofocus: true,
-                    breakpoint: 450,
-                });
-                var model = new BVSelect({
-                    selector: "#model",
-                    searchbox: false,
-                    offset: true,
-                    placeholder: "All",
-                    search_placeholder: "Search...",
-                    search_autofocus: true,
-                    breakpoint: 450,
-                });
-                var condition = new BVSelect({
-                    selector: "#conditions",
-                    searchbox: false,
-                    offset: true,
-                    placeholder: "All",
-                    search_placeholder: "Search...",
-                    search_autofocus: true,
-                    breakpoint: 450,
-                });
-                var auth = new BVSelect({
-                    selector: "#authenticity",
-                    searchbox: false,
-                    offset: true,
-                    placeholder: "All",
-                    search_placeholder: "Search...",
-                    search_autofocus: true,
-                    breakpoint: 450,
-                });
-            });
-        </script>
     </body>
 </html>

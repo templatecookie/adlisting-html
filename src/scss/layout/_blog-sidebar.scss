@@ -15,7 +15,7 @@
   &-wrapper {
     @include max(991px) {
       position: fixed;
-      top: 0;
+      top: 95px;
       left: -425px;
       width: inherit;
       max-height: inherit;
@@ -27,7 +27,7 @@
 
   .toggle-icon {
     position: absolute;
-    top: 85px;
+    top: 95px;
     right: auto;
     left: 0;
     color: color(g);
@@ -48,7 +48,7 @@
       @include max(460px) {
         padding: 0px;
         right: 32px;
-        top: 32px;
+        top: 125px;
       }
     }
     .blog__sidebar {
@@ -64,10 +64,11 @@
     background-color: color(gray-10);
     margin-bottom: 24px;
     @include max(991px) {
-      // background: #fff;
       border-radius: 0px;
       margin-bottom: 0px;
-      padding-bottom: 0px;
+    }
+    @include max(767px) {
+      padding: 16px;
     }
     .item-title {
       color: color(g);
@@ -76,9 +77,11 @@
     }
 
     &:nth-last-child(1) {
-      padding: 0px;
-      margin-bottom: 0px;
-      background-color: transparent;
+      @include min(992px) {
+        background-color: transparent;
+        padding: 0px;
+        margin-bottom: 0px;
+      }
     }
   }
 
@@ -98,18 +101,15 @@
 
   &-category {
     .category {
-      display: flex;
-      // flex-wrap: wrap;
-      &-left {
-        margin-right: 16px;
-      }
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
       &-item {
         width: 100%;
         height: 65px;
         border-radius: 5px;
         overflow: hidden;
         position: relative;
-        margin-bottom: 16px;
         cursor: pointer;
         &:nth-last-child(1) {
           margin-bottom: 0px;
@@ -186,41 +186,25 @@
 
   &-gallery {
     .gallery {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      @include max(767px) {
-        justify-content: start;
-      }
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-flow: row;
+      gap: 12px;
       &-item {
-        width: 112px;
-        height: 112px;
-        border-radius: 4px;
-        overflow: hidden;
-        margin-bottom: 6px;
-        @include max(767px) {
-          margin-right: 6px;
-        }
-        @include max(420px) {
-          width: 112px;
-          height: 112px;
-        }
-        @include max(400px) {
-          margin-right: 16px;
-          margin-bottom: 16px;
-          width: 90px;
-          height: 90px;
-        }
-
-        @include max(360px) {
-          width: 70px;
-          height: 70px;
-          margin: 6px;
-        }
-
-        img {
+        .galleryView {
           width: 100%;
+          border-radius: 4px;
+          overflow: hidden;
+          @include min(992px) {
+            height: 112px;
+          }
+          @include max(767px) {
+            height: 60px;
+          }
+        }
+        img {
+          width: inherit;
+          object-fit: cover;
           @include trans(0.3s, ease-in-out);
         }
         &:hover {
@@ -300,100 +284,6 @@
                 margin: 0px 8px;
               }
             }
-          }
-        }
-      }
-    }
-  }
-
-  &-banner {
-    @include max(1024px) {
-      display: none;
-    }
-    .img {
-      position: relative;
-      width: 100%;
-      height: 925px;
-      border-radius: 12px;
-      overflow: hidden;
-      &::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.4);
-      }
-      .text__content {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 1;
-
-        .logo,
-        .text,
-        .reg-btn,
-        .free {
-          position: absolute;
-          left: 50%;
-          width: 100%;
-          transform: translateX(-50%);
-        }
-
-        .logo {
-          top: 50px;
-          width: 280px;
-        }
-        .text {
-          top: 350px;
-          text-align: center;
-          h2 {
-            @include font(48px, 72px, 700, w);
-          }
-          p {
-            @include font(32px, 48px, 400, w);
-            opacity: 0.8;
-          }
-        }
-
-        .reg-btn {
-          top: 504px;
-          width: 80%;
-          @include font(24px, 24px, 700, w);
-          text-align: center;
-          text-transform: capitalize;
-          padding: 24px 80px;
-          border-radius: 80px;
-          background-color: #52c4ac;
-        }
-
-        .free {
-          bottom: 50px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          text-align: center;
-          .tag {
-            @include font(18px, 27px, 700, w);
-            text-transform: uppercase;
-            width: 76px;
-            height: 76px;
-            border-radius: 50%;
-            border: 2px solid #fff;
-            background-color: #ff4f4f;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transform: rotate(15deg);
-            margin-right: 16px;
-          }
-          h2 {
-            color: #fff;
-            font-weight: 700;
-            text-transform: uppercase;
           }
         }
       }

@@ -11,6 +11,9 @@
     @include max(1200px) {
       margin-left: 0px;
     }
+    @include max(991px) {
+      text-align: center;
+    }
   }
 
   &__img-content {
@@ -34,7 +37,6 @@
     margin-bottom: 32px;
     @include max(767px) {
       font-size: 16px;
-      // line-height: ;
     }
   }
 
@@ -46,6 +48,9 @@
     }
     @include max(1200px) {
       padding-bottom: 30px;
+    }
+    @include max(991px) {
+      justify-content: center;
     }
     .app {
       margin-right: 16px;

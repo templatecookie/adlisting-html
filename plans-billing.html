@@ -10,7 +10,8 @@
         <link rel="icon" type="image/png" sizes="32x32" href="src/images/favicon_io/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="src/images/favicon_io/favicon-16x16.png" />
         <link rel="manifest" href="src/images/favicon_io/site.webmanifest" />
-    </head>
+        <link rel="stylesheet" href="src/plugins/css/bootstrap.min.css">
+</head>
 
     <body>
         <div class="loader">
@@ -67,7 +68,7 @@
                                     <a href="blog-list.html" class="menu-dropdown__link">Blog List</a>
                                 </li>
                                 <li class="menu-dropdown__item">
-                                    <a href="single-blog.html" class="menu-dropdown__link">Single Blogs</a>
+                                    <a href="blog-details.html" class="menu-dropdown__link">Single Blogs</a>
                                 </li>
                                 <li class="menu-dropdown__item">
                                     <a href="about.html" class="menu-dropdown__link">About</a>
@@ -76,10 +77,10 @@
                                     <a href="price-plan.html" class="menu-dropdown__link">Pricing Plans</a>
                                 </li>
                                 <li class="menu-dropdown__item">
-                                    <a href="sign-in.html" class="menu-dropdown__link">Sign In</a>
+                                    <a href="signin.html" class="menu-dropdown__link">Sign In</a>
                                 </li>
                                 <li class="menu-dropdown__item">
-                                    <a href="sign-up.html" class="menu-dropdown__link">Sign Up</a>
+                                    <a href="signup.html" class="menu-dropdown__link">Sign Up</a>
                                 </li>
                                 <li class="menu-dropdown__item">
                                     <a href="dashboard.html" class="menu-dropdown__link active">user Dashboard</a>
@@ -221,7 +222,7 @@
                                 <a href="blog-list.html" class="menu--sm-dropdown__link">Blog List</a>
                             </li>
                             <li class="menu--sm-dropdown__item">
-                                <a href="single-blog.html" class="menu--sm-dropdown__link">Single Blogs</a>
+                                <a href="blog-details.html" class="menu--sm-dropdown__link">Single Blogs</a>
                             </li>
                             <li class="menu--sm-dropdown__item">
                                 <a href="about.html" class="menu--sm-dropdown__link">About</a>
@@ -230,10 +231,10 @@
                                 <a href="price-plan.html" class="menu--sm-dropdown__link">Pricing Plans</a>
                             </li>
                             <li class="menu--sm- dropdown__item">
-                                <a href="sign-in.html" class="menu--sm-dropdown__link">Sign In</a>
+                                <a href="signin.html" class="menu--sm-dropdown__link">Sign In</a>
                             </li>
                             <li class="menu--sm-dropdown__item">
-                                <a href="sign-up.html" class="menu--sm-dropdown__link">Sign Up</a>
+                                <a href="signup.html" class="menu--sm-dropdown__link">Sign Up</a>
                             </li>
                             <li class="menu--sm-dropdown__item">
                                 <a href="dashboard.html" class="menu--sm-dropdown__link active">user Dashboard</a>
@@ -647,40 +648,37 @@
                             <div class="col-lg-8">
                                 <div class="dashboard-card dashboard-card--recentvoice">
                                     <h2 class="dashboard-card__title">Recent Invoice</h2>
-
                                     <div class="dashboard-card--recentvoice__history">
-                                        <div class="header">
-                                            <div class="header-item">
+                                        <div class="header-top">
+                                            <div class="header-top-item">
                                                 <h6 class="text--body-4">payment Type</h6>
-                                                <h5 class="text--body-4">Details</h5>
                                             </div>
-                                            <div class="header-item">
+                                            <div class="header-top-item">
                                                 <h6 class="text--body-4">Date</h6>
                                             </div>
-                                            <div class="header-item">
+                                            <div class="header-top-item">
                                                 <h6 class="text--body-4">Amount</h6>
                                             </div>
                                         </div>
-
                                         <div class="body">
                                             <div class="body-item">
+                                                <p class="payment-type text--body-4">Standard subcription (monthly)</p>
                                                 <p class="date text--body-4">Jul 16, 2021 at 11:34 PM</p>
-                                                <a href="#" class="payment-type text--body-4">Standard subcription (monthly)</a>
                                                 <p class="amount text--body-4">$20.00</p>
                                             </div>
                                             <div class="body-item">
+                                                <p class="payment-type text--body-4">Standard subcription (monthly)</p>
                                                 <p class="date text--body-4">Jul 16, 2021 at 11:34 PM</p>
-                                                                                                <a href="#" class="payment-type text--body-4">Standard subcription (monthly)</a>
                                                 <p class="amount text--body-4">$20.00</p>
                                             </div>
                                             <div class="body-item">
+                                                <p class="payment-type text--body-4">Standard subcription (monthly)</p>
                                                 <p class="date text--body-4">Jul 16, 2021 at 11:34 PM</p>
-                                                                                                <a href="#" class="payment-type text--body-4">Standard subcription (monthly)</a>
                                                 <p class="amount text--body-4">$20.00</p>
                                             </div>
                                             <div class="body-item">
+                                                <p class="payment-type text--body-4">Standard subcription (monthly)</p>
                                                 <p class="date text--body-4">Jul 16, 2021 at 11:34 PM</p>
-                                                                                                <a href="#" class="payment-type text--body-4">Standard subcription (monthly)</a>
                                                 <p class="amount text--body-4">$20.00</p>
                                             </div>
                                         </div>
@@ -929,18 +927,19 @@
             </div>
         </footer>
         <!-- footer section end -->
+        
         <!-- Back To Top Btn -->
-        <button class="scrollTop" onclick="scrollToTop()">
+        <button class="scrollTop" >
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M12 20.25V3.75" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
                 <path d="M5.25 10.5L12 3.75L18.75 10.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
         </button>
 
+        <!-- Scripts Goes Here  -->
+        <script src="src/plugins/jquery.min.js"></script>
+        <script src="src/plugins/bootstrap.bundle.min.js"></script>
+        
         <script type="module" src="/main.js"></script>
-        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-        <script src="src/js/app.js"></script>
-        <script src="src/js/pages/dashboard.js"></script>
-        <script src="src/js/components/header.js"></script>
     </body>
 </html>
