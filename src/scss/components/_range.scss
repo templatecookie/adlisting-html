@@ -1,0 +1,72 @@
+.sliderrange {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 6px;
+  border-radius: 60px;
+  border: none;
+  box-shadow: none;
+  background: linear-gradient(
+    90deg,
+    rgb(218, 221, 229) 60%,
+    rgb(218, 221, 229) 60%
+  );
+  transition: background-color 0.3s ease-in-out;
+  outline: none;
+  &:hover,
+  &:focus,
+  &:active {
+    border: none;
+    box-shadow: none;
+  }
+
+  &::-webkit-slider-thumb {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1.5px solid #00aaff;
+    cursor: pointer;
+  }
+
+  &::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1.5px solid #00aaff;
+    cursor: pointer;
+  }
+}
+
+#priceRangeSlider {
+  height: 6px;
+  border: 0px;
+}
+
+.noUi-target {
+  margin: 50px 0px 10px;
+}
+
+.noUi-connect {
+  background: color(primary-4) !important;
+}
+.noUi-connects {
+  background-color: #dadde5;
+}
+
+.noUi-horizontal .noUi-handle {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1.5px solid #00aaff;
+}
+
+.noUi-handle:after,
+.noUi-handle:before {
+  display: none;
+}
+
+.noUi-touch-area {
+  width: 16px;
+}

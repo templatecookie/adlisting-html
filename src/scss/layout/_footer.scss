@@ -1,0 +1,242 @@
+.footer {
+  position: relative;
+  overflow: hidden;
+
+  &--dark {
+    .footer__top {
+      background-color: color(g);
+    }
+    .footer__bottom {
+      background-color: color(gray-1);
+    }
+
+    .footer {
+      &__title {
+        color: #fff;
+      }
+
+      &-menu {
+        &__link {
+          &:hover {
+            color: #fff;
+          }
+        }
+      }
+
+      &__mobile-app {
+        .app {
+          background-color: color(g);
+          border: 1px solid #2e3447;
+          &:hover {
+            background-color: color(gray-1);
+            box-shadow: 0px 16px 32px 0px #0000003d;
+          }
+          &-logo {
+            color: #fff;
+          }
+          &-info {
+            h2 {
+              color: #fff;
+            }
+          }
+        }
+      }
+      &__copyright {
+        p {
+          a {
+            color: #fff;
+            &:hover {
+              color: color(primary);
+            }
+          }
+        }
+      }
+      &__policy-condition {
+        color: color(gray-4);
+        a {
+          &:hover {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  &--light {
+    box-shadow: 0px 1px 0px 0px #ebeef7 inset;
+  }
+
+  &__top {
+    padding: 100px 0px;
+    @include max(1199px) {
+      padding: 60px 0px;
+    }
+    @include max(767px) {
+      padding-bottom: 30px;
+    }
+    .row {
+      flex-wrap: nowrap;
+      @include max(1199px) {
+        flex-wrap: wrap;
+      }
+    }
+    .social-icon {
+      @include max(480px) {
+        justify-content: center;
+      }
+    }
+  }
+
+  &__bottom {
+    padding: 24px 0px;
+    background-color: color(gray-10);
+    .footer {
+      &__policy-condition {
+        text-align: right;
+        @include max(767px) {
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  &__brand-logo {
+    margin-bottom: 32px;
+    @include max(1199px) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__loc-info {
+    @include max(1199px) {
+      margin-bottom: 30px;
+    }
+    p {
+      color: color(gray-4);
+      margin-bottom: 12px;
+      @include max(767px) {
+        margin-bottom: 6px;
+      }
+    }
+  }
+
+  &__title {
+    color: color(g);
+    text-transform: capitalize;
+    margin-bottom: 36px;
+    @include max(1199px) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &-menu {
+    @include max(1199px) {
+      margin-bottom: 30px;
+    }
+    &__item {
+      margin-bottom: 16px;
+      @include max(767px) {
+        margin-bottom: 8px;
+      }
+    }
+    &__link {
+      position: relative;
+      color: color(gray-4);
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: transparent;
+        @include trans(0.2s, ease-in-out);
+      }
+
+      &:hover {
+        color: color(g);
+        &::after {
+          bottom: -4px;
+          background-color: color(primary-4);
+          @include trans(0.3s, ease-in-out);
+        }
+      }
+    }
+  }
+
+  &__mobile-app {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    @include max(360px) {
+      flex-direction: column;
+    }
+    .app {
+      margin-right: 12px;
+      &:nth-last-child(1) {
+        margin-right: 0px;
+      }
+      @include min-max(992px, 1199px) {
+        width: 50%;
+      }
+
+      @include max(360px) {
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 12px;
+      }
+    }
+  }
+
+  &__copyright {
+    align-items: center;
+    @include max(767px) {
+      text-align: center;
+    }
+    p {
+      color: color(gray-4);
+      a {
+        font-weight: 400;
+        color: color(g);
+      }
+    }
+  }
+
+  &__policy-condition {
+    a {
+      color: color(gray-4);
+      margin: 0px 4px;
+      @include trans(0.3s, linear);
+      &:hover {
+        color: color(g);
+        @include trans(0.3s, linear);
+      }
+    }
+  }
+
+  &-demo {
+    padding: 24px 0px;
+    background-color: color(gray-10);
+    &__content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @include max(767px) {
+        flex-direction: column;
+      }
+    }
+
+    &__copyright,
+    &__documentation {
+      color: color(gray-4);
+      text-transform: capitalize;
+      @include max(767px) {
+        text-align: center;
+      }
+      a {
+        color: color(g);
+        font-weight: 600;
+      }
+    }
+  }
+}

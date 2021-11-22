@@ -1,0 +1,17 @@
+.testimonial {
+  @include min(768px) {
+    padding-bottom: 20px;
+  }
+  @include max(767px) {
+    padding-bottom: 0px;
+  }
+  &-slider {
+    &__item {
+      margin: 0px 12px;
+      margin-bottom: 80px;
+      @include max(767px) {
+        margin-bottom: 60px;
+      }
+    }
+  }
+}

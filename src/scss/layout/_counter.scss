@@ -1,0 +1,39 @@
+.counter {
+  background-color: color(primary);
+  @include max(991px) {
+    padding-bottom: 68px;
+  }
+  @include max(767px) {
+    padding-bottom: 36px;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    @include max(991px) {
+      margin-bottom: 32px;
+      justify-content: center;
+    }
+    @include max(767px) {
+      flex-direction: column;
+      text-align: center;
+    }
+    &-icon {
+      margin-right: 24px;
+      @include max(767px) {
+        margin-right: 0px;
+        margin-bottom: 24px;
+      }
+    }
+  }
+
+  &__number {
+    color: #fff;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+  }
+
+  &__designation {
+    color: #fff;
+    opacity: 0.6;
+  }
+}

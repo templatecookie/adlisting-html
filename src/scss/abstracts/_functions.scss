@@ -1,0 +1,62 @@
+// ====  Colors Function  ====== \\
+@function color($color-name) {
+  @return map-get($map: $colors, $key: $color-name);
+}
+
+@each $key, $value in $colors {
+  .bgcolor--#{$key} {
+    background-color: $value !important;
+  }
+  .textColor--#{$key} {
+    color: $value;
+  }
+}
+
+// ==== Fonts ====== \\
+
+@each $value, $key in $fontSize {
+  .text--#{$value} {
+    font-size: $key;
+    text-transform: capitalize;
+  }
+}
+
+@mixin font($size, $lineHeight, $fontWeight, $color) {
+  font-size: $size;
+  line-height: $lineHeight;
+  font-weight: $fontWeight;
+  color: color($color);
+}
+
+// ==== Flex  ====== \\
+@mixin flex($y, $x) {
+  display: flex;
+  align-items: $y;
+  justify-content: $x;
+}
+
+// ====  Transition   ====== \\
+@mixin trans($time, $type) {
+  transition: all $time $type;
+}
+
+// ====   ====== \\
+
+// ==== Responsive  ====== \\
+@mixin max($size) {
+  @media (max-width: $size) {
+    @content;
+  }
+}
+
+@mixin min($size) {
+  @media (min-width: $size) {
+    @content;
+  }
+}
+
+@mixin min-max($min, $max) {
+  @media (min-width: $min) and (max-width: $max) {
+    @content;
+  }
+}

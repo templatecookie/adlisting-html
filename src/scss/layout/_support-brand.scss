@@ -1,0 +1,30 @@
+.support-brand {
+  .title {
+    margin-bottom: 50px;
+    @include max(767px) {
+      margin-bottom: 24px;
+    }
+  }
+  &__slider {
+    display: flex;
+    align-items: center;
+  }
+  &__slider-item {
+    margin: 0px 24px;
+    @include max(767px) {
+      display: flex !important;
+      justify-content: center;
+    }
+    img {
+      width: 120px;
+      height: 60px;
+      object-fit: contain;
+      filter: grayscale(1);
+    }
+    &.slick-current {
+      img {
+        filter: grayscale(0);
+      }
+    }
+  }
+}
