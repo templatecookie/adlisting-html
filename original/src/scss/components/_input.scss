@@ -1,0 +1,237 @@
+.input-field {
+  position: relative;
+  width: 100%;
+  margin-bottom: 16px;
+
+  &.success {
+    input {
+      border-color: color(success-4);
+    }
+
+    .icon {
+      &--eye,
+      &--alart {
+        display: none;
+      }
+      &--success {
+        display: block;
+      }
+    }
+  }
+
+  &.alart {
+    input {
+      border-color: color(danger-4);
+    }
+    .icon {
+      &--eye,
+      &--success {
+        display: none;
+      }
+      &--alart {
+        display: block;
+      }
+    }
+  }
+
+  label {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: color(g);
+    text-transform: capitalize;
+    margin-bottom: 8px;
+    span {
+      text-transform: lowercase;
+      color: color(gray-4);
+    }
+  }
+
+  .iti {
+    width: 100%;
+    display: block;
+    &__arrow {
+      border: solid color(gray-5);
+      border-width: 0 1px 1px 0;
+      display: inline-block;
+      padding: 3px;
+      margin-left: 8px;
+      margin-bottom: 4px;
+      transform: rotate(45deg);
+      @include trans(0.3s, ease-in-out);
+
+      &--up {
+        margin-bottom: 0px;
+        transform: rotate(-135deg);
+      }
+    }
+  }
+
+  &__group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include max(767px) {
+      flex-direction: column;
+    }
+
+    .input-field,
+    .input-select {
+      margin-right: 16px;
+      @include max(767px) {
+        margin-right: 0px;
+      }
+      &:nth-last-child(1) {
+        margin-right: 0px;
+      }
+    }
+  }
+
+  input {
+    width: inherit;
+    height: 48px;
+    padding: 12px 18px;
+    border-radius: 5px;
+    border: 1px solid #edeff5;
+    &:hover,
+    &:focus {
+      border-color: color(primary-4);
+    }
+  }
+
+  &--textarea {
+    position: relative;
+    width: 100%;
+    margin-bottom: 16px;
+
+    label {
+      @include font(14px, 20px, 400, g);
+      width: 100%;
+      text-align: left;
+      margin-bottom: 8px;
+      text-transform: capitalize;
+      span {
+        text-transform: lowercase;
+        color: color(gray-4);
+      }
+    }
+
+    textarea {
+      padding: 12px 18px;
+      width: inherit;
+      height: 120px;
+      border-radius: 5px;
+    }
+  }
+
+  .icon {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    &--left {
+      left: 16px !important;
+    }
+    &--alart,
+    &--success {
+      display: none;
+    }
+  }
+}
+
+.input-select {
+  position: relative;
+  width: 100%;
+  margin-bottom: 16px;
+
+  label {
+    @include font(14px, 20px, 400, g);
+    width: 100%;
+    text-align: left;
+    margin-bottom: 8px;
+    text-transform: capitalize;
+    span {
+      text-transform: lowercase;
+      color: color(gray-4);
+    }
+  }
+
+  .bv_mainselect {
+    position: relative;
+    border: 1px solid #edeff5;
+    border-radius: 5px;
+    background-color: #fff;
+    text-align: left;
+    cursor: pointer;
+    .bv_atual.bv_background {
+      position: relative;
+      @include font(16px, 24px, 400, gray-5);
+      text-transform: capitalize;
+      width: 100% !important;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      padding: 0px 18px;
+
+      .arrows_bv {
+        position: absolute;
+        right: 18px;
+        top: 50%;
+        border: solid color(gray-5);
+        border-width: 0 1px 1px 0;
+        display: inline-block;
+        padding: 3px;
+        transition: all 0.2s ease-in-out;
+        transform: translateY(-50%) rotate(45deg);
+        &.up {
+          transform: rotate(-135deg);
+          transition: all 0.3s ease-in-out;
+        }
+      }
+    }
+
+    .bv_ul_inner.bv_background {
+      top: 100%;
+      left: 0;
+      width: 100% !important;
+      padding: 16px 0px;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      background-color: #fff;
+      box-shadow: 0px 24px 100px 0px #001d491f;
+      z-index: 9;
+      display: none;
+      li {
+        @include font(14px, 24px, 400, g);
+        padding: 8px 16px;
+        &:hover {
+          color: #fff;
+          background-color: color(primary-4);
+          @include trans(0.3s, ease-in-out);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.form-check {
+  display: flex;
+  align-items: center;
+  input {
+    margin-right: 8px;
+  }
+  label {
+    @include font(14px, 20px, 400, gray-3);
+    text-transform: capitalize;
+    margin-top: 4px;
+    span {
+      text-transform: lowercase;
+      color: color(gray-4);
+    }
+  }
+}

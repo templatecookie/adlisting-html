@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>AdListing || Post Ads</title>
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="512x512" href="src/images/favicon_io/android-chrome-512x512.png" />
+        <link rel="apple-touch-icon" sizes="192x192" href="src/images/favicon_io/android-chrome-192x192.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="src/images/favicon_io/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="src/images/favicon_io/favicon-16x16.png" />
+        <link rel="manifest" href="src/images/favicon_io/site.webmanifest" />
+
+        <link rel="stylesheet" href="src/plugins/css/intlTelInput.css" />
+        <link rel="stylesheet" href="src/plugins/css/bootstrap.min.css">
+</head>
+
+    <body>
+        <div class="loader">
+            <div class="loader-icon">
+                <img src="src/images/loader.gif" alt="loader" />
+            </div>
+        </div>
+        <!-- header section start  -->
+        <header class="header header--three">
+            <div class="container navigation-bar">
+                <div class="navigation-bar__left">
+                    <!-- Brand Logo -->
+                    <a href="index.html" class="navigation-bar__logo">
+                        <img src="src/images/logo-dark.png" alt="brand-logo" />
+                    </a>
+                    <!-- Menu -->
+                    <ul class="menu">
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">
+                                Home
+                                <span class="icon">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3 6L8 11L13 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </span>
+                            </a>
+                            <ul class="menu-dropdown">
+                                <li class="menu-dropdown__item">
+                                    <a href="index.html" class="menu-dropdown__link">Homepage 01</a>
+                                </li>
+                                <li class="menu-dropdown__item">
+                                    <a href="home-02.html" class="menu-dropdown__link">Homepage 02</a>
+                                </li>
+                                <li class="menu-dropdown__item">
+                                    <a href="home-03.html" class="menu-dropdown__link">Homepage 03</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu__item">
+                            <a href="ad-list.html" class="menu__link">Listing</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link active">
+                                Pages
+                                <span class="icon">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3 6L8 11L13 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </span>
+                            </a>
+                            <ul class="menu-dropdown">
+                                <li class="menu-dropdown__item">
+                                    <a href="blog-list.html" class="menu-dropdown__link">Blog List</a>
+                                </li>
+                                <li class="menu-dropdown__item">
+                                    <a href="blog-details.html" class="menu-dropdown__link">Single Blogs</a>
+                                </li>
+                                <li class="menu-dropdown__item">
+                                    <a href="about.html" class="menu-dropdown__link">About</a>
+                                </li>
+                                <li class="menu-dropdown__item">
+                                    <a href="price-plan.html" class="menu-dropdown__link">Pricing Plans</a>
+                                </li>
+                                <li class="menu-dropdown__item">
+                                    <a href="signin.html" class="menu-dropdown__link">Sign In</a>
+                                </li>
+                                <li class="menu-dropdown__item">
+                                    <a href="signup.html" class="menu-dropdown__link">Sign Up</a>
+                                </li>
+                                <li class="menu-dropdown__item">
+                                    <a href="dashboard.html" class="menu-dropdown__link active">user Dashboard</a>
+                                </li>
+                                <li class="menu-dropdown__item">
+                                    <a href="faq.html" class="menu-dropdown__link">Faqs</a>
+                                </li>
+                                <li class="menu-dropdown__item">
+                                    <a href="404-error.html" class="menu-dropdown__link">404 Error Pages</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu__item">
+                            <a href="get-membership.html" class="menu__link">Get Membership</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="contact.html" class="menu__link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navigation-bar__right">
+                    <!-- Action Buttons -->
+                    <div class="navigation-bar__buttons">
+                        <a href="message-board.html" class="message">
+                            <span class="icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M4.25895 16.5939C3.14076 14.7089 2.74916 12.4805 3.15768 10.3272C3.56621 8.1739 4.74675 6.2438 6.47764 4.89933C8.20853 3.55486 10.3707 2.8885 12.5581 3.02539C14.7455 3.16227 16.8078 4.09298 18.3575 5.64274C19.9073 7.19251 20.838 9.25472 20.9749 11.4421C21.1118 13.6296 20.4455 15.7917 19.101 17.5226C17.7565 19.2535 15.8264 20.4341 13.6732 20.8426C11.5199 21.2511 9.29149 20.8596 7.40649 19.7414L7.40651 19.7413L4.29808 20.6294C4.16947 20.6662 4.03338 20.6678 3.90391 20.6343C3.77443 20.6007 3.65628 20.5332 3.5617 20.4386C3.46713 20.344 3.39956 20.2259 3.36601 20.0964C3.33246 19.9669 3.33415 19.8308 3.37089 19.7022L4.25901 16.5938L4.25895 16.5939Z"
+                                        stroke="#767E94"
+                                        stroke-width="1.6"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path d="M12 13.125C12.6213 13.125 13.125 12.6213 13.125 12C13.125 11.3787 12.6213 10.875 12 10.875C11.3787 10.875 10.875 11.3787 10.875 12C10.875 12.6213 11.3787 13.125 12 13.125Z" fill="#767E94" />
+                                    <path d="M7.5 13.125C8.12132 13.125 8.625 12.6213 8.625 12C8.625 11.3787 8.12132 10.875 7.5 10.875C6.87868 10.875 6.375 11.3787 6.375 12C6.375 12.6213 6.87868 13.125 7.5 13.125Z" fill="#767E94" />
+                                    <path
+                                        d="M16.5 13.125C17.1213 13.125 17.625 12.6213 17.625 12C17.625 11.3787 17.1213 10.875 16.5 10.875C15.8787 10.875 15.375 11.3787 15.375 12C15.375 12.6213 15.8787 13.125 16.5 13.125Z"
+                                        fill="#767E94"
+                                    />
+                                </svg>
+                            </span>
+                        </a>
+                        <a href="dashboard.html" class="user">
+                            <div class="user__img-wrapper">
+                                <img src="src/images/users/img-01.png" alt="user-img" />
+                            </div>
+                        </a>
+                        <a href="#" class="btn">
+                            <span class="icon--left">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="currentColor" stroke-width="1.6" stroke-miterlimit="10"></path>
+                                    <path d="M8.25 12H15.75" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M12 8.25V15.75" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </span>
+                            Post Ads
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Responsive Navigation Menu -->
+                <button class="toggle-icon">
+                    <span class="toggle-icon__bar"></span>
+                    <span class="toggle-icon__bar"></span>
+                    <span class="toggle-icon__bar"></span>
+                </button>
+                <ul class="menu--sm">
+                    <li class="menu--sm__item">
+                        <a href="#" class="menu--sm__link">
+                            Home
+                            <span class="icon">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3 6L8 11L13 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                        </a>
+                        <ul class="menu--sm-dropdown">
+                            <li class="menu--sm-dropdown__item">
+                                <a href="index.html" class="menu--sm-dropdown__link">Homepage 01</a>
+                            </li>
+                            <li class="menu--sm-dropdown__item">
+                                <a href="home-02.html" class="menu--sm-dropdown__link">Homepage 02</a>
+                            </li>
+                            <li class="menu--sm-dropdown__item">
+                                <a href="home-03.html" class="menu--sm-dropdown__link">Homepage 03</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu--sm__item">
+                        <a href="#" class="menu--sm__link">
+                            All Category
+                            <span class="icon">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3 6L8 11L13 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                        </a>
+                        <ul class="menu--sm-dropdown">
+                            <li class="menu--sm-dropdown__item">
+                                <a href="#" class="menu--sm-dropdown__link">Mobile</a>
+                            </li>
+                            <li class="menu--sm-dropdown__item">
+                                <a href="#" class="menu--sm-dropdown__link">Electronics</a>
+                            </li>
+                            <li class="menu--sm-dropdown__item">
+                                <a href="#" class="menu--sm-dropdown__link">Vehicles</a>
+                            </li>
+                            <li class="menu--sm-dropdown__item">
+                                <a href="#" class="menu--sm-dropdown__link">Property</a>
+                            </li>
+                            <li class="menu--sm-dropdown__item">
+                                <a href="#" class="menu--sm-dropdown__link">Essentials</a>
+                            </li>
+                            <li class="menu--sm-dropdown__item">
+                                <a href="#" class="menu--sm-dropdown__link">Home & Living</a>
+                            </li>
+                            <li class="menu--sm-dropdown__item">
+                                <a href="#" class="menu--sm-dropdown__link">Business Industry</a>
+                            </li>
+                            <li class="menu--sm-dropdown__item">
+                                <a href="#" class="menu--sm-dropdown__link">Education</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu--sm__item">
+                        <a href="ad-list.html" class="menu--sm__link">ads Listing</a>
+                    </li>
+                    <li class="menu--sm__item">
+                        <a href="#" class="menu--sm__link active">
+                            Pages
+                            <span class="icon">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3 6L8 11L13 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                        </a>
+                        <ul class="menu--sm-dropdown">
+                            <li class="menu--sm-dropdown__item">
+                                <a href="blog-list.html" class="menu--sm-dropdown__link">Blog List</a>
+                            </li>
+                            <li class="menu--sm-dropdown__item">
+                                <a href="blog-details.html" class="menu--sm-dropdown__link">Single Blogs</a>
+                            </li>
+                            <li class="menu--sm-dropdown__item">
+                                <a href="about.html" class="menu--sm-dropdown__link">About</a>
+                            </li>
+                            <li class="menu--sm-dropdown__item">
+                                <a href="price-plan.html" class="menu--sm-dropdown__link">Pricing Plans</a>
+                            </li>
+                            <li class="menu--sm- dropdown__item">
+                                <a href="signin.html" class="menu--sm-dropdown__link">Sign In</a>
+                            </li>
+                            <li class="menu--sm-dropdown__item">
+                                <a href="signup.html" class="menu--sm-dropdown__link">Sign Up</a>
+                            </li>
+                            <li class="menu--sm-dropdown__item">
+                                <a href="dashboard.html" class="menu--sm-dropdown__link active">user Dashboard</a>
+                            </li>
+                            <li class="menu--sm-dropdown__item">
+                                <a href="faq.html" class="menu--sm-dropdown__link">Faqs</a>
+                            </li>
+                            <li class="menu--sm-dropdown__item">
+                                <a href="404-error.html" class="menu--sm-dropdown__link">404 Error Pages</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu--sm__item">
+                        <a href="get-membership.html" class="menu--sm__link">Get Membership</a>
+                    </li>
+                    <li class="menu--sm__item">
+                        <a href="contact.html" class="menu--sm__link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <!-- header section end   -->
+
+        <!-- breedcrumb section start  -->
+        <section class="breedcrumb" style="background: url('src/images/bg/bg-04.jpg') center center/cover no-repeat;">
+            <div class="container">
+                <h2 class="breedcrumb__title text--heading-2">Overview</h2>
+                <ul class="breedcrumb__page">
+                    <li class="breedcrumb__page-item">
+                        <a href="index.html" class="breedcrumb__page-link text--body-3">Home</a>
+                    </li>
+                    <li class="breedcrumb__page-item">
+                        <a href="#" class="breedcrumb__page-link text--body-3">/</a>
+                    </li>
+                    <li class="breedcrumb__page-item">
+                        <a href="#" class="breedcrumb__page-link text--body-3">Dashboard</a>
+                    </li>
+                    <li class="breedcrumb__page-item">
+                        <a href="#" class="breedcrumb__page-link text--body-3">/</a>
+                    </li>
+                    <li class="breedcrumb__page-item">
+                        <a href="#" class="breedcrumb__page-link text--body-3">Post Ads</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- breedcrumb section end  -->
+
+        <!-- dashboard section start  -->
+        <section class="section dashboard">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-3">
+                        <div class="dashboard__navigation">
+                            <div class="dashboard__navigation-top">
+                                <div class="dashboard__user-proifle">
+                                    <div class="dashboard__user-img">
+                                        <img src="src/images/users/img-01.png" alt="user-photo" />
+                                    </div>
+                                    <div class="dashboard__user-info">
+                                        <h2 class="name text--body-2-600">Jenny Wilson</h2>
+                                        <p class="designation text--body-4">Member</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dashboard__navigation-bottom">
+                                <ul class="dashboard__nav">
+                                    <li class="dashboard__nav-item">
+                                        <a href="dashboard.html" class="dashboard__nav-link">
+                                            <span class="icon">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M10 3H3V10H10V3Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M21 3H14V10H21V3Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M21 14H14V21H21V14Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M10 14H3V21H10V14Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </span>
+                                            Overview
+                                        </a>
+                                    </li>
+                                    <li class="dashboard__nav-item">
+                                        <a href="post-ads.html" class="dashboard__nav-link active">
+                                            <span class="icon">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
+                                                        stroke="currentColor"
+                                                        stroke-width="1.6"
+                                                        stroke-miterlimit="10"
+                                                    />
+                                                    <path d="M8.25 12H15.75" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M12 8.25V15.75" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </span>
+                                            post ads
+                                        </a>
+                                    </li>
+                                    <li class="dashboard__nav-item">
+                                        <a href="myad.html" class="dashboard__nav-link">
+                                            <span class="icon">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M9 14.25H15" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M9 11.25H15" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path
+                                                        d="M15.0002 3.75H18.75C18.9489 3.75 19.1397 3.82902 19.2803 3.96967C19.421 4.11032 19.5 4.30109 19.5 4.5V20.25C19.5 20.4489 19.421 20.6397 19.2803 20.7803C19.1397 20.921 18.9489 21 18.75 21H5.25C5.05109 21 4.86032 20.921 4.71967 20.7803C4.57902 20.6397 4.5 20.4489 4.5 20.25V4.5C4.5 4.30109 4.57902 4.11032 4.71967 3.96967C4.86032 3.82902 5.05109 3.75 5.25 3.75H8.9998"
+                                                        stroke="currentColor"
+                                                        stroke-width="1.6"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                    />
+                                                    <path
+                                                        d="M8.25 6.75V6C8.25 5.00544 8.64509 4.05161 9.34835 3.34835C10.0516 2.64509 11.0054 2.25 12 2.25C12.9946 2.25 13.9484 2.64509 14.6517 3.34835C15.3549 4.05161 15.75 5.00544 15.75 6V6.75H8.25Z"
+                                                        stroke="currentColor"
+                                                        stroke-width="1.6"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                    />
+                                                </svg>
+                                            </span>
+                                            My ads
+                                        </a>
+                                    </li>
+                                    <li class="dashboard__nav-item">
+                                        <a href="favourite-ads.html" class="dashboard__nav-link">
+                                            <span class="icon">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M12 20.25C12 20.25 2.625 15 2.625 8.62501C2.62519 7.49826 3.01561 6.40635 3.72989 5.53493C4.44416 4.66351 5.4382 4.06636 6.54299 3.84501C7.64778 3.62367 8.79514 3.79179 9.78999 4.32079C10.7848 4.84979 11.5658 5.70702 12 6.74673L12 6.74673C12.4342 5.70702 13.2152 4.84979 14.21 4.32079C15.2049 3.79179 16.3522 3.62367 17.457 3.84501C18.5618 4.06636 19.5558 4.66351 20.2701 5.53493C20.9844 6.40635 21.3748 7.49826 21.375 8.62501C21.375 15 12 20.25 12 20.25Z"
+                                                        stroke="currentColor"
+                                                        stroke-width="1.6"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                    />
+                                                </svg>
+                                            </span>
+                                            Favourite Ads
+                                        </a>
+                                    </li>
+                                    <li class="dashboard__nav-item">
+                                        <a href="message-board.html" class="dashboard__nav-link">
+                                            <span class="icon">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M4.25895 16.5939C3.14076 14.7089 2.74916 12.4805 3.15768 10.3272C3.56621 8.1739 4.74675 6.2438 6.47764 4.89933C8.20853 3.55486 10.3707 2.8885 12.5581 3.02539C14.7455 3.16227 16.8078 4.09298 18.3575 5.64274C19.9073 7.19251 20.838 9.25472 20.9749 11.4421C21.1118 13.6296 20.4455 15.7917 19.101 17.5226C17.7565 19.2535 15.8264 20.4341 13.6732 20.8426C11.5199 21.2511 9.29149 20.8596 7.40649 19.7414L7.40651 19.7413L4.29808 20.6294C4.16947 20.6662 4.03338 20.6678 3.90391 20.6343C3.77443 20.6007 3.65628 20.5332 3.5617 20.4386C3.46713 20.344 3.39956 20.2259 3.36601 20.0964C3.33246 19.9669 3.33415 19.8308 3.37089 19.7022L4.25901 16.5938L4.25895 16.5939Z"
+                                                        stroke="currentColor"
+                                                        stroke-width="1.6"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                    />
+                                                    <path
+                                                        d="M12 13.125C12.6213 13.125 13.125 12.6213 13.125 12C13.125 11.3787 12.6213 10.875 12 10.875C11.3787 10.875 10.875 11.3787 10.875 12C10.875 12.6213 11.3787 13.125 12 13.125Z"
+                                                        fill="currentColor"
+                                                    />
+                                                    <path
+                                                        d="M7.5 13.125C8.12132 13.125 8.625 12.6213 8.625 12C8.625 11.3787 8.12132 10.875 7.5 10.875C6.87868 10.875 6.375 11.3787 6.375 12C6.375 12.6213 6.87868 13.125 7.5 13.125Z"
+                                                        fill="currentColor"
+                                                    />
+                                                    <path
+                                                        d="M16.5 13.125C17.1213 13.125 17.625 12.6213 17.625 12C17.625 11.3787 17.1213 10.875 16.5 10.875C15.8787 10.875 15.375 11.3787 15.375 12C15.375 12.6213 15.8787 13.125 16.5 13.125Z"
+                                                        fill="currentColor"
+                                                    />
+                                                </svg>
+                                            </span>
+                                            Message
+                                        </a>
+                                    </li>
+                                    <li class="dashboard__nav-item">
+                                        <a href="plans-billing.html" class="dashboard__nav-link">
+                                            <span class="icon">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M21 5.25H3C2.58579 5.25 2.25 5.58579 2.25 6V18C2.25 18.4142 2.58579 18.75 3 18.75H21C21.4142 18.75 21.75 18.4142 21.75 18V6C21.75 5.58579 21.4142 5.25 21 5.25Z"
+                                                        stroke="currentColor"
+                                                        stroke-width="1.6"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                    />
+                                                    <path d="M15.7495 15.75H18.7495" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M11.2495 15.75H12.7495" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M2.24951 9.08008H21.7495" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </span>
+                                            Plans & Billing
+                                        </a>
+                                    </li>
+                                    <li class="dashboard__nav-item">
+                                        <a href="account-setting.html" class="dashboard__nav-link">
+                                            <span class="icon">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M12 16.5C14.4853 16.5 16.5 14.4853 16.5 12C16.5 9.51472 14.4853 7.5 12 7.5C9.51472 7.5 7.5 9.51472 7.5 12C7.5 14.4853 9.51472 16.5 12 16.5Z"
+                                                        stroke="currentColor"
+                                                        stroke-width="1.6"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                    />
+                                                    <path
+                                                        d="M11.5193 4.13952L9.75029 2.81315C9.65538 2.74175 9.54485 2.69393 9.42783 2.67363C9.3108 2.65332 9.19063 2.66112 9.07721 2.69638C8.52933 2.86794 7.99778 3.08787 7.48884 3.35355C7.38349 3.40881 7.29279 3.48834 7.22422 3.58556C7.15566 3.68278 7.1112 3.79492 7.09452 3.91271L6.78179 6.10186C6.66259 6.20753 6.54589 6.31742 6.43169 6.43156C6.31752 6.54573 6.2076 6.66246 6.10191 6.78176L6.10186 6.78179L3.9131 7.09479C3.7955 7.11142 3.68353 7.15576 3.58642 7.22415C3.48932 7.29254 3.40986 7.38303 3.35459 7.48816C3.08849 7.99689 2.86814 8.52826 2.69613 9.076C2.66071 9.18957 2.65281 9.30994 2.67307 9.42717C2.69334 9.5444 2.7412 9.65513 2.81269 9.75022L4.13952 11.5193C4.12995 11.6783 4.12514 11.8385 4.12509 12C4.12509 12.1614 4.1299 12.3217 4.13953 12.4808L4.13952 12.4809L2.81315 14.2499C2.74175 14.3448 2.69393 14.4553 2.67363 14.5723C2.65332 14.6894 2.66112 14.8095 2.69638 14.923C2.86794 15.4708 3.08787 16.0024 3.35355 16.5113C3.40881 16.6167 3.48834 16.7074 3.58556 16.776C3.68278 16.8445 3.79492 16.889 3.91271 16.9057L6.10186 17.2184C6.20752 17.3376 6.31742 17.4543 6.43156 17.5685C6.54572 17.6827 6.66245 17.7926 6.78175 17.8983L6.78179 17.8983L7.09479 20.0871C7.11142 20.2047 7.15575 20.3167 7.22415 20.4138C7.29254 20.5109 7.38303 20.5903 7.48816 20.6456C7.99688 20.9117 8.52825 21.132 9.07599 21.304C9.18957 21.3395 9.30994 21.3474 9.42716 21.3271C9.54439 21.3068 9.65512 21.259 9.75021 21.1875L11.5193 19.8607C11.6783 19.8702 11.8385 19.875 12 19.8751C12.1614 19.8751 12.3217 19.8703 12.4808 19.8607L12.4809 19.8607L14.2499 21.187C14.3448 21.2584 14.4553 21.3063 14.5723 21.3266C14.6894 21.3469 14.8095 21.3391 14.923 21.3038C15.4708 21.1322 16.0024 20.9123 16.5113 20.6466C16.6167 20.5914 16.7074 20.5118 16.776 20.4146C16.8445 20.3174 16.889 20.2053 16.9057 20.0875L17.2184 17.8983C17.3376 17.7927 17.4543 17.6828 17.5685 17.5686C17.6827 17.4545 17.7926 17.3377 17.8983 17.2184L17.8983 17.2184L20.0871 16.9054C20.2047 16.8888 20.3167 16.8444 20.4138 16.776C20.5109 16.7076 20.5903 16.6172 20.6456 16.512C20.9117 16.0033 21.132 15.4719 21.304 14.9242C21.3395 14.8106 21.3474 14.6902 21.3271 14.573C21.3068 14.4558 21.259 14.3451 21.1875 14.25L19.8607 12.4809C19.8702 12.3219 19.875 12.1616 19.8751 12.0002C19.8751 11.8387 19.8703 11.6785 19.8607 11.5194L19.8607 11.5193L21.187 9.75029C21.2584 9.65538 21.3063 9.54485 21.3266 9.42783C21.3469 9.3108 21.3391 9.19063 21.3038 9.07721C21.1322 8.52933 20.9123 7.99778 20.6466 7.48884C20.5914 7.38349 20.5118 7.29279 20.4146 7.22422C20.3174 7.15566 20.2053 7.1112 20.0875 7.09452L17.8983 6.78179C17.7927 6.66259 17.6828 6.54589 17.5686 6.43169C17.4545 6.31752 17.3377 6.2076 17.2184 6.10191L17.2184 6.10186L16.9054 3.9131C16.8888 3.7955 16.8444 3.68353 16.776 3.58642C16.7076 3.48932 16.6172 3.40986 16.512 3.35459C16.0033 3.08849 15.4719 2.86814 14.9242 2.69613C14.8106 2.66071 14.6902 2.65281 14.573 2.67307C14.4558 2.69334 14.3451 2.7412 14.25 2.81269L12.4809 4.13952C12.3219 4.12995 12.1616 4.12514 12.0002 4.12509C11.8387 4.12509 11.6785 4.1299 11.5194 4.13953L11.5193 4.13952Z"
+                                                        stroke="currentColor"
+                                                        stroke-width="1.6"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                    />
+                                                </svg>
+                                            </span>
+                                            Account Settings
+                                        </a>
+                                    </li>
+                                    <li class="dashboard__nav-item">
+                                        <a href="#" class="dashboard__nav-link">
+                                            <span class="icon">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M16.3135 8.0625L20.2499 12L16.3135 15.9375" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M9.75 12H20.2472" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path
+                                                        d="M9.75 20.25H4.5C4.30109 20.25 4.11032 20.171 3.96967 20.0303C3.82902 19.8897 3.75 19.6989 3.75 19.5V4.5C3.75 4.30109 3.82902 4.11032 3.96967 3.96967C4.11032 3.82902 4.30109 3.75 4.5 3.75H9.75"
+                                                        stroke="currentColor"
+                                                        stroke-width="1.6"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                    />
+                                                </svg>
+                                            </span>
+                                            Sign Out
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <span class="dashboard__navigation-toggle-btn">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M19.5 13.5H4.5C4.08579 13.5 3.75 13.8358 3.75 14.25V18C3.75 18.4142 4.08579 18.75 4.5 18.75H19.5C19.9142 18.75 20.25 18.4142 20.25 18V14.25C20.25 13.8358 19.9142 13.5 19.5 13.5Z"
+                                        stroke="currentColor"
+                                        stroke-width="1.6"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path
+                                        d="M19.5 5.25H4.5C4.08579 5.25 3.75 5.58579 3.75 6V9.75C3.75 10.1642 4.08579 10.5 4.5 10.5H19.5C19.9142 10.5 20.25 10.1642 20.25 9.75V6C20.25 5.58579 19.9142 5.25 19.5 5.25Z"
+                                        stroke="currentColor"
+                                        stroke-width="1.6"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-xl-9">
+                        <div class="dashboard-post">
+                            <ul class="nav dashboard-post__nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                <li class="nav-item dashboard-post__item" role="presentation">
+                                    <div class="nav-link dashboard-post__link active" id="pills-basic-tab" data-bs-toggle="pill" data-bs-target="#pills-basic" role="tab" aria-controls="pills-basic" aria-selected="true">
+                                        <span class="icon icon--default">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1.5 9.75L12 15.75L22.5 9.75L12 3.75L1.5 9.75Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M1.5 13.5L12 19.5L22.5 13.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </span>
+                                        <span class="icon icon--success">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20.25 6.75L9.75 17.2495L4.5 12" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </span>
+
+                                        <div class="step-info">
+                                            <h2 class="text--body-3-600">Steps 01</h2>
+                                            <p class="text--body-4">Basic info</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item dashboard-post__item" role="presentation">
+                                    <div class="nav-link dashboard-post__link" id="pills-advance-tab" data-bs-toggle="pill" data-bs-target="#pills-advance" role="tab" aria-controls="pills-advance" aria-selected="false">
+                                        <span class="icon icon--default">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M3 16.5L12 21.75L21 16.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M3 12L12 17.25L21 12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M3 7.5L12 12.75L21 7.5L12 2.25L3 7.5Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </span>
+                                        <span class="icon icon--success">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20.25 6.75L9.75 17.2495L4.5 12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </span>
+                                        <div class="step-info">
+                                            <h2 class="text--body-3-600">Steps 02</h2>
+                                            <p class="text--body-4">Description, Features & Images</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item dashboard-post__item" role="presentation">
+                                    <div class="nav-link dashboard-post__link" id="pills-post-tab" data-bs-toggle="pill" data-bs-target="#pills-post" role="tab" aria-controls="pills-post" aria-selected="false">
+                                        <span class="icon icon--default">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.5 21H10.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path
+                                                    d="M11.5283 1.85314C9.74778 3.27947 3.79242 8.979 8.99983 18.0004H14.9998C20.099 8.98539 14.2307 3.28753 12.4688 1.85618C12.3361 1.74822 12.1703 1.68903 11.9991 1.68848C11.828 1.68793 11.6618 1.74604 11.5283 1.85314V1.85314Z"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.6"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                                <path
+                                                    d="M6.92492 10.4404L3.98585 13.9673C3.91243 14.0554 3.8602 14.1592 3.83316 14.2706C3.80612 14.3821 3.80499 14.4982 3.82987 14.6102L4.98889 19.8258C5.01652 19.9501 5.07536 20.0653 5.15985 20.1606C5.24435 20.2559 5.35172 20.3281 5.47184 20.3705C5.59197 20.4128 5.72089 20.4238 5.84646 20.4025C5.97203 20.3812 6.0901 20.3283 6.18956 20.2487L8.99993 18.0004"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.6"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                                <path
+                                                    d="M17.0186 10.3721L20.0141 13.9667C20.0875 14.0548 20.1397 14.1585 20.1668 14.27C20.1938 14.3814 20.1949 14.4976 20.1701 14.6095L19.011 19.8251C18.9834 19.9495 18.9246 20.0647 18.8401 20.16C18.7556 20.2553 18.6482 20.3275 18.5281 20.3698C18.408 20.4121 18.279 20.4232 18.1535 20.4019C18.0279 20.3806 17.9098 20.3276 17.8104 20.2481L15 17.9998"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.6"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                                <path
+                                                    d="M12 10.125C12.6213 10.125 13.125 9.62132 13.125 9C13.125 8.37868 12.6213 7.875 12 7.875C11.3787 7.875 10.875 8.37868 10.875 9C10.875 9.62132 11.3787 10.125 12 10.125Z"
+                                                    fill="currentColor"
+                                                />
+                                            </svg>
+                                        </span>
+                                        <span class="icon icon--success">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20.25 6.75L9.75 17.2495L4.5 12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </span>
+                                        <div class="step-info">
+                                            <h2 class="text--body-3-600">Steps 03</h2>
+                                            <p class="text--body-4">Post Ads</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="tab-content dashboard-post__content" id="pills-tabContent">
+                                <!-- Step 01 -->
+                                <div class="tab-pane fade show active" id="pills-basic" role="tabpanel" aria-labelledby="pills-basic-tab">
+                                    <div class="dashboard-post__information step-information">
+                                        <form action="#">
+                                            <div class="dashboard-post__information-form">
+                                                <div class="input-field">
+                                                    <label for="adname"> Ad Name</label>
+                                                    <input type="text" placeholder="Ad name" id="adname" />
+                                                </div>
+                                                <div class="input-field__group">
+                                                    <div class="input-select">
+                                                        <label for="category">Category</label>
+                                                        <select id="allCategory">
+                                                            <option value="01">Category 01</option>
+                                                            <option value="02">Category 02</option>
+                                                            <option value="03">Category 03</option>
+                                                            <option value="04">Category 04</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="input-select">
+                                                        <label for="subcategory">sub category</label>
+                                                        <select id="subcategory">
+                                                            <option value="01">Sub Category 01</option>
+                                                            <option value="02">Sub Category 02</option>
+                                                            <option value="03">Sub Category 03</option>
+                                                            <option value="04">Sub Category 04</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="input-field__group">
+                                                    <div class="input-select">
+                                                        <label for="brand">brand</label>
+                                                        <select id="brand">
+                                                            <option value="01">brand 01</option>
+                                                            <option value="02">brand 02</option>
+                                                            <option value="03">brand 03</option>
+                                                            <option value="04">brand 04</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="input-select">
+                                                        <label for="model">Model</label>
+                                                        <select id="model">
+                                                            <option value="01">Model 01</option>
+                                                            <option value="02">Model 02</option>
+                                                            <option value="03">Model 03</option>
+                                                            <option value="04">Model 04</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="input-field__group">
+                                                    <div class="input-select">
+                                                        <label for="conditions">conditions</label>
+                                                        <select id="conditions">
+                                                            <option value="01">conditions 01</option>
+                                                            <option value="02">conditions 02</option>
+                                                            <option value="03">conditions 03</option>
+                                                            <option value="04">conditions 04</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="input-select">
+                                                        <label for="authenticity">authenticity</label>
+                                                        <select id="authenticity">
+                                                            <option value="01">authenticity 01</option>
+                                                            <option value="02">authenticity 02</option>
+                                                            <option value="03">authenticity 03</option>
+                                                            <option value="04">authenticity 04</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="input-field">
+                                                    <label for="tag"> Tags </label>
+                                                    <input type="text" placeholder="Ad Tag..." id="tag" />
+                                                </div>
+                                                <div class="form-check">
+                                                    <input type="checkbox" class="form-check-input" id="checkme" />
+                                                    <label class="form-check-label" for="checkme">negotiable </label>
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <div class="dashboard-post__action-btns">
+                                            <a href="#" class="btn btn--lg btn--outline">
+                                                View Posting Rules
+                                            </a>
+                                            <a href="#" class="btn btn--lg">
+                                                Next Steps
+                                                <span class="icon--right">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M3.75 12H20.25" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Step 02 -->
+                                <div class="tab-pane fade" id="pills-advance" role="tabpanel" aria-labelledby="pills-advance-tab">
+                                    <div class="dashboard-post__step02 step-information">
+                                        <div class="input-field--textarea">
+                                            <label for="description">Ad description</label>
+                                            <textarea placeholder="What’s your thought..." id="description"></textarea>
+                                        </div>
+                                        <div class="input-field--textarea">
+                                            <label for="feature">Feature <span>(optional)</span> </label>
+                                            <textarea placeholder="Write a feature in each line..." id="feature"></textarea>
+                                        </div>
+                                        <div class="upload-wrapper">
+                                            <h3>Upload Photos</h3>
+                                            <div class="upload-area">
+                                                <div class="uploaded-items">
+                                                    <div class="uploaded-item">
+                                                        <img src="src/images/blogs/img-02.png" alt="">
+                                                        <div class="remove-icon">
+                                                            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                                                        </div>
+                                                    </div>
+                                                    <div class="uploaded-item">
+                                                        <img src="src/images/blogs/img-03.png" alt="">
+                                                        <div class="remove-icon">
+                                                            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="add-new">
+                                                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+                                                    <input type="file" hidden id="addNew">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="dashboard-post__action-btns">
+                                            <a href="#" class="btn btn--lg btn--outline">
+                                                Previous
+                                            </a>
+                                            <a href="#" class="btn btn--lg">
+                                                Next Steps
+                                                <span class="icon--right">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M3.75 12H20.25" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Steop 03 -->
+                                <div class="tab-pane fade" id="pills-post" role="tabpanel" aria-labelledby="pills-post-tab">
+                                    <div class="dashboard-post__ads step-information">
+                                        <form action="#">
+                                            <div class="input-field__group">
+                                                <div class="input-field">
+                                                    <label for="phoneNumber">phone Number</label>
+                                                    <input type="tel" class="telephone" placeholder="Phone" id="phoneNumber" />
+                                                </div>
+                                                <div class="input-field">
+                                                    <label for="backupPhone">Backup phone Number <span>(optional)</span> </label>
+                                                    <input type="tel" class="backupPhone" placeholder="Phone Number" />
+                                                </div>
+                                            </div>
+                                            <div class="input-field__group">
+                                                <div class="input-field">
+                                                    <label for="email">Email address</label>
+                                                    <input type="text" placeholder="Email Address" id="email" />
+                                                </div>
+                                                <div class="input-field">
+                                                    <label for="website">Website Link <span>(optional)</span></label>
+                                                    <input type="text" placeholder="your website url" id="website" />
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="input-select">
+                                                        <label for="country">country</label>
+                                                        <select id="country">
+                                                            <option value="01">country 01</option>
+                                                            <option value="02">country 02</option>
+                                                            <option value="03">country 03</option>
+                                                            <option value="04">country 04</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="input-field__group">
+                                                        <div class="input-select">
+                                                            <label for="city">city</label>
+                                                            <select id="city">
+                                                                <option value="01">city 01</option>
+                                                                <option value="02">city 02</option>
+                                                                <option value="03">city 03</option>
+                                                                <option value="04">city 04</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="input-select">
+                                                            <label for="state">state <span>(optional)</span> </label>
+                                                            <select id="state">
+                                                                <option value="01">state 01</option>
+                                                                <option value="02">state 02</option>
+                                                                <option value="03">state 03</option>
+                                                                <option value="04">state 04</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="input-field__group">
+                                                <div class="input-field">
+                                                    <label for="location">location</label>
+                                                    <input type="text" placeholder="Your location" id="location" />
+                                                </div>
+                                                <div class="input-field">
+                                                    <label for="maploc">Map location <span>(optional)</span></label>
+                                                    <input type="text" placeholder="map Location" id="maploc" />
+                                                </div>
+                                            </div>
+                                        </form>
+
+                                        <div class="dashboard-post__ads-bottom">
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" id="savecontact" />
+                                                <label class="form-check-label" for="savecontact">Save my contact information for faster posting </label>
+                                            </div>
+
+                                            <div class="dashboard-post__action-btns">
+                                                <a href="#" class="btn btn--lg btn--outline">
+                                                    Previous
+                                                </a>
+                                                <a href="post-ad-success.html" class="btn btn--lg">
+                                                    Post Ads
+                                                    <span class="icon--right">
+                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M3.75 12H20.25" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- dashboard section end  -->
+
+        <!-- footer section start  -->
+        <footer class="footer footer--dark">
+            <div class="footer__top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-3">
+                            <div class="footer__brand-logo">
+                                <img src="src/images/logo.png" alt="logo-brand" />
+                            </div>
+                            <div class="footer__loc-info">
+                                <p class="text--body-3">
+                                    4517 Washington Ave. Manchester, Kentucky 39495
+                                </p>
+                                <p class="text--body-3 phone">
+                                    Phone: (405) 555-0128
+                                </p>
+                                <p class="text--body-3 email">
+                                    Mail: adlisting@gmail.com
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-sm-4 col-6">
+                            <h2 class="footer__title text--body-2-600">Supports</h2>
+
+                            <ul class="footer-menu">
+                                <li class="footer-menu__item">
+                                    <a href="contact.html" class="footer-menu__link text--body-3">Contact</a>
+                                </li>
+                                <li class="footer-menu__item">
+                                    <a href="faq.html" class="footer-menu__link text--body-3">Faqs</a>
+                                </li>
+                                <li class="footer-menu__item">
+                                    <a href="price-plan.html" class="footer-menu__link text--body-3">Pricing Plans</a>
+                                </li>
+                                <li class="footer-menu__item">
+                                    <a href="sitemap.html" class="footer-menu__link text--body-3">Sitemap</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-sm-4 col-6">
+                            <h2 class="footer__title text--body-2-600">Quick Links</h2>
+
+                            <ul class="footer-menu">
+                                <li class="footer-menu__item">
+                                    <a href="about.html" class="footer-menu__link text--body-3">About</a>
+                                </li>
+                                <li class="footer-menu__item">
+                                    <a href="get-membership.html" class="footer-menu__link text--body-3">Get Membership</a>
+                                </li>
+                                <li class="footer-menu__item">
+                                    <a href="post-ads.html" class="footer-menu__link text--body-3">Pricing Plans</a>
+                                </li>
+                                <li class="footer-menu__item">
+                                    <a href="blog-list.html" class="footer-menu__link text--body-3">Blog</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-sm-4 col-6">
+                            <h2 class="footer__title text--body-2-600">Category</h2>
+
+                            <ul class="footer-menu">
+                                <li class="footer-menu__item">
+                                    <a href="#" class="footer-menu__link text--body-3">Mobile</a>
+                                </li>
+                                <li class="footer-menu__item">
+                                    <a href="#" class="footer-menu__link text--body-3">Electronics</a>
+                                </li>
+                                <li class="footer-menu__item">
+                                    <a href="#" class="footer-menu__link text--body-3">Vehicles</a>
+                                </li>
+                                <li class="footer-menu__item">
+                                    <a href="#" class="footer-menu__link text--body-3">Property</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-xl-4 col-lg-6">
+                            <h2 class="footer__title text--body-2-600">Download our app</h2>
+                            <div class="footer__mobile-app">
+                                <a href="#" class="app">
+                                    <div class="app-logo">
+                                        <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#googlePlay)">
+                                                <path
+                                                    d="M20.087 15.4109L6.29177 1.48889L23.8438 11.6301L20.087 15.4109ZM2.69017 0.670898C1.87737 1.09922 1.33337 1.87857 1.33337 2.89301V30.6533C1.33337 31.6677 1.87737 32.4471 2.69017 32.8754L18.7334 16.7699L2.69017 0.670898ZM29.271 14.8634L25.5894 12.7186L21.4822 16.7764L25.5894 20.8341L29.3462 18.6893C30.471 17.7892 30.471 15.7635 29.271 14.8634ZM6.29177 32.0638L23.8438 21.9226L20.087 18.1418L6.29177 32.0638Z"
+                                                    fill="currentColor"
+                                                ></path>
+                                            </g>
+                                            <defs>
+                                                <clipPath id="googlePlay">
+                                                    <rect width="32" height="32.2045" fill="white"></rect>
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                    <div class="app-info">
+                                        <h5 class="text--body-5">Get it now</h5>
+                                        <h2 class="text--body-3-600">Google Play</h2>
+                                    </div>
+                                </a>
+
+                                <a href="#" class="app">
+                                    <div class="app-logo">
+                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#appstore)">
+                                                <path
+                                                    d="M29.056 24.938C28.5893 26.0249 28.013 27.0614 27.336 28.0313C26.4306 29.3213 25.69 30.214 25.1193 30.71C24.2346 31.5233 23.286 31.9407 22.2706 31.964C21.542 31.964 20.6633 31.7567 19.64 31.336C18.6133 30.9173 17.67 30.7093 16.8073 30.7093C15.9026 30.7093 14.9326 30.9173 13.8946 31.336C12.8553 31.7567 12.018 31.976 11.378 31.9973C10.4046 32.0393 9.43396 31.6107 8.46463 30.71C7.84663 30.17 7.07396 29.246 6.14729 27.9367C5.15329 26.538 4.33596 24.9167 3.69596 23.0673C3.01063 21.0707 2.66663 19.1367 2.66663 17.2647C2.66663 15.12 3.12996 13.2707 4.05796 11.7207C4.78796 10.4753 5.75796 9.494 6.97263 8.77267C8.16428 8.05956 9.52398 7.67581 10.9126 7.66067C11.686 7.66067 12.7 7.9 13.9606 8.37C15.2173 8.84133 16.024 9.08067 16.378 9.08067C16.642 9.08067 17.5386 8.80067 19.058 8.24333C20.4953 7.726 21.708 7.512 22.7013 7.59667C25.394 7.814 27.4166 8.87533 28.7613 10.7873C26.354 12.246 25.1626 14.2893 25.1866 16.9107C25.208 18.9527 25.9486 20.652 27.4046 22.0007C28.0646 22.6273 28.8013 23.1113 29.6206 23.4547C29.4488 23.9552 29.2605 24.4499 29.056 24.938ZM22.8813 0.640667C22.8813 2.24067 22.2966 3.73533 21.1313 5.118C19.7246 6.76267 18.024 7.71267 16.1793 7.56267C16.1545 7.36139 16.142 7.15879 16.142 6.956C16.142 5.42 16.8106 3.776 17.9986 2.43133C18.592 1.75067 19.3453 1.18467 20.26 0.733333C21.1733 0.288667 22.036 0.0426667 22.848 0C22.8713 0.214 22.8813 0.428 22.8813 0.64V0.640667Z"
+                                                    fill="currentColor"
+                                                ></path>
+                                            </g>
+                                            <defs>
+                                                <clipPath id="appstore">
+                                                    <rect width="32" height="32" fill="white"></rect>
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                    <div class="app-info">
+                                        <h5 class="text--body-5">Get it now</h5>
+                                        <h2 class="text--body-3-600">App Store</h2>
+                                    </div>
+                                </a>
+                            </div>
+                            <ul class="social-icon">
+                                <!-- facebook -->
+                                <li class="social-icon__item">
+                                    <a href="#" class="social-icon__link">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M9.33328 16H6.16101V8.1131H4V5.54528H6.16092V3.7181C6.16092 1.55288 7.1167 0 10.2804 0C10.9495 0 12 0.134507 12 0.134507V2.51887H10.8966C9.7724 2.51887 9.33345 2.85992 9.33345 3.80281V5.54528H11.9579L11.7242 8.1131H9.33336L9.33328 16Z"
+                                                fill="currentColor"
+                                            ></path>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <!-- Twitter -->
+                                <li class="social-icon__item">
+                                    <a href="#" class="social-icon__link">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M5.00378 14.4021C11.0081 14.4021 14.2917 9.45627 14.2917 5.1674C14.2917 5.02694 14.2888 4.88712 14.2824 4.74789C14.9214 4.28823 15.4728 3.71911 15.9108 3.06719C15.3259 3.32574 14.6965 3.49976 14.0362 3.57821C14.7101 3.17641 15.2275 2.54074 15.4716 1.78303C14.8308 2.16099 14.1298 2.42742 13.3988 2.57086C12.8031 1.93998 11.955 1.54541 11.016 1.54541C9.21328 1.54541 7.75143 2.99892 7.75143 4.7906C7.75143 5.04532 7.78011 5.29301 7.83612 5.53067C5.12304 5.39493 2.71728 4.10341 1.10722 2.13958C0.817235 2.6349 0.664706 3.19784 0.665213 3.7709C0.665213 4.89696 1.24149 5.89101 2.11788 6.47258C1.59949 6.45684 1.09247 6.31762 0.639471 6.06663C0.638986 6.08026 0.638986 6.09353 0.638986 6.10809C0.638986 7.67992 1.76419 8.9923 3.25786 9.28967C2.97733 9.36564 2.68785 9.40404 2.39709 9.40387C2.18712 9.40387 1.98248 9.38334 1.78359 9.34538C2.19918 10.635 3.40426 11.5734 4.83303 11.5996C3.71575 12.4703 2.30832 12.9889 0.778658 12.9889C0.518442 12.9892 0.258439 12.9741 0 12.944C1.44471 13.8647 3.16017 14.4019 5.00394 14.4019"
+                                                fill="currentColor"
+                                            ></path>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <!-- Instagram -->
+                                <li class="social-icon__item">
+                                    <a href="#" class="social-icon__link">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M5.33412 8C5.33412 6.5273 6.52766 5.33312 8.00036 5.33312C9.47307 5.33312 10.6672 6.5273 10.6672 8C10.6672 9.4727 9.47307 10.6669 8.00036 10.6669C6.52766 10.6669 5.33412 9.4727 5.33412 8ZM3.89246 8C3.89246 10.2688 5.73156 12.1079 8.00036 12.1079C10.2692 12.1079 12.1083 10.2688 12.1083 8C12.1083 5.7312 10.2692 3.8921 8.00036 3.8921C5.73156 3.8921 3.89246 5.7312 3.89246 8ZM11.3109 3.72922C11.3108 3.91909 11.367 4.10471 11.4725 4.26263C11.5779 4.42054 11.7278 4.54365 11.9032 4.61638C12.0785 4.68911 12.2716 4.7082 12.4578 4.67123C12.644 4.63426 12.8151 4.5429 12.9494 4.40869C13.0838 4.27449 13.1753 4.10347 13.2124 3.91726C13.2495 3.73106 13.2306 3.53802 13.158 3.36258C13.0854 3.18713 12.9624 3.03715 12.8046 2.9316C12.6467 2.82605 12.4611 2.76968 12.2713 2.7696H12.2709C12.0164 2.76972 11.7723 2.87085 11.5923 3.05077C11.4123 3.2307 11.3111 3.47471 11.3109 3.72922ZM4.76836 14.5118C3.9884 14.4763 3.56446 14.3464 3.28273 14.2366C2.90923 14.0912 2.64273 13.918 2.36254 13.6382C2.08235 13.3584 1.90891 13.0922 1.76414 12.7187C1.65432 12.4371 1.5244 12.013 1.48894 11.233C1.45016 10.3898 1.44241 10.1364 1.44241 8.00006C1.44241 5.86368 1.4508 5.61107 1.48894 4.7671C1.52446 3.98714 1.65534 3.5639 1.76414 3.28147C1.90955 2.90797 2.08273 2.64147 2.36254 2.36128C2.64235 2.08109 2.90859 1.90765 3.28273 1.76288C3.56433 1.65306 3.9884 1.52314 4.76836 1.48768C5.61163 1.4489 5.86494 1.44115 8.00036 1.44115C10.1358 1.44115 10.3894 1.44954 11.2333 1.48768C12.0133 1.5232 12.4365 1.65408 12.719 1.76288C13.0925 1.90765 13.359 2.08147 13.6391 2.36128C13.9193 2.64109 14.0921 2.90797 14.2375 3.28147C14.3474 3.56307 14.4773 3.98714 14.5127 4.7671C14.5515 5.61107 14.5593 5.86368 14.5593 8.00006C14.5593 10.1364 14.5515 10.3891 14.5127 11.233C14.4772 12.013 14.3467 12.4369 14.2375 12.7187C14.0921 13.0922 13.919 13.3587 13.6391 13.6382C13.3593 13.9178 13.0925 14.0912 12.719 14.2366C12.4374 14.3464 12.0133 14.4764 11.2333 14.5118C10.3901 14.5506 10.1367 14.5583 8.00036 14.5583C5.86398 14.5583 5.61137 14.5506 4.76836 14.5118ZM4.70213 0.048448C3.85048 0.087232 3.26853 0.222272 2.7603 0.420032C2.23397 0.624256 1.7884 0.89824 1.34315 1.34278C0.897902 1.78733 0.624622 2.2336 0.420398 2.75994C0.222638 3.26848 0.0875982 3.85011 0.0488142 4.70176C0.00939021 5.55475 0.000366211 5.82746 0.000366211 8C0.000366211 10.1725 0.00939021 10.4452 0.0488142 11.2982C0.0875982 12.15 0.222638 12.7315 0.420398 13.2401C0.624622 13.7661 0.897966 14.2129 1.34315 14.6572C1.78833 15.1016 2.23397 15.3752 2.7603 15.58C3.26948 15.7777 3.85048 15.9128 4.70213 15.9516C5.55556 15.9903 5.82782 16 8.00036 16C10.1729 16 10.4456 15.991 11.2986 15.9516C12.1503 15.9128 12.7319 15.7777 13.2404 15.58C13.7664 15.3752 14.2123 15.1018 14.6576 14.6572C15.1028 14.2127 15.3755 13.7661 15.5803 13.2401C15.7781 12.7315 15.9138 12.1499 15.9519 11.2982C15.9907 10.4446 15.9997 10.1725 15.9997 8C15.9997 5.82746 15.9907 5.55475 15.9519 4.70176C15.9131 3.85005 15.7781 3.26816 15.5803 2.75994C15.3755 2.23392 15.1021 1.78803 14.6576 1.34278C14.213 0.897536 13.7664 0.624256 13.2411 0.420032C12.7319 0.222272 12.1503 0.086592 11.2992 0.048448C10.4463 0.009664 10.1735 0 8.001 0C5.82846 0 5.55556 0.009024 4.70213 0.048448Z"
+                                                fill="currentColor"
+                                            ></path>
+                                            <path
+                                                d="M5.33412 8C5.33412 6.5273 6.52766 5.33312 8.00036 5.33312C9.47307 5.33312 10.6672 6.5273 10.6672 8C10.6672 9.4727 9.47307 10.6669 8.00036 10.6669C6.52766 10.6669 5.33412 9.4727 5.33412 8ZM3.89246 8C3.89246 10.2688 5.73156 12.1079 8.00036 12.1079C10.2692 12.1079 12.1083 10.2688 12.1083 8C12.1083 5.7312 10.2692 3.8921 8.00036 3.8921C5.73156 3.8921 3.89246 5.7312 3.89246 8ZM11.3109 3.72922C11.3108 3.91909 11.367 4.10471 11.4725 4.26263C11.5779 4.42054 11.7278 4.54365 11.9032 4.61638C12.0785 4.68911 12.2716 4.7082 12.4578 4.67123C12.644 4.63426 12.8151 4.5429 12.9494 4.40869C13.0838 4.27449 13.1753 4.10347 13.2124 3.91726C13.2495 3.73106 13.2306 3.53802 13.158 3.36258C13.0854 3.18713 12.9624 3.03715 12.8046 2.9316C12.6467 2.82605 12.4611 2.76968 12.2713 2.7696H12.2709C12.0164 2.76972 11.7723 2.87085 11.5923 3.05077C11.4123 3.2307 11.3111 3.47471 11.3109 3.72922ZM4.76836 14.5118C3.9884 14.4763 3.56446 14.3464 3.28273 14.2366C2.90923 14.0912 2.64273 13.918 2.36254 13.6382C2.08235 13.3584 1.90891 13.0922 1.76414 12.7187C1.65432 12.4371 1.5244 12.013 1.48894 11.233C1.45016 10.3898 1.44241 10.1364 1.44241 8.00006C1.44241 5.86368 1.4508 5.61107 1.48894 4.7671C1.52446 3.98714 1.65534 3.5639 1.76414 3.28147C1.90955 2.90797 2.08273 2.64147 2.36254 2.36128C2.64235 2.08109 2.90859 1.90765 3.28273 1.76288C3.56433 1.65306 3.9884 1.52314 4.76836 1.48768C5.61163 1.4489 5.86494 1.44115 8.00036 1.44115C10.1358 1.44115 10.3894 1.44954 11.2333 1.48768C12.0133 1.5232 12.4365 1.65408 12.719 1.76288C13.0925 1.90765 13.359 2.08147 13.6391 2.36128C13.9193 2.64109 14.0921 2.90797 14.2375 3.28147C14.3474 3.56307 14.4773 3.98714 14.5127 4.7671C14.5515 5.61107 14.5593 5.86368 14.5593 8.00006C14.5593 10.1364 14.5515 10.3891 14.5127 11.233C14.4772 12.013 14.3467 12.4369 14.2375 12.7187C14.0921 13.0922 13.919 13.3587 13.6391 13.6382C13.3593 13.9178 13.0925 14.0912 12.719 14.2366C12.4374 14.3464 12.0133 14.4764 11.2333 14.5118C10.3901 14.5506 10.1367 14.5583 8.00036 14.5583C5.86398 14.5583 5.61137 14.5506 4.76836 14.5118ZM4.70213 0.048448C3.85048 0.087232 3.26853 0.222272 2.7603 0.420032C2.23397 0.624256 1.7884 0.89824 1.34315 1.34278C0.897902 1.78733 0.624622 2.2336 0.420398 2.75994C0.222638 3.26848 0.0875982 3.85011 0.0488142 4.70176C0.00939021 5.55475 0.000366211 5.82746 0.000366211 8C0.000366211 10.1725 0.00939021 10.4452 0.0488142 11.2982C0.0875982 12.15 0.222638 12.7315 0.420398 13.2401C0.624622 13.7661 0.897966 14.2129 1.34315 14.6572C1.78833 15.1016 2.23397 15.3752 2.7603 15.58C3.26948 15.7777 3.85048 15.9128 4.70213 15.9516C5.55556 15.9903 5.82782 16 8.00036 16C10.1729 16 10.4456 15.991 11.2986 15.9516C12.1503 15.9128 12.7319 15.7777 13.2404 15.58C13.7664 15.3752 14.2123 15.1018 14.6576 14.6572C15.1028 14.2127 15.3755 13.7661 15.5803 13.2401C15.7781 12.7315 15.9138 12.1499 15.9519 11.2982C15.9907 10.4446 15.9997 10.1725 15.9997 8C15.9997 5.82746 15.9907 5.55475 15.9519 4.70176C15.9131 3.85005 15.7781 3.26816 15.5803 2.75994C15.3755 2.23392 15.1021 1.78803 14.6576 1.34278C14.213 0.897536 13.7664 0.624256 13.2411 0.420032C12.7319 0.222272 12.1503 0.086592 11.2992 0.048448C10.4463 0.009664 10.1735 0 8.001 0C5.82846 0 5.55556 0.009024 4.70213 0.048448Z"
+                                                fill="currentColor"
+                                            ></path>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <!-- Youtube -->
+                                <li class="social-icon__item">
+                                    <a href="#" class="social-icon__link">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M8.35464 13.6327L5.07201 13.5714C4.00914 13.5501 2.94366 13.5927 1.90168 13.3715C0.316517 13.0411 0.204224 11.4209 0.0867073 10.0618C-0.0752042 8.15113 -0.0125288 6.20581 0.293014 4.31112C0.465371 3.24786 1.14435 2.61363 2.19417 2.54434C5.73794 2.29385 9.30522 2.32316 12.8412 2.44041C13.2146 2.45107 13.5906 2.5097 13.9589 2.57632C15.7765 2.90143 15.8208 4.73749 15.9384 6.28309C16.0559 7.84468 16.0063 9.41426 15.7817 10.9652C15.6015 12.2496 15.2568 13.3262 13.8022 13.4301C11.9794 13.5661 10.1983 13.6753 8.37031 13.6407C8.37031 13.6327 8.35986 13.6327 8.35464 13.6327ZM6.42476 10.3816C7.79839 9.57681 9.14592 8.78536 10.5117 7.98591C9.13547 7.18114 7.79056 6.38968 6.42476 5.59024V10.3816Z"
+                                                fill="currentColor"
+                                            ></path>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <!-- Linked in -->
+                                <li class="social-icon__item">
+                                    <a href="#" class="social-icon__link">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#linkedIn)">
+                                                <path
+                                                    d="M15.9961 16V15.9993H16.0001V10.1313C16.0001 7.26065 15.3821 5.04932 12.0261 5.04932C10.4128 5.04932 9.33009 5.93465 8.88809 6.77399H8.84142V5.31732H5.65942V15.9993H8.97276V10.71C8.97276 9.31732 9.23676 7.97065 10.9614 7.97065C12.6608 7.97065 12.6861 9.55999 12.6861 10.7993V16H15.9961Z"
+                                                    fill="currentColor"
+                                                ></path>
+                                                <path d="M0.263794 5.31787H3.58113V15.9999H0.263794V5.31787Z" fill="currentColor"></path>
+                                                <path
+                                                    d="M1.92133 0C0.860667 0 0 0.860667 0 1.92133C0 2.982 0.860667 3.86067 1.92133 3.86067C2.982 3.86067 3.84267 2.982 3.84267 1.92133C3.842 0.860667 2.98133 0 1.92133 0V0Z"
+                                                    fill="currentColor"
+                                                ></path>
+                                            </g>
+                                            <defs>
+                                                <clipPath id="linkedIn">
+                                                    <rect width="16" height="16" fill="white"></rect>
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <!-- whats app -->
+                                <li class="social-icon__item">
+                                    <a href="#" class="social-icon__link">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                fill-rule="evenodd"
+                                                clip-rule="evenodd"
+                                                d="M13.3057 2.67206C11.9024 1.26709 10.0361 0.493011 8.04782 0.492188C3.95084 0.492188 0.616486 3.82645 0.614838 7.92453C0.614288 9.23456 0.956512 10.5134 1.60699 11.6406L0.55249 15.4922L4.49283 14.4586C5.57855 15.0508 6.80087 15.3629 8.0448 15.3633H8.04791C12.1444 15.3633 15.4792 12.0287 15.4807 7.93048C15.4815 5.94433 14.7091 4.07693 13.3057 2.67206ZM8.04782 14.108H8.04526C6.93674 14.1075 5.84955 13.8096 4.90088 13.2469L4.67538 13.1129L2.33713 13.7263L2.96124 11.4466L2.8143 11.2128C2.19586 10.2292 1.86929 9.09228 1.86984 7.92499C1.87112 4.51877 4.64261 1.74756 8.05029 1.74756C9.70044 1.74811 11.2516 2.39154 12.418 3.5593C13.5844 4.72705 14.2263 6.27923 14.2258 7.93002C14.2243 11.3365 11.453 14.108 8.04782 14.108ZM11.4366 9.48102C11.2509 9.388 10.3377 8.93884 10.1674 8.87677C9.99734 8.81479 9.87338 8.78393 9.74969 8.96979C9.62582 9.15564 9.26996 9.57403 9.16156 9.6979C9.05316 9.82187 8.94495 9.83743 8.75918 9.74441C8.57342 9.65149 7.97504 9.45529 7.26559 8.82257C6.71353 8.33011 6.34082 7.72192 6.23242 7.53607C6.12421 7.35004 6.23151 7.25922 6.3139 7.15704C6.51495 6.90738 6.71628 6.64563 6.77817 6.52176C6.84015 6.3978 6.80911 6.28931 6.7626 6.19638C6.71628 6.10345 6.34485 5.1893 6.19012 4.81732C6.03925 4.45532 5.88626 4.50421 5.77219 4.49853C5.66397 4.49313 5.5401 4.49203 5.41623 4.49203C5.29245 4.49203 5.09122 4.53845 4.92093 4.72449C4.75073 4.91043 4.271 5.35968 4.271 6.27383C4.271 7.18799 4.93649 8.0711 5.02933 8.19507C5.12216 8.31903 6.33899 10.1949 8.202 10.9993C8.64511 11.1909 8.991 11.305 9.2608 11.3906C9.70575 11.532 10.1105 11.512 10.4306 11.4642C10.7874 11.4109 11.5293 11.0149 11.6842 10.5811C11.8389 10.1472 11.8389 9.77545 11.7924 9.6979C11.7461 9.62045 11.6222 9.57403 11.4366 9.48102Z"
+                                                fill="currentColor"
+                                            ></path>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="container">
+                    <div class="row footer__copyright">
+                        <div class="col-md-6">
+                            <p class="text--body-3">Adlisting - Classified Listing © 2021. Design by <a href="#">Templatecookie</a></p>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="footer__policy-condition">
+                                <a href="#" class="text--body-3">Privacy Policy</a> |
+                                <a href="#" class="text--body-3">Terms &amp; Conditions</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer section end -->
+
+        <!-- Back To Top Btn -->
+        <button class="scrollTop scrollTop--white" >
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 20.25V3.75" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M5.25 10.5L12 3.75L18.75 10.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </button>
+
+        <script src="src/plugins/jquery.min.js"></script>
+        <script src="src/plugins/bootstrap.bundle.min.js"></script>
+        
+        <script src="src/plugins/bvselect.js"></script>
+        <script type="module" src="/main.js"></script>
+    </body>
+</html>

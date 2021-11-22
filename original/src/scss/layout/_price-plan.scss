@@ -1,0 +1,200 @@
+.price-plan {
+  &__title,
+  &__brief {
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  &__title {
+    color: color(g);
+    @include max(767px) {
+      font-size: 38px;
+      line-height: 48px;
+    }
+  }
+  &__brief {
+    color: color(gray-4);
+    width: 512px;
+    margin: auto;
+    margin-bottom: 24px;
+    @include max(767px) {
+      width: 100%;
+    }
+  }
+
+  &__nav {
+    display: inline-flex;
+    border: 0;
+    border-radius: 160px;
+    padding: 8px;
+    background-color: color(gray-10);
+    margin-bottom: 50px;
+  }
+
+  &__link {
+    @include font(16px, 24px, 400, null);
+    color: color(gray-2) !important;
+    padding: 8px 24px;
+    border-radius: 100px !important;
+    margin-right: 8px;
+    &:nth-last-child(1) {
+      margin-right: 0px;
+    }
+    &.active {
+      color: #fff !important;
+      background-color: color(primary-4) !important;
+    }
+  }
+
+  .plan-card {
+    @include max(1199px) {
+      margin-bottom: 24px;
+    }
+  }
+
+  // Modal
+  &__modal-content {
+    padding: 40px;
+    border-radius: 12px;
+    @include max(767px) {
+      padding: 40px 16px;
+    }
+  }
+
+  &__modal-header,
+  &__modal-body {
+    padding: 0;
+  }
+
+  &__modal-header {
+    margin-bottom: 32px;
+  }
+
+  &__modal-btnclose {
+    width: 48px;
+    height: 48px;
+    border-radius: 4px;
+    background-color: #ebeef7;
+    color: color(g);
+    &:hover {
+      color: color(gray-3);
+    }
+  }
+
+  &__field-group {
+    display: flex;
+    justify-content: space-between;
+    @include max(991px) {
+      flex-direction: column;
+    }
+    .input-select {
+      width: 100%;
+      &:nth-child(1) {
+        margin-right: 18px;
+      }
+    }
+  }
+
+  &__input {
+    position: relative;
+    width: 100%;
+    height: 48px;
+
+    &-group {
+      margin-bottom: 16px;
+      label {
+        margin-bottom: 8px;
+      }
+    }
+
+    input {
+      width: inherit;
+      height: inherit;
+      padding-left: 18px;
+      border-radius: 5px;
+    }
+    .icon,
+    .card-type {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .icon {
+      left: 20px;
+      @include max(767px) {
+        left: 10px;
+      }
+    }
+
+    .card-type {
+      right: 24px;
+      display: flex;
+      @include max(767px) {
+        right: 12px;
+      }
+      &__item {
+        margin-right: 16px;
+        @include max(767px) {
+          margin-right: 8px;
+        }
+        &:nth-last-child(1) {
+          margin-right: 0px;
+        }
+        span {
+          color: color(gray-5);
+          text-transform: uppercase;
+          @include max(767px) {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    &#credit {
+      input {
+        padding-left: 55px;
+        @include max(767px) {
+          padding-left: 40px;
+        }
+      }
+    }
+  }
+
+  &__info {
+    padding: 32px 0px;
+    margin-bottom: 32px;
+    border-bottom: 1px solid #ebeef7;
+    &-item {
+      margin-bottom: 24px;
+      &:nth-last-child(1) {
+        margin-bottom: 0px;
+      }
+      .plan-type {
+        color: color(gray-3);
+        span {
+          font-weight: 600;
+          color: color(g);
+        }
+      }
+      .price {
+        color: color(g);
+      }
+    }
+  }
+
+  &__total {
+    h2 {
+      color: color(g);
+    }
+  }
+
+  &__checkout-btn {
+    margin-bottom: 16px;
+  }
+
+  &__message {
+    color: color(gray-5);
+    text-transform: capitalize;
+    text-align: center;
+  }
+}
