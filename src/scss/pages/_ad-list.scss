@@ -218,6 +218,9 @@
 
 .product-item {
 	padding-top: 50px;
+	@include max(767px) {
+		padding-bottom: 0px;
+	}
 	&__badge {
 		display: flex;
 		align-items: center;
