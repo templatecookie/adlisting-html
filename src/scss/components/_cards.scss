@@ -47,6 +47,7 @@
 	}
 
 	&__caption-title {
+		width: 100%;
 		color: color(g);
 	}
 
@@ -62,6 +63,7 @@
 
 	&__info-bottom {
 		display: flex;
+		flex-wrap: wrap;
 		align-items: center;
 		justify-content: space-between;
 		border-bottom-left-radius: 12px;
@@ -71,6 +73,7 @@
 	&__user-details {
 		display: flex;
 		align-items: center;
+		flex-wrap: wrap;
 		justify-content: space-between;
 		&__item {
 			.icon {
@@ -135,6 +138,8 @@
 			}
 
 			&__location {
+				display: flex;
+				align-items: flex-start;
 				color: color(gray-4);
 			}
 
@@ -145,10 +150,12 @@
 	}
 
 	&--two {
-		display: flex;
-		align-items: center;
+		display: grid;
+		grid-auto-rows: 220px;
+		grid-template-columns: repeat(3, 1fr);
 		@include max(767px) {
-			flex-direction: column;
+			grid-template-columns: 1fr;
+			grid-template-rows: auto;
 		}
 
 		&.cards--highlight {
@@ -165,12 +172,12 @@
 
 		.cards {
 			&__img-wrapper {
-				width: 220px;
+				width: 100%;
 				height: 220px;
+				grid-column-start: 1;
 				border-top-left-radius: 12px;
 				border-bottom-left-radius: 12px;
 				@include max(767px) {
-					width: 100%;
 					height: 325px;
 					border-top-right-radius: 12px;
 					border-bottom-left-radius: 0px;
@@ -190,34 +197,38 @@
 			}
 
 			&__info {
-				width: 70%;
-				height: 220px;
-				display: flex;
-				flex-direction: column;
-				justify-content: flex-end;
+				padding-bottom: 0px;
 				border-top-left-radius: 0px;
 				border-bottom-left-radius: 0px;
-
 				@include max(767px) {
-					width: 100%;
-					height: auto;
+					border-top: 0px;
+					border-right: 0px;
+					border-bottom: 0px;
+					border-bottom-left-radius: 10px !important;
+					border-bottom-right-radius: 10px !important;
+				}
+				@include min(768px) {
+					grid-column: 2 / -1;
 				}
 			}
 
 			&__info-top {
 				padding: 0px 24px;
+				padding-top: 24px;
 				@include max(767px) {
-					padding-top: 24px;
 					border-top-right-radius: 0px;
 					border-right: 1px solid #ffd966;
 				}
 			}
 
 			&__info-bottom {
-				padding: 12px 24px;
+				padding: 0px 24px;
+				padding-top: 12px;
 				@include max(767px) {
 					border-bottom: 1px solid #ffd966;
 					border-right: 1px solid #ffd966;
+					border-bottom-left-radius: 9px;
+					border-bottom-right-radius: 9px;
 				}
 			}
 
@@ -226,14 +237,14 @@
 				color: color(gray-3);
 
 				.tag-label {
+					color: color(g);
 					font-size: 13px;
-					line-height: 14px;
 					font-weight: 400;
 					padding: 4px 8px;
 					margin-left: 12px;
+					line-height: 14px;
 					border-radius: 100px;
 					display: inline-block;
-					color: color(g);
 					background-color: white;
 
 					.icon {
