@@ -1,0 +1,64 @@
+.language-select {
+	width: 80px;
+	.country_selector {
+		user-select: none;
+		pointer-events: none;
+		border: 0px;
+		padding: 0px;
+		font-size: 14px;
+		color: #1f1f1f;
+		line-height: 20px;
+		margin-left: 56px;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		text-transform: capitalize;
+		background-color: transparent;
+	}
+
+	.country-select {
+		.selected-flag {
+			.arrow {
+				border: solid #1f1f1f;
+				border-width: 0px 1.5px 1.5px 0;
+				right: 8px;
+				padding: 3px;
+				border-top-color: #fff;
+				transform: translateY(-50%) rotate(45deg);
+				transform: all 0.3s linear;
+
+				&.up {
+					transform: translateY(-50%) rotate(225deg);
+				}
+			}
+		}
+		.flag-dropdown {
+			top: 50%;
+			transform: translateY(-50%);
+
+			.selected-flag {
+				padding: 0px;
+				&:hover {
+					background-color: transparent;
+				}
+				.flag {
+					margin: 0;
+				}
+			}
+		}
+		.country-list {
+			top: calc(100% + 30px);
+			width: 160px;
+			overflow-x: hidden;
+			z-index: 99999999;
+			@include max(767px) {
+				width: 100%;
+			}
+			li {
+				span {
+					font-size: 12px;
+				}
+			}
+		}
+	}
+}
