@@ -125,8 +125,18 @@
                         </span>
                         Post Ads
                     </a>
-                    <div class="language-select">
+                    <!-- <div class="language-select">
                         <input class="country_selector" type="text">
+                    </div> -->
+                    <div class="language-picker js-language-picker desktop-show">
+                        <form action="" class="language-picker__form">
+                            <label for="language-picker-select"></label>
+                            <select name="language-picker-select" id="language-picker-select">
+                                <option lang="en" value="english" selected>En</option>
+                                <option lang="de" value="deutsch">De</option>
+                                <option lang="fr" value="francais">Fr</option>
+                            </select>
+                        </form>
                     </div>
                 </div>
                 <!-- Responsive Navigation Menu -->
@@ -274,8 +284,18 @@
 
                         <div class="mobile-menu__language">
                             <h2>Languages</h2>
-                            <div class="language-select">
+                            <!-- <div class="language-select">
                                 <input class="country_selector" type="text">
+                            </div> -->
+                            <div class="language-picker js-language-picker mobile-show">
+                                <form action="" class="language-picker__form">
+                                    <label for="language-picker-select"></label>
+                                    <select name="language-picker-select" id="language-picker-select">
+                                        <option lang="en" value="english" selected>En</option>
+                                        <option lang="de" value="deutsch">De</option>
+                                        <option lang="fr" value="francais">Fr</option>
+                                    </select>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -1969,6 +1989,7 @@
         <script src="src/plugins/bootstrap.bundle.min.js"></script>
         <script src="src/plugins/countrySelect.js"></script>
         <script src="src/plugins/slick.min.js"></script>
+        <script src="src/plugins/lan.js"></script>
         <script src="src/plugins/select2/js/select2.min.js"></script>
         <script type="module" src="./main.js"></script>
     </body>
