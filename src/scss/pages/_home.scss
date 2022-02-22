@@ -275,3 +275,27 @@ ul.language-picker__list {
   //   color: black;
   // }
 }
+
+.mobile-show {
+  .language-picker__item {
+    &[aria-selected="true"] {
+      position: relative;
+      background: #fff;
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        height: 16px;
+        width: 16px;
+        right: 5px;
+        background-image: url("../images/svg/check.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+    }
+  }
+}
