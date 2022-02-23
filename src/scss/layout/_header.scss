@@ -1,22 +1,29 @@
+.navigation-bar__bottom-wrap {
+  transition: all 0.4s;
+}
 .header {
-  position: relative;
-  min-height: 80px;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  background-color: #fff;
   transition: all 0.4s ease-in-out;
-  &.active {
-    background-color: #fff;
-    box-shadow: 0px -1px 0px 0px #ebeef7 inset;
-    padding: 0px;
-    transition: all 0.3s linear;
-  }
-
+  box-shadow: 0px -1px 0px 0px #ebeef7 inset;
   &.header--fixed {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 999;
     box-shadow: 0px 12px 80px 0px #001a661a;
     background-color: #fff;
+
+    &.header--two {
+      background-color: transparent;
+      box-shadow: none;
+    }
+    .navigation-bar__bottom-wrap {
+      opacity: 0;
+    }
+    .navigation-bar__top {
+      background-color: white;
+    }
 
     .language-select {
       border-left-color: #191f334d;
@@ -134,11 +141,9 @@
   }
 
   &--one {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 9;
     padding: 25px 0px;
+    box-shadow: none;
+    background-color: transparent;
     @include max(991px) {
       padding: 0px;
     }
@@ -172,10 +177,6 @@
             font-weight: 400;
             background-color: transparent !important;
             color: rgba(255, 255, 255, 0.6) !important;
-          }
-
-          @include max(1199px) {
-            padding: 0px 12px;
           }
         }
         .language-select {
@@ -414,9 +415,9 @@
     .navigation-bar {
       &__buttons {
         .btn {
-          @include max(1199px) {
-            padding: 0px 12px;
-          }
+          // @include max(1199px) {
+          //   padding: 0px 12px;
+          // }
 
           .icon--left {
             @include max(1199px) {
@@ -1215,6 +1216,16 @@ ul.language-picker__list {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+      }
+    }
+  }
+}
+
+.navigation-bar {
+  &__buttons {
+    .btn {
+      @include max(1199px) {
+        padding: 0px 12px;
       }
     }
   }
