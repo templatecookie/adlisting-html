@@ -840,6 +840,42 @@
 						margin-right: 4px;
 					}
 				}
+
+				.user-data {
+					display: flex;
+					align-items: center;
+
+					a {
+						width: 48px;
+						height: 48px;
+						position: relative;
+						border-radius: 50%;
+						overflow: hidden;
+						margin-right: 12px;
+						img {
+							width: 100%;
+							height: 100%;
+							object-fit: cover;
+						}
+					}
+
+					h2,
+					small {
+						text-transform: capitalize;
+					}
+					h2 {
+						margin: 0;
+						color: #191f33;
+						font-size: 16px;
+						font-weight: 600;
+						line-height: 24px;
+					}
+					small {
+						color: #636a80;
+						font-size: 14px;
+						line-height: 20px;
+					}
+				}
 			}
 		}
 	}
