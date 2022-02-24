@@ -835,6 +835,3 @@ window.addEventListener("scroll", function () {
 		scroll.classList.toggle("active", window.scrollY > 500)
 	}
 })
-if (document.querySelector(".country_selector")) {
-	$(".country_selector").countrySelect()
-}

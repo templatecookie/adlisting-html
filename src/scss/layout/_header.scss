@@ -1,6 +1,3 @@
-.navigation-bar__bottom-wrap {
-	transition: all 0.4s;
-}
 .header {
 	position: fixed;
 	width: 100%;
@@ -49,6 +46,10 @@
 					top: calc(100% + 30px);
 				}
 			}
+		}
+
+		.language-picker__flag {
+			color: #191f33;
 		}
 	}
 
@@ -567,6 +568,9 @@
 		padding-top: 14px;
 		padding-bottom: 14px;
 		@include flex(center, null);
+		&-wrap {
+			transition: all 0.4s ease;
+		}
 	}
 }
 
