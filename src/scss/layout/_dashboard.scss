@@ -108,7 +108,7 @@
 			top: 50%;
 			left: -295px;
 			width: 295px;
-			z-index: 999;
+			z-index: 9;
 			transform: translateY(-50%);
 			border-top-left-radius: 0px;
 			border-bottom-left-radius: 0px;
@@ -946,7 +946,7 @@
 					text-transform: uppercase;
 					&::after,
 					&::before {
-						content: '';
+						content: "";
 						position: absolute;
 						top: 50%;
 						width: 45%;
