@@ -89,14 +89,14 @@
 
 	&__list {
 		background: #fff;
-		padding: 10px;
+		padding: 6px 0px;
 		width: calc(100% - 20px);
 		border-radius: 5px;
 		box-shadow: 0px 12px 80px rgb(0 26 102 / 10%);
 		margin-left: 20px;
 		li {
 			a {
-				padding: 6px 0px;
+				padding: 6px 20px;
 				span {
 					color: black;
 				}
