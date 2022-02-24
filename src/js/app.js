@@ -81,15 +81,13 @@ if (backList) {
 // 	else sticky.removeClass("header--fixed")
 // })
 
-$(window).on('scroll', function(){
-  if ($(window).scrollTop() > 50) {
-      $('#sticky-menu').addClass('header--fixed');
-  } else {
-      $('#sticky-menu').removeClass('header--fixed');
-  }
-
-});
-
+$(window).on("scroll", function () {
+	if ($(window).scrollTop() > 50) {
+		$("#sticky-menu").addClass("header--fixed")
+	} else {
+		$("#sticky-menu").removeClass("header--fixed")
+	}
+})
 
 if (toggle) {
 	toggle.addEventListener("click", function (e) {
@@ -104,6 +102,7 @@ if (toggle) {
 if (closeSidebar) {
 	closeSidebar.addEventListener("click", (e) => {
 		e.preventDefault()
+		mainNav.classList.remove("active")
 		mobileNav.classList.remove("active")
 		document.querySelector("body").classList.remove("overlay")
 	})
