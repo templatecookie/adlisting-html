@@ -440,6 +440,45 @@
             </div>
         </div>
 
+        <div class="mobile-search-filed">
+            <div class="container">
+                <div class="search-field-wrap">
+                    <div class="input-field">
+                        <input type="text" placeholder="Search for anything">
+                        <span class="icon icon--left">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9.16667 15.8333C12.8486 15.8333 15.8333 12.8486 15.8333 9.16667C15.8333 5.48477 12.8486 2.5 9.16667 2.5C5.48477 2.5 2.5 5.48477 2.5 9.16667C2.5 12.8486 5.48477 15.8333 9.16667 15.8333Z"
+                                    stroke="#00AAFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M17.5 17.5L13.875 13.875" stroke="#00AAFF" stroke-width="1.6" stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                            </svg>
+                        </span>
+                    </div>
+                    <span class="toggle-bar">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 11.25L12 20.25" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M12 3.75L12 8.25" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M18.75 18.75L18.7501 20.25" stroke="white" stroke-width="1.6" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M18.7501 3.75L18.75 15.75" stroke="white" stroke-width="1.6" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M21 15.75H16.5" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M5.25007 15.75L5.25 20.25" stroke="white" stroke-width="1.6" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M5.25 3.75L5.25007 12.75" stroke="white" stroke-width="1.6" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M3 12.75H7.5" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M14.25 8.25H9.75" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                    </span>
+                </div>
+                
+            </div>
+        </div>
+        <div class="offcanvas-overlay"></div>
+
         <section class="filter">
             <div class="container">
                 <div class="filter-result">
@@ -455,7 +494,7 @@
                                     <option value="03"> New</option>
                                 </select>
                             </div>
-                            <div class="input-select">
+                            <div class="input-select mobile-none">
                                 <select id="page">
                                     <option value="01"> 1 Per Page</option>
                                     <option value="02"> 2 Per Page</option>
@@ -474,25 +513,18 @@
                 <div class="row">
                     <div class="col-xl-3">
                         <div class="list-sidebar">
-                            <span class="toggle-bar">
-                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M19.5 13.5H4.5C4.08579 13.5 3.75 13.8358 3.75 14.25V18C3.75 18.4142 4.08579 18.75 4.5 18.75H19.5C19.9142 18.75 20.25 18.4142 20.25 18V14.25C20.25 13.8358 19.9142 13.5 19.5 13.5Z"
-                                        stroke="currentColor"
-                                        stroke-width="1.6"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    ></path>
-                                    <path
-                                        d="M19.5 5.25H4.5C4.08579 5.25 3.75 5.58579 3.75 6V9.75C3.75 10.1642 4.08579 10.5 4.5 10.5H19.5C19.9142 10.5 20.25 10.1642 20.25 9.75V6C20.25 5.58579 19.9142 5.25 19.5 5.25Z"
-                                        stroke="currentColor"
-                                        stroke-width="1.6"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    ></path>
-                                </svg>
-                            </span>
+                            <div class="product-filter">
+                                <h3>Product Filters</h3>
+                                <span class="close"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15.625 4.375L4.375 15.625" stroke="#767E94" stroke-width="1.6" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M15.625 15.625L4.375 4.375" stroke="#767E94" stroke-width="1.6" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                            </div>
                             <div class="accordion list-sidebar__accordion" id="accordionGroup">
+                                
                                 <div class="accordion-item list-sidebar__accordion-item category">
                                     <h2 class="accordion-header list-sidebar__accordion-header" id="category">
                                         <button class="accordion-button list-sidebar__accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#categoryCollapse" aria-expanded="true" aria-controls="categoryCollapse">

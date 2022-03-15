@@ -835,3 +835,11 @@ window.addEventListener("scroll", function () {
 		scroll.classList.toggle("active", window.scrollY > 500)
 	}
 })
+
+
+$(".toggle-bar").on("click", function () {
+    $(".list-sidebar, .offcanvas-overlay").addClass("active");
+});
+$(".close, .offcanvas-overlay").on("click", function () {
+    $(".list-sidebar, .offcanvas-overlay").removeClass("active");
+});

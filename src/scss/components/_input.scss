@@ -79,6 +79,9 @@
     .input-field,
     .input-select {
       margin-right: 16px;
+      @include max(1199px) {
+        margin: 0;
+      }
       @include max(767px) {
         margin-right: 0px;
       }

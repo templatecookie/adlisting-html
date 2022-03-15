@@ -2,12 +2,15 @@
   padding: 13px 12px;
   border-radius: 10px;
   background-color: #fff;
+  @include max(1199px) {
+    padding: 0;
+  }
   &__content {
     display: flex;
     align-items: center;
     justify-content: space-between;
     @include max(1199px) {
-      flex-direction: column;
+      display: none;
     }
 
     &-item {
@@ -73,6 +76,7 @@
 
       .input-field {
         margin-bottom: 0px;
+
         input {
           border: 0;
           background-color: transparent;
@@ -118,3 +122,24 @@
 }
 
 // .select2-results__option--selected { display: none;}
+
+.mobile-search-filed {
+  padding-top: 30px;
+  display: none;
+  @include max(1199px) {
+    display: block;
+  }
+  @include max(767px) {
+    padding: 24px 0 0;
+  }
+
+  .input-field {
+    margin: 0;
+    input {
+      border: none;
+      padding: 12px 50px;
+      width: calc(100% - 56px);
+      background-color: #f5f7fa;
+    }
+  }
+}
