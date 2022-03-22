@@ -144,3 +144,27 @@
     }
   }
 }
+
+.mobile-search-filed {
+  padding-top: 30px;
+  display: none;
+}
+@media (max-width: 1199px) {
+  .mobile-search-filed {
+    display: block;
+  }
+}
+@media (max-width: 767px) {
+  .mobile-search-filed {
+    padding: 24px 0 0;
+  }
+}
+.mobile-search-filed .input-field {
+  margin: 0;
+}
+.mobile-search-filed .input-field input {
+  border: none;
+  padding: 12px 50px;
+  width: calc(100% - 56px);
+  background-color: #f5f7fa;
+}

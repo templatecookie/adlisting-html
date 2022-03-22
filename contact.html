@@ -5,19 +5,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Onest || Contact</title>
         <!-- Favicons -->
-        <link rel="apple-touch-icon" sizes="512x512" href="src/images/favicon_io/android-chrome-512x512.png" />
-        <link rel="apple-touch-icon" sizes="192x192" href="src/images/favicon_io/android-chrome-192x192.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="src/images/favicon_io/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="src/images/favicon_io/favicon-16x16.png" />
-        <link rel="manifest" href="src/images/favicon_io/site.webmanifest" />
-        <link rel="stylesheet" href="src/plugins/css/bootstrap.min.css">
+        <link rel="apple-touch-icon" sizes="512x512" href="/src/images/favicon_io/android-chrome-512x512.png" />
+        <link rel="apple-touch-icon" sizes="192x192" href="/src/images/favicon_io/android-chrome-192x192.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/src/images/favicon_io/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/src/images/favicon_io/favicon-16x16.png" />
+        <link rel="manifest" href="/src/images/favicon_io/site.webmanifest" />
+        <link rel="stylesheet" href="/src/plugins/css/bootstrap.min.css">
        
 </head>
 
     <body>
         <div class="loader">
             <div class="loader-icon">
-                <img src="src/images/loader.gif" alt="loader" />
+                <img src="/src/images/loader.gif" alt="loader" />
             </div>
         </div>
 
@@ -33,7 +33,7 @@
                     <!-- Brand Logo -->
                     <a href="index.html" class="navigation-bar__logo">
                       
-                        <img src="src/images/svg/logo-dark.svg" alt="brand-logo" class="logo-dark">
+                        <img src="/src/images/svg/logo-dark.svg" alt="brand-logo" class="logo-dark">
                     </a>
                 </div>
                 <!-- Menu -->
@@ -157,7 +157,7 @@
                         <!-- brand -->
                         <div class="mobile-menu__brand">
                             <a href="index.html">
-                                <img src="src/images/svg/logo-dark.svg" alt="logo">
+                                <img src="/src/images/svg/logo-dark.svg" alt="logo">
                             </a>
                             <div class="close">
                                 <span>
@@ -479,12 +479,7 @@
 
         <!-- map section start  -->
 
-        <div class="map">
-            <iframe src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
-        </div>
-
-        <!-- map section end  -->
-        <div style="width: 100%;"></div>
+        <div id="map"></div>
 
         <!-- footer section start  -->
         <footer class="footer footer--dark">
@@ -493,7 +488,7 @@
                     <div class="row">
                         <div class="col-xl-3">
                             <div class="footer__brand-logo">
-                                <img src="src/images/logo.png" alt="logo-brand" />
+                                <img src="/src/images/logo.png" alt="logo-brand" />
                             </div>
                             <div class="footer__loc-info">
                                 <p class="text--body-3">
@@ -732,9 +727,10 @@
         </button>
         
         <!-- Script Goes Here -->
-        <script src="src/plugins/jquery.min.js"></script>
-        <script src="src/plugins/bootstrap.bundle.min.js"></script>
-        <script src="src/plugins/lan.js"></script>
+        <script src="/src/plugins/jquery.min.js"></script>
+        <script src="/src/plugins/bootstrap.bundle.min.js"></script>
+        <script src="/src/plugins/lan.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyArZVfNvjnLNwJZlLJKuOiWHZ6vtQzzb1Y"></script>
         <script type="module" src="/main.js"></script>
     </body>
 </html>

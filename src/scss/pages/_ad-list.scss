@@ -1,6 +1,5 @@
 .ad-list {
   padding-top: 25px;
-
   &__search-box {
     padding-top: 50px;
     @include max(1199px) {
@@ -75,6 +74,11 @@
         &:nth-last-child(1) {
           padding-bottom: 0px;
           border-bottom: 0px;
+        }
+        &.mobile-toggle-hide {
+          @include max(1199px) {
+            display: none;
+          }
         }
       }
       &-header {
@@ -756,7 +760,8 @@
   }
 }
 
-// new add
+// add new css
+
 .input-select.mobile-none {
   @include max(1199px) {
     display: none;
