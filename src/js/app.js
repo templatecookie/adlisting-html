@@ -872,25 +872,27 @@ if ($('.js-range-slider').length > 0) {
 }
 
 // google map
-google.maps.event.addDomListener(window, 'load', init);
+if ($('#map').length > 0) {
+	google.maps.event.addDomListener(window, 'load', init);
         
-    function init() {
-        var mapOptions = {
-            zoom: 11,
-            center: new google.maps.LatLng(40.6700, -73.9400), // New York
-            styles: [{"featureType":"landscape","elementType":"all","stylers":[{"visibility":"on"}]},{"featureType":"poi.business","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"poi.business","elementType":"labels","stylers":[{"visibility":"simplified"}]},{"featureType":"poi.park","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"poi.school","elementType":"all","stylers":[{"visibility":"on"}]},{"featureType":"poi.sports_complex","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"transit.station.bus","elementType":"all","stylers":[{"visibility":"on"},{"saturation":"21"},{"weight":"4.05"}]}]
-        };
-        // Get the HTML DOM element that will contain your map 
-        // We are using a div with id="map" seen below in the <body>
-        var mapElement = document.getElementById('map');
+	function init() {
+		var mapOptions = {
+			zoom: 11,
+			center: new google.maps.LatLng(40.6700, -73.9400), // New York
+			styles: [{ "featureType": "landscape", "elementType": "all", "stylers": [{ "visibility": "on" }] }, { "featureType": "poi.business", "elementType": "all", "stylers": [{ "visibility": "simplified" }] }, { "featureType": "poi.business", "elementType": "labels", "stylers": [{ "visibility": "simplified" }] }, { "featureType": "poi.park", "elementType": "all", "stylers": [{ "visibility": "off" }] }, { "featureType": "poi.school", "elementType": "all", "stylers": [{ "visibility": "on" }] }, { "featureType": "poi.sports_complex", "elementType": "all", "stylers": [{ "visibility": "off" }] }, { "featureType": "transit.station.bus", "elementType": "all", "stylers": [{ "visibility": "on" }, { "saturation": "21" }, { "weight": "4.05" }] }]
+		};
+		// Get the HTML DOM element that will contain your map 
+		// We are using a div with id="map" seen below in the <body>
+		var mapElement = document.getElementById('map');
 
-        // Create the Google Map using our element and options defined above
-        var map = new google.maps.Map(mapElement, mapOptions);
+		// Create the Google Map using our element and options defined above
+		var map = new google.maps.Map(mapElement, mapOptions);
 
-        // Let's also add a marker while we're at it
-        var marker = new google.maps.Marker({
-            position: new google.maps.LatLng(40.6700, -73.9400),
-            map: map,
-            title: 'Snazzy!'
-        });
-    }
+		// Let's also add a marker while we're at it
+		var marker = new google.maps.Marker({
+			position: new google.maps.LatLng(40.6700, -73.9400),
+			map: map,
+			title: 'Snazzy!'
+		});
+	}
+}

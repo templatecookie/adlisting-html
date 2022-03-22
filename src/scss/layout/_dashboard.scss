@@ -105,10 +105,11 @@
 
     @include max(1199px) {
       position: fixed;
-      top: 0;
+      top: 50%;
       left: -295px;
       width: 295px;
-      z-index: 9999;
+      z-index: 9;
+      transform: translateY(-50%);
       border-top-left-radius: 0px;
       border-bottom-left-radius: 0px;
       @include trans(0.4s, ease-in-out);
