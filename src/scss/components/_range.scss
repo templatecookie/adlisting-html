@@ -171,3 +171,8 @@ span.irs-from {
     background-color: #00aaff;
   }
 }
+.price-range-slider {
+  @include max(1199px) {
+    height: 130px;
+  }
+}
