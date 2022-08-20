@@ -8562,39 +8562,8 @@ span.irs-from {
 .product-item__feature .feature-item p {
   color: #464d61;
 }
-@media (max-width: 1199px) {
-  .product-item__sidebar {
-    position: fixed;
-    top: 95px;
-    left: -390px;
-    z-index: 9;
-    width: 390px;
-    height: 100%;
-    overflow-x: visible;
-    background-color: #fff;
-    transition: all 0.3s ease-in-out;
-  }
-}
 @media (max-width: 480px) {
-  .product-item__sidebar {
-    width: 100%;
-    left: -100%;
-  }
-}
-.product-item__sidebar.active {
-  left: 0px;
-}
-.product-item__sidebar.active .toggle-bar {
-  color: #00aaff;
-}
-@media (max-width: 480px) {
-  .product-item__sidebar.active .toggle-bar {
-    top: 35px;
-    right: 0px;
-  }
-}
-@media (max-width: 480px) {
-  .product-item__sidebar.active .btn--fav {
+  .product-item__sidebar .btn--fav {
     margin-right: 50px;
     transition: all 0.3s ease-in-out;
   }
