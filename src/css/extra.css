@@ -55,3 +55,24 @@
     background: #555; 
   }
     
+
+.select2-container--default .select2-selection--single {
+    border-color: #edeff5;
+}
+
+.search__content-item .select2-container--default .select2-selection--single {
+    border-color: transparent;
+}
+
+.search__content-item .select2-container .select2-selection--single .select2-selection__rendered {
+    padding-left: 35px;
+}
+
+.language-picker__button .icon {
+    height: 13px;
+    margin-top: -4px;
+}
+
+.banner.banner--three .select2-container--default .select2-selection--single {
+background-color: transparent;
+}
