@@ -201,13 +201,14 @@
       top: 100%;
       left: 0;
       width: 100% !important;
+      height: 220px !important;
+      overflow: auto !important;
       padding: 16px 0px;
       border-bottom-left-radius: 5px;
       border-bottom-right-radius: 5px;
       background-color: #fff;
       box-shadow: 0px 24px 100px 0px #001d491f;
       z-index: 9;
-      display: none;
       li {
         @include font(14px, 24px, 400, g);
         padding: 8px 16px;
@@ -238,3 +239,9 @@
     }
   }
 }
+
+.select2-container--default .select2-selection--single .select2-selection__rendered{
+    color: #939aad !important;
+    text-transform: capitalize !important;
+}
+

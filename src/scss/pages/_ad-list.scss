@@ -791,3 +791,10 @@
 .search-field-wrap {
   position: relative;
 }
+
+
+// fixing css
+.input-select .bv_mainselect .bv_ul_inner.bv_background{
+    height: 220px !important;
+    overflow: auto !important;
+}

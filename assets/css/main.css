@@ -6906,13 +6906,14 @@ a {
   top: 100%;
   left: 0;
   width: 100% !important;
+  height: 220px !important;
+  overflow: auto !important;
   padding: 16px 0px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   background-color: #fff;
   box-shadow: 0px 24px 100px 0px rgba(0, 29, 73, 0.1215686275);
   z-index: 9;
-  display: none;
 }
 .input-select .bv_mainselect .bv_ul_inner.bv_background li {
   font-size: 14px;
@@ -6946,6 +6947,11 @@ a {
 .form-check label span {
   text-transform: lowercase;
   color: #767e94;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  color: #939aad !important;
+  text-transform: capitalize !important;
 }
 
 .page-navigation {
@@ -7453,6 +7459,7 @@ span.irs-from {
 .input-field--transparent .select2-container--bootstrap-5 .select2-selection--single {
   position: relative;
   background-image: none;
+  height: 48px !important;
 }
 .input-field--transparent .select2-container--bootstrap-5 .select2-selection--single::after {
   content: "";
@@ -8878,6 +8885,11 @@ span.irs-from {
 
 .search-field-wrap {
   position: relative;
+}
+
+.input-select .bv_mainselect .bv_ul_inner.bv_background {
+  height: 220px !important;
+  overflow: auto !important;
 }
 
 .upload-wrapper h3 {

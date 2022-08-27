@@ -13,7 +13,9 @@
 
         <link rel="stylesheet" href="./src/plugins/css/intlTelInput.css" />
         <link rel="stylesheet" href="./src/plugins/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./src/plugins/select2/css/select2.min.css">
         <link rel="stylesheet" href="./src/css/main.css">
+        <link rel="stylesheet" href="./src/css/extra.css">
        
 </head>
 
@@ -655,18 +657,19 @@
                                                     <input type="text" placeholder="Ad name" id="adname" />
                                                 </div>
                                                 <div class="input-field__group">
+                                                    
                                                     <div class="input-select">
-                                                        <label for="category">Category</label>
-                                                        <select id="allCategory">
+                                                        <label for="cat">Category</label>
+                                                        <select class="js-example-basic-single w-100" id="cat" name="category">
                                                             <option value="01">Category 01</option>
                                                             <option value="02">Category 02</option>
                                                             <option value="03">Category 03</option>
                                                             <option value="04">Category 04</option>
-                                                        </select>
+                                                          </select>
                                                     </div>
                                                     <div class="input-select">
                                                         <label for="subcategory">sub category</label>
-                                                        <select id="subcategory">
+                                                        <select class="js-example-basic-single w-100" id="subcat" name="subcategory">
                                                             <option value="01">Sub Category 01</option>
                                                             <option value="02">Sub Category 02</option>
                                                             <option value="03">Sub Category 03</option>
@@ -676,8 +679,8 @@
                                                 </div>
                                                 <div class="input-field__group">
                                                     <div class="input-select">
-                                                        <label for="brand">brand</label>
-                                                        <select id="brand">
+                                                        <label>brand</label>
+                                                        <select class="js-example-basic-single w-100" name="brand">
                                                             <option value="01">brand 01</option>
                                                             <option value="02">brand 02</option>
                                                             <option value="03">brand 03</option>
@@ -685,8 +688,8 @@
                                                         </select>
                                                     </div>
                                                     <div class="input-select">
-                                                        <label for="model">Model</label>
-                                                        <select id="model">
+                                                        <label>Model</label>
+                                                        <select class="js-example-basic-single w-100" name="model">
                                                             <option value="01">Model 01</option>
                                                             <option value="02">Model 02</option>
                                                             <option value="03">Model 03</option>
@@ -696,8 +699,8 @@
                                                 </div>
                                                 <div class="input-field__group">
                                                     <div class="input-select">
-                                                        <label for="conditions">conditions</label>
-                                                        <select id="conditions">
+                                                        <label>conditions</label>
+                                                        <select class="js-example-basic-single w-100" name="conditions">
                                                             <option value="01">conditions 01</option>
                                                             <option value="02">conditions 02</option>
                                                             <option value="03">conditions 03</option>
@@ -705,8 +708,8 @@
                                                         </select>
                                                     </div>
                                                     <div class="input-select">
-                                                        <label for="authenticity">authenticity</label>
-                                                        <select id="authenticity">
+                                                        <label>authenticity</label>
+                                                        <select class="js-example-basic-single w-100" name="authenticity">
                                                             <option value="01">authenticity 01</option>
                                                             <option value="02">authenticity 02</option>
                                                             <option value="03">authenticity 03</option>
@@ -818,8 +821,8 @@
                                             <div class="row">
                                                 <div class="col-lg-6">
                                                     <div class="input-select">
-                                                        <label for="country">country</label>
-                                                        <select id="country">
+                                                        <label>country</label>
+                                                        <select class="js-example-basic-single w-100" name="country">
                                                             <option value="01">country 01</option>
                                                             <option value="02">country 02</option>
                                                             <option value="03">country 03</option>
@@ -830,8 +833,8 @@
                                                 <div class="col-lg-6">
                                                     <div class="input-field__group">
                                                         <div class="input-select">
-                                                            <label for="city">city</label>
-                                                            <select id="city">
+                                                            <label>city</label>
+                                                            <select class="js-example-basic-single w-100" name="city">
                                                                 <option value="01">city 01</option>
                                                                 <option value="02">city 02</option>
                                                                 <option value="03">city 03</option>
@@ -839,8 +842,8 @@
                                                             </select>
                                                         </div>
                                                         <div class="input-select">
-                                                            <label for="state">state <span>(optional)</span> </label>
-                                                            <select id="state">
+                                                            <label>state <span>(optional)</span> </label>
+                                                            <select class="js-example-basic-single w-100" name="state">
                                                                 <option value="01">state 01</option>
                                                                 <option value="02">state 02</option>
                                                                 <option value="03">state 03</option>
@@ -1134,7 +1137,7 @@
         <script src="./src/plugins/jquery.min.js"></script>
         <script src="./src/plugins/bootstrap.bundle.min.js"></script>
         <script src="./src/plugins/lan.js"></script>
-        <script src="./src/plugins/bvselect.js"></script>
+        <script src="./src/plugins/select2/js/select2.min.js"></script>
         <script src="./src/js/app.js"></script>
     </body>
 </html>
