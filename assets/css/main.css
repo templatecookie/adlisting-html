@@ -7618,6 +7618,7 @@ span.irs-from {
 .mobile-show .language-picker__button .icon {
   position: absolute;
   right: 0;
+  margin-top: 0px !important;
 }
 .mobile-show ul.language-picker__list {
   width: 100%;
@@ -7647,7 +7648,7 @@ span.irs-from {
   height: 16px;
   width: 16px;
   right: 5px;
-  background-image: url("../images/svg/check.svg");
+  background-image: url("../images/svg/close.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
