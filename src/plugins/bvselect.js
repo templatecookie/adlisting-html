@@ -22,7 +22,7 @@ class BVSelect {
     {
 
         // Random Number generated
-        var randomID = Math.floor(Math.random() * (9999 - 0 + 1)) + 0;
+        var randomID = Math.floor(Math.random() * (99999999 - 0 + 1)) + 0;
         var SearchPlaceholder = search_placeholder;
         var MainPlaceholder = placeholder;
         var selectedIDFocus = 0; // Save wich dropdown is currently open
@@ -282,7 +282,7 @@ class BVSelect {
                     FixVerticalViewPort();
                 }
             }
-        }, false);
+        }, true);
 
         // ** FADE OUT FUNCTION **
         function BVfadeOut(el) {

@@ -156,6 +156,7 @@
   .language-picker__button .icon {
     position: absolute;
     right: 0;
+    margin-top: 0px !important;
   }
   ul.language-picker__list {
     width: 100%;
@@ -189,7 +190,7 @@
         height: 16px;
         width: 16px;
         right: 5px;
-        background-image: url("../images/svg/check.svg");
+        background-image: url("../images/svg/close.svg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;

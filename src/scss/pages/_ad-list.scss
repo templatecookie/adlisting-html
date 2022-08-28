@@ -438,42 +438,12 @@
   }
 
   &__sidebar {
-    @include max(1199px) {
-      position: fixed;
-      top: 95px;
-      left: -390px;
-      z-index: 9;
-      width: 390px;
-      height: 100%;
-      overflow-x: visible;
-      background-color: #fff;
-      @include trans(0.3s, ease-in-out);
-    }
-
-    @include max(480px) {
-      width: 100%;
-      left: -100%;
-    }
-
-    &.active {
-      left: 0px;
-
-      .toggle-bar {
-        color: color(primary-4);
-        @include max(480px) {
-          top: 35px;
-          right: 0px;
-        }
-      }
-
-      .btn--fav {
-        @include max(480px) {
-          margin-right: 50px;
-          @include trans(0.3s, ease-in-out);
-        }
-      }
-    }
-
+       .btn--fav {
+         @include max(480px) {
+           margin-right: 50px;
+           @include trans(0.3s, ease-in-out);
+         }
+       }
     &-top {
       margin-bottom: 24px;
       border-radius: 12px;
@@ -820,4 +790,11 @@
 }
 .search-field-wrap {
   position: relative;
+}
+
+
+// fixing css
+.input-select .bv_mainselect .bv_ul_inner.bv_background{
+    height: 220px !important;
+    overflow: auto !important;
 }
