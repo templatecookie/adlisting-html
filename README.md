@@ -1,70 +1,42 @@
-![](src/images/preview.png)
+# [Templatecookie](https://templatecookie.com)
+Templatecookie.com creates quality templates and php scripts. Templatecookie has many free HTML & Figma templates available for professional use. Templatecookie is famous for its premium PHP Scripts available on [Codeanyon Marketplace](https://codecanyon.net/user/templatecookie). Browse [Templatecookie](https://templatecookie.com) today and discover awesome digital products.
 
-## Installation
-Step 1: install packages using `npm` or `yarn`
-```bash
-npm install
-// or
-yarn install
-```
-Step 2: run project
-```bash
-npm run dev
-// or
-yarn dev
-```
+# [Onest - Classified Adlisting HTML Template](https://www.templatecookie.com/products)
 
-## Color
+> Onest - classified adlisting HTML template with 8+ landing pages for different professions.
 
----
+Check the [Live Demo here](https://adlisting-html.netlify.app/).
 
-1.  graysacle
-2. primary
-3. success
-4. warning
-5. danger
+![](screenshot.jpeg)
 
-## Fonts
+## Pages List
+- 3 Unique Home Page (Landing Page)
+- Browse Listing
+- Listing Detail
+- Seller Dashboard
+- User Dashboard
+- About
+- Contact
+- Pricing Plan
+- Blog List
+- Blog Details
+- Privacy Policy
+- Terms & Conditions
+- Coming Soon
+- 404
+- 500
+- and many more
 
----
 
-### Font Family
+## Framework & Technologies
+- bootstrap
+- scss
+- slick
+- jQuery
 
----
+## Credits
+- Design & Developed by [Templatecookie](https://templatecookie.com)
 
-1. Nunito Sans
-    1. **FontWeight**
-        1. 700
-        2. 600
-        3. 400
-2. Nunito 
-    1. **FontWeight**
-        1. 400
-        2. 600
+## License
+The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
-### Fonts Size & Line Height
-
----
-
-1. Display
-    1. 80/96
-    2. 72/86.4
-    3. 56 / 67.2
-2. Heading
-    1. 40 / 48
-    2. 32 / 40
-    3. 24 / 32
-3. Caption
-    1. 14 / 14
-4. Body 
-    1. 24 / 36
-    2. 20 / 32
-    3. 16 / 24
-    4. 14 / 20
-    5. 12 / 16
-
-### Icons
-
----
-
-Phosphor Icons (1.2.1)
