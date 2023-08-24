@@ -3,7 +3,7 @@ Templatecookie.com creates quality templates and php scripts. Templatecookie has
 
 # [Adlisting - Classified Listing HTML Template](https://templatecookie.com/demo/adlisting-classified-listing-html-template)
 
-> Adlisting - classified listing HTML template with 8+ landing pages for different professions.
+> Adlisting - classified listing HTML template with 2+ landing pages and 8+ inner pages
 
 Check the [Live Demo here](https://adlisting-html.netlify.app/).
 
