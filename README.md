@@ -7,7 +7,7 @@ Templatecookie.com creates quality templates and php scripts. Templatecookie has
 
 Check the [Live Demo here](https://adlisting-html.netlify.app/).
 
-![](screenshot.jpeg)
+![](screenshot.png)
 
 ## Pages List
 - [3 Unique Home Page](https://adlisting-html.netlify.app/)
