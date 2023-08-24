@@ -10,7 +10,7 @@ Check the [Live Demo here](https://adlisting-html.netlify.app/).
 ![](screenshot.jpeg)
 
 ## Pages List
-- 3 Unique Home Page (Landing Page)
+- [3 Unique Home Page](https://adlisting-html.netlify.app/)
 - Browse Listing
 - Listing Detail
 - Seller Dashboard
