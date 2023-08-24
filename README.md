@@ -27,10 +27,10 @@ Check the [Live Demo here](https://adlisting-html.netlify.app/).
 
 
 ## Framework & Technologies
-- (bootstrap4)[https://getbootstrap.com/docs/4.0/getting-started/introduction/)
-- (scss)[https://sass-lang.com/)
-- (slick)[https://kenwheeler.github.io/slick/]
-- (jQuery)[https://jquery.com/]
+- [bootstrap4](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
+- [scss](https://sass-lang.com/)
+- [slick](https://kenwheeler.github.io/slick/)
+- [jQuery](https://jquery.com/)
 
 ## Credits
 - Design & Developed by [Templatecookie](https://templatecookie.com)
