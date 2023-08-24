@@ -11,20 +11,18 @@ Check the [Live Demo here](https://adlisting-html.netlify.app/).
 
 ## Pages List
 - [3 Unique Home Page](https://adlisting-html.netlify.app/)
-- Browse Listing
-- Listing Detail
-- Seller Dashboard
-- User Dashboard
-- About
-- Contact
-- Pricing Plan
-- Blog List
-- Blog Details
-- Privacy Policy
-- Terms & Conditions
-- Coming Soon
-- 404
-- 500
+- [Browse Listing](https://adlisting-html.netlify.app/ad-list)
+- [Listing Detail](https://adlisting-html.netlify.app/ad-details)
+- [Seller Dashboard](https://adlisting-html.netlify.app/dashboard)
+- [User Dashboard](https://adlisting-html.netlify.app/dashboard)
+- [About](https://adlisting-html.netlify.app/about)
+- [Contact](https://adlisting-html.netlify.app/contact)
+- [Pricing Plan](https://adlisting-html.netlify.app/price-plan)
+- [Blog List](https://adlisting-html.netlify.app/blog-list)
+- [Blog Details](https://adlisting-html.netlify.app/blog-details)
+- [FAQ](https://adlisting-html.netlify.app/faq)
+- [404](https://adlisting-html.netlify.app/404-error)
+- [Authentication](https://adlisting-html.netlify.app/signin)
 - and many more
 
 
